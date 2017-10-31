@@ -1,0 +1,250 @@
+
+<!DOCTYPE html>
+<html lang="english">
+<head>
+  <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" type="text/css" href="https://cloud-init.github.io/theme/stylesheet/style.min.css">
+
+  <link rel="stylesheet" type="text/css" href="https://cloud-init.github.io/theme/pygments/github.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cloud-init.github.io/theme/font-awesome/css/font-awesome.min.css">
+
+
+    <link href="https://cloud-init.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Cloud-init Info Atom">
+
+
+    <link rel="shortcut icon" href="/theme/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/theme/img/favicon.ico" type="image/x-icon">
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-50554247-3', 'auto');
+  ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#2c001e">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#2c001e">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Microsoft EDGE -->
+    <meta name="msapplication-TileColor" content="#2c001e">
+
+<meta name="author" content="chad.smith@canonical.com" />
+<meta name="description" content="Meeting information * #cloud-init: cloud-init status meeting, 18 Sep at 16:04 — 16:27 UTC\ * Full logs athttp://ubottu.com/meetingology/logs/cloud-init/2017/cloud-init.2017-09-18-16.04.log.html Meeting summary LINK: https://public.etherpad-mozilla.org/p/cloud-init-meeting LINK: https://lists.launchpad.net/cloud-init/msg00100.html Release Preparation The discussion …" />
+<meta name="keywords" content="">
+
+<meta property="og:site_name" content="Cloud-init Info"/>
+<meta property="og:title" content="Cloud-init bi-weekly status"/>
+<meta property="og:description" content="Meeting information * #cloud-init: cloud-init status meeting, 18 Sep at 16:04 — 16:27 UTC\ * Full logs athttp://ubottu.com/meetingology/logs/cloud-init/2017/cloud-init.2017-09-18-16.04.log.html Meeting summary LINK: https://public.etherpad-mozilla.org/p/cloud-init-meeting LINK: https://lists.launchpad.net/cloud-init/msg00100.html Release Preparation The discussion …"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:url" content="https://cloud-init.github.io/status-2017-09-18.html"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2017-09-18 16:30:00+00:00"/>
+<meta property="article:modified_time" content=""/>
+<meta property="article:author" content="https://cloud-init.github.io/author/chadsmithcanonicalcom.html">
+<meta property="article:section" content="status-meeting-minutes"/>
+<meta property="og:image" content="/theme/img/profile.png">
+
+  <title>Cloud-init Info &ndash; Cloud-init bi-weekly status</title>
+
+</head>
+<body>
+  <aside>
+    <div>
+      <a href="https://cloud-init.github.io">
+        <img src="/theme/img/profile.png" alt="Cloud-init" title="Cloud-init">
+      </a>
+      <h1><a href="https://cloud-init.github.io">Cloud-init</a></h1>
+
+<p>Make your cloud images be all they can be</p>
+      <nav>
+        <ul class="list">
+
+          <li><a href="https://cloudinit.readthedocs.org/" target="_blank">Docs</a></li>
+          <li><a href="https://cloud-init.io" target="_blank">Overview</a></li>
+          <li><a href="https://cloudinit.readthedocs.io/en/latest/topics/hacking.html" target="_blank">Hacking</a></li>
+          <li><a href="https://jenkins.ubuntu.com/server/view/cloud-init/" target="_blank">CI builds</a></li>
+          <li><a href="https://launchpad.net/cloud-init" target="_blank">Code</a></li>
+        </ul>
+      </nav>
+
+      <ul class="social">
+        <li><a class="sc-github" href="https://github.com/cloud-init" target="_blank"><i class="fa fa-github"></i></a></li>
+        <li><a class="sc-wechat" href="https://webchat.freenode.net/?channels=cloud-init" target="_blank"><i class="fa fa-wechat"></i></a></li>
+      </ul>
+    </div>
+
+
+  </aside>
+  <main>
+
+    <nav>
+      <a href="https://cloud-init.github.io">Home</a>
+
+      <a href="/archives.html">Archives</a>
+      <a href="/categories.html">Categories</a>
+      <a href="/tags.html">Tags</a>
+
+      <a href="https://cloud-init.github.io/feeds/all.atom.xml">Atom</a>
+
+    </nav>
+
+<article class="single">
+  <header>
+      
+    <h1 id="status-2017-09-18">Cloud-init bi-weekly status</h1>
+    <p>
+      Posted on Mon 18 September 2017 in <a href="https://cloud-init.github.io/category/status-meeting-minutes.html">status-meeting-minutes</a>
+
+        &#8226; 3 min read
+    </p>
+  </header>
+
+
+  <div>
+    <h2>Meeting information</h2>
+<p><code>* #cloud-init: cloud-init status meeting, 18 Sep at 16:04 — 16:27 UTC</code>\
+<code>* Full logs at</code><a href="http://ubottu.com/meetingology/logs/cloud-init/2017/cloud-init.2017-09-18-16.04.log.html" title="wikilink"><code>http://ubottu.com/meetingology/logs/cloud-init/2017/cloud-init.2017-09-18-16.04.log.html</code></a></p>
+<h2>Meeting summary</h2>
+<ul>
+<li><em>LINK:</em> <a href="https://public.etherpad-mozilla.org/p/cloud-init-meeting">https://public.etherpad-mozilla.org/p/cloud-init-meeting</a></li>
+<li><em>LINK:</em> <a href="https://lists.launchpad.net/cloud-init/msg00100.html">https://lists.launchpad.net/cloud-init/msg00100.html</a></li>
+</ul>
+<h3>Release Preparation</h3>
+<p>The discussion about "Release Preparation" started at 16:08.</p>
+<p><code>*</code><strong><code>Release</code> <code>Preparation</code></strong><code>(16:08)</code></p>
+<p><code>*</code><em><code>LINK:</code></em><code></code><a href="http://bit.ly/ci-reviews"><code>http://bit.ly/ci-reviews</code></a><code></code></p>
+<h3>Open Discussion</h3>
+<p>The discussion about "Open Discussion" started at 16:14.</p>
+<p><code>*</code><em><code>LINK:</code></em><code></code><a href="https://launchpad.net/bugs/1717598"><code>https://launchpad.net/bugs/1717598</code></a><code></code></p>
+<h2>Vote results</h2>
+<h2>Done items</h2>
+<p><code>* (none)</code></p>
+<h2>People present (lines said)</h2>
+<p><code>* smoser (41)</code>\
+<code>* blackboxsw (8)</code>\
+<code>* ubot5 (4)</code>\
+<code>* ajorg (4)</code>\
+<code>* robjo (4)</code>\
+<code>* meetingology (3)</code>\
+<code>* dpb1 (3)</code>\
+<code>* rharper (1)</code></p>
+<h2>Full Log</h2>
+<p><em>LINK:</em> <a href="https://irclogs.ubuntu.com/2017/09/18/%23cloud-init.html#t16:04">https://irclogs.ubuntu.com/2017/09/18/%23cloud-init.html#t16:04</a></p>
+<p><code>16:04 &lt;smoser&gt; #startmeeting cloud-init status meeting</code></p>
+<p><code>16:04 &lt;meetingology&gt; Meeting started Mon Sep 18 16:04:28 2017 UTC.  The chair is smoser. Information about MeetBot at</code><a href="http://wiki.ubuntu.com/meetingology"><code>http://wiki.ubuntu.com/meetingology</code></a><code>.</code></p>
+<p><code>16:04 &lt;meetingology&gt;</code></p>
+<p><code>16:04 &lt;meetingology&gt; Available commands: action commands idea info link nick</code></p>
+<p><code>16:05 &lt;blackboxsw&gt; hiya o/</code></p>
+<p><code>16:05 &lt;rharper&gt; o/</code></p>
+<p><code>16:05 &lt;smoser&gt; #link</code><a href="https://public.etherpad-mozilla.org/p/cloud-init-meeting"><code>https://public.etherpad-mozilla.org/p/cloud-init-meeting</code></a></p>
+<p><code>16:05 &lt;dpb1&gt; hello</code></p>
+<p><code>16:05 &lt;smoser&gt; so that contains a agenda that we'd been following</code></p>
+<p><code>16:06 &lt;smoser&gt; #link</code><a href="https://lists.launchpad.net/cloud-init/msg00100.html"><code>https://lists.launchpad.net/cloud-init/msg00100.html</code></a></p>
+<p><code>16:07 &lt;smoser&gt; sorry for slow going here.</code></p>
+<p><code>16:08 &lt;smoser&gt; shoot</code></p>
+<p><code>16:08 &lt;smoser&gt; #topic Release Preparation</code></p>
+<p><code>16:08 &lt;smoser&gt; #subtopic Release Preparation</code></p>
+<p><code>16:08 &lt;smoser&gt; hm..</code></p>
+<p><code>16:09 &lt;smoser&gt; anyway</code></p>
+<p><code>16:09 &lt;smoser&gt;</code><a href="https://lists.launchpad.net/cloud-init/msg00100.html"><code>https://lists.launchpad.net/cloud-init/msg00100.html</code></a></p>
+<p><code>16:09 &lt;smoser&gt; that is the primariy point of this meeting for today.</code></p>
+<p><code>16:09 &lt;smoser&gt; The goal is to make a release named 17.1 on Thursday of this week.</code></p>
+<p><code>16:09 &lt;blackboxsw&gt; strange</code></p>
+<p><code>16:09 &lt;smoser&gt; We have landed several branches in the last few days, and have 2 more to land at least.</code></p>
+<p><code>16:10 &lt;smoser&gt; from</code><a href="http://bit.ly/ci-reviews"><code>http://bit.ly/ci-reviews</code></a></p>
+<p><code>16:10 &lt;dpb1&gt; meetingology │ Available commands: action commands idea info link nick</code></p>
+<p><code>16:10 &lt;dpb1&gt; something to look into. :)</code></p>
+<p><code>16:10 &lt;blackboxsw&gt; #link</code><a href="http://bit.ly/ci-reviews"><code>http://bit.ly/ci-reviews</code></a></p>
+<p><code>16:10 &lt;smoser&gt; the two we consider needs to be integrated are</code></p>
+<p><code>16:10 &lt;smoser&gt;</code><a href="https://code.launchpad.net/~chad.smith/cloud-init/+git/cloud-init/+merge/330875"><code>https://code.launchpad.net/~chad.smith/cloud-init/+git/cloud-init/+merge/330875</code></a></p>
+<p><code>16:10 &lt;smoser&gt;</code><a href="https://code.launchpad.net/~smoser/cloud-init/+git/cloud-init/+merge/330880"><code>https://code.launchpad.net/~smoser/cloud-init/+git/cloud-init/+merge/330880</code></a></p>
+<p><code>16:11 &lt;smoser&gt; and Chad's (the first) is the one we're looking at now.</code></p>
+<p><code>16:11 &lt;smoser&gt; or that is the one that is non-trivial</code></p>
+<p><code>16:11 &lt;smoser&gt; does anyone here wnat to raise other bugs or MP that they believe should be pulled ?</code></p>
+<p><code>16:12 &lt;smoser&gt; ...</code></p>
+<p><code>16:12 &lt;smoser&gt; ajorg, i think its best to hold off on some of yours until after release.</code></p>
+<p><code>16:13 &lt;smoser&gt; anyone have anything else ?</code></p>
+<p><code>16:13 &lt;blackboxsw&gt; msaika (vmware) pinged on a branch a couple days ago.  but I think there is a little of discussion/re-work that's needed there before we land</code></p>
+<p><code>16:13 &lt;ajorg&gt; smoser: I assume you mean the instance identity one, in which case I agree.</code></p>
+<p><code>16:13 &lt;ajorg&gt; (in either case I'd agree)</code></p>
+<p><code>16:13 &lt;smoser&gt; and simpletable</code></p>
+<p><code>16:13 &lt;smoser&gt; yeah</code></p>
+<p><code>16:14 &lt;smoser&gt; ok. so that is where we are. we are still targettin a release on Thursday.</code></p>
+<p><code>16:14 &lt;smoser&gt; other than that, i thinkw e move on to open discussion or office hours</code></p>
+<p><code>16:14 &lt;smoser&gt; #topic Open Discussion</code></p>
+<p><code>16:14 &lt;smoser&gt; anyone have anything for this ?</code></p>
+<p><code>16:14 &lt;robjo&gt; Customer has run into an issue where we run out of threads during the user script phase, should generally set TasksMax in the service file, i.e. is that of interest upstream?</code></p>
+<p><code>16:15 &lt;robjo&gt; we are still testing, but that appears to be the solution for this particular problem</code></p>
+<p><code>16:15 &lt;smoser&gt; robjo, i dont have an immediate objection to that idea.</code></p>
+<p><code>16:16 &lt;smoser&gt; could you open a bug ?</code></p>
+<p><code>16:16 &lt;robjo&gt; sure</code></p>
+<p><code>16:17 &lt;smoser&gt; i dont think that we'd want to pull that change in right now, but it otherwise seems reasonable at frist b lush.</code></p>
+<p><code>16:18 &lt;smoser&gt; anything else ?</code></p>
+<p><code>16:18 &lt;robjo&gt; Agreed, do't think this is sufficiently urgent for Thursday's release, it can wait until the next one</code></p>
+<p><code>16:19 &lt;ajorg&gt; were there other bugs that we should consider high enough prio to deserve landing a fix in the release?</code></p>
+<p><code>16:20 &lt;smoser&gt; ajorg, the only 2 that i'm aware of are linked in those mp. i can dig the numbers</code></p>
+<p><code>16:21 &lt;smoser&gt; * bug 1717598</code></p>
+<p><code>16:21 &lt;ubot5&gt; bug 1717598 in cloud-init (Ubuntu) "Traceback when passing user-data on GCE" [High,In progress]</code><a href="https://launchpad.net/bugs/1717598"><code>https://launchpad.net/bugs/1717598</code></a></p>
+<p><code>16:21 &lt;smoser&gt; * bug 1717627</code></p>
+<p><code>16:21 &lt;ubot5&gt; bug 1717627 in cloud-init "permission denied when executing dhclient in Ec2 datasource" [High,In progress]</code><a href="https://launchpad.net/bugs/1717627"><code>https://launchpad.net/bugs/1717627</code></a></p>
+<p><code>16:21 &lt;ajorg&gt; ok</code></p>
+<p><code>16:22 &lt;smoser&gt; Anything else? other wise i'll call this meeting done and hang around for office hours for the next 30 m inutes at least.</code></p>
+<p><code>16:22 &lt;smoser&gt; thanks for attending / feedback, robjo and ajorg</code></p>
+<p><code>16:23 &lt;blackboxsw&gt; #link</code><a href="https://launchpad.net/bugs/1717598"><code>https://launchpad.net/bugs/1717598</code></a></p>
+<p><code>16:23 &lt;ubot5&gt; Ubuntu bug 1717598 in cloud-init (Ubuntu) "Traceback when passing user-data on GCE" [High,In progress]</code></p>
+<p><code>16:24 &lt;blackboxsw&gt; #linkhttps://launchpad.net/bugs/1717627</code></p>
+<p><code>16:24 &lt;ubot5&gt; Ubuntu bug 1717627 in cloud-init "permission denied when executing dhclient in Ec2 datasource" [High,In progress]</code></p>
+<p><code>16:24 &lt;blackboxsw&gt; just in case</code></p>
+<p><code>16:24 &lt;blackboxsw&gt; duno whats up with the bot.... again</code></p>
+<p><code>16:27 &lt;smoser&gt; ok. well, lets move on</code></p>
+<p><code>16:27 &lt;smoser&gt; #endmeeting</code></p>
+<p>Generated by MeetBot 0.1.5 (http://wiki.ubuntu.com/meetingology)</p>
+  </div>
+  <div class="tag-cloud">
+    <p>
+    </p>
+  </div>
+
+
+
+    <div class="addthis_relatedposts_inline">
+
+
+</article>
+
+    <footer>
+<p>&copy;  </p>
+<p>Powered by <a href="http://getpelican.com" target="_blank">Pelican</a> - <a href="https://github.com/alexandrevicenzi/flex" target="_blank">Flex</a> theme by <a href="http://alexandrevicenzi.com" target="_blank">Alexandre Vicenzi</a></p>    </footer>
+  </main>
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " Cloud-init Info ",
+  "url" : "https://cloud-init.github.io",
+  "image": "/theme/img/profile.png",
+  "description": "Cloud-init project updates and general information"
+}
+</script>
+
+</body>
+</html>

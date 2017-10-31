@@ -1,0 +1,244 @@
+
+<!DOCTYPE html>
+<html lang="english">
+<head>
+  <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" type="text/css" href="https://cloud-init.github.io/theme/stylesheet/style.min.css">
+
+  <link rel="stylesheet" type="text/css" href="https://cloud-init.github.io/theme/pygments/github.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cloud-init.github.io/theme/font-awesome/css/font-awesome.min.css">
+
+
+    <link href="https://cloud-init.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Cloud-init Info Atom">
+
+
+    <link rel="shortcut icon" href="/theme/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/theme/img/favicon.ico" type="image/x-icon">
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-50554247-3', 'auto');
+  ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#2c001e">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#2c001e">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Microsoft EDGE -->
+    <meta name="msapplication-TileColor" content="#2c001e">
+
+<meta name="author" content="chad.smith@canonical.com" />
+<meta name="description" content="Meeting information * #cloud-init: Office Hours, 16 Oct at 16:06 — 17:03 UTC\ * Full logs athttp://ubottu.com/meetingology/logs/cloud-init/2017/cloud-init.2017-10-16-16.06.log.html Meeting summary LINK: https://trello.com/c/wROS4mKT/458-sru-171 LINK: https://bugs.launchpad.net/ubuntu/+source/cloud-init/+bug/1722668 LINK: https://bugs …" />
+<meta name="keywords" content="">
+
+<meta property="og:site_name" content="Cloud-init Info"/>
+<meta property="og:title" content="Cloud-init bi-weekly status"/>
+<meta property="og:description" content="Meeting information * #cloud-init: Office Hours, 16 Oct at 16:06 — 17:03 UTC\ * Full logs athttp://ubottu.com/meetingology/logs/cloud-init/2017/cloud-init.2017-10-16-16.06.log.html Meeting summary LINK: https://trello.com/c/wROS4mKT/458-sru-171 LINK: https://bugs.launchpad.net/ubuntu/+source/cloud-init/+bug/1722668 LINK: https://bugs …"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:url" content="https://cloud-init.github.io/status-2017-10-16.html"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2017-10-16 16:06:00+00:00"/>
+<meta property="article:modified_time" content=""/>
+<meta property="article:author" content="https://cloud-init.github.io/author/chadsmithcanonicalcom.html">
+<meta property="article:section" content="status-meeting-minutes"/>
+<meta property="og:image" content="/theme/img/profile.png">
+
+  <title>Cloud-init Info &ndash; Cloud-init bi-weekly status</title>
+
+</head>
+<body>
+  <aside>
+    <div>
+      <a href="https://cloud-init.github.io">
+        <img src="/theme/img/profile.png" alt="Cloud-init" title="Cloud-init">
+      </a>
+      <h1><a href="https://cloud-init.github.io">Cloud-init</a></h1>
+
+<p>Make your cloud images be all they can be</p>
+      <nav>
+        <ul class="list">
+
+          <li><a href="https://cloudinit.readthedocs.org/" target="_blank">Docs</a></li>
+          <li><a href="https://cloud-init.io" target="_blank">Overview</a></li>
+          <li><a href="https://cloudinit.readthedocs.io/en/latest/topics/hacking.html" target="_blank">Hacking</a></li>
+          <li><a href="https://jenkins.ubuntu.com/server/view/cloud-init/" target="_blank">CI builds</a></li>
+          <li><a href="https://launchpad.net/cloud-init" target="_blank">Code</a></li>
+        </ul>
+      </nav>
+
+      <ul class="social">
+        <li><a class="sc-github" href="https://github.com/cloud-init" target="_blank"><i class="fa fa-github"></i></a></li>
+        <li><a class="sc-wechat" href="https://webchat.freenode.net/?channels=cloud-init" target="_blank"><i class="fa fa-wechat"></i></a></li>
+      </ul>
+    </div>
+
+
+  </aside>
+  <main>
+
+    <nav>
+      <a href="https://cloud-init.github.io">Home</a>
+
+      <a href="/archives.html">Archives</a>
+      <a href="/categories.html">Categories</a>
+      <a href="/tags.html">Tags</a>
+
+      <a href="https://cloud-init.github.io/feeds/all.atom.xml">Atom</a>
+
+    </nav>
+
+<article class="single">
+  <header>
+      
+    <h1 id="status-2017-10-16">Cloud-init bi-weekly status</h1>
+    <p>
+      Posted on Mon 16 October 2017 in <a href="https://cloud-init.github.io/category/status-meeting-minutes.html">status-meeting-minutes</a>
+
+        &#8226; 3 min read
+    </p>
+  </header>
+
+
+  <div>
+    <h2>Meeting information</h2>
+<p><code>* #cloud-init: Office Hours, 16 Oct at 16:06 — 17:03 UTC</code>\
+<code>* Full logs at</code><a href="http://ubottu.com/meetingology/logs/cloud-init/2017/cloud-init.2017-10-16-16.06.log.html" title="wikilink"><code>http://ubottu.com/meetingology/logs/cloud-init/2017/cloud-init.2017-10-16-16.06.log.html</code></a></p>
+<h2>Meeting summary</h2>
+<p><em>LINK:</em> <a href="https://trello.com/c/wROS4mKT/458-sru-171">https://trello.com/c/wROS4mKT/458-sru-171</a> <em>LINK:</em>
+<a href="https://bugs.launchpad.net/ubuntu/+source/cloud-init/+bug/1722668">https://bugs.launchpad.net/ubuntu/+source/cloud-init/+bug/1722668</a>
+<em>LINK:</em>
+<a href="https://bugs.launchpad.net/ubuntu/+source/cloud-init/+bug/1722668">https://bugs.launchpad.net/ubuntu/+source/cloud-init/+bug/1722668</a>
+<em>LINK:</em>
+<a href="https://gist.github.com/smoser/49444542158f2e5f88f1/#file-lxc-pstart-md">https://gist.github.com/smoser/49444542158f2e5f88f1/#file-lxc-pstart-md</a>
+<em>LINK:</em>
+<a href="https://gist.github.com/smoser/49444542158f2e5f88f1/#file-lxc-pstart-md">https://gist.github.com/smoser/49444542158f2e5f88f1/#file-lxc-pstart-md</a>
+<em>LINK:</em> <a href="https://bugs.launchpad.net/cloud-init/+bug/1722992">https://bugs.launchpad.net/cloud-init/+bug/1722992</a> <em>LINK:</em>
+<a href="http://bit.ly/ci-reviews">http://bit.ly/ci-reviews</a> open season for discussions, bug requests,
+review requests for the next 30 mins</p>
+<h2>Vote results</h2>
+<h2>Done items</h2>
+<p><code>* (none)</code></p>
+<h2>People present (lines said)</h2>
+<p><code>* blackboxsw (49)</code>\
+<code>* smoser (8)</code>\
+<code>* ubot5 (3)</code>\
+<code>* meetingology (3)</code>\
+<code>* rharper (3)</code></p>
+<h2>Full Log</h2>
+<p><code>16:06</code><blackboxsw><code>#startmeeting Cloud-init bi-weekly status</code></p>
+<p><code>16:06</code><meetingology><code>Meeting started Mon Oct 16 16:06:51 2017 UTC.  The chair is blackboxsw. Information about MeetBot at</code><a href="http://wiki.ubuntu.com/meetingology"><code>http://wiki.ubuntu.com/meetingology</code></a><code>.</code></p>
+<p><code>16:06</code><meetingology><code></code></p>
+<p><code>16:06</code><meetingology><code>Available commands: action commands idea info link nick</code></p>
+<p><code>16:08</code><blackboxsw><code>#meetingtopic Recent Changes</code></p>
+<p><code>16:08</code><blackboxsw><code>Ok last couple of weeks for our team were</code></p>
+<p><code>16:08</code><blackboxsw><code>Ok last couple of weeks for our team were</code></p>
+<p><code>16:08</code><blackboxsw><code>Ok last couple of weeks for our team were 'impacted' by a couple of work conferences for planning next release of cloud-init/curtin etc.</code></p>
+<p><code>16:08</code><rharper><code>o/</code></p>
+<p><code>16:09</code><blackboxsw><code>so things felt a bit slow. but folks have still made some good progress.</code></p>
+<p><code>16:09</code><blackboxsw><code>Some changes that have landed in master:</code></p>
+<p><code>16:09</code><blackboxsw><code>Robert Schweikert: suse cloud-config module to add zypper repos and zypp config</code></p>
+<p><code>16:09</code><blackboxsw><code>Robert Schweikert: Allow cloud-init.final stage to spawn infinite processes</code></p>
+<p><code>16:09</code><blackboxsw><code>Andrew Jorgensen: Remove prettytable dependency</code></p>
+<p><code>16:09</code><blackboxsw><code>Fix dhcp parsing in Artful of networkd leases for CloudStack and Azure</code></p>
+<p><code>16:09</code><blackboxsw><code>Updated packaging copyright file (LP: #1718681)</code></p>
+<p><code>16:09</code><ubot5><code>Launchpad bug 1718681 in cloud-init</code>“<code>Package`` ``copyright`` ``file`` ``omits`` ``Apache`` ``2`` ``license</code>”<code>[High,Fix committed]</code><a href="https://launchpad.net/bugs/1718681"><code>https://launchpad.net/bugs/1718681</code></a></p>
+<p><code>16:10</code><smoser><code>o/</code></p>
+<p><code>16:10</code><blackboxsw><code>thanks a lot for the contributions on that front folks. There have been a couple of work items that fell out of our conferences related to Ubuntu artful and systemd/networkd support so we've been workin those</code></p>
+<p><code>16:11</code><blackboxsw><code>on the testing front we've re-enable tox support for integration tests</code></p>
+<p><code>16:11</code><blackboxsw><code>and Ubuntu-only has queued a 17.1 SRU release/update into xenial and zesty</code></p>
+<p><code>16:12</code><blackboxsw><code>smoser: rharper powersj anyone else anything else I'm missing on recent changes?</code></p>
+<p><code>16:12</code><rharper><code>blackboxsw: that sounds right</code></p>
+<p><code>16:13</code><blackboxsw><code>ok. next topic</code></p>
+<p><code>16:13</code><blackboxsw><code>#meetingtopic In progress development</code></p>
+<p><code>16:14</code><blackboxsw><code>As mentioned, we are walking through the Ubuntu xenial/zesty SRU validation process, so I excpect we will have a release update published this week</code></p>
+<p><code>16:14 * blackboxsw grabs the trello card link</code></p>
+<p><code>16:14</code><blackboxsw><code>#link</code><a href="https://trello.com/c/wROS4mKT/458-sru-171"><code>https://trello.com/c/wROS4mKT/458-sru-171</code></a></p>
+<p><code>16:15</code><blackboxsw><code>This card will move to the Done lane once we've finished publishing</code></p>
+<p><code>16:16</code><blackboxsw><code>I know powersj has been working the integration test front for KVM as time permits. There will be some upcoming changes there to get us more complex storage/network  testing on kvm</code></p>
+<p><code>16:16</code><blackboxsw><code>I know smoser is also working on a couple of Azure-related fixes for artful as well.</code></p>
+<p><code>16:16</code><blackboxsw><code>anything else to add there?</code></p>
+<p><code>16:17</code><smoser><code></code><a href="https://bugs.launchpad.net/ubuntu/+source/cloud-init/+bug/1722668"><code>https://bugs.launchpad.net/ubuntu/+source/cloud-init/+bug/1722668</code></a></p>
+<p><code>16:17</code><rharper><code>nothing from me</code></p>
+<p><code>16:17</code><ubot5><code>Ubuntu bug 1722668 in cloud-init (Ubuntu)</code>“<code>Azure:`` ``bouncing`` ``of`` ``network`` ``device/publishing`` ``of`` ``hostname`` ``fails`` ``on`` ``artful</code>”<code>[Critical,Confirmed]</code></p>
+<p><code>16:17</code><blackboxsw><code>#link</code><a href="https://bugs.launchpad.net/ubuntu/+source/cloud-init/+bug/1722668"><code>https://bugs.launchpad.net/ubuntu/+source/cloud-init/+bug/1722668</code></a></p>
+<p><code>16:18</code><blackboxsw><code>thx</code></p>
+<p><code>16:18</code><smoser><code>that one i'm working on, and then also been trying to get lxc/mount-image-callback</code></p>
+<p><code>16:19</code><smoser><code>the use we ahve for 'lxc-proposed-snapshot' and also for 'mount-image-callback'</code></p>
+<p><code>16:19</code><blackboxsw><code>Also in the same vein of improving dev testing of Ubuntu or really any lxc image is that work smoser referenced above.</code></p>
+<p><code>16:20</code><blackboxsw><code>smoser: is that worth a link at the moment or does it still need polish?</code></p>
+<p><code>16:20</code><smoser><code></code><a href="https://gist.github.com/smoser/49444542158f2e5f88f1/#file-lxc-pstart-md"><code>https://gist.github.com/smoser/49444542158f2e5f88f1/#file-lxc-pstart-md</code></a></p>
+<p><code>16:20</code><blackboxsw><code>sweet</code></p>
+<p><code>16:20</code><blackboxsw><code>#link</code><a href="https://gist.github.com/smoser/49444542158f2e5f88f1/#file-lxc-pstart-md"><code>https://gist.github.com/smoser/49444542158f2e5f88f1/#file-lxc-pstart-md</code></a></p>
+<p><code>16:20</code><smoser><code>right now that is only known to work on lxc 2.18</code></p>
+<p><code>16:21</code><smoser><code>i think we can make it work with earlier versions, and would like to make it work with xenial (2.02.. maybe)</code></p>
+<p><code>16:22</code><blackboxsw><code>yeah I just got my artful box up and was going to use that for the SRU verification</code></p>
+<p><code>16:22</code><blackboxsw><code>also, I think we were going to peek at a solution for the following bug:</code></p>
+<p><code>16:22</code><blackboxsw><code>#link</code><a href="https://bugs.launchpad.net/cloud-init/+bug/1722992"><code>https://bugs.launchpad.net/cloud-init/+bug/1722992</code></a></p>
+<p><code>16:22</code><ubot5><code>Ubuntu bug 1722992 in cloud-init</code>“<code>On`` ``the`` ``latest`` ``centos`` ``7`` ``release,`` ``we`` ``are`` ``unable`` ``to`` ``resize`` ``our`` ``instances`` ``filesystems</code>”<code>[Medium,Confirmed]</code></p>
+<p><code>16:23</code><blackboxsw><code>so there might be some minor changes  for the OpenStack/MAAS and ConfigDrive datasources</code></p>
+<p><code>16:24</code><blackboxsw><code>ok anything else in</code>“<code>In`` ``progress`` ``development</code>”<code>?</code></p>
+<p><code>16:24</code><blackboxsw><code>I know we have a queue of active reviews we need to get through. I was expecting we'll have bandwidth for that after this SRU push.</code></p>
+<p><code>16:24</code><blackboxsw><code>#link</code><a href="http://bit.ly/ci-reviews"><code>http://bit.ly/ci-reviews</code></a></p>
+<p><code>16:25</code><blackboxsw><code>#meetingtopic Office Hours</code></p>
+<p><code>16:26</code><blackboxsw><code>#info open season for discussions, bug requests, review requests for the next 30 mins</code></p>
+<p><code>16:29</code><smoser><code>thanks blackboxsw</code></p>
+<p><code>16:34</code><blackboxsw><code>no prob. I was peeking around at puppet this weekend.... might have a branch puppet local(masterless deployment) to put up this week</code></p>
+<p><code>16:34</code><blackboxsw><code>I sort of got distracted by shiny objects while trying to write an SRU test  for our existing puppet</code></p>
+<p><code>16:34</code><blackboxsw><code>config module</code></p>
+<p><code>17:01</code><blackboxsw><code>ok two more SRU tests  left to write for Azure and datasourceOVF. then we can start validation for the upload</code></p>
+<p><code>17:02</code><blackboxsw><code>office hours coming to a close. but we'll still float in here as always. Happy Monday folks</code></p>
+<p><code>17:02</code><blackboxsw><code>just ping us directly by IRC nick if you aren't getting a response otherwise.</code></p>
+<p><code>17:03</code><blackboxsw><code>tanks again.</code></p>
+<p><code>17:03</code><blackboxsw><code>thanks even</code></p>
+<p><code>17:03</code><blackboxsw><code>#endmeeting</code></p>
+<p>Generated by MeetBot 0.1.5 (http://wiki.ubuntu.com/meetingology)</p>
+  </div>
+  <div class="tag-cloud">
+    <p>
+    </p>
+  </div>
+
+
+
+    <div class="addthis_relatedposts_inline">
+
+
+</article>
+
+    <footer>
+<p>&copy;  </p>
+<p>Powered by <a href="http://getpelican.com" target="_blank">Pelican</a> - <a href="https://github.com/alexandrevicenzi/flex" target="_blank">Flex</a> theme by <a href="http://alexandrevicenzi.com" target="_blank">Alexandre Vicenzi</a></p>    </footer>
+  </main>
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " Cloud-init Info ",
+  "url" : "https://cloud-init.github.io",
+  "image": "/theme/img/profile.png",
+  "description": "Cloud-init project updates and general information"
+}
+</script>
+
+</body>
+</html>
