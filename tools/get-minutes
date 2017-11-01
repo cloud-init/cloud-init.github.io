@@ -45,11 +45,11 @@ def convert_minutes(minutes_file):
             ['pandoc', '-r', 'mediawiki', '-w', 'markdown', minutes_file])
     except CalledProcessError as e:
         error('Could not download minutes from {}'.format(args.url))
-    import pdb; pdb.set_trace()
     header = HEADER.format(date=meeting_date, time=meeting_time)
-    with open(output_file, 'wb') as stream:
-        stream.write(header.encode('utf-8'))
-        stream.write(content)
+    scrubbed_content = content.decode().replace('`<', '<').replace('>`', '>')
+    with open(output_file, 'w') as stream:
+        stream.write(header)
+        stream.write(scrubbed_content)
 
 def main():
     parser = get_parser()
