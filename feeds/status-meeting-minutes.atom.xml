@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom"><title>Cloud-init Info - status-meeting-minutes</title><link href="https://cloud-init.github.io/" rel="alternate"></link><link href="https://cloud-init.github.io/feeds/status-meeting-minutes.atom.xml" rel="self"></link><id>https://cloud-init.github.io/</id><updated>2017-10-30T16:03:00+00:00</updated><entry><title>Cloud-init bi-weekly status</title><link href="https://cloud-init.github.io/status-2017-10-30.html" rel="alternate"></link><published>2017-10-30T16:03:00+00:00</published><updated>2017-10-30T16:03:00+00:00</updated><author><name>chad.smith@canonical.com</name></author><id>tag:cloud-init.github.io,2017-10-30:/status-2017-10-30.html</id><summary type="html">&lt;h2&gt;Meeting information&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt; &lt;code&gt;#cloud-init: Open Discussion / Office Hours (30 mins), 30 Oct at 16:03 — 17:00 UTC&lt;/code&gt;
-&lt;/em&gt; &lt;code&gt;Full logs at&lt;/code&gt;&lt;a href="http://ubottu.com/meetingology/logs/cloud-init/2017/cloud-init.2017-10-30-16.03.log.html" title="wikilink"&gt;&lt;code&gt;http://ubottu.com/meetingology/logs/cloud-init/2017/cloud-init.2017-10-30-16.03.log.html&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;* &lt;code&gt;#cloud-init: Open Discussion / Office Hours (30 mins), 30 Oct at 16:03 — 17:00 UTC&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;* &lt;code&gt;Full logs at&lt;/code&gt;&lt;a href="http://ubottu.com/meetingology/logs/cloud-init/2017/cloud-init.2017-10-30-16.03.log.html" title="wikilink"&gt;&lt;code&gt;http://ubottu.com/meetingology/logs/cloud-init/2017/cloud-init.2017-10-30-16.03.log.html&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h2&gt;Meeting summary&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -10,8 +10,8 @@
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;em&gt;LINK:&lt;/em&gt; &lt;a href="https://trello.com/b/hFtWKUn3/daily-cloud-init-curtin"&gt;https://trello.com/b/hFtWKUn3 …&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;h2&gt;Meeting information&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt; &lt;code&gt;#cloud-init: Open Discussion / Office Hours (30 mins), 30 Oct at 16:03 — 17:00 UTC&lt;/code&gt;
-&lt;/em&gt; &lt;code&gt;Full logs at&lt;/code&gt;&lt;a href="http://ubottu.com/meetingology/logs/cloud-init/2017/cloud-init.2017-10-30-16.03.log.html" title="wikilink"&gt;&lt;code&gt;http://ubottu.com/meetingology/logs/cloud-init/2017/cloud-init.2017-10-30-16.03.log.html&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;* &lt;code&gt;#cloud-init: Open Discussion / Office Hours (30 mins), 30 Oct at 16:03 — 17:00 UTC&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;* &lt;code&gt;Full logs at&lt;/code&gt;&lt;a href="http://ubottu.com/meetingology/logs/cloud-init/2017/cloud-init.2017-10-30-16.03.log.html" title="wikilink"&gt;&lt;code&gt;http://ubottu.com/meetingology/logs/cloud-init/2017/cloud-init.2017-10-30-16.03.log.html&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h2&gt;Meeting summary&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -21,7 +21,9 @@
 &lt;li&gt;
 &lt;p&gt;&lt;em&gt;LINK:&lt;/em&gt; &lt;a href="https://trello.com/b/hFtWKUn3/daily-cloud-init-curtin"&gt;https://trello.com/b/hFtWKUn3/daily-cloud-init-curtin&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;em&gt;LINK:&lt;/em&gt; &lt;a href="https://launchpad.net/bugs/1728152"&gt;https://launchpad.net/bugs/1728152&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;LINK:&lt;/em&gt; &lt;a href="https://launchpad.net/bugs/1728152"&gt;https://launchpad.net/bugs/1728152&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2&gt;Vote results&lt;/h2&gt;
 &lt;h2&gt;Done items&lt;/h2&gt;
