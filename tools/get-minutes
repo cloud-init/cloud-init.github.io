@@ -1,0 +1,71 @@
+#!/usr/bin/python3
+"""Convert meetingology meeting minutes for publishing."""
+
+from argparse import ArgumentParser
+import re
+from subprocess import check_call, check_output, CalledProcessError
+import sys
+
+HEADER = '''\
+Title: Cloud-init bi-weekly status
+Date: {date} {time}
+Category: status-meeting-minutes
+Slug: status-{date}
+
+'''
+
+
+def get_parser():
+    parser = ArgumentParser(description=__doc__)
+    parser.add_argument(
+        'url', type=str,
+        help='URL of meetingology moinmoin formatted text minutes to publish')
+    return parser
+
+
+
+def error(message):
+    print(message)
+    sys.exit(1)
+
+
+MINUTES_REGEX = (
+    r'cloud-init\.(?P<date>[\d]+-[\d]+-[\d]+)-(?P<time>[\d]+\.[\d]+)')
+
+def convert_minutes(minutes_file):
+    match = re.match(MINUTES_REGEX, minutes_file)
+    if not match:
+        raise ValueError('Expected to parse date out of filename {}'.format(
+            minutes_file))
+    meeting_date, meeting_time = match.groups()
+    meeting_time = meeting_time.replace('.', ':') + ':00 UTC'
+    output_file = 'content/status-{}.md'.format(meeting_date)
+    try:
+        content = check_output(
+            ['pandoc', '-r', 'mediawiki', '-w', 'markdown', minutes_file])
+    except CalledProcessError as e:
+        error('Could not download minutes from {}'.format(args.url))
+    import pdb; pdb.set_trace()
+    header = HEADER.format(date=meeting_date, time=meeting_time)
+    with open(output_file, 'wb') as stream:
+        stream.write(header.encode('utf-8'))
+        stream.write(content)
+
+def main():
+    parser = get_parser()
+    args = parser.parse_args()
+    try:
+        check_call(['wget', args.url])
+    except CalledProcessError as e:
+        error('Could not download minutes from {}'.format(args.url))
+    try:
+        convert_minutes(args.url.split('/')[-1])
+    except ValueError as e:
+        error(str(e))
+    return 0
+
+
+if __name__ == '__main__':
+    sys.exit(main())
+   
+
