@@ -10,7 +10,7 @@ SITENAME = 'Cloud-init Info'
 SITETITLE = 'Cloud-init'
 SITESUBTITLE = 'Make your cloud images be all they can be'
 SITEDESCRIPTION = 'Cloud-init project updates and general information'
-SITELOGO = SITEURL + '/theme/img/profile.png'
+SITELOGO = SITEURL + '/images/cloud-init-orange.svg'
 FAVICON = SITEURL + '/theme/img/favicon.ico'
 
 USE_FOLDER_AS_CATEGORY = False

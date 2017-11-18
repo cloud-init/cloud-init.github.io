@@ -3,7 +3,7 @@
 
 from argparse import ArgumentParser
 import re
-from subprocess import check_call, check_output, CalledProcessError
+from subprocess import check_call, CalledProcessError
 import sys
 
 HEADER = '''\
@@ -32,6 +32,28 @@ def error(message):
 MINUTES_REGEX = (
     r'cloud-init\.(?P<date>[\d]+-[\d]+-[\d]+)-(?P<time>[\d]+\.[\d]+)')
 
+
+
+RE_H1 = r'== ([\S ]+) ==\n'
+RE_H2 = r'=== ([\S ]+) ===\n'
+RE_LINK = r'(https?:\/\/[-a-zA-Z0-9@:%._\+~#=\/]+)'
+           
+
+def convert_to_markdown(content):
+    '''Fix meeting minutes for markdown publishing.'''
+    replacements = (
+        ('<', '`<'),
+        ('>', '`>'),
+        ('#', '\#'),
+        (RE_H1, r'\1\n----------------\n'),
+        (RE_H2, r'### \1\n'),
+        ("''LINK:'' ", ' * **LINK**: '),
+        (RE_LINK, r'[\1](\1)')
+    )
+    for orig, replacement in replacements:
+        content = re.sub(orig, replacement, content)
+    return content
+
 def convert_minutes(minutes_file):
     match = re.match(MINUTES_REGEX, minutes_file)
     if not match:
@@ -40,16 +62,13 @@ def convert_minutes(minutes_file):
     meeting_date, meeting_time = match.groups()
     meeting_time = meeting_time.replace('.', ':') + ':00 UTC'
     output_file = 'content/status-{}.md'.format(meeting_date)
-    try:
-        content = check_output(
-            ['pandoc', '-r', 'mediawiki', '-w', 'markdown', minutes_file])
-    except CalledProcessError as e:
-        error('Could not download minutes from {}'.format(args.url))
+    with open(minutes_file, 'rb') as stream:
+         content = stream.read().decode()
     header = HEADER.format(date=meeting_date, time=meeting_time)
-    scrubbed_content = content.decode().replace('`<', '<').replace('>`', '>')
+    markdown_content = convert_to_markdown(content)
     with open(output_file, 'w') as stream:
         stream.write(header)
-        stream.write(scrubbed_content)
+        stream.write(markdown_content)
 
 def main():
     parser = get_parser()
