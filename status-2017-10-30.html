@@ -44,12 +44,12 @@
     <meta name="msapplication-TileColor" content="#2c001e">
 
 <meta name="author" content="chad.smith@canonical.com" />
-<meta name="description" content="Meeting information * #cloud-init: Open Discussion / Office Hours (30 mins), 30 Oct at 16:03 — 17:00 UTC * Full logs athttp://ubottu.com/meetingology/logs/cloud-init/2017/cloud-init.2017-10-30-16.03.log.html Meeting summary Recent Changes The discussion about “Recent Changes” started at 16:04. LINK: https://bugs.launchpad.net …" />
+<meta name="description" content="Meeting information #cloud-init: Open Discussion / Office Hours (30 mins), 30 Oct at 16:03 — 17:00 UTC Full logs at [[http://ubottu.com/meetingology/logs/cloud-init/2017/cloud-init.2017-10-30-16.03.log.html]] Meeting summary Recent Changes The discussion about “Recent Changes” started at 16:04. LINK: https://bugs.launchpad.net …" />
 <meta name="keywords" content="">
 
 <meta property="og:site_name" content="Cloud-init Info"/>
 <meta property="og:title" content="Cloud-init bi-weekly status"/>
-<meta property="og:description" content="Meeting information * #cloud-init: Open Discussion / Office Hours (30 mins), 30 Oct at 16:03 — 17:00 UTC * Full logs athttp://ubottu.com/meetingology/logs/cloud-init/2017/cloud-init.2017-10-30-16.03.log.html Meeting summary Recent Changes The discussion about “Recent Changes” started at 16:04. LINK: https://bugs.launchpad.net …"/>
+<meta property="og:description" content="Meeting information #cloud-init: Open Discussion / Office Hours (30 mins), 30 Oct at 16:03 — 17:00 UTC Full logs at [[http://ubottu.com/meetingology/logs/cloud-init/2017/cloud-init.2017-10-30-16.03.log.html]] Meeting summary Recent Changes The discussion about “Recent Changes” started at 16:04. LINK: https://bugs.launchpad.net …"/>
 <meta property="og:locale" content="en_US"/>
 <meta property="og:url" content="https://cloud-init.github.io/status-2017-10-30.html"/>
 <meta property="og:type" content="article"/>
@@ -117,19 +117,21 @@
 
   <div>
     <h2>Meeting information</h2>
-<p>* <code>#cloud-init: Open Discussion / Office Hours (30 mins), 30 Oct at 16:03 — 17:00 UTC</code></p>
-<p>* <code>Full logs at</code><a href="http://ubottu.com/meetingology/logs/cloud-init/2017/cloud-init.2017-10-30-16.03.log.html" title="wikilink"><code>http://ubottu.com/meetingology/logs/cloud-init/2017/cloud-init.2017-10-30-16.03.log.html</code></a></p>
+<ul>
+<li>#cloud-init: Open Discussion / Office Hours (30 mins), 30 Oct at 16:03 &mdash; 17:00 UTC</li>
+<li>Full logs at [[<a href="http://ubottu.com/meetingology/logs/cloud-init/2017/cloud-init.2017-10-30-16.03.log.html">http://ubottu.com/meetingology/logs/cloud-init/2017/cloud-init.2017-10-30-16.03.log.html</a>]]</li>
+</ul>
 <h2>Meeting summary</h2>
 <h3>Recent Changes</h3>
 <p>The discussion about “Recent Changes” started at 16:04.</p>
 <ul>
-<li><em>LINK:</em> <a href="https://bugs.launchpad.net/ubuntu/+source/cloud-init/+bug/1721847">https://bugs.launchpad.net/ubuntu/+source/cloud-init/+bug/1721847</a></li>
+<li><strong>LINK</strong>: <a href="https://bugs.launchpad.net/ubuntu/+source/cloud-init/+bug/1721847">https://bugs.launchpad.net/ubuntu/+source/cloud-init/+bug/1721847</a> </li>
 </ul>
 <h3>In Progess Development</h3>
 <p>The discussion about “In Progress Development” started at 16:17.</p>
 <ul>
-<li><em>LINK:</em> <a href="http://bit.ly/ci-reviews">http://bit.ly/ci-reviews</a></li>
-<li><em>LINK:</em> <a href="https://trello.com/b/hFtWKUn3/daily-cloud-init-curtin">https://trello.com/b/hFtWKUn3/daily-cloud-init-curtin</a></li>
+<li><strong>LINK</strong>: <a href="https://trello.com/b/hFtWKUn3/daily-cloud-init-curtin">https://trello.com/b/hFtWKUn3/daily-cloud-init-curtin</a> </li>
+<li><strong>LINK</strong>: <a href="https://launchpad.net/bugs/1728152">https://launchpad.net/bugs/1728152</a> </li>
 </ul>
 <h3>Open Discussion / Office Hours (30 mins)</h3>
 <p>The discussion about “Recent Changes” started at 16:30.</p>
@@ -138,113 +140,122 @@
 </ul>
 <h2>Vote results</h2>
 <h2>Done items</h2>
-<p><code>* (none)</code></p>
+<h2>Meeting summary</h2>
+<h2>Vote results</h2>
+<h2>Done items</h2>
+<ul>
+<li>(none)</li>
+</ul>
 <h2>People present (lines said)</h2>
-<p>* <code>blackboxsw (61)</code></p>
-<p>* <code>smoser (10)</code></p>
-<p>* <code>ubot5 (8)</code></p>
-<p>* <code>powersj (6)</code></p>
-<p>* <code>robjo (6)</code></p>
-<p>* <code>meetingology (3)</code></p>
-<p>* <code>rharper (2)</code></p>
-<p>* <code>ckonstanski (1)</code></p>
+<ul>
+<li>blackboxsw (61)</li>
+<li>smoser (10)</li>
+<li>ubot5 (8)</li>
+<li>powersj (6)</li>
+<li>robjo (6)</li>
+<li>meetingology (3)</li>
+<li>rharper (2)</li>
+<li>ckonstanski (1)</li>
+</ul>
 <h2>Full Log</h2>
-<p><code>16:03 &lt;blackboxsw&gt; #startmeeting cloud-init bi-weekly status</code></p>
-<p><code>16:03 &lt;meetingology&gt; Meeting started Mon Oct 30 16:03:09 2017 UTC.  The chair is blackboxsw. Information about MeetBot at</code><a href="http://wiki.ubuntu.com/meetingology"><code>http://wiki.ubuntu.com/meetingology</code></a><code>.</code></p>
-<p><code>16:03 &lt;meetingology&gt;</code></p>
-<p><code>16:03 &lt;meetingology&gt; Available commands: action commands idea info link nick</code></p>
-<p><code>16:04 &lt;blackboxsw&gt; #topic Recent Changes</code></p>
-<p><code>16:04 &lt;blackboxsw&gt; So, the last couple weeks have been fairly busy with Ubuntu an SRU  processs for Xenial, Zesty and the new Artful release</code></p>
-<p><code>16:05 &lt;blackboxsw&gt; our SRU process bug captures most of that work</code></p>
-<p><code>16:05 &lt;blackboxsw&gt; #LINK</code><a href="https://bugs.launchpad.net/ubuntu/+source/cloud-init/+bug/1721847"><code>https://bugs.launchpad.net/ubuntu/+source/cloud-init/+bug/1721847</code></a></p>
-<p><code>16:05 &lt;ubot5&gt; Ubuntu bug 1721847 in cloud-init (Ubuntu Zesty)</code>“<code>sru`` ``cloud-init`` ``2017-10-06`` ``(17.1-18-gd4f70470-0ubuntu1)</code>”<code>[Medium,Fix committed]</code></p>
-<p><code>16:07 &lt;blackboxsw&gt; our teams uncovered at least one bug  during verification testing</code></p>
-<p><code>16:07 &lt;blackboxsw&gt; LINK</code><a href="https://bugs.launchpad.net/cloud-init/+bug/1725067"><code>https://bugs.launchpad.net/cloud-init/+bug/1725067</code></a></p>
-<p><code>16:07 &lt;ubot5&gt; Ubuntu bug 1725067 in cloud-init (Ubuntu Artful)</code>“<code>cloud-init`` ``resizefs`` ``fails`` ``when`` ``booting`` ``with`` ``root=PARTUUID=</code>”<code>[Medium,Fix committed]</code></p>
-<p><code>16:08 &lt;blackboxsw&gt; The former bug we have now resolved. This SRU will not be published until we resolve one other bug for EC2-specfic environments to ensure we retain behavior to always bring up dhcp4 on the primary nic</code></p>
-<p><code>16:09 &lt;blackboxsw&gt; I don't think we have created a bug for the ec2 issue yet (it affects artful only) instances with only private ipv4 addresses allocated will not have dhcp4 config'd for that instance</code></p>
-<p><code>16:10 &lt;blackboxsw&gt; We'll link a bug for the above today</code></p>
-<p><code>16:10 &lt;blackboxsw&gt; other work on cloud-init... paste coming</code></p>
-<p><code>16:11 &lt;blackboxsw&gt; * Fix systemd mount target due to busy device or already mounted (LP: #1718287)</code></p>
-<p><code>16:11 &lt;blackboxsw&gt; * Fix simpleteable object as output string (LP: #1722566)</code></p>
-<p><code>16:11 &lt;blackboxsw&gt; * Fix netplan bridge stp boolean (LP: #1721157)</code></p>
-<p><code>16:11 &lt;blackboxsw&gt; * Fix cc_ntp to allow empty configuration</code>“<code>ntp:</code>”<code>. Fix ntp integration test to provide valid empty ntp config (LP: 1724951)</code></p>
-<p><code>16:11 &lt;blackboxsw&gt; * Fixed cc_lxd to allow for missing bridge definitions in lxd cloud-config</code></p>
-<p><code>16:11 &lt;blackboxsw&gt; * Dropped fastestmirror plugin for CentOS tests</code></p>
-<p><code>16:11 &lt;blackboxsw&gt; * Numerous test and CI stability improvements</code></p>
-<p><code>16:11 &lt;ubot5&gt; Launchpad bug 1718287 in cloud-init</code>“<code>systemd`` ``mount`` ``targets`` ``fail`` ``due`` ``to`` ``device`` ``busy`` ``or`` ``already`` ``mounted</code>”<code>[High,Fix committed]</code><a href="https://launchpad.net/bugs/1718287"><code>https://launchpad.net/bugs/1718287</code></a></p>
-<p><code>16:11 &lt;ubot5&gt; Launchpad bug 1722566 in cloud-init</code>“<code>ci-info:``</code><cloudinit.simpletable.SimpleTable<code></code>object<code></code>at<code></code>0x7fa98d222748>”<code>[Medium,Fix committed]</code><a href="https://launchpad.net/bugs/1722566"><code>https://launchpad.net/bugs/1722566</code></a></p>
-<p><code>16:11 &lt;ubot5&gt; Launchpad bug 1721157 in cloud-init</code>“<code>netplan`` ``render`` ``drops`` ``bridge_stp`` ``setting</code>”<code>[High,Fix committed]</code><a href="https://launchpad.net/bugs/1721157"><code>https://launchpad.net/bugs/1721157</code></a></p>
-<p><code>16:11 &lt;ubot5&gt; Launchpad bug 1724951 in cloud-init</code>“<code>Ntp`` ``schema`` ``definition`` ``permits`` ``empty`` ``ntp`` ``cloud-config,`` ``but`` ``code`` ``disallows</code>”<code>[Medium,In progress]</code><a href="https://launchpad.net/bugs/1724951"><code>https://launchpad.net/bugs/1724951</code></a></p>
-<p><code>16:13 &lt;blackboxsw&gt; Also we got a couple of gentoo commits from ckonstanski  to Use</code>“<code>rc-service</code>”<code>rather than</code>“<code>service</code>”<code>.  Thanks again</code></p>
-<p><code>16:13 &lt;rharper&gt; \o/</code></p>
-<p><code>16:14 &lt;ckonstanski&gt; You're welcome, though those were just tiny toy commits to get me indocrinated into the launchpad process. Getting NTP tests to work in gentoo will be more significant.</code></p>
-<p><code>16:15 &lt;blackboxsw&gt; ckonstanski: testing always is time-consuming, but totally worth it.  We are still trying build our unit test coverage up so we don't get suprises on different platforms/clouds when sparsely tested modules run. Thanks again</code></p>
-<p><code>16:16 &lt;blackboxsw&gt; anything else for recent changes that have landed rharper powersj or others?</code></p>
-<p><code>16:17 &lt;powersj&gt; nope</code></p>
-<p><code>16:17 &lt;rharper&gt; blackboxsw: not yet</code></p>
-<p><code>16:17 &lt;blackboxsw&gt; ok then let's move to next topic</code></p>
-<p><code>16:17 &lt;blackboxsw&gt; #topic In Progress Development</code></p>
-<p><code>16:17 &lt;blackboxsw&gt; for real.</code></p>
-<p><code>16:18 &lt;blackboxsw&gt; ok so we are wrapping up that one Ec2 bug that was raised by Sargun on friday (which affects Artful)</code></p>
-<p><code>16:18 &lt;blackboxsw&gt; When we have that branch in place, we can kick our final validation of the cloud-init 17.1 updates to Xenial Zesty and Artful.</code></p>
-<p><code>16:19 &lt;blackboxsw&gt; I know smoser just uploaded cloud-init to the newly opened Bionic release as well</code></p>
-<p><code>16:19 &lt;blackboxsw&gt; We will be hitting the review queue a bit this week to wrap up content that we want landed once master is open for more dyna</code></p>
-<p><code>16:20 &lt;blackboxsw&gt; We will be hitting the review queue a bit this week to wrap up content that we want landed once master is open for more significant changesets</code></p>
-<p><code>16:21 &lt;blackboxsw&gt; we've been a little risk averse during the SRU release process</code></p>
-<p><code>16:21 &lt;blackboxsw&gt; As always please watch our trello board for progress on anything we are working</code></p>
-<p><code>16:21 &lt;blackboxsw&gt; LINK</code><a href="https://trello.com/b/hFtWKUn3/daily-cloud-init-curtin"><code>https://trello.com/b/hFtWKUn3/daily-cloud-init-curtin</code></a></p>
-<p><code>16:22 &lt;powersj&gt; need that #</code></p>
-<p><code>16:22 &lt;blackboxsw&gt; #LINK</code><a href="https://trello.com/b/hFtWKUn3/daily-cloud-init-curtin"><code>https://trello.com/b/hFtWKUn3/daily-cloud-init-curtin</code></a></p>
-<p><code>16:22 &lt;blackboxsw&gt; ahh thanks oops</code></p>
-<p><code>16:23 &lt;robjo&gt; speaking of reviews thanks for the help so far blackboxsw , now that my schedule should be a bit less crazy I'd like to get back to</code><a href="https://code.launchpad.net/~rjschwei/cloud-init/+git/cloud-init/+ref/addZyppRepos"><code>https://code.launchpad.net/~rjschwei/cloud-init/+git/cloud-init/+ref/addZyppRepos</code></a></p>
-<p><code>16:23 &lt;blackboxsw&gt; Our focus as well for the upcoming work in cloud-init is to increase continuous integration coverage and tooling around cloud-init to make sure we can keep delivering stability across releases</code></p>
-<p><code>16:24 &lt;robjo&gt; since I cannotreproduce the issue the bot has locally and I don't really understand the problem some more help is needed</code></p>
-<p><code>16:24 &lt;blackboxsw&gt; ahh hiya robjo</code></p>
-<p><code>16:24 &lt;powersj&gt; that looks merged</code></p>
-<p><code>16:24 &lt;blackboxsw&gt; robjo: good to hear, we'll watch for updates.</code></p>
-<p><code>16:25 &lt;powersj&gt; smoser went and fixed the flake8 issues</code></p>
-<p><code>16:25 &lt;blackboxsw&gt; robjo: do you mean another branch?</code></p>
-<p><code>16:25 &lt;robjo&gt; blackboxsw: no, that branch, but bot  thinks " Needs Fixing ", I just don't get why</code></p>
-<p><code>16:26 &lt;blackboxsw&gt; yeah per robjo's work cloud-init folks can also configure zypper repos . We landed it Sept 21st. (So it's in cloud-init 17.1)</code></p>
-<p><code>16:26 &lt;blackboxsw&gt; commit cc1475d07b9d0727012634ee9c7a914d67b051f5</code></p>
-<p>`16:26 <blackboxsw> Author: Robert Schweikert <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#114;&#106;&#115;&#99;&#104;&#119;&#101;&#105;&#64;&#115;&#117;&#115;&#101;&#46;&#99;&#111;&#109;">&#114;&#106;&#115;&#99;&#104;&#119;&#101;&#105;&#64;&#115;&#117;&#115;&#101;&#46;&#99;&#111;&#109;</a></p>
-<p><code>16:26 &lt;blackboxsw&gt; Date:   Thu Sep 21 11:58:28 2017 -0400</code></p>
-<p><code>16:27 &lt;robjo&gt; Oh, so it did get merged, missed that, never mind</code></p>
-<p><code>16:27 &lt;blackboxsw&gt; as powersj mentioned, I think it was a flake8 CI test issue, so we just fixed the minor issue and landed it as it wasn't a significant content change</code></p>
-<p><code>16:28 &lt;powersj&gt; cloudinit/config/cc_zypper_add_repo.py:15:1: H306: imports not in alphabetical order (cloudinit.util, cloudinit.config.schema.get_schema_doc)</code></p>
-<p><code>16:28 &lt;robjo&gt; much appreciated, still a bit concerning that the flake8 issue did not show up locally :(</code></p>
-<p><code>16:28 &lt;blackboxsw&gt; thx powersj</code></p>
-<p><code>16:29 &lt;powersj&gt; is correct way</code><a href="https://paste.ubuntu.com/25852643/"><code>https://paste.ubuntu.com/25852643/</code></a></p>
-<p><code>16:29 &lt;robjo&gt; SO flake8 has serious issue with the definition of alpha order :(</code></p>
-<p><code>16:30 &lt;blackboxsw&gt; ;)</code></p>
-<p><code>16:30 &lt;blackboxsw&gt; ok anything else for</code>“<code>In`` ``Progress`` ``Development</code>”<code>if not we'll transition to the next topic</code></p>
-<p><code>16:30 &lt;blackboxsw&gt; #topic Open Discussion / Office Hours (30 mins)</code></p>
-<p><code>16:31 &lt;blackboxsw&gt; ok we'll hang out in channel  if anyone has topics, bugs or features they want to discuss or need some feedback on</code></p>
-<p><code>16:35 &lt;blackboxsw&gt; and as always thanks for contributions folks. It's really great to work on a project where there is so much interest and investment</code></p>
-<p><code>16:42 &lt;smoser&gt; blackboxsw: hey. i'm back now. did you open a bug?</code></p>
-<p><code>16:42 &lt;smoser&gt; i can do so now if you have not.</code></p>
-<p><code>16:43 &lt;blackboxsw&gt; smoser: I haven't done that yet, was just working out the fix</code></p>
-<p><code>16:43 &lt;blackboxsw&gt; please do, then we can link it here</code></p>
-<p><code>16:43 &lt;smoser&gt; ok. i'll do so. and i realized a comment you were making about artful.</code></p>
-<p><code>16:43 &lt;smoser&gt; that we could go leave artful configuring all nics it saw.</code></p>
-<p><code>16:43 &lt;blackboxsw&gt; right, because we allow change of behavior in artful right?</code></p>
-<p><code>16:44 &lt;smoser&gt; as that isn't necessarily</code>“<code>broken</code>”<code>behavior.</code></p>
-<p><code>16:44 &lt;smoser&gt; yeah. i didnt understand that when you said it.</code></p>
-<p><code>16:44 &lt;blackboxsw&gt; ahh, I get you. Right, just that the new behavior of configuring all nics is acceptable as new behavior, but not for Xenial. It's just that artful is slightly busted for local-only ipv4</code></p>
-<p><code>16:45 &lt;smoser&gt; i think it might be easiest both in terms of fixing and in terms of keeping things in our head if we just keep the same behavior everywhere for now.</code></p>
-<p><code>16:46 &lt;smoser&gt; that is... make artful act like xenial in only configuring one nic</code></p>
-<p><code>16:48 &lt;smoser&gt; blackboxsw: actually i dont think there is any reason why we shoudlnt just use bug 1728152</code></p>
-<p><code>16:48 &lt;ubot5&gt; bug 1728152 in cloud-init</code>“<code>IPv4`` ``and`` ``IPv6`` ``Dual`` ``Stack`` ``Does`` ``Not`` ``work`` ``when`` ``instance`` ``is`` ``not`` ``assigned`` ``public`` ``IPv4`` ``address</code>”<code>[High,In progress]</code><a href="https://launchpad.net/bugs/1728152"><code>https://launchpad.net/bugs/1728152</code></a></p>
-<p><code>16:48 &lt;smoser&gt; unless you disagree</code></p>
-<p><code>16:51 &lt;blackboxsw&gt; +1 smoser</code></p>
-<p><code>16:52 &lt;blackboxsw&gt; lets use that bug</code></p>
-<p><code>16:59 &lt;blackboxsw&gt; #LINK</code><a href="https://launchpad.net/bugs/1728152"><code>https://launchpad.net/bugs/1728152</code></a></p>
-<p><code>16:59 &lt;ubot5&gt; Ubuntu bug 1728152 in cloud-init</code>“<code>EC2`` ``IPv4`` ``and`` ``IPv6`` ``Dual`` ``Stack`` ``Does`` ``Not`` ``work`` ``when`` ``instance`` ``is`` ``not`` ``assigned`` ``public`` ``IPv4`` ``address</code>”<code>[High,In progress]</code></p>
-<p><code>16:59 &lt;blackboxsw&gt; ok looks like we are good for the status meeting</code></p>
-<p><code>17:00 &lt;blackboxsw&gt; thanks for joining all. see you in two weeks</code></p>
-<p><code>17:00 &lt;blackboxsw&gt; #endmeeting</code></p>
-<p>Generated by MeetBot 0.1.5 (http://wiki.ubuntu.com/meetingology)</p>
+<p>16:03 <code>&lt;blackboxsw</code>&gt; #startmeeting cloud-init bi-weekly status</p>
+<p>16:03 <code>&lt;meetingology</code>&gt; Meeting started Mon Oct 30 16:03:09 2017 UTC.  The chair is blackboxsw. Information about MeetBot at <a href="http://wiki.ubuntu.com/meetingology.">http://wiki.ubuntu.com/meetingology.</a></p>
+<p>16:03 <code>&lt;meetingology</code>&gt; </p>
+<p>16:03 <code>&lt;meetingology</code>&gt; Available commands: action commands idea info link nick</p>
+<p>16:04 <code>&lt;blackboxsw</code>&gt; #topic In Progress Development</p>
+<p>16:04 <code>&lt;blackboxsw</code>&gt; So, the last couple weeks have been fairly busy with Ubuntu an SRU  processs for Xenial, Zesty and the new Artful release</p>
+<p>16:05 <code>&lt;blackboxsw</code>&gt; our SRU process bug captures most of that work</p>
+<p>16:05 <code>&lt;blackboxsw</code>&gt; #LINK <a href="https://bugs.launchpad.net/ubuntu/+source/cloud-init/+bug/1721847">https://bugs.launchpad.net/ubuntu/+source/cloud-init/+bug/1721847</a></p>
+<p>16:05 <code>&lt;ubot5</code>&gt; Ubuntu bug 1721847 in cloud-init (Ubuntu Zesty) "sru cloud-init 2017-10-06 (17.1-18-gd4f70470-0ubuntu1)" [Medium,Fix committed]</p>
+<p>16:07 <code>&lt;blackboxsw</code>&gt; our teams uncovered at least one bug  during verification testing</p>
+<p>16:07 <code>&lt;blackboxsw</code>&gt; LINK <a href="https://bugs.launchpad.net/cloud-init/+bug/1725067">https://bugs.launchpad.net/cloud-init/+bug/1725067</a></p>
+<p>16:07 <code>&lt;ubot5</code>&gt; Ubuntu bug 1725067 in cloud-init (Ubuntu Artful) "cloud-init resizefs fails when booting with root=PARTUUID=" [Medium,Fix committed]</p>
+<p>16:08 <code>&lt;blackboxsw</code>&gt; The former bug we have now resolved. This SRU will not be published until we resolve one other bug for EC2-specfic environments to ensure we retain behavior to always bring up dhcp4 on the primary nic</p>
+<p>16:09 <code>&lt;blackboxsw</code>&gt; I don't think we have created a bug for the ec2 issue yet (it affects artful only) instances with only private ipv4 addresses allocated will not have dhcp4 config'd for that instance</p>
+<p>16:10 <code>&lt;blackboxsw</code>&gt; We'll link a bug for the above today</p>
+<p>16:10 <code>&lt;blackboxsw</code>&gt; other work on cloud-init... paste coming</p>
+<p>16:11 <code>&lt;blackboxsw</code>&gt; * Fix systemd mount target due to busy device or already mounted (LP: #1718287)</p>
+<p>16:11 <code>&lt;blackboxsw</code>&gt; * Fix simpleteable object as output string (LP: #1722566)</p>
+<p>16:11 <code>&lt;blackboxsw</code>&gt; * Fix netplan bridge stp boolean (LP: #1721157)</p>
+<p>16:11 <code>&lt;blackboxsw</code>&gt; * Fix cc_ntp to allow empty configuration "ntp:". Fix ntp integration test to provide valid empty ntp config (LP: 1724951)</p>
+<p>16:11 <code>&lt;blackboxsw</code>&gt; * Fixed cc_lxd to allow for missing bridge definitions in lxd cloud-config</p>
+<p>16:11 <code>&lt;blackboxsw</code>&gt; * Dropped fastestmirror plugin for CentOS tests</p>
+<p>16:11 <code>&lt;blackboxsw</code>&gt; * Numerous test and CI stability improvements</p>
+<p>16:11 <code>&lt;ubot5</code>&gt; Launchpad bug 1718287 in cloud-init "systemd mount targets fail due to device busy or already mounted" [High,Fix committed] <a href="https://launchpad.net/bugs/1718287">https://launchpad.net/bugs/1718287</a></p>
+<p>16:11 <code>&lt;ubot5</code>&gt; Launchpad bug 1722566 in cloud-init "ci-info: <code>&lt;cloudinit.simpletable.SimpleTable object at 0x7fa98d222748</code>&gt;" [Medium,Fix committed] <a href="https://launchpad.net/bugs/1722566">https://launchpad.net/bugs/1722566</a></p>
+<p>16:11 <code>&lt;ubot5</code>&gt; Launchpad bug 1721157 in cloud-init "netplan render drops bridge_stp setting" [High,Fix committed] <a href="https://launchpad.net/bugs/1721157">https://launchpad.net/bugs/1721157</a></p>
+<p>16:11 <code>&lt;ubot5</code>&gt; Launchpad bug 1724951 in cloud-init "Ntp schema definition permits empty ntp cloud-config, but code disallows" [Medium,In progress] <a href="https://launchpad.net/bugs/1724951">https://launchpad.net/bugs/1724951</a></p>
+<p>16:13 <code>&lt;blackboxsw</code>&gt; Also we got a couple of gentoo commits from ckonstanski  to Use "rc-service" rather than "service".  Thanks again</p>
+<p>16:13 <code>&lt;rharper</code>&gt; \o/</p>
+<p>16:14 <code>&lt;ckonstanski</code>&gt; You're welcome, though those were just tiny toy commits to get me indocrinated into the launchpad process. Getting NTP tests to work in gentoo will be more significant.</p>
+<p>16:15 <code>&lt;blackboxsw</code>&gt; ckonstanski: testing always is time-consuming, but totally worth it.  We are still trying build our unit test coverage up so we don't get suprises on different platforms/clouds when sparsely tested modules run. Thanks again</p>
+<p>16:16 <code>&lt;blackboxsw</code>&gt; oops sorry about the topic for the above ... that should have been the following</p>
+<p>16:16 <code>&lt;blackboxsw</code>&gt; #topic Recent Changes</p>
+<p>16:16 <code>&lt;blackboxsw</code>&gt; anything else for recent changes that have landed rharper powersj or others?</p>
+<p>16:17 <code>&lt;powersj</code>&gt; nope</p>
+<p>16:17 <code>&lt;rharper</code>&gt; blackboxsw: not yet</p>
+<p>16:17 <code>&lt;blackboxsw</code>&gt; ok then let's move to next topic</p>
+<p>16:17 <code>&lt;blackboxsw</code>&gt; #meetingstatus In Progress Development</p>
+<p>16:17 <code>&lt;blackboxsw</code>&gt; for real.</p>
+<p>16:18 <code>&lt;blackboxsw</code>&gt; ok so we are wrapping up that one Ec2 bug that was raised by Sargun on friday (which affects Artful)</p>
+<p>16:18 <code>&lt;blackboxsw</code>&gt; When we have that branch in place, we can kick our final validation of the cloud-init 17.1 updates to Xenial Zesty and Artful.</p>
+<p>16:19 <code>&lt;blackboxsw</code>&gt; I know smoser just uploaded cloud-init to the newly opened Bionic release as well</p>
+<p>16:19 <code>&lt;blackboxsw</code>&gt; We will be hitting the review queue a bit this week to wrap up content that we want landed once master is open for more dyna</p>
+<p>16:20 <code>&lt;blackboxsw</code>&gt; We will be hitting the review queue a bit this week to wrap up content that we want landed once master is open for more significant changesets</p>
+<p>16:21 <code>&lt;blackboxsw</code>&gt; we've been a little risk averse during the SRU release process</p>
+<p>16:21 <code>&lt;blackboxsw</code>&gt; As always please watch our trello board for progress on anything we are working</p>
+<p>16:21 <code>&lt;blackboxsw</code>&gt; LINK <a href="https://trello.com/b/hFtWKUn3/daily-cloud-init-curtin">https://trello.com/b/hFtWKUn3/daily-cloud-init-curtin</a></p>
+<p>16:22 <code>&lt;powersj</code>&gt; need that #</p>
+<p>16:22 <code>&lt;blackboxsw</code>&gt; #LINK <a href="https://trello.com/b/hFtWKUn3/daily-cloud-init-curtin">https://trello.com/b/hFtWKUn3/daily-cloud-init-curtin</a></p>
+<p>16:22 <code>&lt;blackboxsw</code>&gt; ahh thanks oops</p>
+<p>16:23 <code>&lt;robjo</code>&gt; speaking of reviews thanks for the help so far blackboxsw , now that my schedule should be a bit less crazy I'd like to get back to <a href="https://code.launchpad.net/~rjschwei/cloud-init/+git/cloud-init/+ref/addZyppRepos">https://code.launchpad.net/~rjschwei/cloud-init/+git/cloud-init/+ref/addZyppRepos</a></p>
+<p>16:23 <code>&lt;blackboxsw</code>&gt; Our focus as well for the upcoming work in cloud-init is to increase continuous integration coverage and tooling around cloud-init to make sure we can keep delivering stability across releases</p>
+<p>16:24 <code>&lt;robjo</code>&gt; since I cannotreproduce the issue the bot has locally and I don't really understand the problem some more help is needed</p>
+<p>16:24 <code>&lt;blackboxsw</code>&gt; ahh hiya robjo</p>
+<p>16:24 <code>&lt;powersj</code>&gt; that looks merged</p>
+<p>16:24 <code>&lt;blackboxsw</code>&gt; robjo: good to hear, we'll watch for updates.</p>
+<p>16:25 <code>&lt;powersj</code>&gt; smoser went and fixed the flake8 issues</p>
+<p>16:25 <code>&lt;blackboxsw</code>&gt; robjo: do you mean another branch?</p>
+<p>16:25 <code>&lt;robjo</code>&gt; blackboxsw: no, that branch, but bot  thinks " Needs Fixing ", I just don't get why</p>
+<p>16:26 <code>&lt;blackboxsw</code>&gt; yeah per robjo's work cloud-init folks can also configure zypper repos . We landed it Sept 21st. (So it's in cloud-init 17.1)</p>
+<p>16:26 <code>&lt;blackboxsw</code>&gt; commit cc1475d07b9d0727012634ee9c7a914d67b051f5</p>
+<p>16:26 <code>&lt;blackboxsw</code>&gt; Author: Robert Schweikert <code>&lt;rjschwei@suse.com</code>&gt;</p>
+<p>16:26 <code>&lt;blackboxsw</code>&gt; Date:   Thu Sep 21 11:58:28 2017 -0400</p>
+<p>16:27 <code>&lt;robjo</code>&gt; Oh, so it did get merged, missed that, never mind</p>
+<p>16:27 <code>&lt;blackboxsw</code>&gt; as powersj mentioned, I think it was a flake8 CI test issue, so we just fixed the minor issue and landed it as it wasn't a significant content change</p>
+<p>16:28 <code>&lt;powersj</code>&gt; cloudinit/config/cc_zypper_add_repo.py:15:1: H306: imports not in alphabetical order (cloudinit.util, cloudinit.config.schema.get_schema_doc)</p>
+<p>16:28 <code>&lt;robjo</code>&gt; much appreciated, still a bit concerning that the flake8 issue did not show up locally :(</p>
+<p>16:28 <code>&lt;blackboxsw</code>&gt; thx powersj</p>
+<p>16:29 <code>&lt;powersj</code>&gt; is correct way <a href="https://paste.ubuntu.com/25852643/">https://paste.ubuntu.com/25852643/</a></p>
+<p>16:29 <code>&lt;robjo</code>&gt; SO flake8 has serious issue with the definition of alpha order :(</p>
+<p>16:30 <code>&lt;blackboxsw</code>&gt; ;)</p>
+<p>16:30 <code>&lt;blackboxsw</code>&gt; ok anything else for "In Progress Development"  if not we'll transition to the next topic</p>
+<p>16:30 <code>&lt;blackboxsw</code>&gt; #topic Open Discussion / Office Hours (30 mins)</p>
+<p>16:31 <code>&lt;blackboxsw</code>&gt; ok we'll hang out in channel  if anyone has topics, bugs or features they want to discuss or need some feedback on</p>
+<p>16:35 <code>&lt;blackboxsw</code>&gt; and as always thanks for contributions folks. It's really great to work on a project where there is so much interest and investment</p>
+<p>16:42 <code>&lt;smoser</code>&gt; blackboxsw: hey. i'm back now. did you open a bug?</p>
+<p>16:42 <code>&lt;smoser</code>&gt; i can do so now if you have not.</p>
+<p>16:43 <code>&lt;blackboxsw</code>&gt; smoser: I haven't done that yet, was just working out the fix</p>
+<p>16:43 <code>&lt;blackboxsw</code>&gt; please do, then we can link it here</p>
+<p>16:43 <code>&lt;smoser</code>&gt; ok. i'll do so. and i realized a comment you were making about artful.</p>
+<p>16:43 <code>&lt;smoser</code>&gt; that we could go leave artful configuring all nics it saw.</p>
+<p>16:43 <code>&lt;blackboxsw</code>&gt; right, because we allow change of behavior in artful right?</p>
+<p>16:44 <code>&lt;smoser</code>&gt; as that isn't necessarily "broken" behavior.</p>
+<p>16:44 <code>&lt;smoser</code>&gt; yeah. i didnt understand that when you said it.</p>
+<p>16:44 <code>&lt;blackboxsw</code>&gt; ahh, I get you. Right, just that the new behavior of configuring all nics is acceptable as new behavior, but not for Xenial. It's just that artful is slightly busted for local-only ipv4</p>
+<p>16:45 <code>&lt;smoser</code>&gt; i think it might be easiest both in terms of fixing and in terms of keeping things in our head if we just keep the same behavior everywhere for now.</p>
+<p>16:46 <code>&lt;smoser</code>&gt; that is... make artful act like xenial in only configuring one nic</p>
+<p>16:48 <code>&lt;smoser</code>&gt; blackboxsw: actually i dont think there is any reason why we shoudlnt just use bug 1728152</p>
+<p>16:48 <code>&lt;ubot5</code>&gt; bug 1728152 in cloud-init "IPv4 and IPv6 Dual Stack Does Not work when instance is not assigned public IPv4 address" [High,In progress] <a href="https://launchpad.net/bugs/1728152">https://launchpad.net/bugs/1728152</a></p>
+<p>16:48 <code>&lt;smoser</code>&gt; unless you disagree</p>
+<p>16:51 <code>&lt;blackboxsw</code>&gt; +1 smoser</p>
+<p>16:52 <code>&lt;blackboxsw</code>&gt; lets use that bug</p>
+<p>16:59 <code>&lt;blackboxsw</code>&gt; #LINK <a href="https://launchpad.net/bugs/1728152">https://launchpad.net/bugs/1728152</a></p>
+<p>16:59 <code>&lt;ubot5</code>&gt; Ubuntu bug 1728152 in cloud-init "EC2 IPv4 and IPv6 Dual Stack Does Not work when instance is not assigned public IPv4 address" [High,In progress]</p>
+<p>16:59 <code>&lt;blackboxsw</code>&gt; ok looks like we are good for the status meeting</p>
+<p>17:00 <code>&lt;blackboxsw</code>&gt; thanks for joining all. see you in two weeks</p>
+<p>17:00 <code>&lt;blackboxsw</code>&gt; #endmeeting</p>
+<p>Generated by MeetBot 0.1.5 (<a href="http://wiki.ubuntu.com/meetingology">http://wiki.ubuntu.com/meetingology</a>)</p>
   </div>
   <div class="tag-cloud">
     <p>
