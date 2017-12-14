@@ -37,6 +37,7 @@ MINUTES_REGEX = (
 RE_H1 = r'== ([\S ]+) ==\n'
 RE_H2 = r'=== ([\S ]+) ===\n'
 RE_LINK = r'(https?:\/\/[-a-zA-Z0-9@:%._\+~#=\/]+)'
+RE_NESTED_LIST = r'\* \*'
            
 
 def convert_to_markdown(content):
@@ -48,6 +49,8 @@ def convert_to_markdown(content):
         (RE_H1, r'\1\n----------------\n'),
         (RE_H2, r'### \1\n'),
         ("''LINK:'' ", ' * **LINK**: '),
+        ("''ACTION:'' ", ' * **ACTION**: '),
+        (RE_NESTED_LIST, '*'),
         (RE_LINK, r'[\1](\1)')
     )
     for orig, replacement in replacements:
