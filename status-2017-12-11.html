@@ -1,0 +1,426 @@
+
+<!DOCTYPE html>
+<html lang="english">
+<head>
+  <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" type="text/css" href="https://cloud-init.github.io/theme/stylesheet/style.min.css">
+
+  <link rel="stylesheet" type="text/css" href="https://cloud-init.github.io/theme/pygments/github.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cloud-init.github.io/theme/font-awesome/css/font-awesome.min.css">
+
+
+    <link href="https://cloud-init.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Cloud-init Info Atom">
+
+
+    <link rel="shortcut icon" href="/theme/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/theme/img/favicon.ico" type="image/x-icon">
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-50554247-3', 'auto');
+  ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#2c001e">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#2c001e">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Microsoft EDGE -->
+    <meta name="msapplication-TileColor" content="#2c001e">
+
+<meta name="author" content="chad.smith@canonical.com" />
+<meta name="description" content="Meeting information #cloud-init: Cloud-init &#39;bi-weekly&#39; status meeting, 11 Dec at 16:05 — 17:22 UTC Full logs at [[http://ubottu.com/meetingology/logs/cloud-init/2017/cloud-init.2017-12-11-16.05.log.html]] Meeting summary Recent Changes The discussion about &#34;Recent Changes&#34; started at 16:07. LINK: https://lists.launchpad.net/cloud-init/msg00114 …" />
+<meta name="keywords" content="">
+
+<meta property="og:site_name" content="Cloud-init Info"/>
+<meta property="og:title" content="Cloud-init bi-weekly status"/>
+<meta property="og:description" content="Meeting information #cloud-init: Cloud-init &#39;bi-weekly&#39; status meeting, 11 Dec at 16:05 — 17:22 UTC Full logs at [[http://ubottu.com/meetingology/logs/cloud-init/2017/cloud-init.2017-12-11-16.05.log.html]] Meeting summary Recent Changes The discussion about &#34;Recent Changes&#34; started at 16:07. LINK: https://lists.launchpad.net/cloud-init/msg00114 …"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:url" content="https://cloud-init.github.io/status-2017-12-11.html"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2017-12-11 16:05:00+00:00"/>
+<meta property="article:modified_time" content=""/>
+<meta property="article:author" content="https://cloud-init.github.io/author/chadsmithcanonicalcom.html">
+<meta property="article:section" content="status-meeting-minutes"/>
+<meta property="og:image" content="/images/cloud-init-orange.svg">
+
+  <title>Cloud-init Info &ndash; Cloud-init bi-weekly status</title>
+
+</head>
+<body>
+  <aside>
+    <div>
+      <a href="https://cloud-init.github.io">
+        <img src="/images/cloud-init-orange.svg" alt="Cloud-init" title="Cloud-init">
+      </a>
+      <h1><a href="https://cloud-init.github.io">Cloud-init</a></h1>
+
+<p>Make your cloud images be all they can be</p>
+      <nav>
+        <ul class="list">
+
+          <li><a href="https://cloudinit.readthedocs.org/" target="_blank">Docs</a></li>
+          <li><a href="https://cloud-init.io" target="_blank">Overview</a></li>
+          <li><a href="https://cloudinit.readthedocs.io/en/latest/topics/hacking.html" target="_blank">Hacking</a></li>
+          <li><a href="https://jenkins.ubuntu.com/server/view/cloud-init/" target="_blank">CI builds</a></li>
+          <li><a href="https://launchpad.net/cloud-init" target="_blank">Code</a></li>
+        </ul>
+      </nav>
+
+      <ul class="social">
+        <li><a class="sc-github" href="https://github.com/cloud-init" target="_blank"><i class="fa fa-github"></i></a></li>
+        <li><a class="sc-wechat" href="https://webchat.freenode.net/?channels=cloud-init" target="_blank"><i class="fa fa-wechat"></i></a></li>
+      </ul>
+    </div>
+
+
+  </aside>
+  <main>
+
+    <nav>
+      <a href="https://cloud-init.github.io">Home</a>
+
+      <a href="/archives.html">Archives</a>
+      <a href="/categories.html">Categories</a>
+      <a href="/tags.html">Tags</a>
+
+      <a href="https://cloud-init.github.io/feeds/all.atom.xml">Atom</a>
+
+    </nav>
+
+<article class="single">
+  <header>
+      
+    <h1 id="status-2017-12-11">Cloud-init bi-weekly status</h1>
+    <p>
+      Posted on Mon 11 December 2017 in <a href="https://cloud-init.github.io/category/status-meeting-minutes.html">status-meeting-minutes</a>
+
+        &#8226; 13 min read
+    </p>
+  </header>
+
+
+  <div>
+    <h2>Meeting information</h2>
+<ul>
+<li>#cloud-init: Cloud-init 'bi-weekly' status meeting, 11 Dec at 16:05 &mdash; 17:22 UTC</li>
+<li>Full logs at [[<a href="http://ubottu.com/meetingology/logs/cloud-init/2017/cloud-init.2017-12-11-16.05.log.html">http://ubottu.com/meetingology/logs/cloud-init/2017/cloud-init.2017-12-11-16.05.log.html</a>]]</li>
+</ul>
+<h2>Meeting summary</h2>
+<h3>Recent Changes</h3>
+<p>The discussion about "Recent Changes" started at 16:07.</p>
+<ul>
+<li><strong>LINK</strong>: <a href="https://lists.launchpad.net/cloud-init/msg00114.html">https://lists.launchpad.net/cloud-init/msg00114.html</a> </li>
+<li><strong>LINK</strong>: <a href="http://cloud-init.github.io">http://cloud-init.github.io</a> </li>
+</ul>
+<h3>In-progress Development</h3>
+<p>The discussion about "In-progress Development" started at 16:15.</p>
+<ul>
+<li><strong>LINK</strong>: <a href="http://bit.ly/ci-reviews">http://bit.ly/ci-reviews</a> </li>
+<li><strong>LINK</strong>: <a href="https://code.launchpad.net/~paul-meyer/cloud-init/+git/cloud-init/+merge/334989">https://code.launchpad.net/~paul-meyer/cloud-init/+git/cloud-init/+merge/334989</a> </li>
+<li><strong>LINK</strong>: <a href="https://code.launchpad.net/~smoser/cloud-init/+git/cloud-init/+merge/335034">https://code.launchpad.net/~smoser/cloud-init/+git/cloud-init/+merge/335034</a> </li>
+</ul>
+<h3>Office Hours (for next 30 mins)</h3>
+<p>The discussion about "Office Hours (for next 30 mins)" started at 16:38.</p>
+<ul>
+<li><strong>LINK</strong>: <a href="http://pastebin.ubuntu.com/26075842/">http://pastebin.ubuntu.com/26075842/</a> </li>
+<li><strong>LINK</strong>: <a href="http://paste.ubuntu.com/26164503/">http://paste.ubuntu.com/26164503/</a> </li>
+<li><strong>ACTION</strong>: blackboxsw bring up any updates in instance-data.json fields for discussion about common use-cases/patterns</li>
+</ul>
+<h2>Vote results</h2>
+<h2>Action items, by person</h2>
+<ul>
+<li>blackboxsw</li>
+<li>blackboxsw bring up any updates in instance-data.json fields for discussion about common use-cases/patterns</li>
+</ul>
+<h2>Done items</h2>
+<ul>
+<li>(none)</li>
+</ul>
+<h2>People present (lines said)</h2>
+<ul>
+<li>blackboxsw (83)</li>
+<li>smoser (54)</li>
+<li>ajorg (38)</li>
+<li>robjo (32)</li>
+<li>ubot5 (7)</li>
+<li>meetingology (4)</li>
+<li>powersj (2)</li>
+<li>dpb1 (2)</li>
+<li>rharper (2)</li>
+</ul>
+<h2>Full Log</h2>
+<p>16:05 <code>&lt;blackboxsw</code>&gt; #startmeeting Cloud-init 'bi-weekly' status meeting</p>
+<p>16:05 <code>&lt;meetingology</code>&gt; Meeting started Mon Dec 11 16:05:16 2017 UTC.  The chair is blackboxsw. Information about MeetBot at <a href="http://wiki.ubuntu.com/meetingology.">http://wiki.ubuntu.com/meetingology.</a></p>
+<p>16:05 <code>&lt;meetingology</code>&gt; </p>
+<p>16:05 <code>&lt;meetingology</code>&gt; Available commands: action commands idea info link nick</p>
+<p>16:05 <code>&lt;smoser</code>&gt; thanks for hosting blackboxsw</p>
+<p>16:05 <code>&lt;blackboxsw</code>&gt; no problemo.</p>
+<p>16:05 <code>&lt;blackboxsw</code>&gt; happy holidays folks and thanks for joining.</p>
+<p>16:07 <code>&lt;blackboxsw</code>&gt; #topic Recent Changes</p>
+<p>16:07 <code>&lt;blackboxsw</code>&gt; As mentioned @ our 17.1 release, we're promising more frequent cloud-init releases.</p>
+<p>16:08 <code>&lt;blackboxsw</code>&gt; smoser has mailed the list informing cloud-init interested parties that we are targeting a 17.2 release for Thursday this week</p>
+<p>16:08 <code>&lt;blackboxsw</code>&gt; It's been a few weeks since we've hosted the meeting (I think we missed last meeting), so I'll post some of the development that has landed in trunk</p>
+<p>16:08 <code>&lt;smoser</code>&gt; #link <a href="https://lists.launchpad.net/cloud-init/msg00114.html">https://lists.launchpad.net/cloud-init/msg00114.html</a></p>
+<p>16:09 <code>&lt;blackboxsw</code>&gt; * All integration tests now function with the nocloud-kvm backend</p>
+<p>16:09 <code>&lt;blackboxsw</code>&gt; * Fix apport for cloud-name options (LP: #1722564)</p>
+<p>16:09 <code>&lt;blackboxsw</code>&gt; * Improve warning message when templates aren't found (Robert Schweikert) (LP: #1730135)</p>
+<p>16:09 <code>&lt;blackboxsw</code>&gt; * Perform null checks for enabled/disabled Red Hat repos (Dave Mulford)</p>
+<p>16:09 <code>&lt;blackboxsw</code>&gt; * Fix openSUSE and SLES setup of /etc/hosts (Robert Schweikert) (LP: #1731022)</p>
+<p>16:09 <code>&lt;blackboxsw</code>&gt; * Catch UrlError when #include'ing URLs (Andrew Jorgensen)</p>
+<p>16:09 <code>&lt;ubot5</code>&gt; Launchpad bug 1722564 in Apport "apport question will not accept multi-character responses" [Undecided,Confirmed] <a href="https://launchpad.net/bugs/1722564">https://launchpad.net/bugs/1722564</a></p>
+<p>16:09 <code>&lt;ubot5</code>&gt; Launchpad bug 1730135 in openstack-dev-sandbox ""Too much rain in Sydney"" [Undecided,New] <a href="https://launchpad.net/bugs/1730135">https://launchpad.net/bugs/1730135</a></p>
+<p>16:09 <code>&lt;ubot5</code>&gt; Launchpad bug 1731022 in cloud-init "host template expansion does not work on SUSE distros" [High,Fix committed] <a href="https://launchpad.net/bugs/1731022">https://launchpad.net/bugs/1731022</a></p>
+<p>16:09 <code>&lt;smoser</code>&gt; ajorg replied with a request for <a href="https://code.launchpad.net/~ajorgens/cloud-init/+git/cloud-init/+merge/329657">https://code.launchpad.net/~ajorgens/cloud-init/+git/cloud-init/+merge/329657</a></p>
+<p>16:09 <code>&lt;smoser</code>&gt; that fell on deaf ears</p>
+<p>16:09 <code>&lt;blackboxsw</code>&gt; * Released stable release update (SRU) of 17.1-27-geb292c18 (LP: #1721847)</p>
+<p>16:09 <code>&lt;blackboxsw</code>&gt; * Cleanup dhclient background process after EC2 network discovery.</p>
+<p>16:09 <code>&lt;blackboxsw</code>&gt; * ntp: fix configuration template rendering for openSUSE and SLES (Robert Schweikert) LP: #1726572</p>
+<p>16:09 <code>&lt;blackboxsw</code>&gt; * fix manually running cloud-init after upgrade (LP: #1732917)</p>
+<p>16:09 <code>&lt;ubot5</code>&gt; Launchpad bug 1721847 in cloud-init (Ubuntu Artful) "sru cloud-init 2017-10-06 (17.1-18-gd4f70470-0ubuntu1) updated to (17.1-27-geb292c18)" [Medium,Fix released] <a href="https://launchpad.net/bugs/1721847">https://launchpad.net/bugs/1721847</a></p>
+<p>16:09 <code>&lt;ubot5</code>&gt; Launchpad bug 1726572 in cloud-init "ntp config handling inconsistent for SLES and openSUSE" [Medium,Fix committed] <a href="https://launchpad.net/bugs/1726572">https://launchpad.net/bugs/1726572</a></p>
+<p>16:09 <code>&lt;ubot5</code>&gt; Launchpad bug 1732917 in cloud-init "17.1 update breaks EC2 nodes" [High,Fix committed] <a href="https://launchpad.net/bugs/1732917">https://launchpad.net/bugs/1732917</a></p>
+<p>16:09 <code>&lt;ajorg</code>&gt; truth</p>
+<p>16:09 <code>&lt;smoser</code>&gt; ajorg: i will review shortly</p>
+<p>16:09 <code>&lt;blackboxsw</code>&gt; * Queued upstream for merge into Bionic</p>
+<p>16:09 <code>&lt;blackboxsw</code>&gt; * Queued 17.1.46 SRU for Xenial, Zesty, and Artful</p>
+<p>16:09 <code>&lt;blackboxsw</code>&gt; * Fix EC2 race on sandboxed dhclient's pidfile during tempdir teardown (LP: #1735331)</p>
+<p>16:09 <code>&lt;blackboxsw</code>&gt; * Enable Bionic in Integration Tests</p>
+<p>16:09 <code>&lt;blackboxsw</code>&gt; * Create LXD and KVM Integration Tests in Jenkins</p>
+<p>16:09 <code>&lt;ubot5</code>&gt; Launchpad bug 1735331 in cloud-init "ec2: zesty tempfile sandbox dhclient.pid file can't be created" [High,Fix committed] <a href="https://launchpad.net/bugs/1735331">https://launchpad.net/bugs/1735331</a></p>
+<p>16:10 <code>&lt;blackboxsw</code>&gt; As of end of last week, we are trying to blitz the review queue and dust off anything that has been sitting too long</p>
+<p>16:12 <code>&lt;blackboxsw</code>&gt; So a couple fixes went into Amazon's initial network setup, IPv6 support is live for Ubuntu series Xenial, Zesty, Artful and Bionic</p>
+<p>16:13 <code>&lt;ajorg</code>&gt; cool</p>
+<p>16:14 <code>&lt;blackboxsw</code>&gt; heh I blew that last topic. it should have been #topic Recent Changes.</p>
+<p>16:14 <code>&lt;blackboxsw</code>&gt; anyway I'll fix it in the logs when I publish</p>
+<p>16:15 <code>&lt;blackboxsw</code>&gt; As always , for historical docs from this meeting check this link</p>
+<p>16:15 <code>&lt;blackboxsw</code>&gt; #link <a href="http://cloud-init.github.io">http://cloud-init.github.io</a></p>
+<p>16:15 <code>&lt;blackboxsw</code>&gt; #topic In-progress Development</p>
+<p>16:15 <code>&lt;blackboxsw</code>&gt; So we have an active queue that is pretty healthy still</p>
+<p>16:15 <code>&lt;blackboxsw</code>&gt; #link <a href="http://bit.ly/ci-reviews">http://bit.ly/ci-reviews</a></p>
+<p>16:16 <code>&lt;blackboxsw</code>&gt; smoser: rharper are we still trying to get through that queue as best we can for 17.2 or when do we think the window closes there?</p>
+<p>16:16 <code>&lt;smoser</code>&gt; i think we can spend some more time on queue today.</p>
+<p>16:16 <code>&lt;smoser</code>&gt; but that is about it really.</p>
+<p>16:16 <code>&lt;blackboxsw</code>&gt; yeah, want some settle 'bake' time before the 17.2 cut on Thursday</p>
+<p>16:17 <code>&lt;blackboxsw</code>&gt; We saw a couple Azure branches come in late last week.... Are there any branches folks are really excited about landing this week (today tomorrow?)</p>
+<p>16:18 <code>&lt;blackboxsw</code>&gt; I had hoped to get through a couple of Robert's as they don't seem very contentious.</p>
+<p>16:19 <code>&lt;smoser</code>&gt; the reporter bit seems pretty reasonable</p>
+<p>16:19 <code>&lt;smoser</code>&gt; other than its not actually used anywhere in the mp</p>
+<p>16:19 <code>&lt;smoser</code>&gt; ie, its non-contentious to add a reporter, but adding code that is not used is of not a lot of use :)</p>
+<p>16:19 <code>&lt;blackboxsw</code>&gt; true</p>
+<p>16:20 <code>&lt;ajorg</code>&gt; which mp is being discussed?</p>
+<p>16:20 <code>&lt;smoser</code>&gt; (<a href="https://code.launchpad.net/~paul-meyer/cloud-init/+git/cloud-init/+merge/334989">https://code.launchpad.net/~paul-meyer/cloud-init/+git/cloud-init/+merge/334989</a>)</p>
+<p>16:20 <code>&lt;blackboxsw</code>&gt; #link <a href="https://code.launchpad.net/~paul-meyer/cloud-init/+git/cloud-init/+merge/334989">https://code.launchpad.net/~paul-meyer/cloud-init/+git/cloud-init/+merge/334989</a></p>
+<p>16:21 <code>&lt;ajorg</code>&gt; thanks</p>
+<p>16:23 <code>&lt;blackboxsw</code>&gt; With the upcoming holidays I expect things will be pretty slow after mid-next week, so we won't likely be landing a lot before the first of the new year.</p>
+<p>16:25 <code>&lt;robjo</code>&gt; If it's slow for you more time to review open merge proposals ;)</p>
+<p>16:25 <code>&lt;blackboxsw</code>&gt; This week we are also trying to get an SRU into ubuntu xenial, zesty and artful for some VMware/OVF datasource fixes for ds-identify and for pre-cusomization marker files courtesty (smoser &amp; maitriyee)</p>
+<p>16:26 <code>&lt;blackboxsw</code>&gt; <em>courtesy</em> rather</p>
+<p>16:26 <code>&lt;smoser</code>&gt; ajorg: you could ping matthew on <a href="https://code.launchpad.net/~yeazelm/cloud-init/+git/cloud-init/+merge/331897">https://code.launchpad.net/~yeazelm/cloud-init/+git/cloud-init/+merge/331897</a></p>
+<p>16:27 <code>&lt;ajorg</code>&gt; yup</p>
+<p>16:27 <code>&lt;blackboxsw</code>&gt; and I know powersj is working on EC2 integration test support for cloud-init</p>
+<p>16:27 <code>&lt;powersj</code>&gt; yep!</p>
+<p>16:27 <code>&lt;powersj</code>&gt; Hoping to have an initial MP up this week</p>
+<p>16:27 <code>&lt;blackboxsw</code>&gt; it's gonna be excellent to automatically test these releases</p>
+<p>16:28 <code>&lt;blackboxsw</code>&gt; powersj: rharper smoser anything else in progress?</p>
+<p>16:28 <code>&lt;rharper</code>&gt; nothing here</p>
+<p>16:28 <code>&lt;ajorg</code>&gt; oh very nice.</p>
+<p>16:28 <code>&lt;dpb1</code>&gt; powersj: \o/</p>
+<p>16:28 <code>&lt;smoser</code>&gt; just the things that are in teh review queue. i put up one this morning for tmp file leakage</p>
+<p>16:28 <code>&lt;smoser</code>&gt; <a href="https://code.launchpad.net/~smoser/cloud-init/+git/cloud-init/+merge/335034">https://code.launchpad.net/~smoser/cloud-init/+git/cloud-init/+merge/335034</a></p>
+<p>16:29 <code>&lt;smoser</code>&gt; i think the yeazelm mp probably is just missing somethign simple bug haven't spent any time on it.</p>
+<p>16:29 <code>&lt;blackboxsw</code>&gt; ahh also we landed the initial /run/cloud-init/instance-data.json which we had talked about with larsks. It captures all metadata and userdata and some standardized properties which could help people script instance data.</p>
+<p>16:29 <code>&lt;smoser</code>&gt; yeah, that is neat.</p>
+<p>16:30 <code>&lt;blackboxsw</code>&gt; Yeah, we have yet to write up docs on using it (and we have an inprogress branch to allow using jinja templates in #cloud-config modules). But I don't expect this to land by 17.2</p>
+<p>16:31 <code>&lt;ajorg</code>&gt; did we? that's great!</p>
+<p>16:32 <code>&lt;blackboxsw</code>&gt; yeah only basic standardized properties currently.  +            'local-hostname': self.get_hostname(),</p>
+<p>16:32 <code>&lt;blackboxsw</code>&gt; 592   +            'instance-id': self.get_instance_id(),</p>
+<p>16:32 <code>&lt;blackboxsw</code>&gt; 593   +            'cloud-name': self.cloud_name,</p>
+<p>16:32 <code>&lt;blackboxsw</code>&gt; 594   +            'region': self.region,</p>
+<p>16:32 <code>&lt;blackboxsw</code>&gt; 595   +            'availability-zone': self.availability_zone}}</p>
+<p>16:32 <code>&lt;robjo</code>&gt; is that basically a re-implementation of python-ec2metadata? <a href="https://github.com/SUSE/Enceladus/tree/master/ec2utils/ec2metadata">https://github.com/SUSE/Enceladus/tree/master/ec2utils/ec2metadata</a></p>
+<p>16:32 <code>&lt;blackboxsw</code>&gt; but it's a first pass. We expect to add more</p>
+<p>16:33 <code>&lt;blackboxsw</code>&gt; robjo: kindof, though generalized for all datasources</p>
+<p>16:34 <code>&lt;rharper</code>&gt; robjo: long term, it's expected to be more than just ec2; rather a common baseline of instance metadata independent the actual cloud, but , IIRC, having a cloud-specific area (or at least access to the raw data)</p>
+<p>16:34 <code>&lt;blackboxsw</code>&gt; it leaves a json-foramatted file containing any vendor data and user-data plus generalized/standardized fields extracted from that content which can be expected on all clouds</p>
+<p>16:35 <code>&lt;robjo</code>&gt; problem with "all" clouds is that Azure is very different</p>
+<p>16:35 <code>&lt;blackboxsw</code>&gt; since each datasource has that data already, it's essentially just formating it in a consumable file that others could levereage</p>
+<p>16:35 <code>&lt;robjo</code>&gt; although one can argue that a "name" is an id it still looks weird when 'instance-id' and is a name</p>
+<p>16:36 <code>&lt;blackboxsw</code>&gt; agreed robjo, some datasources may not provide different/less  content.</p>
+<p>16:36 <code>&lt;smoser</code>&gt; ajorg: <a href="http://paste.ubuntu.com/26164503/">http://paste.ubuntu.com/26164503/</a></p>
+<p>16:36 <code>&lt;ajorg</code>&gt; Is that one of the Azure differences? name vs. instance-id?</p>
+<p>16:36 <code>&lt;smoser</code>&gt; thats a demo of instance-data.json</p>
+<p>16:36 <code>&lt;robjo</code>&gt; yes, azure has names no numbers</p>
+<p>16:37 <code>&lt;robjo</code>&gt; it's more about "user expectations" as a "name" is an "identifier"</p>
+<p>16:37 <code>&lt;blackboxsw</code>&gt; I'll check that azure run now. I think I linked it to the branch originally</p>
+<p>16:37 <code>&lt;blackboxsw</code>&gt; ok I think it's probably a good to transition to open office hours now for the next 30 mins</p>
+<p>16:38 <code>&lt;smoser</code>&gt; what is 'name' versus 'instance-id' comment ?</p>
+<p>16:38 <code>&lt;smoser</code>&gt; ajorg: ?</p>
+<p>16:38 <code>&lt;blackboxsw</code>&gt; #topic Office Hours (for next 30 mins)</p>
+<p>16:38 <code>&lt;blackboxsw</code>&gt; feel free to continue the discussion now</p>
+<p>16:38 <code>&lt;robjo</code>&gt; I'd just caution of making the assumption that we can stick the information from that data sources straight into another format and then call it "generic instance information"</p>
+<p>16:38 <code>&lt;ajorg</code>&gt; smoser: re robjo's comment about "Azure is very different"</p>
+<p>16:39 <code>&lt;smoser</code>&gt; oh. yes. ok.</p>
+<p>16:39 <code>&lt;blackboxsw</code>&gt; azure instance-data</p>
+<p>16:39 <code>&lt;blackboxsw</code>&gt; #link <a href="http://pastebin.ubuntu.com/26075842/">http://pastebin.ubuntu.com/26075842/</a></p>
+<p>16:39 <code>&lt;dpb1</code>&gt; smoser: standup</p>
+<p>16:39 <code>&lt;smoser</code>&gt; yeah, they do have a 'id'</p>
+<p>16:40 <code>&lt;blackboxsw</code>&gt; #link <a href="http://paste.ubuntu.com/26164503/">http://paste.ubuntu.com/26164503/</a></p>
+<p>16:40 <code>&lt;ajorg</code>&gt; from DMI?</p>
+<p>16:40 <code>&lt;robjo</code>&gt; Which is useless in any any command</p>
+<p>16:40 <code>&lt;smoser</code>&gt; from the cd i think.</p>
+<p>16:41 <code>&lt;ajorg</code>&gt; robjo: ah, so the ID is unique (is it?) but can't be used to call any Azure APIs?</p>
+<p>16:41 <code>&lt;robjo</code>&gt; in EC2 the instance-id is useful to me if I want to run "aws" commands, but the instance ID shown in the pastebin is useless for any "az" command</p>
+<p>16:41 <code>&lt;robjo</code>&gt; ajorg: correct</p>
+<p>16:41 <code>&lt;robjo</code>&gt; in the "az" tools everything is a name</p>
+<p>16:42 <code>&lt;robjo</code>&gt; and thus to make the data cloud-init produces useful the -id should be the name of the VM</p>
+<p>16:42 <code>&lt;robjo</code>&gt; then I can parse that information and use it if I need to deal with the API</p>
+<p>16:43 <code>&lt;smoser</code>&gt; hm.</p>
+<p>16:43 <code>&lt;robjo</code>&gt; but providing that ID as its is basically just sticking information into the json to "fill a field" which is somewhat counter to the point I'd say</p>
+<p>16:43 <code>&lt;ajorg</code>&gt; robjo: there's a uniqueness constraint on the name too? but per-account or at-a-time or what?</p>
+<p>16:43 <code>&lt;smoser</code>&gt; i odnt knwo. although it is insteresting thought.</p>
+<p>16:43 <code>&lt;smoser</code>&gt; the issue is 'instance-id' is supposed to be an instance id</p>
+<p>16:43 <code>&lt;smoser</code>&gt; not a user provided name that can be provided mutliple times in a row.</p>
+<p>16:44 <code>&lt;smoser</code>&gt; i realize name is per-group unique, but if i</p>
+<p>16:44 <code>&lt;smoser</code>&gt; a.) launch</p>
+<p>16:44 <code>&lt;smoser</code>&gt; a.) launch 'foobar'</p>
+<p>16:44 <code>&lt;robjo</code>&gt; There is a uniqueness constraint in that one cannot run a VM with the same "name" in the same resource group</p>
+<p>16:44 <code>&lt;ajorg</code>&gt; so the question is if that ID provides global uniqueness, or if it provides a reference to the instance to be used via APIs</p>
+<p>16:44 <code>&lt;smoser</code>&gt; b.) create capture</p>
+<p>16:44 <code>&lt;smoser</code>&gt; c.) delete foobar</p>
+<p>16:44 <code>&lt;smoser</code>&gt; d.) launch foobar</p>
+<p>16:44 <code>&lt;smoser</code>&gt; then 'd' wont look new</p>
+<p>16:45 <code>&lt;robjo</code>&gt; yes, it will it just takes a long time in Azure until the backend reaches "eventual" consistency and knows "foorbar" has been deleted previously</p>
+<p>16:45 <code>&lt;ajorg</code>&gt; It seems clear enough that cloud-init is looking for a unique ID</p>
+<p>16:45 <code>&lt;ajorg</code>&gt; But a user might want either, and probably an ID for API use.</p>
+<p>16:47 <code>&lt;robjo</code>&gt; Well if we provide a format of the data that is exposed to the user via documentation and expected to be used by the user than at that point, IMHO, user needs have higher priority than what cloud-init is looking for</p>
+<p>16:47 <code>&lt;ajorg</code>&gt; To decide which APIs to use, a script has to first look at which cloud it's on, so it has a chance to decide which value to use.</p>
+<p>16:47 <code>&lt;robjo</code>&gt; that cloud-init uses the id to make decisions about "pre-once", "per-always" is a different topic</p>
+<p>16:49 <code>&lt;robjo</code>&gt; Well that then kind of defeats the "generic instance information" claim, IMHO</p>
+<p>16:49 <code>&lt;robjo</code>&gt; you are basically saying 1.) look for the framework and then decide if on that framework the "generic instance information" is useful or not</p>
+<p>16:50 <code>&lt;robjo</code>&gt; 2.) If you happen to be on a platform where the "generic instance information" is not useful, go and collect your own</p>
+<p>16:50 <code>&lt;robjo</code>&gt; From a user perspective that is not very nice, IMHO</p>
+<p>16:51 <code>&lt;ajorg</code>&gt; oh, I was presuming we'd also include the Azure name, not that we'd include only a useless instance-id in that case.</p>
+<p>16:51 <code>&lt;ajorg</code>&gt; clouds that don't have a name, wouldn't include a value for it.</p>
+<p>16:52 <code>&lt;robjo</code>&gt; the pastebin only has the ID</p>
+<p>16:52 <code>&lt;ajorg</code>&gt; right, I'm saying we should add the name</p>
+<p>16:53 <code>&lt;robjo</code>&gt; This is why I am pointing out that "generic instance information" is not necessarily so easy to come by</p>
+<p>16:54 <code>&lt;blackboxsw</code>&gt; robjo: ultimately, I'd like the generalized content surfaced in instance-data.json to be something that external user's could get value from and script against. This first pass was a stripped down approach to some of that content.</p>
+<p>16:54 <code>&lt;smoser</code>&gt; we could add 'name' and have it be none yes.</p>
+<p>16:55 <code>&lt;smoser</code>&gt; the not-yet-written doc will state that consumers should not be confused by new field names.</p>
+<p>16:55 <code>&lt;blackboxsw</code>&gt; There are some fixes that need to be proposed to all datasources to better standardize on things like  public vs private addresses, external hostnames etc. Those I expect will come in subsequent passes.</p>
+<p>16:55 <code>&lt;robjo</code>&gt; it might be worth considering the concept of "equivalent instance information" where the entries in the json files get names/keys that are generic across all cloud frameworks and provide the euivalent information/usefulness to the user</p>
+<p>16:55 <code>&lt;smoser</code>&gt; but inside the 'v1', then content of a key will not change.</p>
+<p>16:55 <code>&lt;ajorg</code>&gt; robjo: that's a fair point, imho</p>
+<p>16:55 <code>&lt;smoser</code>&gt; but 'instance-id' is in fact 'instance-id'.  not 'name'.</p>
+<p>16:55 <code>&lt;blackboxsw</code>&gt; robjo: I think that is the intent of those 'v1' standardized fields.</p>
+<p>16:56 <code>&lt;smoser</code>&gt; note that lxd shares the same generic problem in this regard as azure. it uses user-provided name for instance-id. but does not provide an actual instance id of any sort.</p>
+<p>16:56 <code>&lt;blackboxsw</code>&gt; right per name/instance-id discussion, they feel separate, and I think there is value in adding a separate 'name' as smoser mentioned</p>
+<p>16:58 <code>&lt;robjo</code>&gt; Lets look at it from an API perspective, if I were to use the .json file wouldn't it be nice if I could just say  json.load().get{'instance_api_id')</p>
+<p>16:58 <code>&lt;robjo</code>&gt; for EC2 that returns the instance-id, for Azure it gives me the name</p>
+<p>16:59 <code>&lt;robjo</code>&gt; part of the idea of cloud-init is to keep the ugly details of the cloud framework away from the user</p>
+<p>16:59 <code>&lt;ajorg</code>&gt; if we were talking about the value of "region" we'd certainly want to yield the value that's useful for API calls.</p>
+<p>17:00 <code>&lt;robjo</code>&gt; so why would the .json data then retrieve from that idea and make the user know if I am in EC2 I need to use instance-id and if I am in Azure I need to use instance-name?</p>
+<p>17:01 <code>&lt;robjo</code>&gt; ajorg: agreed</p>
+<p>17:01 <code>&lt;smoser</code>&gt; it seems somewhat non-sense that azure gives an instance a unique id, but cannot take that in as an identifier to the instance.</p>
+<p>17:02 <code>&lt;robjo</code>&gt; AWS, GCE, and Azure all have the concept of "region" , not certain how IBM is handling that part in their setup but that may not be of interest to us at this point</p>
+<p>17:02 <code>&lt;smoser</code>&gt; your point is good though. but instance-id i really think needs to be a unique identifier (as much as possible) for this <em>instance</em></p>
+<p>17:02 <code>&lt;ajorg</code>&gt; It sounded like smoser's 'v1' comment was meant to imply we could have a 'v2' that yields data differently than 'v1'.</p>
+<p>17:02 <code>&lt;smoser</code>&gt; softlayer has "datacenters"</p>
+<p>17:03 <code>&lt;robjo</code>&gt; smoser: I agree, but that's the way it is</p>
+<p>17:03 <code>&lt;smoser</code>&gt; at some point, ajorg we will of course realize that we're all idiots</p>
+<p>17:03 <code>&lt;smoser</code>&gt; and wonder What were we thinking!</p>
+<p>17:03 <code>&lt;smoser</code>&gt; and have a 'v2'</p>
+<p>17:04 <code>&lt;blackboxsw</code>&gt; `&lt;-- it takes some of us longer than others to realize that</p>
+<p>17:05 <code>&lt;ajorg</code>&gt; smoser: you're not convinced that today is that day?</p>
+<p>17:05 <code>&lt;smoser</code>&gt; i try to keep acknowledgement of that fact to be more than a few days later</p>
+<p>17:06 <code>&lt;ajorg</code>&gt; good to let it sink in first :-)</p>
+<p>17:06 <code>&lt;smoser</code>&gt; (compared to when i notice it, to allow for additional occurences)</p>
+<p>17:06 <code>&lt;ajorg</code>&gt; I'm not going to say it has to be changed, but I do think at the very least the azure name should be available.</p>
+<p>17:07 <code>&lt;blackboxsw</code>&gt; I think this discussion definitely sheds light on the fact that we should continue to bring these standardized instance-data discussions to this meeting for a quick feedback loop from you guys as it evolves :)</p>
+<p>17:07 <code>&lt;ajorg</code>&gt; :)</p>
+<p>17:08 <code>&lt;blackboxsw</code>&gt; #action blackboxsw bring up any updates in instance-data.json fields for discussion about common use-cases/patterns</p>
+<p>17:08 * meetingology blackboxsw bring up any updates in instance-data.json fields for discussion about common use-cases/patterns</p>
+<p>17:08 <code>&lt;ajorg</code>&gt; and it doesn't seem harmful to have the name only if the cloud provides one, just as if the cloud doesn't have a concept of an availability zone we'll skip that too.</p>
+<p>17:09 <code>&lt;blackboxsw</code>&gt; +1</p>
+<p>17:10 <code>&lt;blackboxsw</code>&gt; well i think this about wraps up our meeting for today</p>
+<p>17:10 <code>&lt;blackboxsw</code>&gt; any other topics for today?</p>
+<p>17:11 <code>&lt;ajorg</code>&gt; I pinged Matt Yeazel, but he didn't respond yet.</p>
+<p>17:11 <code>&lt;smoser</code>&gt; i think 'api-id' would lmake sense as a name.</p>
+<p>17:11 <code>&lt;ajorg</code>&gt; so nothing more from my end</p>
+<p>17:11 <code>&lt;ajorg</code>&gt; smoser: or 'api-instance-id'</p>
+<p>17:12 <code>&lt;smoser</code>&gt; that just seems confusing.</p>
+<p>17:12 <code>&lt;smoser</code>&gt; hm..</p>
+<p>17:12 <code>&lt;smoser</code>&gt; i see why you want the 'instance' portion there, but the thing i dont like is that implies that this is 'per instance'</p>
+<p>17:12 <code>&lt;ajorg</code>&gt; well, it's an API instance identifier.</p>
+<p>17:13 <code>&lt;smoser</code>&gt; which in fact it is not.</p>
+<p>17:13 <code>&lt;smoser</code>&gt; hm.</p>
+<p>17:13 <code>&lt;ajorg</code>&gt; Ah, okay, that's true, but if the cloud doesn't have a unique way to identify the instance to the API...</p>
+<p>17:13 <code>&lt;smoser</code>&gt; yeah</p>
+<p>17:14 <code>&lt;ajorg</code>&gt; someone should check that assumption... how do you refer to terminated instances? or how are they identified in logs?</p>
+<p>17:16 <code>&lt;ajorg</code>&gt; smoser: I just worry that someone's going to say "but in my API an API ID is this other thing"</p>
+<p>17:17 <code>&lt;blackboxsw</code>&gt; yeah before surfacing something like that we'd need to vet it</p>
+<p>17:17 <code>&lt;ajorg</code>&gt; In general I think there are enough differences between clouds that it's probably a losing battle to try to come up with something that's one-size-fits-all.</p>
+<p>17:17 <code>&lt;ajorg</code>&gt; The goal was to make the information available more readily than by calling out to metadata services, right?</p>
+<p>17:18 <code>&lt;ajorg</code>&gt; It's much harder to implement meta-data pulling for every cloud than to implement some logic that pulls the right value out of a JSON object, so it's still a big improvement even if it can't provide a unified view.</p>
+<p>17:21 <code>&lt;ajorg</code>&gt; anywho, I should go do other things.</p>
+<p>17:21 <code>&lt;blackboxsw</code>&gt; ajorg: yes that is the primary goal:  more easily access cloud-provided metadata</p>
+<p>17:21 <code>&lt;blackboxsw</code>&gt; if there is low-hanging fruit we can standardize I'm +1 on the concept</p>
+<p>17:22 <code>&lt;blackboxsw</code>&gt; that's where the standard 'v1' key came from</p>
+<p>17:22 <code>&lt;blackboxsw</code>&gt; but yeah I also don't think cloud-init needs to boil the ocean and standardize all fields</p>
+<p>17:22 <code>&lt;blackboxsw</code>&gt; we'll capture what low-hanging fruit we can</p>
+<p>17:22 <code>&lt;blackboxsw</code>&gt; and it'll take time</p>
+<p>17:22 <code>&lt;blackboxsw</code>&gt; ok. Thanks for the great discusssions/suggestions ajorg and robjo. keep 'em coming</p>
+<p>17:22 <code>&lt;blackboxsw</code>&gt; think I'll end meeting now</p>
+<p>17:22 <code>&lt;blackboxsw</code>&gt; until next time...</p>
+<p>17:22 <code>&lt;blackboxsw</code>&gt; #endmeeting</p>
+<p>Generated by MeetBot 0.1.5 (<a href="http://wiki.ubuntu.com/meetingology">http://wiki.ubuntu.com/meetingology</a>)</p>
+  </div>
+  <div class="tag-cloud">
+    <p>
+    </p>
+  </div>
+
+
+
+    <div class="addthis_relatedposts_inline">
+
+
+</article>
+
+    <footer>
+<p>&copy;  </p>
+<p>Powered by <a href="http://getpelican.com" target="_blank">Pelican</a> - <a href="https://github.com/alexandrevicenzi/flex" target="_blank">Flex</a> theme by <a href="http://alexandrevicenzi.com" target="_blank">Alexandre Vicenzi</a></p>    </footer>
+  </main>
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " Cloud-init Info ",
+  "url" : "https://cloud-init.github.io",
+  "image": "/images/cloud-init-orange.svg",
+  "description": "Cloud-init project updates and general information"
+}
+</script>
+
+</body>
+</html>
