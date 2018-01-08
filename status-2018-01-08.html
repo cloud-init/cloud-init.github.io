@@ -1,0 +1,382 @@
+
+<!DOCTYPE html>
+<html lang="english">
+<head>
+  <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" type="text/css" href="https://cloud-init.github.io/theme/stylesheet/style.min.css">
+
+  <link rel="stylesheet" type="text/css" href="https://cloud-init.github.io/theme/pygments/github.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cloud-init.github.io/theme/font-awesome/css/font-awesome.min.css">
+
+
+    <link href="https://cloud-init.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Cloud-init Info Atom">
+
+
+    <link rel="shortcut icon" href="/theme/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/theme/img/favicon.ico" type="image/x-icon">
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-50554247-3', 'auto');
+  ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#2c001e">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#2c001e">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Microsoft EDGE -->
+    <meta name="msapplication-TileColor" content="#2c001e">
+
+<meta name="author" content="chad.smith@canonical.com" />
+<meta name="description" content="Meeting information #cloud-init: Cloud-inin bi-weekly status meeting, 08 Jan at 16:03 — 17:15 UTC Full logs at [[http://ubottu.com/meetingology/logs/cloud-init/2018/cloud-init.2018-01-08-16.03.log.html]] Meeting summary Recent changes The discussion about &#34;Recent changes&#34; started at 16:04. LINK: https://trello.com/b/hFtWKUn3/daily-cloud-init-curtin …" />
+<meta name="keywords" content="">
+
+<meta property="og:site_name" content="Cloud-init Info"/>
+<meta property="og:title" content="Cloud-init bi-weekly status"/>
+<meta property="og:description" content="Meeting information #cloud-init: Cloud-inin bi-weekly status meeting, 08 Jan at 16:03 — 17:15 UTC Full logs at [[http://ubottu.com/meetingology/logs/cloud-init/2018/cloud-init.2018-01-08-16.03.log.html]] Meeting summary Recent changes The discussion about &#34;Recent changes&#34; started at 16:04. LINK: https://trello.com/b/hFtWKUn3/daily-cloud-init-curtin …"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:url" content="https://cloud-init.github.io/status-2018-01-08.html"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2018-01-08 16:03:00+00:00"/>
+<meta property="article:modified_time" content=""/>
+<meta property="article:author" content="https://cloud-init.github.io/author/chadsmithcanonicalcom.html">
+<meta property="article:section" content="status-meeting-minutes"/>
+<meta property="og:image" content="/images/cloud-init-orange.svg">
+
+  <title>Cloud-init Info &ndash; Cloud-init bi-weekly status</title>
+
+</head>
+<body>
+  <aside>
+    <div>
+      <a href="https://cloud-init.github.io">
+        <img src="/images/cloud-init-orange.svg" alt="Cloud-init" title="Cloud-init">
+      </a>
+      <h1><a href="https://cloud-init.github.io">Cloud-init</a></h1>
+
+<p>Make your cloud images be all they can be</p>
+      <nav>
+        <ul class="list">
+
+          <li><a href="https://cloudinit.readthedocs.org/" target="_blank">Docs</a></li>
+          <li><a href="https://cloud-init.io" target="_blank">Overview</a></li>
+          <li><a href="https://cloudinit.readthedocs.io/en/latest/topics/hacking.html" target="_blank">Hacking</a></li>
+          <li><a href="https://jenkins.ubuntu.com/server/view/cloud-init/" target="_blank">CI builds</a></li>
+          <li><a href="https://launchpad.net/cloud-init" target="_blank">Code</a></li>
+        </ul>
+      </nav>
+
+      <ul class="social">
+        <li><a class="sc-github" href="https://github.com/cloud-init" target="_blank"><i class="fa fa-github"></i></a></li>
+        <li><a class="sc-wechat" href="https://webchat.freenode.net/?channels=cloud-init" target="_blank"><i class="fa fa-wechat"></i></a></li>
+      </ul>
+    </div>
+
+
+  </aside>
+  <main>
+
+    <nav>
+      <a href="https://cloud-init.github.io">Home</a>
+
+      <a href="/archives.html">Archives</a>
+      <a href="/categories.html">Categories</a>
+      <a href="/tags.html">Tags</a>
+
+      <a href="https://cloud-init.github.io/feeds/all.atom.xml">Atom</a>
+
+    </nav>
+
+<article class="single">
+  <header>
+      
+    <h1 id="status-2018-01-08">Cloud-init bi-weekly status</h1>
+    <p>
+      Posted on Mon 08 January 2018 in <a href="https://cloud-init.github.io/category/status-meeting-minutes.html">status-meeting-minutes</a>
+
+        &#8226; 11 min read
+    </p>
+  </header>
+
+
+  <div>
+    <h2>Meeting information</h2>
+<ul>
+<li>#cloud-init: Cloud-inin bi-weekly status meeting, 08 Jan at 16:03 &mdash; 17:15 UTC</li>
+<li>Full logs at [[<a href="http://ubottu.com/meetingology/logs/cloud-init/2018/cloud-init.2018-01-08-16.03.log.html">http://ubottu.com/meetingology/logs/cloud-init/2018/cloud-init.2018-01-08-16.03.log.html</a>]]</li>
+</ul>
+<h2>Meeting summary</h2>
+<h3>Recent changes</h3>
+<p>The discussion about "Recent changes" started at 16:04.</p>
+<ul>
+<li><strong>LINK</strong>: <a href="https://trello.com/b/hFtWKUn3/daily-cloud-init-curtin">https://trello.com/b/hFtWKUn3/daily-cloud-init-curtin</a> </li>
+<li><strong>LINK</strong>: <a href="https://cloudinit.readthedocs.io/en/latest/topics/tests.html#ec2">https://cloudinit.readthedocs.io/en/latest/topics/tests.html#ec2</a> </li>
+</ul>
+<h3>In-progress Development</h3>
+<p>The discussion about "In-progress Development" started at 16:22.</p>
+<ul>
+<li><strong>LINK</strong>: <a href="https://trello.com/c/AYaCdQyT">https://trello.com/c/AYaCdQyT</a> </li>
+<li><strong>LINK</strong>: <a href="https://trello.com/c/xyqxyOxg">https://trello.com/c/xyqxyOxg</a> </li>
+<li><strong>LINK</strong>: <a href="https://trello.com/c/AYaCdQyT/21-cloud-init-query-standardized-json-information">https://trello.com/c/AYaCdQyT/21-cloud-init-query-standardized-json-information</a> </li>
+</ul>
+<h3>Office Hours (next 30 minutes)</h3>
+<p>The discussion about "Office Hours (next 30 minutes)" started at 16:46.</p>
+<ul>
+<li><strong>LINK</strong>: <a href="https://code.launchpad.net/~rjschwei/cloud-init/+git/cloud-init/+merge/334992">https://code.launchpad.net/~rjschwei/cloud-init/+git/cloud-init/+merge/334992</a> </li>
+<li><strong>LINK</strong>: <a href="http://jinja.pocoo.org/docs/2.10/api/#policies">http://jinja.pocoo.org/docs/2.10/api/#policies</a> </li>
+</ul>
+<h2>Vote results</h2>
+<h2>Done items</h2>
+<ul>
+<li>(none)</li>
+</ul>
+<h2>People present (lines said)</h2>
+<ul>
+<li>blackboxsw (99)</li>
+<li>ajorg (45)</li>
+<li>smoser (19)</li>
+<li>rharper (9)</li>
+<li>robjo (5)</li>
+<li>powersj (4)</li>
+<li>meetingology (3)</li>
+<li>smoser1 (2)</li>
+<li>ubot5 (1)</li>
+</ul>
+<h2>Full Log</h2>
+<p>16:03 <code>&lt;blackboxsw&gt;</code> #startmeeting Cloud-inin bi-weekly status meeting</p>
+<p>16:03 <code>&lt;meetingology&gt;</code> Meeting started Mon Jan  8 16:03:53 2018 UTC.  The chair is blackboxsw. Information about MeetBot at <a href="http://wiki.ubuntu.com/meetingology.">http://wiki.ubuntu.com/meetingology.</a></p>
+<p>16:03 <code>&lt;meetingology&gt;</code> </p>
+<p>16:03 <code>&lt;meetingology&gt;</code> Available commands: action commands idea info link nick</p>
+<p>16:04 <code>&lt;blackboxsw&gt;</code> Happy  2018 cloud-initers!   Thanks ajorg for helping kick us off.</p>
+<p>16:04 <code>&lt;blackboxsw&gt;</code> Welcome back from break hope the holidays were good for folks.</p>
+<p>16:09 <code>&lt;blackboxsw&gt;</code> #topic Recent changes</p>
+<p>16:04 <code>&lt;blackboxsw&gt;</code> It</p>
+<p>16:05 <code>&lt;blackboxsw&gt;</code> It's been a while since we've held the meeting due to holidays and vacation time. So, not a ton of content to report for the last bit. Digging up those details now</p>
+<p>16:06 <code>&lt;blackboxsw&gt;</code> Testing of 17.2 on EC2, Azure, and GCE and release to Ubuntu Bionic</p>
+<p>16:06 <code>&lt;blackboxsw&gt;</code> Complete 17.1.46 SRU to Ubuntu Xenial, Zesty, and Artful</p>
+<p>16:06 <code>&lt;blackboxsw&gt;</code> Fix documentation around 'init' mode for modules subcommand (LP: #1736600)</p>
+<p>16:06 <code>&lt;blackboxsw&gt;</code> Tooling to merge community authored branches into master</p>
+<p>16:06 <code>&lt;ubot5&gt;</code> Launchpad bug 1736600 in cloud-init "CLI: cloud-init modules -h documents unsupported --mode init" [Low,Fix committed] <a href="https://launchpad.net/bugs/1736600">https://launchpad.net/bugs/1736600</a></p>
+<p>16:07 <code>&lt;blackboxsw&gt;</code> So the canonical side of the team worked a bit on getting the latest SRU updates 17.1.46 into Xenial, Zesty and artful. The testing and verification of that release took a bit of time, but we are getting better(faster)</p>
+<p>16:07 <code>&lt;blackboxsw&gt;</code> I think this last SRU only took us 2 weeks instead of 4 weeks. so that frees up more time on upstream reviews and increasing cloud-init's velocity</p>
+<p>16:07 <code>&lt;ajorg&gt;</code> great</p>
+<p>16:08 <code>&lt;blackboxsw&gt;</code> we also added team tools for streamlining community authored branches. so that we stop slowing folks down :/</p>
+<p>16:08 <code>&lt;blackboxsw&gt;</code> then the only problem is the reviewer :)</p>
+<p>16:10 <code>&lt;blackboxsw&gt;</code> Also 17.2 release was 'cut' prior to Christmas break, this opened master up for more changes to land. so we've pulled in good  fixes for VMWare NoCloud and SLES</p>
+<p>16:11 <code>&lt;blackboxsw&gt;</code> digging up the changests now.</p>
+<p>16:11 <code>&lt;blackboxsw&gt;</code> Also, keep in touch with our active development and the "done" lane on trello. It's out bookkeeper for anything we are working and Done represents anything landed</p>
+<p>16:11 <code>&lt;blackboxsw&gt;</code> #link <a href="https://trello.com/b/hFtWKUn3/daily-cloud-init-curtin">https://trello.com/b/hFtWKUn3/daily-cloud-init-curtin</a></p>
+<p>16:13 <code>&lt;blackboxsw&gt;</code> so high-level content that landed between 17.1.46 and 17.2:</p>
+<p>16:14 <code>&lt;blackboxsw&gt;</code> * CLI added the clean and status subcommands</p>
+<p>16:14 <code>&lt;blackboxsw&gt;</code> * Support for identifying OVF datasource provided by VMware</p>
+<p>16:14 <code>&lt;blackboxsw&gt;</code> * NoCloudKVM tests now run in continuous integration</p>
+<p>16:14 <code>&lt;blackboxsw&gt;</code> * Formalize DataSource get_data and related properties</p>
+<p>16:14 <code>&lt;blackboxsw&gt;</code> * Remove prettytable dependency and introduce simpletable</p>
+<p>16:14 <code>&lt;blackboxsw&gt;</code> * VMWare pre and post-customization script support</p>
+<p>16:15 <code>&lt;blackboxsw&gt;</code> Thanks ajorg I think you were the author of note on simpletable stuff, it's nice to drop dependencies where we can to increase speed of cloud-init</p>
+<p>16:15 <code>&lt;ajorg&gt;</code> it was done selfishly</p>
+<p>16:15 <code>&lt;ajorg&gt;</code> we dislike taking on new dependencies :-)</p>
+<p>16:17 <code>&lt;blackboxsw&gt;</code> and thanks to robjo(suse)  maitree(vmware) too and dojordan and Ryan McCabe(redhat) for recent branches too</p>
+<p>16:17 <code>&lt;blackboxsw&gt;</code> :)</p>
+<p>16:18 <code>&lt;blackboxsw&gt;</code> Post our 17.2 release we've started work on improved integration..... I think we just got powersj's ec2 integration tests landed right johs?</p>
+<p>16:18 <code>&lt;blackboxsw&gt;</code> josh even</p>
+<p>16:18 <code>&lt;powersj&gt;</code> \o/ yep!</p>
+<p>16:18 <code>&lt;ajorg&gt;</code> nice</p>
+<p>16:19 <code>&lt;blackboxsw&gt;</code> sweet, so an extra security blanked for us when we have significant changesets landed in master to ensure ec2 is happy.</p>
+<p>16:19 <code>&lt;blackboxsw&gt;</code> powersj: what are out plans for continuous integration frequency</p>
+<p>16:19 <code>&lt;blackboxsw&gt;</code> with ec2 specifically</p>
+<p>16:19 <code>&lt;ajorg&gt;</code> Can those integration tests be run by others with EC2 accounts?</p>
+<p>16:19 <code>&lt;blackboxsw&gt;</code> ajorg: yes they can</p>
+<p>16:19 <code>&lt;powersj&gt;</code> I am working on the jenkins jobs this week and hope to have a weekly run as well as a manual run for backport testing</p>
+<p>16:19 <code>&lt;blackboxsw&gt;</code> I'll get the cmdline</p>
+<p>16:19 <code>&lt;ajorg&gt;</code> thanks!</p>
+<p>16:20 <code>&lt;blackboxsw&gt;</code> tox -e citests -m tests.cloud_tests run --os-name=artful --platform=ec2 --preserve-data --data-dir=../results --verbose</p>
+<p>16:20 <code>&lt;blackboxsw&gt;</code> or something like that</p>
+<p>16:20 <code>&lt;ajorg&gt;</code> got it</p>
+<p>16:20 <code>&lt;ajorg&gt;</code> thanks!</p>
+<p>16:20 <code>&lt;blackboxsw&gt;</code> powersj: documented it too I think</p>
+<p>16:20 <code>&lt;blackboxsw&gt;</code> getting link</p>
+<p>16:20 <code>&lt;powersj&gt;</code> <a href="https://cloudinit.readthedocs.io/en/latest/topics/tests.html#ec2">https://cloudinit.readthedocs.io/en/latest/topics/tests.html#ec2</a></p>
+<p>16:20 <code>&lt;blackboxsw&gt;</code> #link <a href="https://cloudinit.readthedocs.io/en/latest/topics/tests.html#ec2">https://cloudinit.readthedocs.io/en/latest/topics/tests.html#ec2</a></p>
+<p>16:20 <code>&lt;blackboxsw&gt;</code> :)</p>
+<p>16:21 <code>&lt;blackboxsw&gt;</code> excellent work  Josh</p>
+<p>16:21 <code>&lt;powersj&gt;</code> thanks for all the reviews :)</p>
+<p>16:21 <code>&lt;blackboxsw&gt;</code> anything else I'm missing about landed work?    rharper powersj smoser1 ?</p>
+<p>16:22 <code>&lt;blackboxsw&gt;</code> otherwise next topic</p>
+<p>16:22 <code>&lt;rharper&gt;</code> blackboxsw: nothing from me</p>
+<p>16:22 <code>&lt;blackboxsw&gt;</code> #topic In-progress Development</p>
+<p>16:23 <code>&lt;blackboxsw&gt;</code> So we've got a fairly healthy review queue that we need to get through as we get the year started....</p>
+<p>16:24 <code>&lt;blackboxsw&gt;</code> we also have a few things we are in flight currently:</p>
+<p>16:24 <code>&lt;blackboxsw&gt;</code> - continuous integration improvements per powersj</p>
+<p>16:24 <code>&lt;blackboxsw&gt;</code> - dropping dependence on ifup ifdown utils where possible as that's not supported (or installed in some cases) in systemd world</p>
+<p>16:24 <code>&lt;smoser1&gt;</code> blackboxsw: wow. sorry, missing.</p>
+<p>16:25 <code>&lt;blackboxsw&gt;</code> who is that smoser1 guy anyway</p>
+<p>16:25 <code>&lt;smoser1&gt;</code> yeah, i didnt see anything missing sorry.</p>
+<p>16:25 <code>&lt;smoser&gt;</code> wonder how that happened.</p>
+<p>16:25 <code>&lt;blackboxsw&gt;</code> welcome ;)</p>
+<p>16:25 <code>&lt;blackboxsw&gt;</code> - netplan improvements per rharper and jinja template support for all cloud-config modules</p>
+<p>16:26 <code>&lt;blackboxsw&gt;</code> - and softlayer support per smoser</p>
+<p>16:27 <code>&lt;blackboxsw&gt;</code> know the Azure guys are also posting a couple branches on getting a pre-provisioning setup going for thier datasource which looks pretty exciting</p>
+<p>16:27 <code>&lt;blackboxsw&gt;</code> I can't think of anything else off the top of my head.</p>
+<p>16:28 <code>&lt;robjo&gt;</code> chrony support</p>
+<p>16:28 <code>&lt;ajorg&gt;</code> we're only talking feature work in this topic?</p>
+<p>16:29 <code>&lt;blackboxsw&gt;</code> any in progress development to highlight is fair game. bug work. refactoring, feature etc</p>
+<p>16:29 <code>&lt;blackboxsw&gt;</code> +10 robjo and again thanks for working with us getting all those branches up and (hopefully soon) landed</p>
+<p>16:29 <code>&lt;ajorg&gt;</code> what does "jinja template support for all cloud-config modules" mean?</p>
+<p>16:31 <code>&lt;ajorg&gt;</code> I'd guess most modules don't need templating?</p>
+<p>16:31 <code>&lt;blackboxsw&gt;</code> ajorg: two things. 1. since we have now landed /run/cloud-instance/instance-data.json    to store metadata/userdata it'd be that #cloud-config can  new be specified with ## template:jinja header and could leverage anything jinjia has to offer plus sourcing any of the instance-data.json metadata fields</p>
+<p>16:33 <code>&lt;ajorg&gt;</code> Ah, right. Is that not being done above the module level?</p>
+<p>16:33 <code>&lt;blackboxsw&gt;</code> so if people have repetitive or template-driven content in the runcmd   or write_files portion or their #cloud-config  they'd be able to leverage jinja templates etc</p>
+<p>16:33 <code>&lt;smoser&gt;</code> ajorg: yes, above the module level.</p>
+<p>16:33 <code>&lt;blackboxsw&gt;</code> ajorg: not anywhere in cloud-config currently</p>
+<p>16:33 <code>&lt;blackboxsw&gt;</code> one sec I misunderstood the question</p>
+<p>16:33 <code>&lt;blackboxsw&gt;</code> smoser: can you clarify what you mean?</p>
+<p>16:33 <code>&lt;ajorg&gt;</code> I mean, shouldn't #cloud-config template expansion happen before the module sees the config?</p>
+<p>16:34 <code>&lt;smoser&gt;</code> blackboxsw: we could/should also allow other part types to be rendered</p>
+<p>16:34 <code>&lt;smoser&gt;</code> ttps://trello.com/c/xyqxyOxg</p>
+<p>16:35 <code>&lt;smoser&gt;</code> er... bad url. in 2 ways</p>
+<p>16:35 <code>&lt;ajorg&gt;</code> The the part handler would be the one to do that expansion.</p>
+<p>16:35 <code>&lt;smoser&gt;</code> <a href="https://trello.com/c/AYaCdQyT">https://trello.com/c/AYaCdQyT</a></p>
+<p>16:35 <code>&lt;blackboxsw&gt;</code> ahh ok, right that makes sense. I think the cut I made was limited in focus to cloud-config modules and custom scripts supporting the ## template:jinja header.. but nothing would preclude handling other parts</p>
+<p>16:36 <code>&lt;blackboxsw&gt;</code> so the link to my WIP branch was</p>
+<p>16:36 <code>&lt;blackboxsw&gt;</code> #link <a href="https://trello.com/c/xyqxyOxg">https://trello.com/c/xyqxyOxg</a></p>
+<p>16:36 <code>&lt;blackboxsw&gt;</code> and the general feature per smoser</p>
+<p>16:36 <code>&lt;blackboxsw&gt;</code> #link <a href="https://trello.com/c/AYaCdQyT/21-cloud-init-query-standardized-json-information">https://trello.com/c/AYaCdQyT/21-cloud-init-query-standardized-json-information</a></p>
+<p>16:36 <code>&lt;ajorg&gt;</code> Is there a design doc of some kind of this?</p>
+<p>16:37 <code>&lt;blackboxsw&gt;</code> not yet.. but we probably should have a spec as it'd be a good template for the docs we'll need to write</p>
+<p>16:38 <code>&lt;blackboxsw&gt;</code> scott captured most of the use cases we'd be going for in that last trello link above</p>
+<p>16:38 <code>&lt;ajorg&gt;</code> Small example of where some clarity is needed: if Jinja is interpreting {foo} in a user-script, what will it do when it sees a shell variable ${foo}</p>
+<p>16:38 <code>&lt;ajorg&gt;</code> ?</p>
+<p>16:39 <code>&lt;smoser&gt;</code> you declare that the content is a jinja template</p>
+<p>16:39 <code>&lt;smoser&gt;</code> if you provide it something that is not renderable as a jinja template</p>
+<p>16:39 <code>&lt;smoser&gt;</code> then it will fail</p>
+<p>16:39 <code>&lt;smoser&gt;</code> it requires input to explicitly say "this is jinja". it does not just attempt to render anything.</p>
+<p>16:39 <code>&lt;smoser&gt;</code> (unless explicitly told to)</p>
+<p>16:39 <code>&lt;blackboxsw&gt;</code> some brief working examples are in the description of the branch @ <a href="https://code.launchpad.net/~chad.smith/cloud-init/+git/cloud-init/+merge/334030">https://code.launchpad.net/~chad.smith/cloud-init/+git/cloud-init/+merge/334030</a></p>
+<p>16:40 <code>&lt;ajorg&gt;</code> Sure. But as a content author, I need to know if Jinja is going to try to render ${foo} or not.</p>
+<p>16:40 <code>&lt;smoser&gt;</code> then as a content author you can read jinja docs :)</p>
+<p>16:40 <code>&lt;blackboxsw&gt;</code> jinja would try to render {{ foo }}</p>
+<p>16:40 <code>&lt;ajorg&gt;</code> :-</p>
+<p>16:41 <code>&lt;smoser&gt;</code> ajorg: we'll document a simple case, and we can even document "for shell, you'll have to be aware that ...."</p>
+<p>16:41 <code>&lt;smoser&gt;</code> but we're not going to document all of jinja</p>
+<p>16:41 <code>&lt;ajorg&gt;</code> I see.</p>
+<p>16:42 <code>&lt;ajorg&gt;</code> My understanding was that Jinja was highly customizable in what it interpreted and how, so that it's important to document how you've configured it to work.</p>
+<p>16:42 <code>&lt;blackboxsw&gt;</code> and since to burden is on the #cloud-config or script writer to provide the header        ## template: jinja\n#cloud-config\n         they <em>should</em> understand what they are doing</p>
+<p>16:42 <code>&lt;blackboxsw&gt;</code> we won't implicitly run the #cloud-config through jinja</p>
+<p>16:43 <code>&lt;ajorg&gt;</code> I get that, no problem, what I'm saying is that Jinja is an engine that you configure to do something, not a markup that always does the same thing for everyone.</p>
+<p>16:43 <code>&lt;ajorg&gt;</code> Am I making any sense?</p>
+<p>16:44 <code>&lt;blackboxsw&gt;</code> understood (though I thought it was fairly constrained it it's application and functionality). We'll make sure that the mechanism by which jinja operates is well documented and confined as best we can... for our own sanity we don't want that template engine to be too flexible... too many tough support use cases</p>
+<p>16:45 <code>&lt;blackboxsw&gt;</code> ok anything else for "In progress development"  otherwise we can move to Office hours for 30 mins</p>
+<p>16:46 <code>&lt;blackboxsw&gt;</code> #topic Office Hours (next 30 minutes)</p>
+<p>16:47 <code>&lt;blackboxsw&gt;</code> robjo: you've got quite a few branches of goodness up for us to review. Any prioritization on those branches or just take them as we can?</p>
+<p>16:47 <code>&lt;rharper&gt;</code> I don't think  there are issues w.r.t jinja and shell; they use different variable escape methods, jinja uses {{ variable/expression }}; and it doesn't consume $  AFAIK, ajorg do you know differently ?</p>
+<p>16:48 <code>&lt;blackboxsw&gt;</code> #link <a href="https://code.launchpad.net/~rjschwei/cloud-init/+git/cloud-init/+merge/334992">https://code.launchpad.net/~rjschwei/cloud-init/+git/cloud-init/+merge/334992</a></p>
+<p>16:48 <code>&lt;blackboxsw&gt;</code> I'm guessing is top of the list</p>
+<p>16:48 <code>&lt;ajorg&gt;</code> I saw {instance_id} at <a href="https://trello.com/c/AYaCdQyT/21-cloud-init-query-standardized-json-information">https://trello.com/c/AYaCdQyT/21-cloud-init-query-standardized-json-information</a> so I assumed it was being customized to look for { instead of {{</p>
+<p>16:48 <code>&lt;robjo&gt;</code> blackboxsw: The chrony support should probably be the last as it will take longer over all and more back and forth</p>
+<p>16:48 <code>&lt;ajorg&gt;</code> (for one thing)</p>
+<p>16:49 <code>&lt;ajorg&gt;</code> rharper: also, there's the whole question of the "extends" feature</p>
+<p>16:50 <code>&lt;ajorg&gt;</code> We integrated Jinja into an internal tool a few years back and we spent a very long time making sure the loaders did the right thing.</p>
+<p>16:50 <code>&lt;blackboxsw&gt;</code> ajorg: I thought I read somewhere that you couldn't exend jinja for custom functions. maybe I was mistaken</p>
+<p>16:50 <code>&lt;robjo&gt;</code> I am also not certain that the "re-write everything" on the first go around for chrony is really what we want to do initially</p>
+<p>16:50 <code>&lt;ajorg&gt;</code> blackboxsw: I don't think I'm referring to custom functions</p>
+<p>16:51 <code>&lt;robjo&gt;</code> That's probably where we ant to end up, but I am not certain that a "step function" approach is in order</p>
+<p>16:51 <code>&lt;rharper&gt;</code> ajorg: hrm, I've always seen {{ variable }} or {% expression %};  so maybe blackboxsw can just update the templates;</p>
+<p>16:51 <code>&lt;rharper&gt;</code> the examples in the cards</p>
+<p>16:52 <code>&lt;ajorg&gt;</code> rharper: sure, that would have helped in this case.</p>
+<p>16:52 <code>&lt;robjo&gt;</code> If we do go down the route of the step function I'll need more gudance then in rharper's comments</p>
+<p>16:52 <code>&lt;ajorg&gt;</code> blackboxsw: I was referring to the ability of one template to extend another.</p>
+<p>16:53 <code>&lt;ajorg&gt;</code> blackboxsw: and the question of where does the engine look when it's asked to extend another template. It can be tricky.</p>
+<p>16:54 <code>&lt;blackboxsw&gt;</code> yeah I honestly hadn't gotten past step one of handling the template markup within an existing single template. so this may need a bit of thought/work</p>
+<p>16:55 <code>&lt;ajorg&gt;</code> Personally, I'd be a lot happier with limiting things to Python format() templates, even though it means you can't have loops, but I won't get in the way as long as we're cognizant of the problems we can run into by accepting the full power of an advanced engine like Jinja.</p>
+<p>16:56 <code>&lt;smoser&gt;</code> i'm not opposed to allowing ## template: python-format</p>
+<p>16:56 <code>&lt;ajorg&gt;</code> heh</p>
+<p>16:56 <code>&lt;smoser&gt;</code> honestly.</p>
+<p>16:56 <code>&lt;smoser&gt;</code> you can pick  a differnt name if you dont like that one.</p>
+<p>16:57 <code>&lt;smoser&gt;</code> but we already use jinja, so it makes sense to support jinja</p>
+<p>16:57 * smoser has to run. sorry.</p>
+<p>16:57 <code>&lt;rharper&gt;</code> I do feel that supplying the template means the user is opting in;  and specifically if we've got a good way to provide dry-run based on a instance.json and a script; that certainly can help folks work out the kinks in the template of their choosing</p>
+<p>16:57 <code>&lt;ajorg&gt;</code> I'm really not opposed so much as wary of the extensive power of the thing</p>
+<p>16:58 <code>&lt;rharper&gt;</code> ajorg: that's a fair warning; given you've experience here; help drawing the line is most welcome</p>
+<p>16:58 <code>&lt;ajorg&gt;</code> I'm trying to think of a way to read in /etc/shadow using Jinja, you know?</p>
+<p>16:58 <code>&lt;rharper&gt;</code> well, cloud-init is root anyhow; so, what's the deal with that ?</p>
+<p>16:59 <code>&lt;blackboxsw&gt;</code> ajorg: heh, right though you can read that with your runcmd section in #cloud-config :)</p>
+<p>16:59 <code>&lt;ajorg&gt;</code> If I can come up with a way to do it that doesn't make it look obvious that I'm doing it, and then post that as something others can copy, or use with #include <code>&lt;url&gt;</code> then I win.</p>
+<p>16:59 <code>&lt;rharper&gt;</code> I don't think jinja makes that any more troublesome</p>
+<p>17:00 <code>&lt;rharper&gt;</code> folks already wget | bash with shell they don't understand either</p>
+<p>17:00 <code>&lt;ajorg&gt;</code> I suspect Jijna makes it more opaque.</p>
+<p>17:01 <code>&lt;ajorg&gt;</code> The answer to "what file does Jinja read when I use {% extends foo %}" is a very lengthy "it depends"</p>
+<p>17:02 <code>&lt;ajorg&gt;</code> anyway, I've said my piece</p>
+<p>17:03 * ajorg is a bit of a template naysayer.</p>
+<p>17:05 <code>&lt;blackboxsw&gt;</code> +1, there's one in every group. We'll try to keep that in mind as this feature evolves</p>
+<p>17:05 <code>&lt;blackboxsw&gt;</code> :)</p>
+<p>17:06 <code>&lt;ajorg&gt;</code> nice</p>
+<p>17:06 <code>&lt;ajorg&gt;</code> :-)</p>
+<p>17:06 <code>&lt;blackboxsw&gt;</code> any pet bugs, new features or burning reviews that need mention?</p>
+<p>17:07 <code>&lt;blackboxsw&gt;</code> ajorg: we could do something simple like disable the extends option via policies</p>
+<p>17:07 <code>&lt;blackboxsw&gt;</code> it looks like</p>
+<p>17:08 <code>&lt;blackboxsw&gt;</code> #link <a href="http://jinja.pocoo.org/docs/2.10/api/#policies">http://jinja.pocoo.org/docs/2.10/api/#policies</a></p>
+<p>17:08 <code>&lt;blackboxsw&gt;</code> or maybe I'm misunderstanding the issue   I'll read up more on it</p>
+<p>17:08 <code>&lt;ajorg&gt;</code> thanks</p>
+<p>17:09 <code>&lt;ajorg&gt;</code> It looked like <a href="https://code.launchpad.net/~smoser/cloud-init/+git/cloud-init/+merge/334074">https://code.launchpad.net/~smoser/cloud-init/+git/cloud-init/+merge/334074</a> was blocking <a href="https://code.launchpad.net/~yeazelm/cloud-init/+git/cloud-init/+merge/331897">https://code.launchpad.net/~yeazelm/cloud-init/+git/cloud-init/+merge/331897</a> but shouldn't be anymore.</p>
+<p>17:09 <code>&lt;ajorg&gt;</code> I'll remind Matt to try it again now.</p>
+<p>17:13 <code>&lt;blackboxsw&gt;</code> thanks good dela</p>
+<p>17:13 <code>&lt;blackboxsw&gt;</code> dela</p>
+<p>17:13 <code>&lt;blackboxsw&gt;</code> deal</p>
+<p>17:13 <code>&lt;blackboxsw&gt;</code> geez</p>
+<p>17:14 <code>&lt;blackboxsw&gt;</code> on that note. I think it's time for coffee</p>
+<p>17:14 <code>&lt;blackboxsw&gt;</code> and time to end the meeting</p>
+<p>17:14 <code>&lt;blackboxsw&gt;</code> Happy New Year again folks. Good to be back in the office.</p>
+<p>17:15 <code>&lt;blackboxsw&gt;</code> thanks again for the chat, until next time..</p>
+<p>17:15 <code>&lt;blackboxsw&gt;</code> #endmeeting</p>
+<p>Generated by MeetBot 0.1.5 (<a href="http://wiki.ubuntu.com/meetingology">http://wiki.ubuntu.com/meetingology</a>)</p>
+  </div>
+  <div class="tag-cloud">
+    <p>
+    </p>
+  </div>
+
+
+
+    <div class="addthis_relatedposts_inline">
+
+
+</article>
+
+    <footer>
+<p>&copy;  </p>
+<p>Powered by <a href="http://getpelican.com" target="_blank">Pelican</a> - <a href="https://github.com/alexandrevicenzi/flex" target="_blank">Flex</a> theme by <a href="http://alexandrevicenzi.com" target="_blank">Alexandre Vicenzi</a></p>    </footer>
+  </main>
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " Cloud-init Info ",
+  "url" : "https://cloud-init.github.io",
+  "image": "/images/cloud-init-orange.svg",
+  "description": "Cloud-init project updates and general information"
+}
+</script>
+
+</body>
+</html>
