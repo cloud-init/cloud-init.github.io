@@ -45,13 +45,13 @@ def convert_to_markdown(content):
     replacements = (
         ('<', '`<'),
         ('>', '`>'),
+        (RE_LINK, r'[\1](\1)'),
         ('#', '\#'),
         (RE_H1, r'\1\n----------------\n'),
         (RE_H2, r'### \1\n'),
         ("''LINK:'' ", ' * **LINK**: '),
         ("''ACTION:'' ", ' * **ACTION**: '),
-        (RE_NESTED_LIST, '*'),
-        (RE_LINK, r'[\1](\1)')
+        (RE_NESTED_LIST, '*')
     )
     for orig, replacement in replacements:
         content = re.sub(orig, replacement, content)
