@@ -1,0 +1,335 @@
+
+<!DOCTYPE html>
+<html lang="english">
+<head>
+  <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" type="text/css" href="https://cloud-init.github.io/theme/stylesheet/style.min.css">
+
+  <link rel="stylesheet" type="text/css" href="https://cloud-init.github.io/theme/pygments/github.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cloud-init.github.io/theme/font-awesome/css/font-awesome.min.css">
+
+
+    <link href="https://cloud-init.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Cloud-init Info Atom">
+
+
+    <link rel="shortcut icon" href="/theme/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/theme/img/favicon.ico" type="image/x-icon">
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-50554247-3', 'auto');
+  ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#2c001e">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#2c001e">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Microsoft EDGE -->
+    <meta name="msapplication-TileColor" content="#2c001e">
+
+<meta name="author" content="chad.smith@canonical.com" />
+<meta name="description" content="Meeting information #cloud-init: Cloud-init bi-weekly status meeting, 22 Jan at 16:08 — 17:16 UTC Full logs at [[http://ubottu.com/meetingology/logs/cloud-init/2018/cloud-init.2018-01-22-16.08.log.html]] Meeting summary Recent changes The discussion about &#34;Recent changes&#34; started at 16:10. LINK: https://github.com/boto/botocore/issues …" />
+<meta name="keywords" content="">
+
+<meta property="og:site_name" content="Cloud-init Info"/>
+<meta property="og:title" content="Cloud-init bi-weekly status"/>
+<meta property="og:description" content="Meeting information #cloud-init: Cloud-init bi-weekly status meeting, 22 Jan at 16:08 — 17:16 UTC Full logs at [[http://ubottu.com/meetingology/logs/cloud-init/2018/cloud-init.2018-01-22-16.08.log.html]] Meeting summary Recent changes The discussion about &#34;Recent changes&#34; started at 16:10. LINK: https://github.com/boto/botocore/issues …"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:url" content="https://cloud-init.github.io/status-2018-01-22.html"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2018-01-22 16:08:00+00:00"/>
+<meta property="article:modified_time" content=""/>
+<meta property="article:author" content="https://cloud-init.github.io/author/chadsmithcanonicalcom.html">
+<meta property="article:section" content="status-meeting-minutes"/>
+<meta property="og:image" content="/images/cloud-init-orange.svg">
+
+  <title>Cloud-init Info &ndash; Cloud-init bi-weekly status</title>
+
+</head>
+<body>
+  <aside>
+    <div>
+      <a href="https://cloud-init.github.io">
+        <img src="/images/cloud-init-orange.svg" alt="Cloud-init" title="Cloud-init">
+      </a>
+      <h1><a href="https://cloud-init.github.io">Cloud-init</a></h1>
+
+<p>Make your cloud images be all they can be</p>
+      <nav>
+        <ul class="list">
+
+          <li><a href="https://cloudinit.readthedocs.org/" target="_blank">Docs</a></li>
+          <li><a href="https://cloud-init.io" target="_blank">Overview</a></li>
+          <li><a href="https://cloudinit.readthedocs.io/en/latest/topics/hacking.html" target="_blank">Hacking</a></li>
+          <li><a href="https://jenkins.ubuntu.com/server/view/cloud-init/" target="_blank">CI builds</a></li>
+          <li><a href="https://launchpad.net/cloud-init" target="_blank">Code</a></li>
+        </ul>
+      </nav>
+
+      <ul class="social">
+        <li><a class="sc-github" href="https://github.com/cloud-init" target="_blank"><i class="fa fa-github"></i></a></li>
+        <li><a class="sc-wechat" href="https://webchat.freenode.net/?channels=cloud-init" target="_blank"><i class="fa fa-wechat"></i></a></li>
+      </ul>
+    </div>
+
+
+  </aside>
+  <main>
+
+    <nav>
+      <a href="https://cloud-init.github.io">Home</a>
+
+      <a href="/archives.html">Archives</a>
+      <a href="/categories.html">Categories</a>
+      <a href="/tags.html">Tags</a>
+
+      <a href="https://cloud-init.github.io/feeds/all.atom.xml">Atom</a>
+
+    </nav>
+
+<article class="single">
+  <header>
+      
+    <h1 id="status-2018-01-22">Cloud-init bi-weekly status</h1>
+    <p>
+      Posted on Mon 22 January 2018 in <a href="https://cloud-init.github.io/category/status-meeting-minutes.html">status-meeting-minutes</a>
+
+        &#8226; 8 min read
+    </p>
+  </header>
+
+
+  <div>
+    <h2>Meeting information</h2>
+<ul>
+<li>#cloud-init: Cloud-init bi-weekly status meeting, 22 Jan at 16:08 &mdash; 17:16 UTC</li>
+<li>Full logs at [[<a href="http://ubottu.com/meetingology/logs/cloud-init/2018/cloud-init.2018-01-22-16.08.log.html">http://ubottu.com/meetingology/logs/cloud-init/2018/cloud-init.2018-01-22-16.08.log.html</a>]]</li>
+</ul>
+<h2>Meeting summary</h2>
+<h3>Recent changes</h3>
+<p>The discussion about "Recent changes" started at 16:10.</p>
+<ul>
+<li><strong>LINK</strong>: <a href="https://github.com/boto/botocore/issues/1351">https://github.com/boto/botocore/issues/1351</a> </li>
+<li><strong>LINK</strong>: <a href="https://trello.com/b/hFtWKUn3/daily-cloud-init-curtin">https://trello.com/b/hFtWKUn3/daily-cloud-init-curtin</a> </li>
+</ul>
+<h3>In-progress Development</h3>
+<p>The discussion about "In-progress Development" started at 16:24.</p>
+<ul>
+<li><strong>LINK</strong>: <a href="https://code.launchpad.net/~dojordan/cloud-init/+git/cloud-init/+merge/334341">https://code.launchpad.net/~dojordan/cloud-init/+git/cloud-init/+merge/334341</a> </li>
+<li><strong>LINK</strong>: <a href="https://jenkins.ubuntu.com/server/view/cloud-init/job/cloud-init-ci-nightly/">https://jenkins.ubuntu.com/server/view/cloud-init/job/cloud-init-ci-nightly/</a> </li>
+</ul>
+<h3>Office Hours (next 30 minutes)</h3>
+<p>The discussion about "Office Hours (next 30 minutes)" started at 16:45.</p>
+<ul>
+<li><strong>LINK</strong>: <a href="http://paste.ubuntu.com/26438334/">http://paste.ubuntu.com/26438334/</a> </li>
+<li><strong>LINK</strong>: <a href="http://paste.ubuntu.com/26438334/">http://paste.ubuntu.com/26438334/</a> </li>
+</ul>
+<h2>Vote results</h2>
+<h2>Done items</h2>
+<ul>
+<li>(none)</li>
+</ul>
+<h2>People present (lines said)</h2>
+<ul>
+<li>blackboxsw (83)</li>
+<li>smoser (23)</li>
+<li>ajorg (16)</li>
+<li>powersj (10)</li>
+<li>ubot5 (6)</li>
+<li>meetingology (3)</li>
+<li>rharper (1)</li>
+</ul>
+<h2>Full Log</h2>
+<p>16:08 <code>&lt;blackboxsw&gt;</code> #startmeeting Cloud-init bi-weekly status meeting</p>
+<p>16:08 <code>&lt;meetingology&gt;</code> Meeting started Mon Jan 22 16:08:22 2018 UTC.  The chair is blackboxsw. Information about MeetBot at <a href="http://wiki.ubuntu.com/meetingology.">http://wiki.ubuntu.com/meetingology.</a></p>
+<p>16:08 <code>&lt;meetingology&gt;</code> </p>
+<p>16:08 <code>&lt;meetingology&gt;</code> Available commands: action commands idea info link nick</p>
+<p>16:08 <code>&lt;blackboxsw&gt;</code> certianly ajorg :) (on office hours)</p>
+<p>16:09 <code>&lt;blackboxsw&gt;</code> Welcome to another episode of cloud-init bi-weekly status. We'll chat about about cloud-init updates and in progress work, and we'l drop into office hours for ongoing discussions/bug work etc.</p>
+<p>16:10 <code>&lt;blackboxsw&gt;</code> #topic Recent changes</p>
+<p>16:11 <code>&lt;blackboxsw&gt;</code> Just walking through git-log for what we have committed in the last couple of weeks, here's the brief summary</p>
+<p>16:12 <code>&lt;blackboxsw&gt;</code> thx smoser</p>
+<p>16:12 <code>&lt;blackboxsw&gt;</code> - shorten the message in the exception per powersj feedback</p>
+<p>16:12 <code>&lt;blackboxsw&gt;</code> - Use the same botocore session so the patched changes stick.</p>
+<p>16:12 <code>&lt;blackboxsw&gt;</code> - fix bad use of %</p>
+<p>16:12 <code>&lt;blackboxsw&gt;</code> - Fix console_log, improve comments and raise PlatformError on.</p>
+<p>16:12 <code>&lt;blackboxsw&gt;</code> - tests: Fix EC2 Platform to return console output as bytes.</p>
+<p>16:12 <code>&lt;blackboxsw&gt;</code> - tests: remove zesty as supported OS to test [Joshua Powers]</p>
+<p>16:12 <code>&lt;blackboxsw&gt;</code> - Do not log warning on config files that represent None. (LP: #1742479)</p>
+<p>16:12 <code>&lt;ubot5&gt;</code> Launchpad bug 1742479 in cloud-init (Ubuntu) "setting manual_cache_clean causes warning" [Medium,Fix released] <a href="https://launchpad.net/bugs/1742479">https://launchpad.net/bugs/1742479</a></p>
+<p>16:12 <code>&lt;blackboxsw&gt;</code> - tests: Use git hash pip dependency format for pylxd.</p>
+<p>16:12 <code>&lt;blackboxsw&gt;</code> - tests: add integration requirements text file [Joshua Powers]</p>
+<p>16:12 <code>&lt;blackboxsw&gt;</code> - MAAS: add check_instance_id based off oauth tokens. (LP: #1712680)</p>
+<p>16:12 <code>&lt;blackboxsw&gt;</code> - tests: update apt sources list test [Joshua Powers]</p>
+<p>16:12 <code>&lt;blackboxsw&gt;</code> - tests: clean up image properties [Joshua Powers]</p>
+<p>16:12 <code>&lt;blackboxsw&gt;</code> - tests: rename test ssh keys to avoid appearance of leaking private keys.</p>
+<p>16:12 <code>&lt;ubot5&gt;</code> Launchpad bug 1712680 in maas-images "cloud-init re-generates network config every reboot overwriting manual admin changes on CentOS." [Undecided,New] <a href="https://launchpad.net/bugs/1712680">https://launchpad.net/bugs/1712680</a></p>
+<p>16:12 <code>&lt;blackboxsw&gt;</code> [Joshua Powers]</p>
+<p>16:12 <code>&lt;blackboxsw&gt;</code> - tests: Enable AWS EC2 Integration Testing [Joshua Powers]</p>
+<p>16:12 <code>&lt;blackboxsw&gt;</code> - cli: cloud-init clean handles symlinks (LP: #1741093)</p>
+<p>16:12 <code>&lt;ubot5&gt;</code> Launchpad bug 1741093 in cloud-init "cloud-init clean traceback on instance dir symlink" [Low,Fix committed] <a href="https://launchpad.net/bugs/1741093">https://launchpad.net/bugs/1741093</a></p>
+<p>16:13 <code>&lt;ajorg&gt;</code> What's being patched in botocore?</p>
+<p>16:13 <code>&lt;blackboxsw&gt;</code> So a number of changes went into integration test related work, separating out requirements files.</p>
+<p>16:14 <code>&lt;blackboxsw&gt;</code> MAASDatasource now also has smarted cache handling based on oauth token renewal from the maas server</p>
+<p>16:14 <code>&lt;blackboxsw&gt;</code> so botocore is used by integration tests only as a mechanism to talk to the instance under test... looking back at the specifics here</p>
+<p>16:14 <code>&lt;blackboxsw&gt;</code> it might have just been shuffling out how and where we define the dependency</p>
+<p>16:14 <code>&lt;smoser&gt;</code> blackboxsw: (my 'paste' to you was bad... <a href="http://paste.ubuntu.com/26438113/">http://paste.ubuntu.com/26438113/</a> is better, showing only those on master, not my local branch that was currently checked out )</p>
+<p>16:15 <code>&lt;blackboxsw&gt;</code> heh, oopsie daisy let's paste again inline then</p>
+<p>16:15 <code>&lt;blackboxsw&gt;</code> - tests: remove zesty as supported OS to test [Joshua Powers]</p>
+<p>16:15 <code>&lt;blackboxsw&gt;</code> - Do not log warning on config files that represent None. (LP: #1742479)</p>
+<p>16:15 <code>&lt;blackboxsw&gt;</code> - tests: Use git hash pip dependency format for pylxd.</p>
+<p>16:15 <code>&lt;blackboxsw&gt;</code> - tests: add integration requirements text file [Joshua Powers]</p>
+<p>16:15 <code>&lt;blackboxsw&gt;</code> - MAAS: add check_instance_id based off oauth tokens. (LP: #1712680)</p>
+<p>16:15 <code>&lt;blackboxsw&gt;</code> - tests: update apt sources list test [Joshua Powers]</p>
+<p>16:15 <code>&lt;blackboxsw&gt;</code> - tests: clean up image properties [Joshua Powers]</p>
+<p>16:15 <code>&lt;blackboxsw&gt;</code> - tests: rename test ssh keys to avoid appearance of leaking private keys.</p>
+<p>16:15 <code>&lt;blackboxsw&gt;</code> [Joshua Powers]</p>
+<p>16:15 <code>&lt;blackboxsw&gt;</code> - tests: Enable AWS EC2 Integration Testing [Joshua Powers]</p>
+<p>16:15 <code>&lt;blackboxsw&gt;</code> - cli: cloud-init clean handles symlinks (LP: #1741093)</p>
+<p>16:15 <code>&lt;ubot5&gt;</code> Launchpad bug 1742479 in cloud-init (Ubuntu) "setting manual_cache_clean causes warning" [Medium,Fix released] <a href="https://launchpad.net/bugs/1742479">https://launchpad.net/bugs/1742479</a></p>
+<p>16:15 <code>&lt;ubot5&gt;</code> Launchpad bug 1712680 in maas-images "cloud-init re-generates network config every reboot overwriting manual admin changes on CentOS." [Undecided,New] <a href="https://launchpad.net/bugs/1712680">https://launchpad.net/bugs/1712680</a></p>
+<p>16:15 <code>&lt;ubot5&gt;</code> Launchpad bug 1741093 in cloud-init "cloud-init clean traceback on instance dir symlink" [Low,Fix committed] <a href="https://launchpad.net/bugs/1741093">https://launchpad.net/bugs/1741093</a></p>
+<p>16:15 <code>&lt;blackboxsw&gt;</code> ok the real deal, that looks better</p>
+<p>16:16 <code>&lt;blackboxsw&gt;</code> ahh ajorg that interim commit message on botocore was about integration tests caching the session information during testing so we don't recreate that session with every ssh connection to the instance</p>
+<p>16:16 <code>&lt;blackboxsw&gt;</code> just a little time savings per review comments on powersj branch I believe</p>
+<p>16:17 <code>&lt;ajorg&gt;</code> okay, so nothing that needs to get upstreamed to botocore?</p>
+<p>16:17 <code>&lt;blackboxsw&gt;</code> I don't think so, powersj smoser I have vague recollection of someone filing an upstream botocore issue. did we have to do that for something else though?</p>
+<p>16:18 <code>&lt;powersj&gt;</code> <a href="https://github.com/boto/botocore/issues/1351">https://github.com/boto/botocore/issues/1351</a></p>
+<p>16:18 <code>&lt;powersj&gt;</code> that was the issue smoser put in ^</p>
+<p>16:18 <code>&lt;blackboxsw&gt;</code> nice recall powersj thanks.</p>
+<p>16:18 <code>&lt;blackboxsw&gt;</code> #link <a href="https://github.com/boto/botocore/issues/1351">https://github.com/boto/botocore/issues/1351</a></p>
+<p>16:20 <code>&lt;smoser&gt;</code> ajorg: you can read that bug.  imo they have a data loss error, but not one that they can easily fix without causing failures in places that previously ran fine.</p>
+<p>16:20 <code>&lt;ajorg&gt;</code> I'll ask them to re-open it.</p>
+<p>16:21 <code>&lt;ajorg&gt;</code> At the very least they should answer your last.</p>
+<p>16:21 <code>&lt;smoser&gt;</code> thanks.</p>
+<p>16:22 <code>&lt;blackboxsw&gt;</code> Generally anything significant that we have landed (and any inprogress work) should be available at the following link.</p>
+<p>16:22 <code>&lt;blackboxsw&gt;</code> #link <a href="https://trello.com/b/hFtWKUn3/daily-cloud-init-curtin">https://trello.com/b/hFtWKUn3/daily-cloud-init-curtin</a></p>
+<p>16:23 <code>&lt;blackboxsw&gt;</code> anything else we should note over the last couple weeks?</p>
+<p>16:23 <code>&lt;blackboxsw&gt;</code> otherwise I'll switch to ongoing work topic</p>
+<p>16:24 <code>&lt;blackboxsw&gt;</code> #topic In-progress Development</p>
+<p>16:25 <code>&lt;blackboxsw&gt;</code> As you may have seen last week, we've gotten through a few passes and discussions around dojordan's branch to define pre-provisioning</p>
+<p>16:25 <code>&lt;blackboxsw&gt;</code> #link <a href="https://code.launchpad.net/~dojordan/cloud-init/+git/cloud-init/+merge/334341">https://code.launchpad.net/~dojordan/cloud-init/+git/cloud-init/+merge/334341</a></p>
+<p>16:26 <code>&lt;blackboxsw&gt;</code> some of that discussion resulted in a new context manager: EphemeralDHCPv4 to support a sandboxed dhclient request on an instance.</p>
+<p>16:27 <code>&lt;blackboxsw&gt;</code> this context manager affects Ec2 datasource a bit as it encapsulates all of the dhcp request -&gt;` EphemeralIPV4Network calls that Ec2 was doing</p>
+<p>16:28 <code>&lt;blackboxsw&gt;</code> there may be a couple other datasources that follow suit with this type of sandboxed dhcp request in weeks to come</p>
+<p>16:28 <code>&lt;ajorg&gt;</code> glad it turned out to be generally useful rather than only specifically to ec2</p>
+<p>16:28 <code>&lt;blackboxsw&gt;</code> absolutely</p>
+<p>16:30 <code>&lt;blackboxsw&gt;</code> Some other in-progress bits look like we might try focusing a bit more on chrony support and gettting robjo's branches some more eyes.</p>
+<p>16:31 <code>&lt;blackboxsw&gt;</code> and some work on Ubuntu snappy support per the snappy and snap config modules.</p>
+<p>16:31 <code>&lt;smoser&gt;</code> dojordan: i just put one comment on your mp. /me thanks dojordan again for his patience.</p>
+<p>16:32 <code>&lt;blackboxsw&gt;</code> rharper: smoser powersj anything more in the immediate pipeline that I'm missing/</p>
+<p>16:32 <code>&lt;blackboxsw&gt;</code> ?</p>
+<p>16:32 <code>&lt;smoser&gt;</code> blackboxsw: we should get the EphemeralDHCP thingy into the digital ocean datasource also.</p>
+<p>16:32 <code>&lt;rharper&gt;</code> blackboxsw: a reply to the network discussion on the list from the azure folks and robjo</p>
+<p>16:32 <code>&lt;ajorg&gt;</code> I took another look at <a href="https://code.launchpad.net/~yeazelm/cloud-init/+git/cloud-init/+merge/331897">https://code.launchpad.net/~yeazelm/cloud-init/+git/cloud-init/+merge/331897</a> and saw that origin/master seems to be failing some of the integration tests too.</p>
+<p>16:32 <code>&lt;ajorg&gt;</code> (at least for me, locally, on a 16.04 instance)</p>
+<p>16:32 <code>&lt;blackboxsw&gt;</code> ahhh right forgot about all your work there rharper, thanks!</p>
+<p>16:33 <code>&lt;smoser&gt;</code> ajorg: <a href="https://jenkins.ubuntu.com/server/view/cloud-init/job/cloud-init-ci-nightly/">https://jenkins.ubuntu.com/server/view/cloud-init/job/cloud-init-ci-nightly/</a></p>
+<p>16:33 <code>&lt;smoser&gt;</code> that is nigytly run of trunk</p>
+<p>16:33 <code>&lt;blackboxsw&gt;</code> #link <a href="https://jenkins.ubuntu.com/server/view/cloud-init/job/cloud-init-ci-nightly/">https://jenkins.ubuntu.com/server/view/cloud-init/job/cloud-init-ci-nightly/</a></p>
+<p>16:34 <code>&lt;ajorg&gt;</code> I'll try blackholing IMDS on my instance. Could be that's interfering with something.</p>
+<p>16:35 <code>&lt;smoser&gt;</code> it is red, but 218 (green) and 219 (red) used the same git has on trunk (5cc0b19b8).</p>
+<p>16:35 <code>&lt;ajorg&gt;</code> I'll follow up during office hours</p>
+<p>16:36 <code>&lt;smoser&gt;</code> can you give me example of your failures ? we had "disk full" errors recently on our jenkins, so that might be the cause of the issue for 291.</p>
+<p>16:36 <code>&lt;smoser&gt;</code> s/291/219/</p>
+<p>16:36 <code>&lt;blackboxsw&gt;</code> I don't remember seeing that traceback recently. w/ warning messages present in cloud-init</p>
+<p>16:36 <code>&lt;smoser&gt;</code> powersj: ? can you explain lxc timeout failure at</p>
+<p>16:36 <code>&lt;smoser&gt;</code> <a href="https://jenkins.ubuntu.com/server/view/cloud-init/job/cloud-init-ci-nightly/219/consoleFull">https://jenkins.ubuntu.com/server/view/cloud-init/job/cloud-init-ci-nightly/219/consoleFull</a></p>
+<p>16:37 <code>&lt;powersj&gt;</code> smoser: we discovered that our qemu-migration test was installing lxd from the archive and causing conflicts with the snap installed lxd</p>
+<p>16:37 <code>&lt;powersj&gt;</code> I have a message to christian to prevent it, and I have already cleaned it up</p>
+<p>16:37 <code>&lt;powersj&gt;</code> so new runs should pass</p>
+<p>16:37 <code>&lt;ajorg&gt;</code> 2018-01-22 16:19:03,550 - tests.cloud_tests - WARNING - test case: modules/ssh_import_id failed TestSshImportId.test_no_stages_errors with: AssertionError: 1 != 0 : errors ['(\'ssh-import-id\', ProcessExecutionError("Unexpected error while running command.\nCommand: [\'sudo\', \'-Hu\', \'ubuntu\', \'ssh-import-id\', \'gh:powersj\', \'lp:smoser\']\nExit code: 1\nReason: -\nStdout: -\nStderr: -",))'] were encountered in stage m</p>
+<p>16:38 <code>&lt;smoser&gt;</code> hm.. well, that will hit launchpad.net over https</p>
+<p>16:38 <code>&lt;smoser&gt;</code> cloud-init-output.log probaly has more info (should be collected)</p>
+<p>16:38 <code>&lt;powersj&gt;</code> the actual error is:   File "/var/lib/jenkins/slaves/torkoal/workspace/cloud-init-ci-nightly/tests/cloud_tests/platforms/instances.py", line 142, in _wait_for_system</p>
+<p>16:38 <code>&lt;powersj&gt;</code> raise OSError('timeout: after {}s system not started'.format(time))</p>
+<p>16:38 <code>&lt;powersj&gt;</code> it is because when the qemu tests installed lxd it didn't initialize lxd networking</p>
+<p>16:38 <code>&lt;powersj&gt;</code> so no IP is received</p>
+<p>16:39 <code>&lt;smoser&gt;</code> ajorg: would you have had outbound access to launchpad https ? if not, then that'd be expected failure.</p>
+<p>16:40 <code>&lt;smoser&gt;</code> oh, and i guess 'gh:powersj' (github)</p>
+<p>16:40 <code>&lt;ajorg&gt;</code> smoser: I'll check some things, but in short yes. Maybe lxc is being weird?</p>
+<p>16:40 <code>&lt;smoser&gt;</code> i dont like our user names in that test though...</p>
+<p>16:40 <code>&lt;powersj&gt;</code> smoser: we could use the bot instead</p>
+<p>16:42 <code>&lt;ajorg&gt;</code> smoser: it's a public ec2 instance with no special outbound rules, and I can connect to public https sites from a normal session.</p>
+<p>16:44 <code>&lt;blackboxsw&gt;</code> hrm, ok let's chat about what we can do to anonymize or drop that type of test data if we can</p>
+<p>16:44 <code>&lt;blackboxsw&gt;</code> probably time to kick over to office hours</p>
+<p>16:45 <code>&lt;blackboxsw&gt;</code> #topic Office Hours (next 30 minutes)</p>
+<p>16:45 <code>&lt;smoser&gt;</code> powersj: well, i think i'd prefer some public key that we state "no one has the private key for this."</p>
+<p>16:46 <code>&lt;smoser&gt;</code> obviously we could lie about that, but one would <em>expect</em> that you and I would gain access to the system using our public keys.</p>
+<p>16:46 <code>&lt;smoser&gt;</code> it doens't make me feel a lot better that a bot could/can.</p>
+<p>16:47 <code>&lt;ajorg&gt;</code> Is there a way to limit integration testing to a specific test?</p>
+<p>16:47 <code>&lt;blackboxsw&gt;</code> Feel free to bring up any topic/bugs/branches/features you'd like discussion on. We can also continue our discussion on the ssh key imports in teting</p>
+<p>16:47 <code>&lt;ajorg&gt;</code> (takes a long time to run the full suite)</p>
+<p>16:48 <code>&lt;blackboxsw&gt;</code> ajorg: yes</p>
+<p>16:48 <code>&lt;blackboxsw&gt;</code> (reverse-i-search)`cloud_t': python3 -m tests.cloud_tests run --os-name=artful --platform=nocloud-kvm --preserve-data --data-dir=../results --verbose -t modules/locale -t modules/set_password</p>
+<p>16:48 <code>&lt;ajorg&gt;</code> thanks, that should help</p>
+<p>16:48 <code>&lt;blackboxsw&gt;</code> ajorg: you can specify the test names (like modules/set_password) and modules/locale  in this test</p>
+<p>16:48 <code>&lt;blackboxsw&gt;</code> yeah those are short ones I frequently test with</p>
+<p>16:49 <code>&lt;smoser&gt;</code> <a href="http://paste.ubuntu.com/26438334/">http://paste.ubuntu.com/26438334/</a></p>
+<p>16:49 <code>&lt;smoser&gt;</code> that is what i use. and yeah... we've discussed that integration test could be easier to run :)</p>
+<p>16:49 <code>&lt;blackboxsw&gt;</code> #link <a href="http://paste.ubuntu.com/26438334/">http://paste.ubuntu.com/26438334/</a></p>
+<p>16:49 <code>&lt;blackboxsw&gt;</code> nice 1</p>
+<p>16:51 <code>&lt;blackboxsw&gt;</code> smoser: to have a public key we know nobody has a private key for would that mean we'd need a separate github account (or maybe just an additional key associated w/ our bot account in gh</p>
+<p>16:51 * blackboxsw checks github for authorizing multiple keys.</p>
+<p>16:51 <code>&lt;blackboxsw&gt;</code> hrm, that wouldn't work as we need gh:ubuntu-server-bot   (one key) n/m</p>
+<p>16:52 <code>&lt;ajorg&gt;</code> I've got meetings most of today, so I'll have to follow up later. thanks everyone!</p>
+<p>16:52 <code>&lt;blackboxsw&gt;</code> thanks ajorg</p>
+<p>16:59 <code>&lt;blackboxsw&gt;</code> so, bot account for the time being is better than powersj owning the testing world ;)</p>
+<p>16:59 <code>&lt;blackboxsw&gt;</code> but I'm not too concerned about it as this are supposed to be throw away instances</p>
+<p>16:59 <code>&lt;blackboxsw&gt;</code> but I'm not too concerned about it as there instances under test are supposed to be throw away instances</p>
+<p>17:00 <code>&lt;blackboxsw&gt;</code> <em>these instances</em>.... anyway</p>
+<p>17:04 <code>&lt;smoser&gt;</code> blackboxsw: right. it would require users on both those services .</p>
+<p>17:14 <code>&lt;blackboxsw&gt;</code> alrighty. think we're at the close of office hours. Last call?</p>
+<p>17:16 <code>&lt;blackboxsw&gt;</code> Thanks for your time and contributions to cloud-init folks!</p>
+<p>17:16 <code>&lt;blackboxsw&gt;</code> #endmeeting</p>
+<p>Generated by MeetBot 0.1.5 (<a href="http://wiki.ubuntu.com/meetingology">http://wiki.ubuntu.com/meetingology</a>)</p>
+  </div>
+  <div class="tag-cloud">
+    <p>
+    </p>
+  </div>
+
+
+
+    <div class="addthis_relatedposts_inline">
+
+
+</article>
+
+    <footer>
+<p>&copy;  </p>
+<p>Powered by <a href="http://getpelican.com" target="_blank">Pelican</a> - <a href="https://github.com/alexandrevicenzi/flex" target="_blank">Flex</a> theme by <a href="http://alexandrevicenzi.com" target="_blank">Alexandre Vicenzi</a></p>    </footer>
+  </main>
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " Cloud-init Info ",
+  "url" : "https://cloud-init.github.io",
+  "image": "/images/cloud-init-orange.svg",
+  "description": "Cloud-init project updates and general information"
+}
+</script>
+
+</body>
+</html>
