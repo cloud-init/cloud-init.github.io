@@ -1,0 +1,307 @@
+
+<!DOCTYPE html>
+<html lang="english">
+<head>
+  <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" type="text/css" href="https://cloud-init.github.io/theme/stylesheet/style.min.css">
+
+  <link rel="stylesheet" type="text/css" href="https://cloud-init.github.io/theme/pygments/github.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cloud-init.github.io/theme/font-awesome/css/font-awesome.min.css">
+
+
+    <link href="https://cloud-init.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Cloud-init Info Atom">
+
+
+    <link rel="shortcut icon" href="/theme/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/theme/img/favicon.ico" type="image/x-icon">
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-50554247-3', 'auto');
+  ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#2c001e">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#2c001e">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Microsoft EDGE -->
+    <meta name="msapplication-TileColor" content="#2c001e">
+
+<meta name="author" content="chad.smith@canonical.com" />
+<meta name="description" content="Meeting information #cloud-init: Cloud-init bi-weekly status meeting, 16 Apr at 16:01 — 18:11 UTC Full logs at [[http://ubottu.com/meetingology/logs/cloud-init/2018/cloud-init.2018-04-16-16.01.log.html]] Meeting summary Recent-changes The discussion about &#34;Recent-changes&#34; started at 16:04. In-progresss Development The discussion about &#34;In-progresss Development&#34; started at …" />
+<meta name="keywords" content="">
+
+<meta property="og:site_name" content="Cloud-init Info"/>
+<meta property="og:title" content="Cloud-init bi-weekly status"/>
+<meta property="og:description" content="Meeting information #cloud-init: Cloud-init bi-weekly status meeting, 16 Apr at 16:01 — 18:11 UTC Full logs at [[http://ubottu.com/meetingology/logs/cloud-init/2018/cloud-init.2018-04-16-16.01.log.html]] Meeting summary Recent-changes The discussion about &#34;Recent-changes&#34; started at 16:04. In-progresss Development The discussion about &#34;In-progresss Development&#34; started at …"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:url" content="https://cloud-init.github.io/status-2018-04-16.html"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2018-04-16 16:01:00+00:00"/>
+<meta property="article:modified_time" content=""/>
+<meta property="article:author" content="https://cloud-init.github.io/author/chadsmithcanonicalcom.html">
+<meta property="article:section" content="status-meeting-minutes"/>
+<meta property="og:image" content="/images/cloud-init-orange.svg">
+
+  <title>Cloud-init Info &ndash; Cloud-init bi-weekly status</title>
+
+</head>
+<body>
+  <aside>
+    <div>
+      <a href="https://cloud-init.github.io">
+        <img src="/images/cloud-init-orange.svg" alt="Cloud-init" title="Cloud-init">
+      </a>
+      <h1><a href="https://cloud-init.github.io">Cloud-init</a></h1>
+
+<p>Make your cloud images be all they can be</p>
+      <nav>
+        <ul class="list">
+
+          <li><a href="https://cloudinit.readthedocs.org/" target="_blank">Docs</a></li>
+          <li><a href="https://cloud-init.io" target="_blank">Overview</a></li>
+          <li><a href="https://cloudinit.readthedocs.io/en/latest/topics/hacking.html" target="_blank">Hacking</a></li>
+          <li><a href="https://jenkins.ubuntu.com/server/view/cloud-init/" target="_blank">CI builds</a></li>
+          <li><a href="https://launchpad.net/cloud-init" target="_blank">Code</a></li>
+        </ul>
+      </nav>
+
+      <ul class="social">
+        <li><a class="sc-github" href="https://github.com/cloud-init" target="_blank"><i class="fa fa-github"></i></a></li>
+        <li><a class="sc-wechat" href="https://webchat.freenode.net/?channels=cloud-init" target="_blank"><i class="fa fa-wechat"></i></a></li>
+      </ul>
+    </div>
+
+
+  </aside>
+  <main>
+
+    <nav>
+      <a href="https://cloud-init.github.io">Home</a>
+
+      <a href="/archives.html">Archives</a>
+      <a href="/categories.html">Categories</a>
+      <a href="/tags.html">Tags</a>
+
+      <a href="https://cloud-init.github.io/feeds/all.atom.xml">Atom</a>
+
+    </nav>
+
+<article class="single">
+  <header>
+      
+    <h1 id="status-2018-04-16">Cloud-init bi-weekly status</h1>
+    <p>
+      Posted on Mon 16 April 2018 in <a href="https://cloud-init.github.io/category/status-meeting-minutes.html">status-meeting-minutes</a>
+
+        &#8226; 8 min read
+    </p>
+  </header>
+
+
+  <div>
+    <h2>Meeting information</h2>
+<ul>
+<li>#cloud-init: Cloud-init bi-weekly status meeting, 16 Apr at 16:01 &mdash; 18:11 UTC</li>
+<li>Full logs at [[<a href="http://ubottu.com/meetingology/logs/cloud-init/2018/cloud-init.2018-04-16-16.01.log.html">http://ubottu.com/meetingology/logs/cloud-init/2018/cloud-init.2018-04-16-16.01.log.html</a>]]</li>
+</ul>
+<h2>Meeting summary</h2>
+<h3>Recent-changes</h3>
+<p>The discussion about "Recent-changes" started at 16:04.</p>
+<h3>In-progresss Development</h3>
+<p>The discussion about "In-progresss Development" started at 16:11.</p>
+<ul>
+<li><strong>LINK</strong>: <a href="https://trello.com/b/hFtWKUn3/daily-cloud-init-curtin">https://trello.com/b/hFtWKUn3/daily-cloud-init-curtin</a> </li>
+<li><strong>LINK</strong>: <a href="https://bugs.launchpad.net/ubuntu/+source/cloud-init/+bug/1759406">https://bugs.launchpad.net/ubuntu/+source/cloud-init/+bug/1759406</a> </li>
+<li><strong>LINK</strong>: <a href="https://bugs.launchpad.net/bugs/1570997">https://bugs.launchpad.net/bugs/1570997</a> </li>
+<li><strong>LINK</strong>: <a href="https://trello.com/c/JVaXSfpo/749-eol-fix-for-ssh-file">https://trello.com/c/JVaXSfpo/749-eol-fix-for-ssh-file</a> </li>
+<li><strong>LINK</strong>: <a href="https://code.launchpad.net/~raharper/cloud-init/+git/cloud-init/+merge/343123">https://code.launchpad.net/~raharper/cloud-init/+git/cloud-init/+merge/343123</a> </li>
+</ul>
+<h3>Office Hours (next ~30 mins)</h3>
+<p>The discussion about "Office Hours (next ~30 mins)" started at 16:23.</p>
+<ul>
+<li><strong>LINK</strong>: <a href="https://bugs.launchpad.net/cloud-init/+bug/1667735">https://bugs.launchpad.net/cloud-init/+bug/1667735</a> implements proper protocol negotiation over the serial port.   The lack of this has caused problems with KVM at times too.</li>
+<li><strong>LINK</strong>: <a href="https://bugs.launchpad.net/cloud-init/+bug/1746605">https://bugs.launchpad.net/cloud-init/+bug/1746605</a> adressess times when cloud-init and other software may be trying to use the metadata serial port at the same time.  This is purely a bug fix.</li>
+<li><strong>LINK</strong>: <a href="https://bugs.launchpad.net/cloud-init/+bug/1763480">https://bugs.launchpad.net/cloud-init/+bug/1763480</a> makes it so that cloud-init doesn't stack trace and exit when there is no customer_metadata.  This is an unlikely case, but something that is hit when you are testing things that don't need ssh keys, etc.</li>
+<li><strong>LINK</strong>: <a href="https://bugs.launchpad.net/cloud-init/+bug/1763512">https://bugs.launchpad.net/cloud-init/+bug/1763512</a> finishes off the partial implementation of sdc:routes support.  Previously, we didn't publish the required information to VMs, so it is fair to consider this a new feature.</li>
+<li><strong>LINK</strong>: <a href="https://bugs.launchpad.net/ubuntu/+source/cloud-init/+bug/1763511">https://bugs.launchpad.net/ubuntu/+source/cloud-init/+bug/1763511</a> is probably the most incompatible change.  New ephemeral disks will get ext4 instead of ext3, which is needed for larger disks that seem to be getting more common.</li>
+</ul>
+<h2>Vote results</h2>
+<h2>Done items</h2>
+<ul>
+<li>(none)</li>
+</ul>
+<h2>People present (lines said)</h2>
+<ul>
+<li>blackboxsw (54)</li>
+<li>smoser (17)</li>
+<li>rharper (13)</li>
+<li>mgerdts (10)</li>
+<li>ubot5` (10)</li>
+<li>cyphermox (3)</li>
+<li>meetingology (3)</li>
+<li>dpb1 (1)</li>
+</ul>
+<h2>Full Log</h2>
+<p>16:01 <code>&lt;blackboxsw&gt;</code> #startmeeting Cloud-init bi-weekly status meeting</p>
+<p>16:01 <code>&lt;meetingology&gt;</code> Meeting started Mon Apr 16 16:01:49 2018 UTC.  The chair is blackboxsw. Information about MeetBot at <a href="http://wiki.ubuntu.com/meetingology.">http://wiki.ubuntu.com/meetingology.</a></p>
+<p>16:01 <code>&lt;meetingology&gt;</code> </p>
+<p>16:01 <code>&lt;meetingology&gt;</code> Available commands: action commands idea info link nick</p>
+<p>16:02 <code>&lt;rharper&gt;</code> o/</p>
+<p>16:03 <code>&lt;blackboxsw&gt;</code> Hi folks, welcome to cloud-init's bi-weekly status meeting. Feel free to interject at any time or bring up branches/bugs/questions over the next 30-60 mins. We'll have a number of folks around to get eyes and/or keyboards onto any problems.</p>
+<p>16:03 <code>&lt;dpb1&gt;</code> o/</p>
+<p>16:04 <code>&lt;blackboxsw&gt;</code> As always we'll go through the following topics (feel free to suggest others): Recent-changes, In-progress Development, and ~30 mins Office Hours)</p>
+<p>16:04 <code>&lt;blackboxsw&gt;</code> #topic Recent-changes</p>
+<p>16:06 <code>&lt;blackboxsw&gt;</code> a quick rundown of the hi level changes landed:</p>
+<p>16:06 <code>&lt;blackboxsw&gt;</code> Prune integration test artifacts</p>
+<p>16:06 <code>&lt;blackboxsw&gt;</code> Add support for LXD 3.0, fix pylxd integration test dependency</p>
+<p>16:06 <code>&lt;blackboxsw&gt;</code> Fix Ubuntu proposed integration test CI job</p>
+<p>16:06 <code>&lt;blackboxsw&gt;</code> Fix ec2 validation of instance-data.json network info</p>
+<p>16:06 <code>&lt;blackboxsw&gt;</code> Do not retry optional userdata on 404 (LP: #1702160)</p>
+<p>16:06 <code>&lt;blackboxsw&gt;</code> Add explicit cloud-init package dependency on isc-dhcp-client (LP: #1759307)</p>
+<p>16:06 <code>&lt;ubot5</code>&gt;` Launchpad bug 1702160 in cloud-init "OpenStack datasource should not retry user-data on 404" [Medium,Fix released] <a href="https://launchpad.net/bugs/1702160">https://launchpad.net/bugs/1702160</a></p>
+<p>16:06 <code>&lt;ubot5</code>&gt;` Launchpad bug 1759307 in cloud-init (Ubuntu) "missing dependency on isc-dhcp-client (dhclient)" [Medium,Fix released] <a href="https://launchpad.net/bugs/1759307">https://launchpad.net/bugs/1759307</a></p>
+<p>16:08 <code>&lt;blackboxsw&gt;</code> additionally from most recent commits we have:</p>
+<p>16:08 <code>&lt;blackboxsw&gt;</code> tools: Fix make-tarball cli tool usage for development</p>
+<p>16:08 <code>&lt;blackboxsw&gt;</code> renderer: support unicode in render_from_file.</p>
+<p>16:08 <code>&lt;blackboxsw&gt;</code> Implement ntp client spec with auto support for distro selection</p>
+<p>16:08 <code>&lt;blackboxsw&gt;</code> Apport: add Brightbox, IBM, LXD, and OpenTelekomCloud to list of clouds.</p>
+<p>16:08 <code>&lt;blackboxsw&gt;</code> tests: fix ec2 integration network metadata validation</p>
+<p>16:08 <code>&lt;blackboxsw&gt;</code> tests: fix integration tests to support lxd 3.0 release</p>
+<p>16:08 <code>&lt;blackboxsw&gt;</code> correct documentation to match correct attribute name usage.</p>
+<p>16:08 <code>&lt;blackboxsw&gt;</code> cc_resizefs, util: handle no /dev/zfs</p>
+<p>16:09 <code>&lt;blackboxsw&gt;</code> Last week rharper found and fixed a regression in zfs resize behavior that was blocking our ubuntu SRU</p>
+<p>16:09 <code>&lt;blackboxsw&gt;</code> We have uploaded those fixes, as well as rharper's ntp spec changes (which should incorporate a number of robjo's opensuse/sles needs too)</p>
+<p>16:10 <code>&lt;blackboxsw&gt;</code> anything else notable that I'm missing gentlemen?</p>
+<p>16:10 <code>&lt;blackboxsw&gt;</code> If not, I'll jump to in-progress development</p>
+<p>16:11 <code>&lt;blackboxsw&gt;</code> #topic In-progresss Development</p>
+<p>16:13 <code>&lt;blackboxsw&gt;</code> So, on the ubuntu side of the house we are about to approve the cloud-init 18.2 SRU (Stable release update) into xenial and artful. Just one more validation run and we should be good to see 18.2.4 on xenial, artful. Ubuntu Bionic is already a few commits beyond that.</p>
+<p>16:13 <code>&lt;blackboxsw&gt;</code> On Ubuntu as well we are beating the drop to the Bionic LTS (Long term release) feature/bug freeze.</p>
+<p>16:14 <code>&lt;blackboxsw&gt;</code> This week marks the last week for use to get fixes into Bioinic images before that release is cut.</p>
+<p>16:14 <code>&lt;blackboxsw&gt;</code> so we'll be heads down on any Bionic-specific changes that need to get in.</p>
+<p>16:14 <code>&lt;blackboxsw&gt;</code> Feel free to checkout our trello board @</p>
+<p>16:14 <code>&lt;blackboxsw&gt;</code> #link <a href="https://trello.com/b/hFtWKUn3/daily-cloud-init-curtin">https://trello.com/b/hFtWKUn3/daily-cloud-init-curtin</a></p>
+<p>16:15 <code>&lt;blackboxsw&gt;</code> we track all tasks we are working on in public view there so if there are any questions you can ping one of us here about our development efforts</p>
+<p>16:17 <code>&lt;blackboxsw&gt;</code> additional tasks that are in flight:  bash-autocompletion for cloud-init CLI (rhaper).  dropping ifconfig and route in favor of 'ip' (bbsw), and moving openstack datasource to cloud-init's local stage</p>
+<p>16:17 <code>&lt;blackboxsw&gt;</code> (smoser)</p>
+<p>16:17 <code>&lt;blackboxsw&gt;</code> also a couple of bugs to fix such as #1570997</p>
+<p>16:17 <code>&lt;blackboxsw&gt;</code> #link <a href="https://bugs.launchpad.net/ubuntu/+source/cloud-init/+bug/1759406">https://bugs.launchpad.net/ubuntu/+source/cloud-init/+bug/1759406</a></p>
+<p>16:17 <code>&lt;ubot5</code>&gt;` Ubuntu bug 1759406 in cloud-init (Ubuntu) "sru cloud-init (17.2-35-gf576b2a2-0ubuntu1~16.04.1 update to 18.2-4-g05926e48-0ubuntu1)" [Medium,Confirmed]</p>
+<p>16:17 <code>&lt;blackboxsw&gt;</code> oops paste fail:</p>
+<p>16:17 <code>&lt;blackboxsw&gt;</code> #link <a href="https://bugs.launchpad.net/bugs/1570997">https://bugs.launchpad.net/bugs/1570997</a></p>
+<p>16:17 <code>&lt;ubot5</code>&gt;` Ubuntu bug 1570997 in ssh-import-id (Ubuntu Xenial) "fail if HOME environment variable is not set" [Low,Fix committed]</p>
+<p>16:18 <code>&lt;blackboxsw&gt;</code> I think that about wraps in-progress development, anything else that should be noted smoser rharper ?</p>
+<p>16:18 <code>&lt;rharper&gt;</code> I think you covered it</p>
+<p>16:18 <code>&lt;smoser&gt;</code> ssh-import-id is not relally at all related to cloud-init</p>
+<p>16:19 <code>&lt;smoser&gt;</code> thanks blackboxsw</p>
+<p>16:19 <code>&lt;blackboxsw&gt;</code> oops grabbed the wrong one, was thinking about this card</p>
+<p>16:19 <code>&lt;blackboxsw&gt;</code> #link <a href="https://trello.com/c/JVaXSfpo/749-eol-fix-for-ssh-file">https://trello.com/c/JVaXSfpo/749-eol-fix-for-ssh-file</a></p>
+<p>16:19 <code>&lt;smoser&gt;</code> right.</p>
+<p>16:21 <code>&lt;blackboxsw&gt;</code> also of note, in some of our SRU testing we found time-tracking gaps in cloud-init analyze tracking on Azure. rharper put of a logging tracker fix to avoid those tracking gaps</p>
+<p>16:21 <code>&lt;blackboxsw&gt;</code> #link <a href="https://code.launchpad.net/~raharper/cloud-init/+git/cloud-init/+merge/343123">https://code.launchpad.net/~raharper/cloud-init/+git/cloud-init/+merge/343123</a></p>
+<p>16:21 <code>&lt;smoser&gt;</code> i'll point out one thing i just finished up with...</p>
+<p>16:22 <code>&lt;smoser&gt;</code> for testing ubuntu, the <a href="https://github.com/cloud-init/ubuntu-sru/">https://github.com/cloud-init/ubuntu-sru/</a> has 'get-proposed-cloudimg' and 'lxc-proposed-snapshot'</p>
+<p>16:22 <code>&lt;smoser&gt;</code> which now work more like each other.l and can do more than just upgrade cloud-init.</p>
+<p>16:23 <code>&lt;blackboxsw&gt;</code> thanks smoser. Great tools to quicken dev-test cycles and make cloud-init development easier. That wraps up what we've been up to. We can probably move to the open forum for any discussions folks want to have</p>
+<p>16:23 <code>&lt;blackboxsw&gt;</code> #topic Office Hours (next ~30 mins)</p>
+<p>16:24 <code>&lt;blackboxsw&gt;</code> We'll be hanging out here for anyone who wants more eyes on a review, feature discussions or bug triage....</p>
+<p>16:28 <code>&lt;smoser&gt;</code> mgerdts: i'm poking at the branch i think i shoudl be able to get something.</p>
+<p>16:29 <code>&lt;mgerdts&gt;</code> I'm working on a bunch of fixes for things that have turned up on bhyve with SmartOS.  Since we are looking to transition from KVM to bhyve, we will need to provide updates at least as far back as xenial and probably trusty.  Is the process for this any more complicated than get the fixes in master, then cherry-pick the fixes into branches?</p>
+<p>16:29 <code>&lt;mgerdts&gt;</code> thanks @smoser</p>
+<p>17:09 <code>&lt;rharper&gt;</code> mgerdts: we preferrer not to cherry; rather we release master back to xenial via our SRU (Stable Release Update) process; however, we spend a lot of effort to not modify existing behavior on prevlous SRU releases;  so if the changes to support bhyve can be done in a compatible way (working with either) that'd be best;  worst-case, we patch in release specific bahvior into the release branch.</p>
+<p>17:13 <code>&lt;mgerdts&gt;</code> Pretty much everything that I've got queued up is fully compatible.</p>
+<p>17:14 <code>&lt;mgerdts&gt;</code> <a href="https://bugs.launchpad.net/cloud-init/+bug/1667735">https://bugs.launchpad.net/cloud-init/+bug/1667735</a> implements proper protocol negotiation over the serial port.   The lack of this has caused problems with KVM at times too.</p>
+<p>17:14 <code>&lt;ubot5</code>&gt;` Ubuntu bug 1667735 in cloud-init (Ubuntu Trusty) "cloud-init doesn't retry metadata lookups and hangs forever if metadata is down" [Medium,Confirmed]</p>
+<p>17:15 <code>&lt;mgerdts&gt;</code> <a href="https://bugs.launchpad.net/cloud-init/+bug/1746605">https://bugs.launchpad.net/cloud-init/+bug/1746605</a> adressess times when cloud-init and other software may be trying to use the metadata serial port at the same time.  This is purely a bug fix.</p>
+<p>17:15 <code>&lt;ubot5</code>&gt;` Ubuntu bug 1746605 in cloud-init "DataSourceSmartOS needs locking" [Medium,Confirmed]</p>
+<p>17:15 <code>&lt;mgerdts&gt;</code> I hit it when rc.local and cloud-init were both trying to get metadata.</p>
+<p>17:17 <code>&lt;mgerdts&gt;</code> <a href="https://bugs.launchpad.net/cloud-init/+bug/1763480">https://bugs.launchpad.net/cloud-init/+bug/1763480</a> makes it so that cloud-init doesn't stack trace and exit when there is no customer_metadata.  This is an unlikely case, but something that is hit when you are testing things that don't need ssh keys, etc.</p>
+<p>17:17 <code>&lt;ubot5</code>&gt;` Ubuntu bug 1763480 in cloud-init "DataSourceSmartOS list() should always return a list" [Medium,Confirmed]</p>
+<p>17:18 <code>&lt;mgerdts&gt;</code> <a href="https://bugs.launchpad.net/cloud-init/+bug/1763512">https://bugs.launchpad.net/cloud-init/+bug/1763512</a> finishes off the partial implementation of sdc:routes support.  Previously, we didn't publish the required information to VMs, so it is fair to consider this a new feature.</p>
+<p>17:18 <code>&lt;ubot5</code>&gt;` Ubuntu bug 1763512 in cloud-init "DataSourceSmartOS ignores sdc:routes" [Medium,Confirmed]</p>
+<p>17:19 <code>&lt;mgerdts&gt;</code> <a href="https://bugs.launchpad.net/ubuntu/+source/cloud-init/+bug/1763511">https://bugs.launchpad.net/ubuntu/+source/cloud-init/+bug/1763511</a> is probably the most incompatible change.  New ephemeral disks will get ext4 instead of ext3, which is needed for larger disks that seem to be getting more common.</p>
+<p>17:19 <code>&lt;ubot5</code>&gt;` Ubuntu bug 1763511 in cloud-init (Ubuntu) "DataSourceSmartOS should default to ext4" [Undecided,New]</p>
+<p>17:21 <code>&lt;mgerdts&gt;</code> I think that's all that I have in the works right now.  Do any of these sound like they would be problematic as far back as Xenial?</p>
+<p>17:29 <code>&lt;rharper&gt;</code> new features are OK ,bug fixes are fine as well; I think that different filesystem is somewhat tricky</p>
+<p>17:30 <code>&lt;smoser&gt;</code> i think i'm generally ok with the different filesystem.</p>
+<p>17:31 <code>&lt;smoser&gt;</code> if the reason is that simply ext3 can't handle super-big</p>
+<p>17:31 <code>&lt;rharper&gt;</code> yeah, that doesn't seem so user-visible w.r.t configuration;</p>
+<p>17:32 <code>&lt;smoser&gt;</code> we could ensure being more backward compat if we checked the size of the disk and made an ext4 if &gt;` that-size</p>
+<p>17:32 <code>&lt;smoser&gt;</code> then there'd less issue</p>
+<p>17:32 <code>&lt;smoser&gt;</code> but more complication and future we'd be stuck with that</p>
+<p>17:32 <code>&lt;rharper&gt;</code> yeah, it wouldn't have worked on ext3 then it would be fine to use ext4</p>
+<p>17:32 <code>&lt;smoser&gt;</code> so i'd rather really just bite the bulleet</p>
+<p>17:32 <code>&lt;rharper&gt;</code> it could be a metadata flag that the Datasource looks for</p>
+<p>17:32 <code>&lt;smoser&gt;</code> rather than describing to pepole forever "well, if your  disk is `&lt; X you'll get ext3 otherwise ext4"</p>
+<p>17:49 <code>&lt;blackboxsw&gt;</code> rharper: got time for a netplan global dns hangout?</p>
+<p>17:49 <code>&lt;rharper&gt;</code> y</p>
+<p>17:49 <code>&lt;blackboxsw&gt;</code> I want to make sure I'm reading the tea leaves right</p>
+<p>17:52 <code>&lt;smoser&gt;</code> mgerdts: <a href="http://paste.ubuntu.com/p/5qdtFzY8w7/">http://paste.ubuntu.com/p/5qdtFzY8w7/</a></p>
+<p>17:52 <code>&lt;blackboxsw&gt;</code> ok rharper I'm in cloud-init hangout</p>
+<p>17:52 <code>&lt;smoser&gt;</code> that makes tests pass. and i think the changes to the code path are right</p>
+<p>17:52 <code>&lt;rharper&gt;</code> ok</p>
+<p>17:52 <code>&lt;rharper&gt;</code> brt</p>
+<p>17:54 <code>&lt;smoser&gt;</code> it is still hacked in a sense that the response only deals with fp.read(1) rather than possibly anything that read more than 1.</p>
+<p>17:56 <code>&lt;cyphermox&gt;</code> blackboxsw: rharper: what's this about netplan global dns?</p>
+<p>17:57 <code>&lt;rharper&gt;</code> cyphermox: converting network v1 syntax from maas into something that works with netplan which doesn't have "dns" unbound to any interfaces</p>
+<p>17:57 <code>&lt;cyphermox&gt;</code> ok</p>
+<p>17:57 <code>&lt;rharper&gt;</code> maas I believe has fixed this for 2.4.x</p>
+<p>17:58 <code>&lt;rharper&gt;</code> they no longer will emit the type: nameserver  but legacy maas would have that, so we've a branch that stuffs them in reasonable places under defined interfaces which don't already have DNS values</p>
+<p>17:58 <code>&lt;blackboxsw&gt;</code> cyphermox: just SRU validation w.r.t. <a href="https://bugs.launchpad.net/cloud-init/+bug/1750884">https://bugs.launchpad.net/cloud-init/+bug/1750884</a></p>
+<p>17:59 <code>&lt;ubot5</code>&gt;` Ubuntu bug 1750884 in cloud-init "[2.4, bionic] /etc/resolv.conf not configured correctly in Bionic, leads to no DNS resolution" [Medium,Fix released]</p>
+<p>17:59 <code>&lt;cyphermox&gt;</code> all good</p>
+<p>18:11 <code>&lt;blackboxsw&gt;</code> ooops, and /me forgot the end the epic meeting</p>
+<p>18:11 <code>&lt;blackboxsw&gt;</code> thx rharper for the chat</p>
+<p>18:11 <code>&lt;blackboxsw&gt;</code> #endmeetiung</p>
+<p>18:11 <code>&lt;blackboxsw&gt;</code> #endmeeting</p>
+<p>Generated by MeetBot 0.1.5 (<a href="http://wiki.ubuntu.com/meetingology">http://wiki.ubuntu.com/meetingology</a>)</p>
+  </div>
+  <div class="tag-cloud">
+    <p>
+    </p>
+  </div>
+
+
+
+    <div class="addthis_relatedposts_inline">
+
+
+</article>
+
+    <footer>
+<p>&copy;  </p>
+<p>Powered by <a href="http://getpelican.com" target="_blank">Pelican</a> - <a href="https://github.com/alexandrevicenzi/flex" target="_blank">Flex</a> theme by <a href="http://alexandrevicenzi.com" target="_blank">Alexandre Vicenzi</a></p>    </footer>
+  </main>
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " Cloud-init Info ",
+  "url" : "https://cloud-init.github.io",
+  "image": "/images/cloud-init-orange.svg",
+  "description": "Cloud-init project updates and general information"
+}
+</script>
+
+</body>
+</html>
