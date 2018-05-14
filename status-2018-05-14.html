@@ -1,0 +1,308 @@
+
+<!DOCTYPE html>
+<html lang="english">
+<head>
+  <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" type="text/css" href="https://cloud-init.github.io/theme/stylesheet/style.min.css">
+
+  <link rel="stylesheet" type="text/css" href="https://cloud-init.github.io/theme/pygments/github.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cloud-init.github.io/theme/font-awesome/css/font-awesome.min.css">
+
+
+    <link href="https://cloud-init.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Cloud-init Info Atom">
+
+
+    <link rel="shortcut icon" href="/theme/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/theme/img/favicon.ico" type="image/x-icon">
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-50554247-3', 'auto');
+  ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#2c001e">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#2c001e">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Microsoft EDGE -->
+    <meta name="msapplication-TileColor" content="#2c001e">
+
+<meta name="author" content="chad.smith@canonical.com" />
+<meta name="description" content="Meeting information #cloud-init: Cloud-init bi-weekly status meeting, 14 May at 16:05 — 17:03 UTC Full logs at [[http://ubottu.com/meetingology/logs/cloud-init/2018/cloud-init.2018-05-14-16.05.log.html]] Meeting summary Recent Changes The discussion about &#34;Recent Changes&#34; started at 16:09. LINK: https://trello.com/b/hFtWKUn3/daily-cloud-init-curtin …" />
+<meta name="keywords" content="">
+
+<meta property="og:site_name" content="Cloud-init Info"/>
+<meta property="og:title" content="Cloud-init bi-weekly status"/>
+<meta property="og:description" content="Meeting information #cloud-init: Cloud-init bi-weekly status meeting, 14 May at 16:05 — 17:03 UTC Full logs at [[http://ubottu.com/meetingology/logs/cloud-init/2018/cloud-init.2018-05-14-16.05.log.html]] Meeting summary Recent Changes The discussion about &#34;Recent Changes&#34; started at 16:09. LINK: https://trello.com/b/hFtWKUn3/daily-cloud-init-curtin …"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:url" content="https://cloud-init.github.io/status-2018-05-14.html"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2018-05-14 16:05:00+00:00"/>
+<meta property="article:modified_time" content=""/>
+<meta property="article:author" content="https://cloud-init.github.io/author/chadsmithcanonicalcom.html">
+<meta property="article:section" content="status-meeting-minutes"/>
+<meta property="og:image" content="/images/cloud-init-orange.svg">
+
+  <title>Cloud-init Info &ndash; Cloud-init bi-weekly status</title>
+
+</head>
+<body>
+  <aside>
+    <div>
+      <a href="https://cloud-init.github.io">
+        <img src="/images/cloud-init-orange.svg" alt="Cloud-init" title="Cloud-init">
+      </a>
+      <h1><a href="https://cloud-init.github.io">Cloud-init</a></h1>
+
+<p>Make your cloud images be all they can be</p>
+      <nav>
+        <ul class="list">
+
+          <li><a href="https://cloudinit.readthedocs.org/" target="_blank">Docs</a></li>
+          <li><a href="https://cloud-init.io" target="_blank">Overview</a></li>
+          <li><a href="https://cloudinit.readthedocs.io/en/latest/topics/hacking.html" target="_blank">Hacking</a></li>
+          <li><a href="https://jenkins.ubuntu.com/server/view/cloud-init/" target="_blank">CI builds</a></li>
+          <li><a href="https://launchpad.net/cloud-init" target="_blank">Code</a></li>
+        </ul>
+      </nav>
+
+      <ul class="social">
+        <li><a class="sc-github" href="https://github.com/cloud-init" target="_blank"><i class="fa fa-github"></i></a></li>
+        <li><a class="sc-wechat" href="https://webchat.freenode.net/?channels=cloud-init" target="_blank"><i class="fa fa-wechat"></i></a></li>
+      </ul>
+    </div>
+
+
+  </aside>
+  <main>
+
+    <nav>
+      <a href="https://cloud-init.github.io">Home</a>
+
+      <a href="/archives.html">Archives</a>
+      <a href="/categories.html">Categories</a>
+      <a href="/tags.html">Tags</a>
+
+      <a href="https://cloud-init.github.io/feeds/all.atom.xml">Atom</a>
+
+    </nav>
+
+<article class="single">
+  <header>
+      
+    <h1 id="status-2018-05-14">Cloud-init bi-weekly status</h1>
+    <p>
+      Posted on Mon 14 May 2018 in <a href="https://cloud-init.github.io/category/status-meeting-minutes.html">status-meeting-minutes</a>
+
+        &#8226; 7 min read
+    </p>
+  </header>
+
+
+  <div>
+    <h2>Meeting information</h2>
+<ul>
+<li>#cloud-init: Cloud-init bi-weekly status meeting, 14 May at 16:05 &mdash; 17:03 UTC</li>
+<li>Full logs at [[<a href="http://ubottu.com/meetingology/logs/cloud-init/2018/cloud-init.2018-05-14-16.05.log.html">http://ubottu.com/meetingology/logs/cloud-init/2018/cloud-init.2018-05-14-16.05.log.html</a>]]</li>
+</ul>
+<h2>Meeting summary</h2>
+<h3>Recent Changes</h3>
+<p>The discussion about "Recent Changes" started at 16:09.</p>
+<ul>
+<li><strong>LINK</strong>: <a href="https://trello.com/b/hFtWKUn3/daily-cloud-init-curtin">https://trello.com/b/hFtWKUn3/daily-cloud-init-curtin</a> </li>
+</ul>
+<h3>In-progress Development</h3>
+<p>The discussion about "In-progress Development" started at 16:19.</p>
+<h3>Office Hours (next ~30 mins)</h3>
+<p>The discussion about "Office Hours (next ~30 mins)" started at 16:29.</p>
+<ul>
+<li><strong>LINK</strong>: <a href="https://pastebin.ubuntu.com/p/266CyDt9gD/">https://pastebin.ubuntu.com/p/266CyDt9gD/</a> </li>
+<li><strong>LINK</strong>: <a href="https://bugs.launchpad.net/ubuntu/+source/cloud-init/+bug/1766538">https://bugs.launchpad.net/ubuntu/+source/cloud-init/+bug/1766538</a> </li>
+<li><strong>LINK</strong>: <a href="https://code.launchpad.net/~rjschwei/cloud-init/+git/cloud-init/+ref/emptyStageOK">https://code.launchpad.net/~rjschwei/cloud-init/+git/cloud-init/+ref/emptyStageOK</a> </li>
+<li><strong>LINK</strong>: <a href="https://code.launchpad.net/~rjschwei/cloud-init/+git/cloud-init/+ref/noLnxDistro">https://code.launchpad.net/~rjschwei/cloud-init/+git/cloud-init/+ref/noLnxDistro</a> </li>
+<li><strong>LINK</strong>: <a href="https://bugs.launchpad.net/cloud-init/+bug/1745235">https://bugs.launchpad.net/cloud-init/+bug/1745235</a> </li>
+<li><strong>ACTION</strong>: blackboxsw review distro dection and empty modules list</li>
+<li><strong>ACTION</strong>: robjo review existing chrony support in master per rharper's work</li>
+<li><strong>ACTION</strong>: blackboxsw carryover network hotplug vs network maintenance on reboot-only</li>
+</ul>
+<h2>Vote results</h2>
+<h2>Action items, by person</h2>
+<ul>
+<li>blackboxsw</li>
+<li>blackboxsw review distro dection and empty modules list</li>
+<li>blackboxsw carryover network hotplug vs network maintenance on reboot-only</li>
+<li>rharper</li>
+<li>robjo review existing chrony support in master per rharper's work</li>
+<li>robjo</li>
+<li>robjo review existing chrony support in master per rharper's work</li>
+</ul>
+<h2>Done items</h2>
+<ul>
+<li>(none)</li>
+</ul>
+<h2>People present (lines said)</h2>
+<ul>
+<li>blackboxsw (73)</li>
+<li>robjo (14)</li>
+<li>ubot5 (9)</li>
+<li>meetingology (6)</li>
+<li>stanguturi (2)</li>
+<li>rharper (1)</li>
+</ul>
+<h2>Full Log</h2>
+<p>16:05 <code>&lt;blackboxsw&gt;</code> #startmeeting Cloud-init bi-weekly status meeting</p>
+<p>16:05 <code>&lt;meetingology&gt;</code> Meeting started Mon May 14 16:05:28 2018 UTC.  The chair is blackboxsw. Information about MeetBot at <a href="http://wiki.ubuntu.com/meetingology.">http://wiki.ubuntu.com/meetingology.</a></p>
+<p>16:05 <code>&lt;meetingology&gt;</code> </p>
+<p>16:05 <code>&lt;meetingology&gt;</code> Available commands: action commands idea info link nick</p>
+<p>16:08 <code>&lt;blackboxsw&gt;</code> welcome folks to another cloud-init status meeting. This forum is used to communicate the recent changes,  current development efforts and host open office hours to help get quick discussion on bugs,  branches or features of interest to anyone developing (or consuming) cloud-init.</p>
+<p>16:09 <code>&lt;blackboxsw&gt;</code> We'll go through a couple of topics as usual (Recent changes, In-progress Development, Office Hours), if there are any additional topics needed just let me know.</p>
+<p>16:09 <code>&lt;blackboxsw&gt;</code> #topic Recent Changes</p>
+<p>16:10 <code>&lt;blackboxsw&gt;</code> We track our upstream work publicly on trello. Feel free to participate or ask questions about any feature work that is seen up there if there are concerns.</p>
+<p>16:11 <code>&lt;blackboxsw&gt;</code> #link <a href="https://trello.com/b/hFtWKUn3/daily-cloud-init-curtin">https://trello.com/b/hFtWKUn3/daily-cloud-init-curtin</a></p>
+<p>16:11 <code>&lt;blackboxsw&gt;</code> We have landed the following work items: beware the paste :)</p>
+<p>16:11 <code>&lt;blackboxsw&gt;</code> * Completed release of 18.2 to Ubuntu Bionic, Artful, and Xenial</p>
+<p>16:11 <code>&lt;blackboxsw&gt;</code> * Implement bash completion script for cloud-init command line</p>
+<p>16:11 <code>&lt;blackboxsw&gt;</code> * Improved Softlayer datasource documentation</p>
+<p>16:11 <code>&lt;blackboxsw&gt;</code> * net: Depend on iproute2's ip instead of net-tools ifconfig or route</p>
+<p>16:11 <code>&lt;blackboxsw&gt;</code> * Accept-ra unset by default (LP: #1732002)</p>
+<p>16:11 <code>&lt;blackboxsw&gt;</code> * Command collect-logs will only include most recent boot's journal (LP: #1766335)</p>
+<p>16:11 <code>&lt;blackboxsw&gt;</code> * FreeBSD: Invoke growfs on ufs filesystems such that it does not prompt. (LP: #1404745)</p>
+<p>16:11 <code>&lt;ubot5&gt;</code> Launchpad bug 1732002 in systemd (Ubuntu) "cloud images in lxc get ipv6 address" [Undecided,New] <a href="https://launchpad.net/bugs/1732002">https://launchpad.net/bugs/1732002</a></p>
+<p>16:11 <code>&lt;blackboxsw&gt;</code> * Azure: poll_imds fixes to only report 'ready' state once during pre-provisioning from Joshua Chan (LP: #1765214)</p>
+<p>16:11 <code>&lt;blackboxsw&gt;</code> * DataSourceSmartOS: fix hang when metadata service is down from Mike Gerdts (LP: #1667735)</p>
+<p>16:12 <code>&lt;ubot5&gt;</code> Launchpad bug 1766335 in cloud-init "Running cloud-init collect-logs inside a chroot is not possible" [Medium,Fix committed] <a href="https://launchpad.net/bugs/1766335">https://launchpad.net/bugs/1766335</a></p>
+<p>16:12 <code>&lt;blackboxsw&gt;</code> * DataSourceSmartOS: change default fs on ephemeral disk from ext3 to ext4 from Mike Gerdts (LP: #1763511)</p>
+<p>16:12 <code>&lt;blackboxsw&gt;</code> * pycodestyle: Fix invalid escape sequences in string literals</p>
+<p>16:12 <code>&lt;ubot5&gt;</code> Launchpad bug 1404745 in cloud-init "cloud-init's growfs/resize fails with gpart dependency on FreeBSD" [Undecided,Fix committed] <a href="https://launchpad.net/bugs/1404745">https://launchpad.net/bugs/1404745</a></p>
+<p>16:12 <code>&lt;ubot5&gt;</code> Launchpad bug 1765214 in cloud-init "Multiple success messages sent to Azure Fabric if reboot occurs during pre-provisioning" [Medium,Fix committed] <a href="https://launchpad.net/bugs/1765214">https://launchpad.net/bugs/1765214</a></p>
+<p>16:12 <code>&lt;ubot5&gt;</code> Launchpad bug 1667735 in cloud-init (Ubuntu Trusty) "cloud-init doesn't retry metadata lookups and hangs forever if metadata is down" [Medium,Confirmed] <a href="https://launchpad.net/bugs/1667735">https://launchpad.net/bugs/1667735</a></p>
+<p>16:12 <code>&lt;ubot5&gt;</code> Launchpad bug 1763511 in cloud-init (Ubuntu) "DataSourceSmartOS should default to ext4" [Medium,Fix released] <a href="https://launchpad.net/bugs/1763511">https://launchpad.net/bugs/1763511</a></p>
+<p>16:14 <code>&lt;blackboxsw&gt;</code> A big thank you to community involvement again. Thanks jocha(Microsoft) and mgerdts(Joyent) for the recent branch work supporting Azure and SmartOS clouds respectively</p>
+<p>16:16 <code>&lt;blackboxsw&gt;</code> We also went through another round of StableReleaseUpdates for Ubuntu on Xenial and Artful to pull in IBMCloud platform fixes. putting Xenial and artful at 18.2-4-g05926e48-0ubuntu~16.04.2 | ~17.10.2</p>
+<p>16:18 <code>&lt;blackboxsw&gt;</code> I think that's about it for completed development...</p>
+<p>16:19 <code>&lt;blackboxsw&gt;</code> #topic In-progress Development</p>
+<p>16:21 <code>&lt;blackboxsw&gt;</code> There are a couple of items being worked actively at the moment:</p>
+<p>16:22 <code>&lt;blackboxsw&gt;</code> * SRU of cloud-init tip into bionic (should land today or tomorrow)   18.2-27-g6ef92c98-0ubuntu1~18.04.1</p>
+<p>16:23 <code>&lt;blackboxsw&gt;</code> * SmartOs datasource detection improvements</p>
+<p>16:23 <code>&lt;blackboxsw&gt;</code> * Moving OpenStack datasource to get detected earlier at 'local' stange instead of 'network' stage using ephemeral dhcp client</p>
+<p>16:26 <code>&lt;blackboxsw&gt;</code> * read_file_or_url fixes returing text content in all cases</p>
+<p>16:26 <code>&lt;blackboxsw&gt;</code> * various upstream bug fixes</p>
+<p>16:27 <code>&lt;blackboxsw&gt;</code> * powersj: is also investigating a move to a centralized library for our cloud testing.</p>
+<p>16:29 <code>&lt;robjo&gt;</code> blackboxsw: w.r.t. Depend on iproute2's ip instead of net-tools ifconfig or route was this a merge of iproute2tools branch? I don't recall seeing a merge notification but am way behind in e-mail</p>
+<p>16:29 <code>&lt;blackboxsw&gt;</code> think that about captures what upstream is working on. I think we can transition to office hours for ~30 mins for anyone to bring up ideas of interest</p>
+<p>16:29 <code>&lt;blackboxsw&gt;</code> #topic Office Hours (next ~30 mins)</p>
+<p>16:29 <code>&lt;blackboxsw&gt;</code> hi robjo, checking status there</p>
+<p>16:30 <code>&lt;blackboxsw&gt;</code> I know we landed one branch on that topic</p>
+<p>16:31 <code>&lt;blackboxsw&gt;</code> robjo: so we had a couple branches to packaging dependencies in ubuntu to call out iproute2 specifically as a hard package dependency.</p>
+<p>16:32 <code>&lt;blackboxsw&gt;</code> robjo: and the code changes (which took in some of your branch content  and review comments) landed in rev 6d48d265a0548a2dc23e587f2a335d4e38e8db90</p>
+<p>16:32 <code>&lt;robjo&gt;</code> OK, so I can delete my branch</p>
+<p>16:32 <code>&lt;blackboxsw&gt;</code> <a href="https://pastebin.ubuntu.com/p/266CyDt9gD/">https://pastebin.ubuntu.com/p/266CyDt9gD/</a></p>
+<p>16:34 <code>&lt;robjo&gt;</code> thanks, so we'll get that in 18.3?</p>
+<p>16:34 <code>&lt;blackboxsw&gt;</code> robjo: yes I think i marked you co-author on that branch and pulled in all your changes to cloudinit/config/cc_disable_ec2_metadata.py</p>
+<p>16:34 <code>&lt;blackboxsw&gt;</code> 2</p>
+<p>16:34 <code>&lt;blackboxsw&gt;</code> thanks again for that, sorry for the back and forth as I hadn't seen your original branch.</p>
+<p>16:35 <code>&lt;blackboxsw&gt;</code> robjo: definitely in 18.3</p>
+<p>16:35 <code>&lt;blackboxsw&gt;</code> it landed a week or two after the 18.2 cut.</p>
+<p>16:35 <code>&lt;stanguturi&gt;</code> @blackboxsw, Can someone please provide inputs for the bug <a href="https://bugs.launchpad.net/ubuntu/+source/cloud-init/+bug/1766538">https://bugs.launchpad.net/ubuntu/+source/cloud-init/+bug/1766538</a> One of our team members has uploaded the necessary log files to the bug.</p>
+<p>16:35 <code>&lt;ubot5&gt;</code> Ubuntu bug 1766538 in cloud-init (Ubuntu) "network customization with cloud-init does not work on Ubuntu18.04 Beta2 Server" [Undecided,New]</p>
+<p>16:38 <code>&lt;robjo&gt;</code> OK, so lets also revisit some of the other stuff I have floating about as I just did the 18.2 package for openSUSE and SLES and noticed that I am once again scarring a lot of patches :(</p>
+<p>16:39 <code>&lt;robjo&gt;</code> blackboxsw: <a href="https://code.launchpad.net/~rjschwei/cloud-init/+git/cloud-init/+ref/emptyStageOK">https://code.launchpad.net/~rjschwei/cloud-init/+git/cloud-init/+ref/emptyStageOK</a> should be back in your court, did you get notification?</p>
+<p>16:40 <code>&lt;robjo&gt;</code> blackboxsw: <a href="https://code.launchpad.net/~rjschwei/cloud-init/+git/cloud-init/+ref/noLnxDistro">https://code.launchpad.net/~rjschwei/cloud-init/+git/cloud-init/+ref/noLnxDistro</a> pending since January this may have some merge conflicts now as I had to fiddle quite a bit with the patch in my package</p>
+<p>16:41 <code>&lt;blackboxsw&gt;</code> stanguturi: looking</p>
+<p>16:41 <code>&lt;robjo&gt;</code> I think rharper is working on a different approach to <a href="https://code.launchpad.net/~rjschwei/cloud-init/+git/cloud-init/+ref/chrony">https://code.launchpad.net/~rjschwei/cloud-init/+git/cloud-init/+ref/chrony</a> when can we expect that?</p>
+<p>16:42 <code>&lt;robjo&gt;</code> and does rharper account for the fact that ntp has a different service name on different distributions?</p>
+<p>16:43 <code>&lt;blackboxsw&gt;</code> #link <a href="https://bugs.launchpad.net/ubuntu/+source/cloud-init/+bug/1766538">https://bugs.launchpad.net/ubuntu/+source/cloud-init/+bug/1766538</a></p>
+<p>16:43 <code>&lt;ubot5&gt;</code> Ubuntu bug 1766538 in cloud-init (Ubuntu) "network customization with cloud-init does not work on Ubuntu18.04 Beta2 Server" [Undecided,New]</p>
+<p>16:43 <code>&lt;blackboxsw&gt;</code> #link <a href="https://code.launchpad.net/~rjschwei/cloud-init/+git/cloud-init/+ref/emptyStageOK">https://code.launchpad.net/~rjschwei/cloud-init/+git/cloud-init/+ref/emptyStageOK</a></p>
+<p>16:43 <code>&lt;blackboxsw&gt;</code> ahh robjo hadn't, was on vacation Friday, will grab that/close out today</p>
+<p>16:43 <code>&lt;blackboxsw&gt;</code> #link <a href="https://code.launchpad.net/~rjschwei/cloud-init/+git/cloud-init/+ref/noLnxDistro">https://code.launchpad.net/~rjschwei/cloud-init/+git/cloud-init/+ref/noLnxDistro</a></p>
+<p>16:44 <code>&lt;rharper&gt;</code> robjo: re: ntp/chrony, that's landed, including service names for different distros; I pulled unittests and scenarios from your branch; please look over master and see if we're missing anything from your branch w.r.t use-case/scenario</p>
+<p>16:45 <code>&lt;robjo&gt;</code> rharper: OK, if it's landed I can at least throw my branch away, and yes, will take a look at master, I take it this will be another in 18.3 item?</p>
+<p>16:46 <code>&lt;blackboxsw&gt;</code> stanguturi: ok thanks for the logs on that bug, looks like network config parsing is falling over and OVF datasource isn't being detected <a href="https://pastebin.ubuntu.com/p/qVJxDJWZRV/">https://pastebin.ubuntu.com/p/qVJxDJWZRV/</a></p>
+<p>16:47 <code>&lt;stanguturi&gt;</code> @blackboxsw, Oh . Thanks. Will check with him about the test setup and update the bug. Thanks.</p>
+<p>16:48 <code>&lt;blackboxsw&gt;</code> updated the bug with a comment there</p>
+<p>16:48 <code>&lt;blackboxsw&gt;</code> thanks stanguturi</p>
+<p>16:50 <code>&lt;blackboxsw&gt;</code> robjo: correct as well for ntp/chrony, we held off landing it in 18.2 because of risk</p>
+<p>16:50 <code>&lt;blackboxsw&gt;</code> it was one of the first branches landed after the cut</p>
+<p>16:51 <code>&lt;robjo&gt;</code> ok, leaves the <a href="https://code.launchpad.net/~rjschwei/cloud-init/+git/cloud-init/+ref/noLnxDistro">https://code.launchpad.net/~rjschwei/cloud-init/+git/cloud-init/+ref/noLnxDistro</a> implementation of distro detection as things I'd like to get resolved, others to be addressed maybe in 2 weeks ;)</p>
+<p>16:51 <code>&lt;blackboxsw&gt;</code> ok noLnxDistro....  I'm updating the commit comment robjo to the trailing LP: #<code>&lt;bug_id&gt;</code></p>
+<p>16:51 <code>&lt;blackboxsw&gt;</code> claiming a review slot on that now</p>
+<p>16:53 <code>&lt;blackboxsw&gt;</code> good unit test coverage, thanks for that</p>
+<p>16:54 <code>&lt;robjo&gt;</code> np</p>
+<p>16:55 <code>&lt;blackboxsw&gt;</code> ok this can be reviewed today, not sure if why we don't already have a get_linux_distro utility somewhere, but I'll poke around today for context</p>
+<p>16:55 <code>&lt;blackboxsw&gt;</code> ahh ahh, thanks for the bug robjo ok</p>
+<p>16:56 <code>&lt;robjo&gt;</code> the context is that the Python implementation is going away and has been deprecated</p>
+<p>16:56 <code>&lt;blackboxsw&gt;</code> #link <a href="https://bugs.launchpad.net/cloud-init/+bug/1745235">https://bugs.launchpad.net/cloud-init/+bug/1745235</a></p>
+<p>16:56 <code>&lt;ubot5&gt;</code> Ubuntu bug 1745235 in cloud-init "distribution detection" [Undecided,New]</p>
+<p>16:56 <code>&lt;blackboxsw&gt;</code> thanks again</p>
+<p>16:56 <code>&lt;blackboxsw&gt;</code> changing that status and will help you get that landed</p>
+<p>16:56 <code>&lt;blackboxsw&gt;</code> good one</p>
+<p>16:58 <code>&lt;robjo&gt;</code> OK, blackboxsw is on the hook for two things this week ;) distro detection and the empty modules list</p>
+<p>16:58 <code>&lt;blackboxsw&gt;</code> #action blackboxsw review distro dection and empty modules list</p>
+<p>16:58 * meetingology blackboxsw review distro dection and empty modules list</p>
+<p>16:58 * robjo on the hook to look at chrony support in master and report back to rharper</p>
+<p>16:58 <code>&lt;blackboxsw&gt;</code> #action robjo review existing chrony support in master per rharper's work</p>
+<p>16:58 * meetingology robjo review existing chrony support in master per rharper's work</p>
+<p>16:59 <code>&lt;blackboxsw&gt;</code> official now :)</p>
+<p>16:59 <code>&lt;blackboxsw&gt;</code> now if I only reviewed previous meeting's action items.... checking now</p>
+<p>17:00 <code>&lt;blackboxsw&gt;</code> 16:51 <code>&lt;blackboxsw&gt;</code> #action blackboxsw to have discussions w/ team on datasource maintaining network on each reboot per  <a href="https://code.launchpad.net/~mgerdts/cloud-init/+git/cloud-init/+merge/343712">https://code.launchpad.net/~mgerdts/cloud-init/+git/cloud-init/+merge/343712</a></p>
+<p>17:01 <code>&lt;blackboxsw&gt;</code> ok per last meeting, we have held a couple of discussions on hotplug vs. maintaining network only on reboot. on first blush it looks like we'd need to have these mutually exclusive, but we are just started to iron our what we want to do for our initial hotplug support in cloud-init and have to have a followup discussion about how to support both approaches</p>
+<p>17:02 <code>&lt;blackboxsw&gt;</code> #action blackboxsw carryover network hotplug vs network maintenance on reboot-only</p>
+<p>17:02 * meetingology blackboxsw carryover network hotplug vs network maintenance on reboot-only</p>
+<p>17:02 <code>&lt;blackboxsw&gt;</code> well that was the only action item from last meeting looks like</p>
+<p>17:02 <code>&lt;blackboxsw&gt;</code> ok I think that wraps up today's meeting.</p>
+<p>17:02 <code>&lt;blackboxsw&gt;</code> any other parting shots folks?</p>
+<p>17:03 <code>&lt;blackboxsw&gt;</code> Thanks again for your time. It's always a pleasure.</p>
+<p>17:03 <code>&lt;blackboxsw&gt;</code> Next meeting two weeks, same bat time...</p>
+<p>17:03 <code>&lt;blackboxsw&gt;</code> #endmeeting</p>
+<p>Generated by MeetBot 0.1.5 (<a href="http://wiki.ubuntu.com/meetingology">http://wiki.ubuntu.com/meetingology</a>)</p>
+  </div>
+  <div class="tag-cloud">
+    <p>
+    </p>
+  </div>
+
+
+
+    <div class="addthis_relatedposts_inline">
+
+
+</article>
+
+    <footer>
+<p>&copy;  </p>
+<p>Powered by <a href="http://getpelican.com" target="_blank">Pelican</a> - <a href="https://github.com/alexandrevicenzi/flex" target="_blank">Flex</a> theme by <a href="http://alexandrevicenzi.com" target="_blank">Alexandre Vicenzi</a></p>    </footer>
+  </main>
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " Cloud-init Info ",
+  "url" : "https://cloud-init.github.io",
+  "image": "/images/cloud-init-orange.svg",
+  "description": "Cloud-init project updates and general information"
+}
+</script>
+
+</body>
+</html>
