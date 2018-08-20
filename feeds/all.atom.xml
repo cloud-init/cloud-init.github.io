@@ -1,79 +1,230 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Cloud-init Info</title><link href="https://cloud-init.github.io/" rel="alternate"></link><link href="https://cloud-init.github.io/feeds/all.atom.xml" rel="self"></link><id>https://cloud-init.github.io/</id><updated>2018-08-06T16:04:00+00:00</updated><entry><title>Cloud-init bi-weekly status</title><link href="https://cloud-init.github.io/status-2018-08-06.html" rel="alternate"></link><published>2018-08-06T16:04:00+00:00</published><updated>2018-08-06T16:04:00+00:00</updated><author><name>chad.smith@canonical.com</name></author><id>tag:cloud-init.github.io,2018-08-06:/status-2018-08-06.html</id><summary type="html">&lt;p&gt;16:04 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; #startmeeting Cloud-init bi-weekly status meeting
-16:04 &lt;code&gt;&amp;lt;meetingology&amp;gt;&lt;/code&gt; Meeting started Mon Aug  6 16:04:05 2018 UTC.  The chair is blackboxsw. Information about MeetBot at &lt;a href="http://wiki.ubuntu.com/meetingology."&gt;http://wiki.ubuntu.com/meetingology.&lt;/a&gt;
-16:04 &lt;code&gt;&amp;lt;meetingology&amp;gt;&lt;/code&gt; 
-16:04 &lt;code&gt;&amp;lt;meetingology&amp;gt;&lt;/code&gt; Available commands: action commands idea info link nick
-16:04 …&lt;/p&gt;</summary><content type="html">&lt;p&gt;16:04 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; #startmeeting Cloud-init bi-weekly status meeting
-16:04 &lt;code&gt;&amp;lt;meetingology&amp;gt;&lt;/code&gt; Meeting started Mon Aug  6 16:04:05 2018 UTC.  The chair is blackboxsw. Information about MeetBot at &lt;a href="http://wiki.ubuntu.com/meetingology."&gt;http://wiki.ubuntu.com/meetingology.&lt;/a&gt;
-16:04 &lt;code&gt;&amp;lt;meetingology&amp;gt;&lt;/code&gt; 
-16:04 &lt;code&gt;&amp;lt;meetingology&amp;gt;&lt;/code&gt; Available commands: action commands idea info link nick
-16:04 &lt;code&gt;&amp;lt;dpb1&amp;gt;&lt;/code&gt; o/
-16:04 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; hi folks, let's kickoff another cloud-init status meeting. Welcome back. Lot's of summer vacations disrupting our typical meeting schedule.
-16:05 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; Our last meeting's minutes should be up on our github site
-16:05 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; #link &lt;a href="https://cloud-init.github.io/"&gt;https://cloud-init.github.io/&lt;/a&gt;
-16:07 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; for this meeting we'll go through the following topics: previous actions, recent work, in-progress development and office hours
-16:09 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; #topic Previous Actions
-16:09 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; from our last meeting we had a couple of actions to carry over
-16:10 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; we landed the folowing branch which added support for a datasource to re-write network config across each boot.  &lt;a href="https://code.launchpad.net/~chad.smith/cloud-init/+git/cloud-init/+merge/348000"&gt;https://code.launchpad.net/~chad.smith/cloud-init/+git/cloud-init/+merge/348000&lt;/a&gt;
-16:10 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; #action rharper: and I need to review &lt;a href="https://code.launchpad.net/~rjschwei/cloud-init/+git/cloud-init/+merge/333904"&gt;https://code.launchpad.net/~rjschwei/cloud-init/+git/cloud-init/+merge/333904&lt;/a&gt;
-16:10 * meetingology rharper: and I need to review &lt;a href="https://code.launchpad.net/~rjschwei/cloud-init/+git/cloud-init/+merge/333904"&gt;https://code.launchpad.net/~rjschwei/cloud-init/+git/cloud-init/+merge/333904&lt;/a&gt;
-16:10 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; the above is still a carryover
-16:11 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; that's all for actions from last meeting
-16:11 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; #topic Recent Changes
-16:12 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; the following has landed in cloud-init tip:
-16:13 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; * oracle: fix detect_openstack to report True on OracleCloud.com DMI data (LP: #1784685)
-16:13 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; * tests: improve LXDInstance trying to workaround or catch bug.*
-16:13 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; * update_metadata re-config on every boot comments and tests not quite right [Mike Gerdts]
-16:13 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; * docs: note in rtd about avoiding /tmp when writing files
-16:13 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; * ubuntu,centos,debian: get_linux_distro to align with platform.dist
-16:13 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; * Fix boothook docs on environment variable name (INSTANCE_I -&amp;gt;&lt;code&gt;INSTANCE_ID) (Marc Tamsky)
-16:13&lt;/code&gt;&lt;blackboxsw&gt;&lt;code&gt;* update_metadata: a datasource can support network re-config every boot
-16:13&lt;/code&gt;&lt;ubot5&gt;&lt;code&gt;Launchpad bug 1784685 in cloud-init "Oracle: cloud-init openstack local detection too strict for oracle cloud" [High,Fix committed] [https://launchpad.net/bugs/1784685](https://launchpad.net/bugs/1784685)
-16:13&lt;/code&gt;&lt;blackboxsw&gt;&lt;code&gt;* tests: drop salt-minion integration test
-16:13&lt;/code&gt;&lt;blackboxsw&gt;&lt;code&gt;* Retry on failed import of gpg receive keys.
-16:13&lt;/code&gt;&lt;blackboxsw&gt;&lt;code&gt;* tools: Fix run-container when neither source or binary package requested.
-16:13&lt;/code&gt;&lt;blackboxsw&gt;&lt;code&gt;* docs: Fix a small spelling error (Oz N Tiram)
-16:13&lt;/code&gt;&lt;blackboxsw&gt;&lt;code&gt;* tox: use simplestreams from git repository rather than bzr.
-16:14&lt;/code&gt;&lt;blackboxsw&gt;&lt;code&gt;generally speaking we had been spending some cycles on a stable release update (SRU) for cloud-init into Xenial and Bionic with top of tree cloud-init.
-16:15&lt;/code&gt;&lt;blackboxsw&gt;&lt;code&gt;notably, we discovered a potential regression in Oracle datasource detection of their OpenStack implementation so that fix is queued for publish into xenial and bionic
-16:15&lt;/code&gt;&lt;blackboxsw&gt;&lt;code&gt;18.3-9 is what folks are looking for. in xenial/bionic/cosmic for latest cloud-init containing all the above fixes
-16:16&lt;/code&gt;&lt;blackboxsw&gt;&lt;code&gt;Also powersj has been working on an auto-lander for cloud-init branches to get a few of us out of the way once a branch hits acceptm
-16:16&lt;/code&gt;&lt;blackboxsw&gt;&lt;code&gt;Also powersj has been working on an auto-lander for cloud-init branches to get a few of us out of the way once a branch hits "Approved" status.
-16:16&lt;/code&gt;&lt;blackboxsw&gt;&lt;code&gt;\#link [https://jenkins.ubuntu.com/server/job/admin-lp-git-autoland/](https://jenkins.ubuntu.com/server/job/admin-lp-git-autoland/)
-16:16&lt;/code&gt;&lt;powersj&gt;&lt;code&gt;yep that is live and with a recent fix to remove the extra "Author" line now
-16:16&lt;/code&gt;&lt;powersj&gt;&lt;code&gt;hopefully it is saving blackboxsw, smoser, and rharper time ;)
-16:17&lt;/code&gt;&lt;blackboxsw&gt;&lt;code&gt;powersj: can you explain what it does (so I don't have to type)
-16:17&lt;/code&gt;&lt;blackboxsw&gt;&lt;code&gt;:)
-16:17&lt;/code&gt;&lt;powersj&gt;&lt;code&gt;If a merge request is put in the "Approved" state, it will get test merged with the master branch
-16:17&lt;/code&gt;&lt;powersj&gt;&lt;code&gt;the tests will run the same as during a review and verify that it can merge cleanly
-16:18&lt;/code&gt;&lt;powersj&gt;&lt;code&gt;the commit message will get linted to verify it fits our format
-16:18&lt;/code&gt;&lt;powersj&gt;&lt;code&gt;and if everything looks good, get merged in and pushed to master
-16:18&lt;/code&gt;&lt;blackboxsw&gt;&lt;code&gt;thanks for that work powersj. it looks/works great so far.
-16:19&lt;/code&gt;&lt;blackboxsw&gt;&lt;code&gt;\#topic In-progress Development
-16:19&lt;/code&gt;&lt;blackboxsw&gt;&lt;code&gt;All our current work is visible at the following trello board
-16:19&lt;/code&gt;&lt;blackboxsw&gt;&lt;code&gt;\#link [https://trello.com/b/hFtWKUn3/daily-cloud-init-curtin](https://trello.com/b/hFtWKUn3/daily-cloud-init-curtin)
-16:20&lt;/code&gt;&lt;blackboxsw&gt;&lt;code&gt;I expect we'll have a couple of branches landed shortly in the following areas:
-16:21&lt;/code&gt;&lt;blackboxsw&gt;&lt;code&gt;- smoser is working: A datasource specific to Oracle, because of their specific implementation of Openstack. Oracle will no longer use just stock DataSourceOpenStack.
-16:21&lt;/code&gt;&lt;blackboxsw&gt;&lt;code&gt;- I
-16:21&lt;/code&gt;&lt;blackboxsw&gt;&lt;code&gt;- I'm trying to wrap up a branch for Azure to write network data from their IMDS per-boot
-16:22&lt;/code&gt;&lt;blackboxsw&gt;&lt;code&gt;\#link [https://code.launchpad.net/~chad.smith/cloud-init/+git/cloud-init/+merge/348704](https://code.launchpad.net/~chad.smith/cloud-init/+git/cloud-init/+merge/348704)
-16:22&lt;/code&gt;&lt;blackboxsw&gt;&lt;code&gt;- Joyent (SmartOS) per-boot network config review
-16:23&lt;/code&gt;&lt;blackboxsw&gt;&lt;code&gt;- a couple netplan config option bugs for bionic ++
-16:24&lt;/code&gt;&lt;blackboxsw&gt;&lt;code&gt;- and standardize instance-data sourcing in \#cloud-config files (like referencing the hostname as detected from instance metadata)
-16:24&lt;/code&gt;&lt;blackboxsw&gt;&lt;code&gt;I think that probably wraps it up for stuff in progress
-16:24&lt;/code&gt;&lt;blackboxsw&gt;&lt;code&gt;anything I'm missing?
-16:25&lt;/code&gt;&lt;blackboxsw&gt;&lt;code&gt;... without further ado
-16:25&lt;/code&gt;&lt;blackboxsw&gt;&lt;code&gt;\#topic Office Hource (next ~30 mins)
-16:26&lt;/code&gt;&lt;blackboxsw&gt;&lt;code&gt;eyes will float on this channel for any bug/feature discussions, review requests  etc. any cloud-init topic is acceptable.
-16:28&lt;/code&gt;&lt;blackboxsw&gt;&lt;code&gt;a number of us are going to be prepping for a cloud-init summit meeting in the weeks to come.  A number of attendees from various vendors and clouds are attending as well to do a bit of planning on what cloud-init should look like next year. If folks get a chance, think about any feature or topic suggestions that would benefit cloud-init users and we'll see if we can discuss them at the summit.
-16:31&lt;/code&gt;&lt;blackboxsw&gt;&lt;code&gt;while I'm at it, I think I'll set the topic to next status meeting time so folks know it's coming.
-16:39&lt;/code&gt;&lt;blackboxsw&gt;&lt;code&gt;also just noticed the following branch, which admitedly is a bit stale, but adds hyperv logging via kvp. kinda cool for stuffing data into the registry on windows vms. Might have to get a review on that before the next status meeting.
-16:39&lt;/code&gt;&lt;blackboxsw&gt;&lt;code&gt;\#link [https://code.launchpad.net/~andyliuliming/cloud-init/+git/cloud-init/+merge/351742.](https://code.launchpad.net/~andyliuliming/cloud-init/+git/cloud-init/+merge/351742.)
-16:39&lt;/code&gt;&lt;blackboxsw&gt;&lt;code&gt;it looks a bit noisy on the debug front with adding out/err messages for all subp calls, but other than that fairly straight forward.
-17:03&lt;/code&gt;&lt;blackboxsw&gt;&lt;code&gt;looks like that's a wrap for today.
-17:03&lt;/code&gt;&lt;blackboxsw&gt;&lt;code&gt;\#link [https://cloud-init.github.io](https://cloud-init.github.io)   for meeting minutes
-17:04&lt;/code&gt;&lt;blackboxsw&gt;&lt;code&gt;see you next time: 2 weeks from today
-17:04&lt;/code&gt;&lt;blackboxsw&gt;` #endmeeting&lt;/p&gt;</content></entry><entry><title>Cloud-init bi-weekly status</title><link href="https://cloud-init.github.io/status-2018-07-02.html" rel="alternate"></link><published>2018-07-02T16:05:00+00:00</published><updated>2018-07-02T16:05:00+00:00</updated><author><name>chad.smith@canonical.com</name></author><id>tag:cloud-init.github.io,2018-07-02:/status-2018-07-02.html</id><summary type="html">&lt;h2&gt;Meeting information&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Cloud-init Info</title><link href="https://cloud-init.github.io/" rel="alternate"></link><link href="https://cloud-init.github.io/feeds/all.atom.xml" rel="self"></link><id>https://cloud-init.github.io/</id><updated>2018-08-20T16:09:00+00:00</updated><entry><title>Cloud-init bi-weekly status</title><link href="https://cloud-init.github.io/status-2018-08-20.html" rel="alternate"></link><published>2018-08-20T16:09:00+00:00</published><updated>2018-08-20T16:09:00+00:00</updated><author><name>chad.smith@canonical.com</name></author><id>tag:cloud-init.github.io,2018-08-20:/status-2018-08-20.html</id><summary type="html">&lt;h2&gt;Meeting information&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;#cloud-init: Cloud-init bi-weekly status meeting, 20 Aug at 16:09 &amp;mdash; 17:04 UTC&lt;/li&gt;
+&lt;li&gt;Full logs at [[&lt;a href="http://ubottu.com/meetingology/logs/cloud-init/2018/cloud-init.2018-08-20-16.09.log.html"&gt;http://ubottu.com/meetingology/logs/cloud-init/2018/cloud-init.2018-08-20-16.09.log.html&lt;/a&gt;]]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Meeting summary&lt;/h2&gt;
+&lt;h3&gt;Previous Actions&lt;/h3&gt;
+&lt;p&gt;The discussion about "Previous Actions" started at 16:13.&lt;/p&gt;
+&lt;h3&gt;Recent Changes&lt;/h3&gt;
+&lt;p&gt;The discussion about "Recent Changes …&lt;/p&gt;</summary><content type="html">&lt;h2&gt;Meeting information&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;#cloud-init: Cloud-init bi-weekly status meeting, 20 Aug at 16:09 &amp;mdash; 17:04 UTC&lt;/li&gt;
+&lt;li&gt;Full logs at [[&lt;a href="http://ubottu.com/meetingology/logs/cloud-init/2018/cloud-init.2018-08-20-16.09.log.html"&gt;http://ubottu.com/meetingology/logs/cloud-init/2018/cloud-init.2018-08-20-16.09.log.html&lt;/a&gt;]]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Meeting summary&lt;/h2&gt;
+&lt;h3&gt;Previous Actions&lt;/h3&gt;
+&lt;p&gt;The discussion about "Previous Actions" started at 16:13.&lt;/p&gt;
+&lt;h3&gt;Recent Changes&lt;/h3&gt;
+&lt;p&gt;The discussion about "Recent Changes" started at 16:13.&lt;/p&gt;
+&lt;h3&gt;In-progress Development&lt;/h3&gt;
+&lt;p&gt;The discussion about "In-progress Development" started at 16:21.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;LINK&lt;/strong&gt;: &lt;a href="https://trello.com/b/hFtWKUn3/daily-cloud-init-curtin"&gt;https://trello.com/b/hFtWKUn3/daily-cloud-init-curtin&lt;/a&gt; &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Office Hource (next ~30 mins)&lt;/h3&gt;
+&lt;p&gt;The discussion about "Office Hource (next ~30 mins)" started at 16:27.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;LINK&lt;/strong&gt;: &lt;a href="https://code.launchpad.net/~andyliuliming/cloud-init/+git/cloud-init/+merge/351742"&gt;https://code.launchpad.net/~andyliuliming/cloud-init/+git/cloud-init/+merge/351742&lt;/a&gt; &lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ACTION&lt;/strong&gt;: rharper/blackboxsw close out on this review before cloud-init summit &lt;a href="https://code.launchpad.net/~andyliuliming/cloud-init/+git/cloud-init/+merge/351742"&gt;https://code.launchpad.net/~andyliuliming/cloud-init/+git/cloud-init/+merge/351742&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Vote results&lt;/h2&gt;
+&lt;h2&gt;Action items, by person&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;blackboxsw&lt;/li&gt;
+&lt;li&gt;rharper/blackboxsw close out on this review before cloud-init summit &lt;a href="https://code.launchpad.net/~andyliuliming/cloud-init/+git/cloud-init/+merge/351742"&gt;https://code.launchpad.net/~andyliuliming/cloud-init/+git/cloud-init/+merge/351742&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Done items&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;(none)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;People present (lines said)&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;blackboxsw (39)&lt;/li&gt;
+&lt;li&gt;ubot5 (5)&lt;/li&gt;
+&lt;li&gt;paulmey (5)&lt;/li&gt;
+&lt;li&gt;meetingology (4)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Full Log&lt;/h2&gt;
+&lt;p&gt;16:09 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; #startmeeting Cloud-init bi-weekly status meeting&lt;/p&gt;
+&lt;p&gt;16:09 &lt;code&gt;&amp;lt;meetingology&amp;gt;&lt;/code&gt; Meeting started Mon Aug 20 16:09:08 2018 UTC.  The chair is blackboxsw. Information about MeetBot at &lt;a href="http://wiki.ubuntu.com/meetingology."&gt;http://wiki.ubuntu.com/meetingology.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;16:09 &lt;code&gt;&amp;lt;meetingology&amp;gt;&lt;/code&gt; &lt;/p&gt;
+&lt;p&gt;16:09 &lt;code&gt;&amp;lt;meetingology&amp;gt;&lt;/code&gt; Available commands: action commands idea info link nick&lt;/p&gt;
+&lt;p&gt;16:09 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; For those around, let's kickoff another cloud-init status meeting.  Feel free to interrupt as we go through the agenda for today.&lt;/p&gt;
+&lt;p&gt;16:10 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; agenda: Previous Actions, Recent Changes, In-progress development and office hours (~30 minutes)&lt;/p&gt;
+&lt;p&gt;16:13 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; #topic Previous Actions&lt;/p&gt;
+&lt;p&gt;16:13 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; nothing to speak of here as far as I recall.&lt;/p&gt;
+&lt;p&gt;16:13 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; #topic Recent Changes&lt;/p&gt;
+&lt;p&gt;16:14 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; We have recently landed the following content in tip of cloud-init over the last 2 weeks&lt;/p&gt;
+&lt;p&gt;16:14 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; - Add datasource Oracle Compute Infrastructure (OCI).&lt;/p&gt;
+&lt;p&gt;16:14 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; - azure: allow azure to generate network configuration from IMDS per boot.&lt;/p&gt;
+&lt;p&gt;16:14 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; - Scaleway: Add network configuration to the DataSource [Louis Bouchard]&lt;/p&gt;
+&lt;p&gt;16:14 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; - docs: Fix example cloud-init analyze command to match output.&lt;/p&gt;
+&lt;p&gt;16:14 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; [Wesley Gao]&lt;/p&gt;
+&lt;p&gt;16:14 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; - netplan: Correctly render macaddress on a bonds and bridges when&lt;/p&gt;
+&lt;p&gt;16:14 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; provided. (LP: #1784699)&lt;/p&gt;
+&lt;p&gt;16:14 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; - tools: Add 'net-convert' subcommand command to 'cloud-init devel'.&lt;/p&gt;
+&lt;p&gt;16:14 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; - redhat: remove ssh keys on new instance. (LP: #1781094)&lt;/p&gt;
+&lt;p&gt;16:14 &lt;code&gt;&amp;lt;ubot5&amp;gt;&lt;/code&gt; Launchpad bug 1784699 in cloud-init "cloud-init not setting mac address for bond or bridge in bionic" [Medium,Fix committed] &lt;a href="https://launchpad.net/bugs/1784699"&gt;https://launchpad.net/bugs/1784699&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;16:15 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; - Use typeset or local in profile.d scripts. (LP: #1784713)&lt;/p&gt;
+&lt;p&gt;16:15 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; - OpenNebula: Fix null gateway6 [Akihiko Ota] (LP: #1768547)&lt;/p&gt;
+&lt;p&gt;16:15 &lt;code&gt;&amp;lt;ubot5&amp;gt;&lt;/code&gt; Launchpad bug 1781094 in cloud-init "cloud.cfg.tmpl should not include "ssh_deletekeys: 0"" [Medium,Fix committed] &lt;a href="https://launchpad.net/bugs/1781094"&gt;https://launchpad.net/bugs/1781094&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;16:15 &lt;code&gt;&amp;lt;ubot5&amp;gt;&lt;/code&gt; Launchpad bug 1784713 in cloud-init (Ubuntu) "cloud-init profile.d files use bash-specific builtin "local"" [Low,Confirmed] &lt;a href="https://launchpad.net/bugs/1784713"&gt;https://launchpad.net/bugs/1784713&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;16:15 &lt;code&gt;&amp;lt;ubot5&amp;gt;&lt;/code&gt; Launchpad bug 1768547 in cloud-init (Ubuntu) "OpenNebula DataSource adds null gateway6 to netplan config" [Medium,Confirmed] &lt;a href="https://launchpad.net/bugs/1768547"&gt;https://launchpad.net/bugs/1768547&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;16:15 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; most notable is the new datasource for Oracle and Azure datasource now emitting network configuration per boot.&lt;/p&gt;
+&lt;p&gt;16:21 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; new Ubuntu cosmic images should contain 18.3-24-gf6249277-0ubuntu1 with the lastest patches&lt;/p&gt;
+&lt;p&gt;16:21 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; #topic In-progress Development&lt;/p&gt;
+&lt;p&gt;16:23 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; The team in general is perparing for the cloud-init summit conference which will be the second half of this week with cloud and distro vendors so we'll probably be landing a couple more branches in preparation for talks/demos there.&lt;/p&gt;
+&lt;p&gt;16:23 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; &lt;em&gt;preparing&lt;/em&gt; rather&lt;/p&gt;
+&lt;p&gt;16:24 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; Our trello board is a good representation of any existing work we are "Doing"&lt;/p&gt;
+&lt;p&gt;16:24 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; #link &lt;a href="https://trello.com/b/hFtWKUn3/daily-cloud-init-curtin"&gt;https://trello.com/b/hFtWKUn3/daily-cloud-init-curtin&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;16:26 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; recently powersj has also moved our jenkins server around to a new network so there has been a good bit of work getting all things jenkins back up and running behind the new proxies/firewalls etc.&lt;/p&gt;
+&lt;p&gt;16:26 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; thanks for the heavy lift powersj&lt;/p&gt;
+&lt;p&gt;16:27 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; I think that wraps up all things cloud-init....&lt;/p&gt;
+&lt;p&gt;16:27 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; #topic Office Hource (next ~30 mins)&lt;/p&gt;
+&lt;p&gt;16:28 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; We'll have eyes on this channel for any quips, complaints, bug, feature or branch discussions for the next half hour&lt;/p&gt;
+&lt;p&gt;16:28 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; Otherwise, we'll be excited to see a few of you again in this year's cloud-init summit.\&lt;/p&gt;
+&lt;p&gt;16:28 &lt;code&gt;&amp;lt;paulmey&amp;gt;&lt;/code&gt; Hi all, I'd like to request a review for this MP: &lt;a href="https://code.launchpad.net/~andyliuliming/cloud-init/+git/cloud-init/+merge/351742"&gt;https://code.launchpad.net/~andyliuliming/cloud-init/+git/cloud-init/+merge/351742&lt;/a&gt; (attached to LP: #1722959)&lt;/p&gt;
+&lt;p&gt;16:28 &lt;code&gt;&amp;lt;ubot5&amp;gt;&lt;/code&gt; Launchpad bug 1722959 in cloud-init "Implement Key-Value Pair Telemetry for Azure" [Undecided,In progress] &lt;a href="https://launchpad.net/bugs/1722959"&gt;https://launchpad.net/bugs/1722959&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;16:29 &lt;code&gt;&amp;lt;paulmey&amp;gt;&lt;/code&gt; Hoping we can get this merged sometime soon. :-)&lt;/p&gt;
+&lt;p&gt;16:29 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; Hi paulmey thanks for the ping on this.&lt;/p&gt;
+&lt;p&gt;16:29 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; #link &lt;a href="https://code.launchpad.net/~andyliuliming/cloud-init/+git/cloud-init/+merge/351742"&gt;https://code.launchpad.net/~andyliuliming/cloud-init/+git/cloud-init/+merge/351742&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;16:30 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; #action rharper/blackboxsw close out on this review before cloud-init summit &lt;a href="https://code.launchpad.net/~andyliuliming/cloud-init/+git/cloud-init/+merge/351742"&gt;https://code.launchpad.net/~andyliuliming/cloud-init/+git/cloud-init/+merge/351742&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;16:30 * meetingology rharper/blackboxsw close out on this review before cloud-init summit &lt;a href="https://code.launchpad.net/~andyliuliming/cloud-init/+git/cloud-init/+merge/351742"&gt;https://code.launchpad.net/~andyliuliming/cloud-init/+git/cloud-init/+merge/351742&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;16:30 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; that has gotten dusty, thank you&lt;/p&gt;
+&lt;p&gt;16:31 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; I'll start a review in earnest now&lt;/p&gt;
+&lt;p&gt;16:31 &lt;code&gt;&amp;lt;paulmey&amp;gt;&lt;/code&gt; Thanks. The dust is mostly mine... Andy has been working on this, but he's in a different time zone, so I'm still pushing it...&lt;/p&gt;
+&lt;p&gt;16:31 &lt;code&gt;&amp;lt;paulmey&amp;gt;&lt;/code&gt; 😉&lt;/p&gt;
+&lt;p&gt;16:32 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; paulmey: I'll try spinning up an azure vm to test this out&lt;/p&gt;
+&lt;p&gt;16:34 &lt;code&gt;&amp;lt;paulmey&amp;gt;&lt;/code&gt; let me know if you need anything&lt;/p&gt;
+&lt;p&gt;17:04 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; ok thanks folks for tuning in. See you next time&lt;/p&gt;
+&lt;p&gt;17:04 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; #endmeeting&lt;/p&gt;
+&lt;p&gt;Generated by MeetBot 0.1.5 (&lt;a href="http://wiki.ubuntu.com/meetingology"&gt;http://wiki.ubuntu.com/meetingology&lt;/a&gt;)&lt;/p&gt;</content></entry><entry><title>Cloud-init bi-weekly status</title><link href="https://cloud-init.github.io/status-2018-08-06.html" rel="alternate"></link><published>2018-08-06T16:04:00+00:00</published><updated>2018-08-06T16:04:00+00:00</updated><author><name>chad.smith@canonical.com</name></author><id>tag:cloud-init.github.io,2018-08-06:/status-2018-08-06.html</id><summary type="html">&lt;h2&gt;Meeting information&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;#cloud-init: Cloud-init bi-weekly status meeting, 06 Aug at 16:04 &amp;mdash; 17:04 UTC&lt;/li&gt;
+&lt;li&gt;Full logs at [[&lt;a href="http://ubottu.com/meetingology/logs/cloud-init/2018/cloud-init.2018-08-06-16.04.log.html"&gt;http://ubottu.com/meetingology/logs/cloud-init/2018/cloud-init.2018-08-06-16.04.log.html&lt;/a&gt;]]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Meeting summary&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;LINK&lt;/strong&gt;: &lt;a href="https://cloud-init.github.io/"&gt;https://cloud-init.github.io/&lt;/a&gt; &lt;/p&gt;
+&lt;h3&gt;Previous Actions&lt;/h3&gt;
+&lt;p&gt;The discussion about "Previous Actions" started at 16:09.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;ACTION&lt;/strong&gt;: rharper …&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;h2&gt;Meeting information&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;#cloud-init: Cloud-init bi-weekly status meeting, 06 Aug at 16:04 &amp;mdash; 17:04 UTC&lt;/li&gt;
+&lt;li&gt;Full logs at [[&lt;a href="http://ubottu.com/meetingology/logs/cloud-init/2018/cloud-init.2018-08-06-16.04.log.html"&gt;http://ubottu.com/meetingology/logs/cloud-init/2018/cloud-init.2018-08-06-16.04.log.html&lt;/a&gt;]]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Meeting summary&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;LINK&lt;/strong&gt;: &lt;a href="https://cloud-init.github.io/"&gt;https://cloud-init.github.io/&lt;/a&gt; &lt;/p&gt;
+&lt;h3&gt;Previous Actions&lt;/h3&gt;
+&lt;p&gt;The discussion about "Previous Actions" started at 16:09.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;ACTION&lt;/strong&gt;: rharper: and I need to review &lt;a href="https://code.launchpad.net/~rjschwei/cloud-init/+git/cloud-init/+merge/333904"&gt;https://code.launchpad.net/~rjschwei/cloud-init/+git/cloud-init/+merge/333904&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Recent Changes&lt;/h3&gt;
+&lt;p&gt;The discussion about "Recent Changes" started at 16:11.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;LINK&lt;/strong&gt;: &lt;a href="https://jenkins.ubuntu.com/server/job/admin-lp-git-autoland/"&gt;https://jenkins.ubuntu.com/server/job/admin-lp-git-autoland/&lt;/a&gt; &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;In-progress Development&lt;/h3&gt;
+&lt;p&gt;The discussion about "In-progress Development" started at 16:19.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;LINK&lt;/strong&gt;: &lt;a href="https://trello.com/b/hFtWKUn3/daily-cloud-init-curtin"&gt;https://trello.com/b/hFtWKUn3/daily-cloud-init-curtin&lt;/a&gt; &lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;LINK&lt;/strong&gt;: &lt;a href="https://code.launchpad.net/~chad.smith/cloud-init/+git/cloud-init/+merge/348704"&gt;https://code.launchpad.net/~chad.smith/cloud-init/+git/cloud-init/+merge/348704&lt;/a&gt; &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Office Hource (next ~30 mins)&lt;/h3&gt;
+&lt;p&gt;The discussion about "Office Hource (next ~30 mins)" started at 16:25.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;LINK&lt;/strong&gt;: &lt;a href="https://code.launchpad.net/~andyliuliming/cloud-init/+git/cloud-init/+merge/351742."&gt;https://code.launchpad.net/~andyliuliming/cloud-init/+git/cloud-init/+merge/351742.&lt;/a&gt; &lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;LINK&lt;/strong&gt;: &lt;a href="https://cloud-init.github.io"&gt;https://cloud-init.github.io&lt;/a&gt; for meeting minutes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Vote results&lt;/h2&gt;
+&lt;h2&gt;Done items&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;(none)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;People present (lines said)&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;blackboxsw (59)&lt;/li&gt;
+&lt;li&gt;powersj (6)&lt;/li&gt;
+&lt;li&gt;meetingology (4)&lt;/li&gt;
+&lt;li&gt;ubot5 (1)&lt;/li&gt;
+&lt;li&gt;dpb1 (1)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Full Log&lt;/h2&gt;
+&lt;p&gt;16:04 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; #startmeeting Cloud-init bi-weekly status meeting&lt;/p&gt;
+&lt;p&gt;16:04 &lt;code&gt;&amp;lt;meetingology&amp;gt;&lt;/code&gt; Meeting started Mon Aug  6 16:04:05 2018 UTC.  The chair is blackboxsw. Information about MeetBot at &lt;a href="http://wiki.ubuntu.com/meetingology."&gt;http://wiki.ubuntu.com/meetingology.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;16:04 &lt;code&gt;&amp;lt;meetingology&amp;gt;&lt;/code&gt; &lt;/p&gt;
+&lt;p&gt;16:04 &lt;code&gt;&amp;lt;meetingology&amp;gt;&lt;/code&gt; Available commands: action commands idea info link nick&lt;/p&gt;
+&lt;p&gt;16:04 &lt;code&gt;&amp;lt;dpb1&amp;gt;&lt;/code&gt; o/&lt;/p&gt;
+&lt;p&gt;16:04 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; hi folks, let's kickoff another cloud-init status meeting. Welcome back. Lot's of summer vacations disrupting our typical meeting schedule.&lt;/p&gt;
+&lt;p&gt;16:05 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; Our last meeting's minutes should be up on our github site&lt;/p&gt;
+&lt;p&gt;16:05 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; #link &lt;a href="https://cloud-init.github.io/"&gt;https://cloud-init.github.io/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;16:07 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; for this meeting we'll go through the following topics: previous actions, recent work, in-progress development and office hours&lt;/p&gt;
+&lt;p&gt;16:09 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; #topic Previous Actions&lt;/p&gt;
+&lt;p&gt;16:09 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; from our last meeting we had a couple of actions to carry over&lt;/p&gt;
+&lt;p&gt;16:10 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; we landed the folowing branch which added support for a datasource to re-write network config across each boot.  &lt;a href="https://code.launchpad.net/~chad.smith/cloud-init/+git/cloud-init/+merge/348000"&gt;https://code.launchpad.net/~chad.smith/cloud-init/+git/cloud-init/+merge/348000&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;16:10 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; #action rharper: and I need to review &lt;a href="https://code.launchpad.net/~rjschwei/cloud-init/+git/cloud-init/+merge/333904"&gt;https://code.launchpad.net/~rjschwei/cloud-init/+git/cloud-init/+merge/333904&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;16:10 * meetingology rharper: and I need to review &lt;a href="https://code.launchpad.net/~rjschwei/cloud-init/+git/cloud-init/+merge/333904"&gt;https://code.launchpad.net/~rjschwei/cloud-init/+git/cloud-init/+merge/333904&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;16:10 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; the above is still a carryover&lt;/p&gt;
+&lt;p&gt;16:11 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; that's all for actions from last meeting&lt;/p&gt;
+&lt;p&gt;16:11 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; #topic Recent Changes&lt;/p&gt;
+&lt;p&gt;16:12 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; the following has landed in cloud-init tip:&lt;/p&gt;
+&lt;p&gt;16:13 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; * oracle: fix detect_openstack to report True on OracleCloud.com DMI data (LP: #1784685)&lt;/p&gt;
+&lt;p&gt;16:13 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; * tests: improve LXDInstance trying to workaround or catch bug.*&lt;/p&gt;
+&lt;p&gt;16:13 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; * update_metadata re-config on every boot comments and tests not quite right [Mike Gerdts]&lt;/p&gt;
+&lt;p&gt;16:13 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; * docs: note in rtd about avoiding /tmp when writing files&lt;/p&gt;
+&lt;p&gt;16:13 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; * ubuntu,centos,debian: get_linux_distro to align with platform.dist&lt;/p&gt;
+&lt;p&gt;16:13 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; * Fix boothook docs on environment variable name (INSTANCE_I -&amp;gt;` INSTANCE_ID) (Marc Tamsky)&lt;/p&gt;
+&lt;p&gt;16:13 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; * update_metadata: a datasource can support network re-config every boot&lt;/p&gt;
+&lt;p&gt;16:13 &lt;code&gt;&amp;lt;ubot5&amp;gt;&lt;/code&gt; Launchpad bug 1784685 in cloud-init "Oracle: cloud-init openstack local detection too strict for oracle cloud" [High,Fix committed] &lt;a href="https://launchpad.net/bugs/1784685"&gt;https://launchpad.net/bugs/1784685&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;16:13 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; * tests: drop salt-minion integration test&lt;/p&gt;
+&lt;p&gt;16:13 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; * Retry on failed import of gpg receive keys.&lt;/p&gt;
+&lt;p&gt;16:13 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; * tools: Fix run-container when neither source or binary package requested.&lt;/p&gt;
+&lt;p&gt;16:13 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; * docs: Fix a small spelling error (Oz N Tiram)&lt;/p&gt;
+&lt;p&gt;16:13 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; * tox: use simplestreams from git repository rather than bzr.&lt;/p&gt;
+&lt;p&gt;16:14 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; generally speaking we had been spending some cycles on a stable release update (SRU) for cloud-init into Xenial and Bionic with top of tree cloud-init.&lt;/p&gt;
+&lt;p&gt;16:15 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; notably, we discovered a potential regression in Oracle datasource detection of their OpenStack implementation so that fix is queued for publish into xenial and bionic&lt;/p&gt;
+&lt;p&gt;16:15 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; 18.3-9 is what folks are looking for. in xenial/bionic/cosmic for latest cloud-init containing all the above fixes&lt;/p&gt;
+&lt;p&gt;16:16 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; Also powersj has been working on an auto-lander for cloud-init branches to get a few of us out of the way once a branch hits acceptm&lt;/p&gt;
+&lt;p&gt;16:16 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; Also powersj has been working on an auto-lander for cloud-init branches to get a few of us out of the way once a branch hits "Approved" status.&lt;/p&gt;
+&lt;p&gt;16:16 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; #link &lt;a href="https://jenkins.ubuntu.com/server/job/admin-lp-git-autoland/"&gt;https://jenkins.ubuntu.com/server/job/admin-lp-git-autoland/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;16:16 &lt;code&gt;&amp;lt;powersj&amp;gt;&lt;/code&gt; yep that is live and with a recent fix to remove the extra "Author" line now&lt;/p&gt;
+&lt;p&gt;16:16 &lt;code&gt;&amp;lt;powersj&amp;gt;&lt;/code&gt; hopefully it is saving blackboxsw, smoser, and rharper time ;)&lt;/p&gt;
+&lt;p&gt;16:17 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; powersj: can you explain what it does (so I don't have to type)&lt;/p&gt;
+&lt;p&gt;16:17 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; :)&lt;/p&gt;
+&lt;p&gt;16:17 &lt;code&gt;&amp;lt;powersj&amp;gt;&lt;/code&gt; If a merge request is put in the "Approved" state, it will get test merged with the master branch&lt;/p&gt;
+&lt;p&gt;16:17 &lt;code&gt;&amp;lt;powersj&amp;gt;&lt;/code&gt; the tests will run the same as during a review and verify that it can merge cleanly&lt;/p&gt;
+&lt;p&gt;16:18 &lt;code&gt;&amp;lt;powersj&amp;gt;&lt;/code&gt; the commit message will get linted to verify it fits our format&lt;/p&gt;
+&lt;p&gt;16:18 &lt;code&gt;&amp;lt;powersj&amp;gt;&lt;/code&gt; and if everything looks good, get merged in and pushed to master&lt;/p&gt;
+&lt;p&gt;16:18 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; thanks for that work powersj. it looks/works great so far.&lt;/p&gt;
+&lt;p&gt;16:19 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; #topic In-progress Development&lt;/p&gt;
+&lt;p&gt;16:19 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; All our current work is visible at the following trello board&lt;/p&gt;
+&lt;p&gt;16:19 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; #link &lt;a href="https://trello.com/b/hFtWKUn3/daily-cloud-init-curtin"&gt;https://trello.com/b/hFtWKUn3/daily-cloud-init-curtin&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;16:20 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; I expect we'll have a couple of branches landed shortly in the following areas:&lt;/p&gt;
+&lt;p&gt;16:21 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; - smoser is working: A datasource specific to Oracle, because of their specific implementation of Openstack. Oracle will no longer use just stock DataSourceOpenStack.&lt;/p&gt;
+&lt;p&gt;16:21 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; - I&lt;/p&gt;
+&lt;p&gt;16:21 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; - I'm trying to wrap up a branch for Azure to write network data from their IMDS per-boot&lt;/p&gt;
+&lt;p&gt;16:22 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; #link &lt;a href="https://code.launchpad.net/~chad.smith/cloud-init/+git/cloud-init/+merge/348704"&gt;https://code.launchpad.net/~chad.smith/cloud-init/+git/cloud-init/+merge/348704&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;16:22 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; - Joyent (SmartOS) per-boot network config review&lt;/p&gt;
+&lt;p&gt;16:23 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; - a couple netplan config option bugs for bionic ++&lt;/p&gt;
+&lt;p&gt;16:24 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; - and standardize instance-data sourcing in #cloud-config files (like referencing the hostname as detected from instance metadata)&lt;/p&gt;
+&lt;p&gt;16:24 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; I think that probably wraps it up for stuff in progress&lt;/p&gt;
+&lt;p&gt;16:24 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; anything I'm missing?&lt;/p&gt;
+&lt;p&gt;16:25 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; ... without further ado&lt;/p&gt;
+&lt;p&gt;16:25 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; #topic Office Hource (next ~30 mins)&lt;/p&gt;
+&lt;p&gt;16:26 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; eyes will float on this channel for any bug/feature discussions, review requests  etc. any cloud-init topic is acceptable.&lt;/p&gt;
+&lt;p&gt;16:28 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; a number of us are going to be prepping for a cloud-init summit meeting in the weeks to come.  A number of attendees from various vendors and clouds are attending as well to do a bit of planning on what cloud-init should look like next year. If folks get a chance, think about any feature or topic suggestions that would benefit cloud-init users and we'll see if we can discuss them at the summit.&lt;/p&gt;
+&lt;p&gt;16:31 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; while I'm at it, I think I'll set the topic to next status meeting time so folks know it's coming.&lt;/p&gt;
+&lt;p&gt;16:39 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; also just noticed the following branch, which admitedly is a bit stale, but adds hyperv logging via kvp. kinda cool for stuffing data into the registry on windows vms. Might have to get a review on that before the next status meeting.&lt;/p&gt;
+&lt;p&gt;16:39 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; #link &lt;a href="https://code.launchpad.net/~andyliuliming/cloud-init/+git/cloud-init/+merge/351742."&gt;https://code.launchpad.net/~andyliuliming/cloud-init/+git/cloud-init/+merge/351742.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;16:39 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; it looks a bit noisy on the debug front with adding out/err messages for all subp calls, but other than that fairly straight forward.&lt;/p&gt;
+&lt;p&gt;17:03 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; looks like that's a wrap for today.&lt;/p&gt;
+&lt;p&gt;17:03 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; #link &lt;a href="https://cloud-init.github.io"&gt;https://cloud-init.github.io&lt;/a&gt;   for meeting minutes&lt;/p&gt;
+&lt;p&gt;17:04 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; see you next time: 2 weeks from today&lt;/p&gt;
+&lt;p&gt;17:04 &lt;code&gt;&amp;lt;blackboxsw&amp;gt;&lt;/code&gt; #endmeeting&lt;/p&gt;
+&lt;p&gt;Generated by MeetBot 0.1.5 (&lt;a href="http://wiki.ubuntu.com/meetingology"&gt;http://wiki.ubuntu.com/meetingology&lt;/a&gt;)&lt;/p&gt;</content></entry><entry><title>Cloud-init bi-weekly status</title><link href="https://cloud-init.github.io/status-2018-07-02.html" rel="alternate"></link><published>2018-07-02T16:05:00+00:00</published><updated>2018-07-02T16:05:00+00:00</updated><author><name>chad.smith@canonical.com</name></author><id>tag:cloud-init.github.io,2018-07-02:/status-2018-07-02.html</id><summary type="html">&lt;h2&gt;Meeting information&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;#cloud-init: Cloud-init bi-weekly status meeting, 02 Jul at 16:05 &amp;mdash; 17:02 UTC&lt;/li&gt;
 &lt;li&gt;Full logs at [[&lt;a href="http://ubottu.com/meetingology/logs/cloud-init/2018/cloud-init.2018-07-02-16.05.log.html"&gt;http://ubottu.com/meetingology/logs/cloud-init/2018/cloud-init.2018-07-02-16.05.log.html&lt;/a&gt;]]&lt;/li&gt;
