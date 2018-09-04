@@ -1,0 +1,264 @@
+
+<!DOCTYPE html>
+<html lang="english">
+<head>
+  <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" type="text/css" href="https://cloud-init.github.io/theme/stylesheet/style.min.css">
+
+  <link rel="stylesheet" type="text/css" href="https://cloud-init.github.io/theme/pygments/github.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cloud-init.github.io/theme/font-awesome/css/font-awesome.min.css">
+
+
+    <link href="https://cloud-init.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Cloud-init Info Atom">
+
+
+    <link rel="shortcut icon" href="/theme/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/theme/img/favicon.ico" type="image/x-icon">
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-50554247-3', 'auto');
+  ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#2c001e">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#2c001e">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Microsoft EDGE -->
+    <meta name="msapplication-TileColor" content="#2c001e">
+
+<meta name="author" content="chad.smith@canonical.com" />
+<meta name="description" content="Meeting information #cloud-init: Cloud-init bi-weekly status meeting, 04 Sep at 16:08 — 17:01 UTC Full logs at [[http://ubottu.com/meetingology/logs/cloud-init/2018/cloud-init.2018-09-04-16.08.log.html]] Meeting summary LINK: https://cloud-init.github.io/ LINK: https://trello.com/b/hFtWKUn3/daily-cloud-init-curtin LINK: https://powersj.github.io/post …" />
+<meta name="keywords" content="">
+
+<meta property="og:site_name" content="Cloud-init Info"/>
+<meta property="og:title" content="Cloud-init bi-weekly status"/>
+<meta property="og:description" content="Meeting information #cloud-init: Cloud-init bi-weekly status meeting, 04 Sep at 16:08 — 17:01 UTC Full logs at [[http://ubottu.com/meetingology/logs/cloud-init/2018/cloud-init.2018-09-04-16.08.log.html]] Meeting summary LINK: https://cloud-init.github.io/ LINK: https://trello.com/b/hFtWKUn3/daily-cloud-init-curtin LINK: https://powersj.github.io/post …"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:url" content="https://cloud-init.github.io/status-2018-09-04.html"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2018-09-04 16:08:00+00:00"/>
+<meta property="article:modified_time" content=""/>
+<meta property="article:author" content="https://cloud-init.github.io/author/chadsmithcanonicalcom.html">
+<meta property="article:section" content="status-meeting-minutes"/>
+<meta property="og:image" content="/images/cloud-init-orange.svg">
+
+  <title>Cloud-init Info &ndash; Cloud-init bi-weekly status</title>
+
+</head>
+<body>
+  <aside>
+    <div>
+      <a href="https://cloud-init.github.io">
+        <img src="/images/cloud-init-orange.svg" alt="Cloud-init" title="Cloud-init">
+      </a>
+      <h1><a href="https://cloud-init.github.io">Cloud-init</a></h1>
+
+<p>Make your cloud images be all they can be</p>
+      <nav>
+        <ul class="list">
+
+          <li><a href="https://cloudinit.readthedocs.org/" target="_blank">Docs</a></li>
+          <li><a href="https://cloud-init.io" target="_blank">Overview</a></li>
+          <li><a href="https://cloudinit.readthedocs.io/en/latest/topics/hacking.html" target="_blank">Hacking</a></li>
+          <li><a href="https://jenkins.ubuntu.com/server/view/cloud-init/" target="_blank">CI builds</a></li>
+          <li><a href="https://launchpad.net/cloud-init" target="_blank">Code</a></li>
+        </ul>
+      </nav>
+
+      <ul class="social">
+        <li><a class="sc-github" href="https://github.com/cloud-init" target="_blank"><i class="fa fa-github"></i></a></li>
+        <li><a class="sc-wechat" href="https://webchat.freenode.net/?channels=cloud-init" target="_blank"><i class="fa fa-wechat"></i></a></li>
+      </ul>
+    </div>
+
+
+  </aside>
+  <main>
+
+    <nav>
+      <a href="https://cloud-init.github.io">Home</a>
+
+      <a href="/archives.html">Archives</a>
+      <a href="/categories.html">Categories</a>
+      <a href="/tags.html">Tags</a>
+
+      <a href="https://cloud-init.github.io/feeds/all.atom.xml">Atom</a>
+
+    </nav>
+
+<article class="single">
+  <header>
+      
+    <h1 id="status-2018-09-04">Cloud-init bi-weekly status</h1>
+    <p>
+      Posted on Tue 04 September 2018 in <a href="https://cloud-init.github.io/category/status-meeting-minutes.html">status-meeting-minutes</a>
+
+        &#8226; 5 min read
+    </p>
+  </header>
+
+
+  <div>
+    <h2>Meeting information</h2>
+<ul>
+<li>#cloud-init: Cloud-init bi-weekly status meeting, 04 Sep at 16:08 &mdash; 17:01 UTC</li>
+<li>Full logs at [[<a href="http://ubottu.com/meetingology/logs/cloud-init/2018/cloud-init.2018-09-04-16.08.log.html">http://ubottu.com/meetingology/logs/cloud-init/2018/cloud-init.2018-09-04-16.08.log.html</a>]]</li>
+</ul>
+<h2>Meeting summary</h2>
+<p><strong>LINK</strong>: <a href="https://cloud-init.github.io/">https://cloud-init.github.io/</a> 
+ <strong>LINK</strong>: <a href="https://trello.com/b/hFtWKUn3/daily-cloud-init-curtin">https://trello.com/b/hFtWKUn3/daily-cloud-init-curtin</a> 
+ <strong>LINK</strong>: <a href="https://powersj.github.io/post/cloud-init-summit18/">https://powersj.github.io/post/cloud-init-summit18/</a> </p>
+<h3>In-progress Development</h3>
+<p>The discussion about "In-progress Development" started at 16:22.</p>
+<ul>
+<li><strong>LINK</strong>: <a href="https://trello.com/b/hFtWKUn3/daily-cloud-init-curtin">https://trello.com/b/hFtWKUn3/daily-cloud-init-curtin</a>?menu=filter&amp;filter=cloud-init </li>
+<li><strong>LINK</strong>: <a href="https://code.launchpad.net/~raharper/cloud-init/+git/cloud-init/+merge/353740">https://code.launchpad.net/~raharper/cloud-init/+git/cloud-init/+merge/353740</a> </li>
+</ul>
+<h3>Office Hource (next ~30 mins)</h3>
+<p>The discussion about "Office Hource (next ~30 mins)" started at 16:30.</p>
+<h3>Active review queue scrub (and open discussion/office hours)</h3>
+<p>The discussion about "Active review queue scrub (and open discussion/office hours)" started at 16:41.</p>
+<ul>
+<li><strong>LINK</strong>: <a href="https://code.launchpad.net/~praween/cloud-init/+git/cloud-init/+merge/353733">https://code.launchpad.net/~praween/cloud-init/+git/cloud-init/+merge/353733</a> </li>
+<li><strong>LINK</strong>: <a href="https://code.launchpad.net/~rjschwei/cloud-init/+git/cloud-init/+merge/333904">https://code.launchpad.net/~rjschwei/cloud-init/+git/cloud-init/+merge/333904</a> </li>
+</ul>
+<h2>Vote results</h2>
+<h2>Done items</h2>
+<ul>
+<li>(none)</li>
+</ul>
+<h2>People present (lines said)</h2>
+<ul>
+<li>blackboxsw (60)</li>
+<li>smoser (8)</li>
+<li>meetingology (3)</li>
+<li>marcoceppi (2)</li>
+<li>ubot5 (1)</li>
+</ul>
+<h2>Full Log</h2>
+<p>16:08 <code>&lt;blackboxsw&gt;</code> #startmeeting Cloud-init bi-weekly status meeting</p>
+<p>16:08 <code>&lt;meetingology&gt;</code> Meeting started Tue Sep  4 16:08:21 2018 UTC.  The chair is blackboxsw. Information about MeetBot at <a href="http://wiki.ubuntu.com/meetingology.">http://wiki.ubuntu.com/meetingology.</a></p>
+<p>16:08 <code>&lt;meetingology&gt;</code> </p>
+<p>16:08 <code>&lt;meetingology&gt;</code> Available commands: action commands idea info link nick</p>
+<p>16:08 <code>&lt;marcoceppi&gt;</code> rharper: oddly enough, that didn't work. root wasn't set</p>
+<p>16:08 <code>&lt;marcoceppi&gt;</code> I'll bother you all after the meeting</p>
+<p>16:08 <code>&lt;blackboxsw&gt;</code> or during marcoceppi :) sorry for the delay folks, I lost internet for a bit and just got it back up.</p>
+<p>16:09 <code>&lt;blackboxsw&gt;</code> let's kickoff the bi-weekly status meeting and see what discussion we have for today</p>
+<p>16:09 <code>&lt;blackboxsw&gt;</code> Our agenda is the following: Previous Actions, Recent Changes, In-progress development and office hours (~30 minutes)</p>
+<p>16:09 <code>&lt;blackboxsw&gt;</code> #topic Previous Actions</p>
+<p>16:10 <code>&lt;blackboxsw&gt;</code> the only logged action per last meeting was the following:</p>
+<p>16:10 <code>&lt;blackboxsw&gt;</code> rharper/blackboxsw close out on this review before cloud-init summit <a href="https://code.launchpad.net/~andyliuliming/cloud-init/+git/cloud-init/+merge/351742">https://code.launchpad.net/~andyliuliming/cloud-init/+git/cloud-init/+merge/351742</a></p>
+<p>16:11 <code>&lt;blackboxsw&gt;</code> we were able to land that branch at the cloud-init summit 2 weeks ago and also landed a followup fix for a lock race condition related to that changeset</p>
+<p>16:11 <code>&lt;blackboxsw&gt;</code> so we can cross that one off the list</p>
+<p>16:11 <code>&lt;blackboxsw&gt;</code> .... and for those following from home. our meeting minutes from the last status meeting are here</p>
+<p>16:11 <code>&lt;blackboxsw&gt;</code> #link <a href="https://cloud-init.github.io/">https://cloud-init.github.io/</a></p>
+<p>16:13 <code>&lt;blackboxsw&gt;</code> Also generically we had a number of action items that came out of our Seattle cloud-init summit with various cloud and distribution partners. Our team will be having a review meeting to discuss some of those actions/decisions and ultimately convert them into trello work items on our board</p>
+<p>16:13 <code>&lt;blackboxsw&gt;</code> #link <a href="https://trello.com/b/hFtWKUn3/daily-cloud-init-curtin">https://trello.com/b/hFtWKUn3/daily-cloud-init-curtin</a></p>
+<p>16:16 <code>&lt;blackboxsw&gt;</code> #topic Recent Changes</p>
+<p>16:17 <code>&lt;blackboxsw&gt;</code> Over the  last couple weeks Microsoft hosted a very producting Cloud-init Summit conference in Seattle. A number of clouds and distribution vendors participated to set goals for the cloud-init upstream project.  powersj wrote up a nice post to capture some of that work. Thank you all for partipating and helping to improve cloud-init</p>
+<p>16:17 <code>&lt;blackboxsw&gt;</code> #link <a href="https://powersj.github.io/post/cloud-init-summit18/">https://powersj.github.io/post/cloud-init-summit18/</a></p>
+<p>16:19 <code>&lt;blackboxsw&gt;</code> also the following changes landed upstream:</p>
+<p>16:21 <code>&lt;blackboxsw&gt;</code> - Add unit tests for config/cc_ssh.py [Francis Ginther]</p>
+<p>16:21 <code>&lt;blackboxsw&gt;</code> - Fix the built-in cloudinit/tests/helpers:skipIf</p>
+<p>16:21 <code>&lt;blackboxsw&gt;</code> - read-version: enhance error message [Joshua Powers]</p>
+<p>16:21 <code>&lt;blackboxsw&gt;</code> - hyperv_reporting_handler: simplify threaded publisher</p>
+<p>16:21 <code>&lt;blackboxsw&gt;</code> - VMWare: Fix a network config bug in vm with static IPv4 and no gateway.</p>
+<p>16:21 <code>&lt;blackboxsw&gt;</code> [Pengpeng Sun] (LP: #1766538)</p>
+<p>16:21 <code>&lt;blackboxsw&gt;</code> - logging: Add logging config type hyperv for reporting via Azure KVP</p>
+<p>16:21 <code>&lt;blackboxsw&gt;</code> [Andy Liu]</p>
+<p>16:21 <code>&lt;ubot5&gt;</code> Launchpad bug 1766538 in cloud-init (Ubuntu) "network customization with cloud-init does not work on Ubuntu18.04 Beta2 Server" [Medium,Confirmed] <a href="https://launchpad.net/bugs/1766538">https://launchpad.net/bugs/1766538</a></p>
+<p>16:22 <code>&lt;blackboxsw&gt;</code> #topic In-progress Development</p>
+<p>16:23 <code>&lt;blackboxsw&gt;</code> as always, check our board if there are questions about what we are working on the cloud-init side of the house. any cloud-init cards will have a cloud-init label</p>
+<p>16:23 <code>&lt;blackboxsw&gt;</code> #link <a href="https://trello.com/b/hFtWKUn3/daily-cloud-init-curtin">https://trello.com/b/hFtWKUn3/daily-cloud-init-curtin</a>?menu=filter&amp;filter=cloud-init</p>
+<p>16:24 <code>&lt;blackboxsw&gt;</code> we are working a couple of fixes for Oracle as well as the following features that could be interesting to folks:</p>
+<p>16:24 <code>&lt;blackboxsw&gt;</code> - the ability to use jinja templating in cloud-config or user-scripts to reference any standardized instance meta data cloud-init consumes</p>
+<p>16:26 <code>&lt;blackboxsw&gt;</code> - allowing new ssh user config in #cloud-config to specify a ssh-redirect-user, which would allow someone to disable an existing ssh user and provide a redirect message mentioning which username is the preferred default user</p>
+<p>16:28 <code>&lt;blackboxsw&gt;</code> - ryan is working on refactoring the sysconfig renderer align multiple distros,  so that we don't have slightly different implementations in cloud-init for each distribution</p>
+<p>16:28 <code>&lt;blackboxsw&gt;</code> #link <a href="https://code.launchpad.net/~raharper/cloud-init/+git/cloud-init/+merge/353740">https://code.launchpad.net/~raharper/cloud-init/+git/cloud-init/+merge/353740</a></p>
+<p>16:29 <code>&lt;blackboxsw&gt;</code> beyond that, there a number of new contibutions that have been generated by some of the amazon folks that we plan on reviewing and landing for better amazon linux support</p>
+<p>16:30 <code>&lt;blackboxsw&gt;</code> thanks again for all the good work. I think we'll transition to the open forum for any discussion/feature/bug work.</p>
+<p>16:30 <code>&lt;blackboxsw&gt;</code> #topic  Office Hource (next ~30 mins)</p>
+<p>16:31 <code>&lt;blackboxsw&gt;</code> we'll have eyes on this channel for the next 30 mins. any topic is acceptable; big or small. Bugs, discussions, features, complaints etc.</p>
+<p>16:31 <code>&lt;smoser&gt;</code> o/</p>
+<p>16:31 <code>&lt;blackboxsw&gt;</code> sorry for the interrupt earlier :)</p>
+<p>16:40 <code>&lt;blackboxsw&gt;</code> Since we have a clear discussion docket for office hours...    At the summit we decided maybe it would be a good idea to try reviewing our active review queue to keep the momentum going there and avoid stale branches sitting unresolved for a while.</p>
+<p>16:41 <code>&lt;blackboxsw&gt;</code> smoser: rharper you gents up for taking a swing at our review queue in this forum to see if we can prioritize what needs landing/response etc?</p>
+<p>16:41 <code>&lt;blackboxsw&gt;</code> #topic Active review queue scrub (and open discussion/office hours)</p>
+<p>16:42 <code>&lt;smoser&gt;</code> sure.</p>
+<p>16:42 <code>&lt;blackboxsw&gt;</code> I wanted  to see if we could land Praveen's branch for Amazon linux support.</p>
+<p>16:42 <code>&lt;blackboxsw&gt;</code> #link <a href="https://code.launchpad.net/~praween/cloud-init/+git/cloud-init/+merge/353733">https://code.launchpad.net/~praween/cloud-init/+git/cloud-init/+merge/353733</a></p>
+<p>16:42 <code>&lt;blackboxsw&gt;</code> their CI needs a new makefile target "sources"</p>
+<p>16:43 <code>&lt;blackboxsw&gt;</code> I suggested that maybe they add that functionality into ./packages/brpm instead of just the commands on the cli</p>
+<p>16:44 <code>&lt;blackboxsw&gt;</code> since we use brpm in our ci too. ....</p>
+<p>16:44 <code>&lt;blackboxsw&gt;</code> Praveen had agreed at the summit to make some changes to extend brpm with a new cmdline option to do this work. But I don't see anything pushed.   I'd like to mark this work in progress and comment to that affect. sound good?</p>
+<p>16:46 <code>&lt;smoser&gt;</code> blackboxsw: that sounds good</p>
+<p>16:49 <code>&lt;blackboxsw&gt;</code> smoser: ok <a href="https://code.launchpad.net/~smoser/cloud-init/+git/cloud-init/+merge/354001">https://code.launchpad.net/~smoser/cloud-init/+git/cloud-init/+merge/354001</a>  I'll grab today after this meeting so we can land all the  leaky unit tests. geez man</p>
+<p>16:49 * blackboxsw grabs the review slot</p>
+<p>16:50 <code>&lt;blackboxsw&gt;</code> I believe robert's branch is tabled until ryan's sysconfig branch is landed</p>
+<p>16:50 <code>&lt;blackboxsw&gt;</code> #link <a href="https://code.launchpad.net/~rjschwei/cloud-init/+git/cloud-init/+merge/333904">https://code.launchpad.net/~rjschwei/cloud-init/+git/cloud-init/+merge/333904</a></p>
+<p>16:50 <code>&lt;blackboxsw&gt;</code> ^ should we mark this 'work in progress' as it's blocked? or maybe just leave it in the active queue</p>
+<p>16:51 <code>&lt;smoser&gt;</code> blackboxsw: your needs information still stands right?</p>
+<p>16:51 <code>&lt;smoser&gt;</code> lets move it to work-in-progress and ask for response and also ask if it is sitll necessary (unless you know that it is or is not)</p>
+<p>16:52 <code>&lt;smoser&gt;</code> and suggest that it will need to be re-worked.</p>
+<p>16:53 <code>&lt;blackboxsw&gt;</code> smoser: that sounds good. my 'needs information' on that is resolved/read/discussed already. so I should abstain for the moment until the rework</p>
+<p>16:57 <code>&lt;blackboxsw&gt;</code> ok couple more minutes... any additional reviews we should look at in earnest  now?</p>
+<p>16:58 <code>&lt;blackboxsw&gt;</code> I kinda want to hold on <a href="https://code.launchpad.net/~tamilmani1989/cloud-init/+git/cloud-init/+merge/336392">https://code.launchpad.net/~tamilmani1989/cloud-init/+git/cloud-init/+merge/336392</a> until we have our summit retro meeting today</p>
+<p>16:59 <code>&lt;blackboxsw&gt;</code> here's a short one. <a href="https://code.launchpad.net/~otubo/cloud-init/+git/cloud-init/+merge/353436.">https://code.launchpad.net/~otubo/cloud-init/+git/cloud-init/+merge/353436.</a> should we mark this 'work in progress' until smoser's review comments are addressed and unit tests added?</p>
+<p>16:59 <code>&lt;smoser&gt;</code> blackboxsw: yeah. i'll do that.</p>
+<p>17:00 <code>&lt;blackboxsw&gt;</code> ok thanks. and I think that'll about wrap it for today. If we don't resolve the other community reviews by next status meeting, we can continue chipping away at this queue then.</p>
+<p>17:01 <code>&lt;blackboxsw&gt;</code> I'll post the minutes to cloudinit.github.io just after this.</p>
+<p>17:01 <code>&lt;smoser&gt;</code> blackboxsw: i'm loking at rharper's mp now for the system config</p>
+<p>17:01 <code>&lt;blackboxsw&gt;</code> ok I'll get your review on <a href="https://code.launchpad.net/~smoser/cloud-init/+git/cloud-init/+merge/354001">https://code.launchpad.net/~smoser/cloud-init/+git/cloud-init/+merge/354001</a> now</p>
+<p>17:01 <code>&lt;blackboxsw&gt;</code> #endmeeting</p>
+<p>Generated by MeetBot 0.1.5 (<a href="http://wiki.ubuntu.com/meetingology">http://wiki.ubuntu.com/meetingology</a>)</p>
+  </div>
+  <div class="tag-cloud">
+    <p>
+    </p>
+  </div>
+
+
+
+    <div class="addthis_relatedposts_inline">
+
+
+</article>
+
+    <footer>
+<p>&copy;  </p>
+<p>Powered by <a href="http://getpelican.com" target="_blank">Pelican</a> - <a href="https://github.com/alexandrevicenzi/flex" target="_blank">Flex</a> theme by <a href="http://alexandrevicenzi.com" target="_blank">Alexandre Vicenzi</a></p>    </footer>
+  </main>
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " Cloud-init Info ",
+  "url" : "https://cloud-init.github.io",
+  "image": "/images/cloud-init-orange.svg",
+  "description": "Cloud-init project updates and general information"
+}
+</script>
+
+</body>
+</html>
