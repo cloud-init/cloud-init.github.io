@@ -1,0 +1,419 @@
+
+<!DOCTYPE html>
+<html lang="english">
+<head>
+  <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" type="text/css" href="https://cloud-init.github.io/theme/stylesheet/style.min.css">
+
+  <link rel="stylesheet" type="text/css" href="https://cloud-init.github.io/theme/pygments/github.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cloud-init.github.io/theme/font-awesome/css/font-awesome.min.css">
+
+
+    <link href="https://cloud-init.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Cloud-init Info Atom">
+
+
+    <link rel="shortcut icon" href="/theme/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/theme/img/favicon.ico" type="image/x-icon">
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-50554247-3', 'auto');
+  ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#2c001e">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#2c001e">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Microsoft EDGE -->
+    <meta name="msapplication-TileColor" content="#2c001e">
+
+<meta name="author" content="chad.smith@canonical.com" />
+<meta name="description" content="Meeting information #cloud-init: Cloud-init bi-weekly status, 13 May at 16:25 — 17:32 UTC Full logs at [[http://ubottu.com/meetingology/logs/cloud-init/2019/cloud-init.2019-05-13-16.25.log.html]] Meeting summary Previous Actions The discussion about &#34;Previous Actions&#34; started at 16:31. LINK: https://cloud-init.github.io/status-2019-01-28.html#status-2019-01-28 …" />
+<meta name="keywords" content="">
+
+<meta property="og:site_name" content="Cloud-init Info"/>
+<meta property="og:title" content="Cloud-init bi-weekly status"/>
+<meta property="og:description" content="Meeting information #cloud-init: Cloud-init bi-weekly status, 13 May at 16:25 — 17:32 UTC Full logs at [[http://ubottu.com/meetingology/logs/cloud-init/2019/cloud-init.2019-05-13-16.25.log.html]] Meeting summary Previous Actions The discussion about &#34;Previous Actions&#34; started at 16:31. LINK: https://cloud-init.github.io/status-2019-01-28.html#status-2019-01-28 …"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:url" content="https://cloud-init.github.io/status-2019-05-13.html"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2019-05-13 16:25:00+00:00"/>
+<meta property="article:modified_time" content=""/>
+<meta property="article:author" content="https://cloud-init.github.io/author/chadsmithcanonicalcom.html">
+<meta property="article:section" content="status-meeting-minutes"/>
+<meta property="og:image" content="/images/cloud-init-orange.svg">
+
+  <title>Cloud-init Info &ndash; Cloud-init bi-weekly status</title>
+
+</head>
+<body>
+  <aside>
+    <div>
+      <a href="https://cloud-init.github.io">
+        <img src="/images/cloud-init-orange.svg" alt="Cloud-init" title="Cloud-init">
+      </a>
+      <h1><a href="https://cloud-init.github.io">Cloud-init</a></h1>
+
+<p>Make your cloud images be all they can be</p>
+      <nav>
+        <ul class="list">
+
+          <li><a href="https://cloudinit.readthedocs.org/" target="_blank">Docs</a></li>
+          <li><a href="https://cloud-init.io" target="_blank">Overview</a></li>
+          <li><a href="https://cloudinit.readthedocs.io/en/latest/topics/hacking.html" target="_blank">Hacking</a></li>
+          <li><a href="https://jenkins.ubuntu.com/server/view/cloud-init/" target="_blank">CI builds</a></li>
+          <li><a href="https://launchpad.net/cloud-init" target="_blank">Code</a></li>
+        </ul>
+      </nav>
+
+      <ul class="social">
+        <li><a class="sc-github" href="https://github.com/cloud-init" target="_blank"><i class="fa fa-github"></i></a></li>
+        <li><a class="sc-wechat" href="https://webchat.freenode.net/?channels=cloud-init" target="_blank"><i class="fa fa-wechat"></i></a></li>
+      </ul>
+    </div>
+
+
+  </aside>
+  <main>
+
+    <nav>
+      <a href="https://cloud-init.github.io">Home</a>
+
+      <a href="/archives.html">Archives</a>
+      <a href="/categories.html">Categories</a>
+      <a href="/tags.html">Tags</a>
+
+      <a href="https://cloud-init.github.io/feeds/all.atom.xml">Atom</a>
+
+    </nav>
+
+<article class="single">
+  <header>
+      
+    <h1 id="status-2019-05-13">Cloud-init bi-weekly status</h1>
+    <p>
+      Posted on Mon 13 May 2019 in <a href="https://cloud-init.github.io/category/status-meeting-minutes.html">status-meeting-minutes</a>
+
+        &#8226; 14 min read
+    </p>
+  </header>
+
+
+  <div>
+    <h2>Meeting information</h2>
+<ul>
+<li>#cloud-init: Cloud-init bi-weekly status, 13 May at 16:25 &mdash; 17:32 UTC</li>
+<li>Full logs at [[<a href="http://ubottu.com/meetingology/logs/cloud-init/2019/cloud-init.2019-05-13-16.25.log.html">http://ubottu.com/meetingology/logs/cloud-init/2019/cloud-init.2019-05-13-16.25.log.html</a>]]</li>
+</ul>
+<h2>Meeting summary</h2>
+<h3>Previous Actions</h3>
+<p>The discussion about "Previous Actions" started at 16:31.</p>
+<ul>
+<li><strong>LINK</strong>: <a href="https://cloud-init.github.io/status-2019-01-28.html#status-2019-01-28">https://cloud-init.github.io/status-2019-01-28.html#status-2019-01-28</a> </li>
+<li><strong>LINK</strong>: <a href="https://bugs.launchpad.net/cloud-init/+bug/1801364">https://bugs.launchpad.net/cloud-init/+bug/1801364</a> </li>
+<li><strong>ACTION</strong>: Odd_Bloke confirm correct status of <a href="https://bugs.launchpad.net/cloud-init/+bug/1801364">https://bugs.launchpad.net/cloud-init/+bug/1801364</a></li>
+</ul>
+<h3>Recent Changes</h3>
+<p>The discussion about "Recent Changes" started at 16:35.</p>
+<ul>
+<li><strong>LINK</strong>: <a href="https://launchpad.net/cloud-init/+milestone/19.1">https://launchpad.net/cloud-init/+milestone/19.1</a> </li>
+</ul>
+<h3>In-progress Development</h3>
+<p>The discussion about "In-progress Development" started at 16:46.</p>
+<ul>
+<li><strong>LINK</strong>: <a href="https://wiki.ubuntu.com/CloudinitUpdates">https://wiki.ubuntu.com/CloudinitUpdates</a> </li>
+<li><strong>LINK</strong>: <a href="https://trello.com/c/oxv61bPl/1099-sru-191-xenial-bionic-cosmic-and-disco">https://trello.com/c/oxv61bPl/1099-sru-191-xenial-bionic-cosmic-and-disco</a> </li>
+<li><strong>LINK</strong>: <a href="https://copr.fedorainfracloud.org/coprs/g/cloud-init/el-testing/">https://copr.fedorainfracloud.org/coprs/g/cloud-init/el-testing/</a> </li>
+<li><strong>LINK</strong>: <a href="https://code.launchpad.net/~chad.smith/cloud-init/+git/cloud-init/+merge/367301">https://code.launchpad.net/~chad.smith/cloud-init/+git/cloud-init/+merge/367301</a> </li>
+<li><strong>LINK</strong>: <a href="https://code.launchpad.net/~chad.smith/cloud-init/+git/cloud-init/+merge/367302">https://code.launchpad.net/~chad.smith/cloud-init/+git/cloud-init/+merge/367302</a> </li>
+<li><strong>LINK</strong>: <a href="https://code.launchpad.net/~chad.smith/cloud-init/+git/cloud-init/+merge/367297">https://code.launchpad.net/~chad.smith/cloud-init/+git/cloud-init/+merge/367297</a> </li>
+<li><strong>LINK</strong>: <a href="https://bugs.launchpad.net/ubuntu/+source/cloud-init/+bug/1828637">https://bugs.launchpad.net/ubuntu/+source/cloud-init/+bug/1828637</a> </li>
+<li><strong>LINK</strong>: <a href="https://trello.com/b/hFtWKUn3/daily-cloud-init-curtin">https://trello.com/b/hFtWKUn3/daily-cloud-init-curtin</a> </li>
+</ul>
+<h3>Office hours (next ~30 mins)</h3>
+<p>The discussion about "Office hours (next ~30 mins)" started at 17:02.</p>
+<ul>
+<li><strong>LINK</strong>: <a href="https://cloudinit.readthedocs.io/en/latest/topics/tests.html#">https://cloudinit.readthedocs.io/en/latest/topics/tests.html#</a> </li>
+<li><strong>LINK</strong>: <a href="https://cloud-init.github.io">https://cloud-init.github.io</a> </li>
+<li><strong>ACTION</strong>: Odd_Bloke/rharper/AnhVoMSFT followup on recommended approach for getting kernel/userspace timestamp with or without python-dbus package dependency</li>
+</ul>
+<h2>Vote results</h2>
+<h2>Action items, by person</h2>
+<ul>
+<li>AnhVoMSFT</li>
+<li>Odd_Bloke/rharper/AnhVoMSFT followup on recommended approach for getting kernel/userspace timestamp with or without python-dbus package dependency</li>
+</ul>
+<h2>Done items</h2>
+<ul>
+<li>(none)</li>
+</ul>
+<h2>People present (lines said)</h2>
+<ul>
+<li>blackboxsw (163)</li>
+<li>AnhVoMSFT (20)</li>
+<li>ubot5` (19)</li>
+<li>meetingology (5)</li>
+<li>powersj (3)</li>
+</ul>
+<h2>Full Log</h2>
+<p>16:25 <code>&lt;blackboxsw&gt;</code> #startmeeting  Cloud-init bi-weekly status</p>
+<p>16:25 <code>&lt;meetingology&gt;</code> Meeting started Mon May 13 16:25:37 2019 UTC.  The chair is blackboxsw. Information about MeetBot at <a href="http://wiki.ubuntu.com/meetingology.">http://wiki.ubuntu.com/meetingology.</a></p>
+<p>16:25 <code>&lt;meetingology&gt;</code> </p>
+<p>16:25 <code>&lt;meetingology&gt;</code> Available commands: action commands idea info link nick</p>
+<p>16:26 <code>&lt;blackboxsw&gt;</code> hi folks, we are restarting the cloud-init community status meeting so we can have a community forum to discuss current cloud-init development and try to improve momentum in the cloud-init project efforts.</p>
+<p>16:28 <code>&lt;blackboxsw&gt;</code> over the last couple of months we had taken a break from this meeting.  But, I think it's shown us that there is demand and usefulness in continuing hosting these meetings. So, from here on, we expect to post the upcoming date of status meetings in this channel's room topic.</p>
+<p>16:29 <code>&lt;blackboxsw&gt;</code> Again the goal of this meeting is to give people a chance to see what work is currently being performed on upstream cloud-init as well as a forum to discuss or raise concerns or get eyes on potential bugs or features.</p>
+<p>16:30 <code>&lt;blackboxsw&gt;</code> Generally the topics we would like to cover are the following:  (and interjections/suggestions are always welcome</p>
+<p>16:30 <code>&lt;blackboxsw&gt;</code> topics: Previous Actions, Recent Changes, In-progress Development, Office Hours.</p>
+<p>16:31 <code>&lt;blackboxsw&gt;</code> #topic Previous Actions</p>
+<p>16:32 <code>&lt;blackboxsw&gt;</code> so, looking at our last status minutes from the last meeting, (on Jan 28.... :( )    we had one action carried over</p>
+<p>16:32 <code>&lt;blackboxsw&gt;</code> #link <a href="https://cloud-init.github.io/status-2019-01-28.html#status-2019-01-28">https://cloud-init.github.io/status-2019-01-28.html#status-2019-01-28</a></p>
+<p>16:33 <code>&lt;blackboxsw&gt;</code> review and land <a href="https://code.launchpad.net/~rjschwei/cloud-init/+git/cloud-init/+merge/356098">https://code.launchpad.net/~rjschwei/cloud-init/+git/cloud-init/+merge/356098</a></p>
+<p>16:33 <code>&lt;blackboxsw&gt;</code> that's done. as well as an openstack bug...</p>
+<p>16:33 <code>&lt;blackboxsw&gt;</code> #link <a href="https://bugs.launchpad.net/cloud-init/+bug/1801364">https://bugs.launchpad.net/cloud-init/+bug/1801364</a></p>
+<p>16:33 <code>&lt;ubot5</code>&gt;` Ubuntu bug 1801364 in cloud-init "persisting OpenStack metadata fails" [Undecided,Confirmed]</p>
+<p>16:33 <code>&lt;blackboxsw&gt;</code> Odd_Bloke: has landed this bug, I think it needs to be marked fix committed though</p>
+<p>16:34 <code>&lt;blackboxsw&gt;</code> Odd_Bloke: is out today at a meeting, but I'll mark that action so we can make sure that bug status is properly reported (if there are no other branches to land for it)</p>
+<p>16:34 <code>&lt;blackboxsw&gt;</code> #action Odd_Bloke confirm correct status of <a href="https://bugs.launchpad.net/cloud-init/+bug/1801364">https://bugs.launchpad.net/cloud-init/+bug/1801364</a></p>
+<p>16:34 * meetingology Odd_Bloke confirm correct status of <a href="https://bugs.launchpad.net/cloud-init/+bug/1801364">https://bugs.launchpad.net/cloud-init/+bug/1801364</a></p>
+<p>16:34 <code>&lt;ubot5</code>&gt;` Ubuntu bug 1801364 in cloud-init "persisting OpenStack metadata fails" [Undecided,Confirmed]</p>
+<p>16:34 <code>&lt;blackboxsw&gt;</code> That;s about it for actions from previous meeting.</p>
+<p>16:35 <code>&lt;blackboxsw&gt;</code> #topic Recent Changes</p>
+<p>16:36 <code>&lt;blackboxsw&gt;</code> Here we list current content that has landed in cloud-init since last meeting..... because it has been a really long time since last meeting, I'm going to redact this to the last month or so of content to avoid getting banned in this channel for spam</p>
+<p>16:37 <code>&lt;blackboxsw&gt;</code> - Azure: Return static fallback address as if failed to find endpoint</p>
+<p>16:37 <code>&lt;blackboxsw&gt;</code> [Jason Zions (MSFT)]</p>
+<p>16:37 <code>&lt;blackboxsw&gt;</code> - release 19.1 (LP: #1828479)</p>
+<p>16:37 <code>&lt;blackboxsw&gt;</code> - freebsd: add chpasswd pkg in the image [Gonéri Le Bouder]</p>
+<p>16:37 <code>&lt;blackboxsw&gt;</code> - tests: add Eoan release [Paride Legovini]</p>
+<p>16:37 <code>&lt;ubot5</code>&gt;` Launchpad bug 1828479 in cloud-init "Release 19.1" [Undecided,Fix released] <a href="https://launchpad.net/bugs/1828479">https://launchpad.net/bugs/1828479</a></p>
+<p>16:37 <code>&lt;blackboxsw&gt;</code> hah, I don't think that worked</p>
+<p>16:37 <code>&lt;blackboxsw&gt;</code> ok breaking that content up</p>
+<p>16:37 <code>&lt;blackboxsw&gt;</code> - Azure: Return static fallback address as if failed to find endpoint</p>
+<p>16:37 <code>&lt;blackboxsw&gt;</code> [Jason Zions (MSFT)]</p>
+<p>16:37 <code>&lt;blackboxsw&gt;</code> - release 19.1 (LP: #1828479)</p>
+<p>16:37 <code>&lt;blackboxsw&gt;</code> - freebsd: add chpasswd pkg in the image [Gonéri Le Bouder]</p>
+<p>16:37 <code>&lt;blackboxsw&gt;</code> - tests: add Eoan release [Paride Legovini]</p>
+<p>16:37 <code>&lt;blackboxsw&gt;</code> - cc_mounts: check if mount -a on no-change fstab path</p>
+<p>16:37 <code>&lt;blackboxsw&gt;</code> [Jason Zions (MSFT)] (LP: #1825596)</p>
+<p>16:37 <code>&lt;blackboxsw&gt;</code> - replace remaining occurrences of LOG.warn [Daniel Watkins]</p>
+<p>16:37 <code>&lt;ubot5</code>&gt;` Launchpad bug 1825596 in cloud-init "Azure reboot with unformatted ephemeral drive won't mount reformatted volume" [High,Fix released] <a href="https://launchpad.net/bugs/1825596">https://launchpad.net/bugs/1825596</a></p>
+<p>16:37 <code>&lt;blackboxsw&gt;</code> - DataSourceAzure: Adjust timeout for polling IMDS [Anh Vo]</p>
+<p>16:37 <code>&lt;blackboxsw&gt;</code> - Azure: Changes to the Hyper-V KVP Reporter [Anh Vo]</p>
+<p>16:37 <code>&lt;blackboxsw&gt;</code> - git tests: no longer show warning about safe yaml.</p>
+<p>16:37 <code>&lt;blackboxsw&gt;</code> - tools/read-version: handle errors [Chad Miller]</p>
+<p>16:37 <code>&lt;blackboxsw&gt;</code> - net/sysconfig: only indicate available on known sysconfig distros</p>
+<p>16:37 <code>&lt;blackboxsw&gt;</code> (LP: #1819994)</p>
+<p>16:37 <code>&lt;blackboxsw&gt;</code> - packages: update rpm specs for new bash completion path</p>
+<p>16:37 <code>&lt;blackboxsw&gt;</code> [Daniel Watkins] (LP: #1825444)</p>
+<p>16:37 <code>&lt;blackboxsw&gt;</code> - test_azure: mock util.SeLinuxGuard where needed</p>
+<p>16:37 <code>&lt;blackboxsw&gt;</code> [Jason Zions (MSFT)] (LP: #1825253)</p>
+<p>16:37 <code>&lt;blackboxsw&gt;</code> - setup.py: install bash completion script in new location [Daniel Watkins]</p>
+<p>16:37 <code>&lt;blackboxsw&gt;</code> - mount_cb: do not pass sync and rw options to mount</p>
+<p>16:37 <code>&lt;ubot5</code>&gt;` Launchpad bug 1819994 in Provider for Plainbox - Canonical Certification Server "cloud-init selects sysconfig netconfig renderer if network-manager is installed on Ubuntu" [Critical,Confirmed] <a href="https://launchpad.net/bugs/1819994">https://launchpad.net/bugs/1819994</a></p>
+<p>16:37 <code>&lt;blackboxsw&gt;</code> [Gonéri Le Bouder] (LP: #1645824)</p>
+<p>16:37 <code>&lt;blackboxsw&gt;</code> - cc_apt_configure: fix typo in apt documentation [Dominic Schlegel]</p>
+<p>16:37 <code>&lt;blackboxsw&gt;</code> - Revert "DataSource: move update_events from a class to an instance..."</p>
+<p>16:37 <code>&lt;blackboxsw&gt;</code> [Daniel Watkins]</p>
+<p>16:37 <code>&lt;ubot5</code>&gt;` Launchpad bug 1825444 in cloud-init (Ubuntu) ""make rpm" fails on CentOS after commit 947d3c208" [Undecided,Fix released] <a href="https://launchpad.net/bugs/1825444">https://launchpad.net/bugs/1825444</a></p>
+<p>16:37 <code>&lt;blackboxsw&gt;</code> - Change DataSourceNoCloud to ignore file system label's case.</p>
+<p>16:37 <code>&lt;blackboxsw&gt;</code> [Risto Oikarinen]</p>
+<p>16:38 <code>&lt;ubot5</code>&gt;` Launchpad bug 1825253 in cloud-init "Unit tests with filesystem-related mocks fail in SeLinuxGuard when run on RHEL or CentOS" [Undecided,Fix released] <a href="https://launchpad.net/bugs/1825253">https://launchpad.net/bugs/1825253</a></p>
+<p>16:38 <code>&lt;ubot5</code>&gt;` Launchpad bug 1645824 in cloud-init "NoCloud source doesn't work on FreeBSD" [Medium,Fix released] <a href="https://launchpad.net/bugs/1645824">https://launchpad.net/bugs/1645824</a></p>
+<p>16:38 <code>&lt;blackboxsw&gt;</code> - cmd:main.py: Fix missing 'modules-init' key in modes dict</p>
+<p>16:38 <code>&lt;blackboxsw&gt;</code> [Antonio Romito] (LP: #1815109)</p>
+<p>16:38 <code>&lt;blackboxsw&gt;</code> - ubuntu_advantage: rewrite cloud-config module</p>
+<p>16:38 <code>&lt;blackboxsw&gt;</code> - Azure: Treat _unset network configuration as if it were absent</p>
+<p>16:38 <code>&lt;blackboxsw&gt;</code> [Jason Zions (MSFT)] (LP: #1823084)</p>
+<p>16:38 <code>&lt;blackboxsw&gt;</code> - DatasourceAzure: add additional logging for azure datasource [Anh Vo]</p>
+<p>16:38 <code>&lt;blackboxsw&gt;</code> - cloud_tests: fix apt_pipelining test-cases</p>
+<p>16:38 <code>&lt;ubot5</code>&gt;` Launchpad bug 1815109 in cloud-init "cloud-final.service: "cloud-init modules --mode final" exit with "KeyError: 'modules-init'" after upgrade to version 18.2" [Medium,Fix released] <a href="https://launchpad.net/bugs/1815109">https://launchpad.net/bugs/1815109</a></p>
+<p>16:38 <code>&lt;blackboxsw&gt;</code> - Azure: Ensure platform random_seed is always serializable as JSON.</p>
+<p>16:38 <code>&lt;blackboxsw&gt;</code> [Jason Zions (MSFT)]</p>
+<p>16:38 <code>&lt;blackboxsw&gt;</code> - net/sysconfig: write out SUSE-compatible IPv6 config [Robert Schweikert]</p>
+<p>16:38 <code>&lt;blackboxsw&gt;</code> - tox: Update testenv for openSUSE Leap to 15.0 [Thomas Bechtold]</p>
+<p>16:38 <code>&lt;ubot5</code>&gt;` Launchpad bug 1823084 in cloud-init "DataSourceAzure doesn't rebuild network-config after reboot" [High,Fix released] <a href="https://launchpad.net/bugs/1823084">https://launchpad.net/bugs/1823084</a></p>
+<p>16:38 <code>&lt;blackboxsw&gt;</code> - net: Fix ipv6 static routes when using eni renderer</p>
+<p>16:38 <code>&lt;blackboxsw&gt;</code> [Raphael Glon] (LP: #1818669)</p>
+<p>16:38 <code>&lt;ubot5</code>&gt;` Launchpad bug 1818669 in cloud-init "ipv6 static routes configured for eni are incorrect" [Undecided,Fix released] <a href="https://launchpad.net/bugs/1818669">https://launchpad.net/bugs/1818669</a></p>
+<p>16:38 <code>&lt;blackboxsw&gt;</code> - Add ubuntu_drivers config module [Daniel Watkins]</p>
+<p>16:38 <code>&lt;blackboxsw&gt;</code> - doc: Refresh Azure walinuxagent docs [Daniel Watkins]</p>
+<p>16:38 <code>&lt;blackboxsw&gt;</code> - tox: bump pylint version to latest (2.3.1) [Daniel Watkins]</p>
+<p>16:38 <code>&lt;blackboxsw&gt;</code> - DataSource: move update_events from a class to an instance attribute</p>
+<p>16:38 <code>&lt;blackboxsw&gt;</code> [Daniel Watkins] (LP: #1819913)</p>
+<p>16:38 <code>&lt;blackboxsw&gt;</code> - net/sysconfig: Handle default route setup for dhcp configured NICs</p>
+<p>16:38 <code>&lt;blackboxsw&gt;</code> [Robert Schweikert] (LP: #1812117)</p>
+<p>16:38 <code>&lt;blackboxsw&gt;</code> - DataSourceEc2: update RELEASE_BLOCKER to be more accurate</p>
+<p>16:38 <code>&lt;ubot5</code>&gt;` Launchpad bug 1819913 in cloud-init "cloud-init on xenial may generate network config on every boot" [Undecided,Fix released] <a href="https://launchpad.net/bugs/1819913">https://launchpad.net/bugs/1819913</a></p>
+<p>16:38 <code>&lt;blackboxsw&gt;</code> [Daniel Watkins]</p>
+<p>16:38 <code>&lt;blackboxsw&gt;</code> - cloud-init-per: POSIX sh does not support string subst, use sed</p>
+<p>16:38 <code>&lt;ubot5</code>&gt;` Launchpad bug 1812117 in cloud-init "route files are not written on SUSE distros" [Undecided,Fix released] <a href="https://launchpad.net/bugs/1812117">https://launchpad.net/bugs/1812117</a></p>
+<p>16:38 <code>&lt;blackboxsw&gt;</code> (LP: #1819222)</p>
+<p>16:38 <code>&lt;blackboxsw&gt;</code> - Support locking user with usermod if passwd is not available.</p>
+<p>16:38 <code>&lt;ubot5</code>&gt;` Launchpad bug 1819222 in cloud-init "cloud-init-per no longer works due to bashisms" [Undecided,Fix released] <a href="https://launchpad.net/bugs/1819222">https://launchpad.net/bugs/1819222</a></p>
+<p>16:38 <code>&lt;blackboxsw&gt;</code> - Example for Microsoft Azure data disk added. [Anton Olifir]</p>
+<p>16:38 <code>&lt;blackboxsw&gt;</code> - clean: correctly determine the path for excluding seed directory</p>
+<p>16:38 <code>&lt;blackboxsw&gt;</code> [Daniel Watkins] (LP: #1818571)</p>
+<p>16:38 <code>&lt;blackboxsw&gt;</code> - helpers/openstack: Treat unknown link types as physical</p>
+<p>16:38 <code>&lt;ubot5</code>&gt;` Launchpad bug 1818571 in cloud-init "cloud-init clean removes seed directory even when --seed is not specified" [High,Fix released] <a href="https://launchpad.net/bugs/1818571">https://launchpad.net/bugs/1818571</a></p>
+<p>16:38 <code>&lt;blackboxsw&gt;</code> [Daniel Watkins] (LP: #1639263)</p>
+<p>16:38 <code>&lt;ubot5</code>&gt;` Launchpad bug 1639263 in cloud-init " cloud-init Unknown network_data link type: macvtap" [Undecided,Fix released] <a href="https://launchpad.net/bugs/1639263">https://launchpad.net/bugs/1639263</a></p>
+<p>16:38 <code>&lt;blackboxsw&gt;</code> - drop Python 2.6 support and our NIH version detection [Daniel Watkins]</p>
+<p>16:38 <code>&lt;blackboxsw&gt;</code> - tip-pylint: Fix assignment-from-return-none errors</p>
+<p>16:38 <code>&lt;blackboxsw&gt;</code> - net: append type:dhcp[46] only if dhcp[46] is True in v2 netconfig</p>
+<p>16:38 <code>&lt;blackboxsw&gt;</code> [Kurt Stieger] (LP: #1818032)</p>
+<p>16:38 <code>&lt;blackboxsw&gt;</code> - cc_apt_pipelining: stop disabling pipelining by default</p>
+<p>16:38 <code>&lt;blackboxsw&gt;</code> [Daniel Watkins] (LP: #1794982)</p>
+<p>16:38 <code>&lt;blackboxsw&gt;</code> - tests: fix some slow tests and some leaking state [Daniel Watkins]</p>
+<p>16:38 <code>&lt;ubot5</code>&gt;` Launchpad bug 1818032 in cloud-init "sysconfig renders BOOTPROTO=dhcp even if dhcp=false in v2 network-config" [High,Fix released] <a href="https://launchpad.net/bugs/1818032">https://launchpad.net/bugs/1818032</a></p>
+<p>16:38 <code>&lt;blackboxsw&gt;</code> - util: don't determine string_types ourselves [Daniel Watkins]</p>
+<p>16:38 <code>&lt;ubot5</code>&gt;` Launchpad bug 1794982 in cloud-init "drop /etc/apt/apt.conf.d/90cloud-init-pipelining in 16.04+" [Medium,Fix released] <a href="https://launchpad.net/bugs/1794982">https://launchpad.net/bugs/1794982</a></p>
+<p>16:39 <code>&lt;blackboxsw&gt;</code> Azure and SuSE and FreeBSD  foks have been quite a bit of work and we have a number of other community contributors to thank this round</p>
+<p>16:41 <code>&lt;blackboxsw&gt;</code> AnhVoMSFT: jasonzio (MSFT) and robjo (SuSE) thanks again for your efforts</p>
+<p>16:43 <code>&lt;blackboxsw&gt;</code> Also, as you can see, Canonical added someone to our ranks for cloud-init development. Odd_Bloke is a permanent addition to our team and landing a lot of solid content for cloud-init.</p>
+<p>16:43 <code>&lt;blackboxsw&gt;</code> welcome Dan!</p>
+<p>16:43 <code>&lt;AnhVoMSFT&gt;</code> thanks rharper Odd_Bloke powersj blackboxsw for all the reviewing and advice</p>
+<p>16:44 <code>&lt;blackboxsw&gt;</code> From upstream side of the house, we have cut our first official upstream release of cloud-init. Version 19.1 sports 5 months of development, 24 contributors from 20 top-level domains. Details of that release are sent to our mailinglist and posted to the luanchpad milestone</p>
+<p>16:44 <code>&lt;blackboxsw&gt;</code> #link <a href="https://launchpad.net/cloud-init/+milestone/19.1">https://launchpad.net/cloud-init/+milestone/19.1</a></p>
+<p>16:46 <code>&lt;blackboxsw&gt;</code> :) ! it's nice how involved your teams have been thanks again.</p>
+<p>16:46 <code>&lt;blackboxsw&gt;</code> #topic In-progress Development</p>
+<p>16:47 <code>&lt;blackboxsw&gt;</code> So, for the upstream release of 19.1:     Canonical has just started our SRU (Stable Release Update) process where we validate the upstream release before pushing it back into earlier Ubuntu series</p>
+<p>16:47 <code>&lt;blackboxsw&gt;</code> We follow this upstream release process for Ubuntu</p>
+<p>16:47 <code>&lt;blackboxsw&gt;</code> #link <a href="https://wiki.ubuntu.com/CloudinitUpdates">https://wiki.ubuntu.com/CloudinitUpdates</a></p>
+<p>16:48 <code>&lt;blackboxsw&gt;</code> I've queue to release branches for review as of Friday 05/10. I have queued Ubuntu Disco and published to disco-proposed pocket already.</p>
+<p>16:48 <code>&lt;blackboxsw&gt;</code> So if someone deploys disco on your favorite cloud or hardware, you can add a disco-proposed apt source to /etc/apt/sources.list and you sound be able to install and or test 19.1</p>
+<p>16:49 <code>&lt;blackboxsw&gt;</code> I made the 19.1.1 SRU cut which included the commitish baa478546d8cac98a706010699d64f8c2f70b5bf  which was the tip containing " Azure: Return static fallback address as if failed to find endpoint"  as the last commit</p>
+<p>16:49 <code>&lt;blackboxsw&gt;</code> so jasonzio's latest azure branch made it</p>
+<p>16:50 <code>&lt;blackboxsw&gt;</code> expectation is that I'll get most of verification done over this week and we can hopefully (pending no SRU regressions discovered) publish to Xenial, Bionic, Cosmic and Disco the beginning of next week (05/20/2019)</p>
+<p>16:51 <code>&lt;blackboxsw&gt;</code> I just added the following card to track this work, it'll move to DONE when published</p>
+<p>16:51 <code>&lt;blackboxsw&gt;</code> #link <a href="https://trello.com/c/oxv61bPl/1099-sru-191-xenial-bionic-cosmic-and-disco">https://trello.com/c/oxv61bPl/1099-sru-191-xenial-bionic-cosmic-and-disco</a></p>
+<p>16:51 <code>&lt;powersj&gt;</code> AnhVoMSFT, thank you for all your contributions</p>
+<p>16:52 <code>&lt;AnhVoMSFT&gt;</code> is there a package available publicly for 19.1 that we can download and apply it to existing images and run through our perf. regression test?</p>
+<p>16:52 <code>&lt;blackboxsw&gt;</code> also today, we'll post 19.1 to our copr el-testing repo at</p>
+<p>16:52 <code>&lt;blackboxsw&gt;</code> #link <a href="https://copr.fedorainfracloud.org/coprs/g/cloud-init/el-testing/">https://copr.fedorainfracloud.org/coprs/g/cloud-init/el-testing/</a></p>
+<p>16:52 <code>&lt;blackboxsw&gt;</code> for centos.</p>
+<p>16:53 <code>&lt;powersj&gt;</code> AnhVoMSFT, daily PPA: <a href="https://launchpad.net/~cloud-init-dev/+archive/ubuntu/daily">https://launchpad.net/~cloud-init-dev/+archive/ubuntu/daily</a></p>
+<p>16:53 <code>&lt;blackboxsw&gt;</code> AnhVoMSFT: we have daily repos that</p>
+<p>16:53 <code>&lt;blackboxsw&gt;</code> thx powersj</p>
+<p>16:53 * powersj disappears</p>
+<p>16:54 <code>&lt;blackboxsw&gt;</code> AnhVoMSFT, so that is built from tip of master (which currently contains exactly the same commit set as will be published to each series)</p>
+<p>16:54 <code>&lt;blackboxsw&gt;</code> AnhVoMSFT: once the following branches are "merged" for each series, xenial-proposed, bionic-proposed, cosmic-proposed will also contain the final bits for each series</p>
+<p>16:54 <code>&lt;AnhVoMSFT&gt;</code> thanks powersj blackboxsw</p>
+<p>16:55 <code>&lt;blackboxsw&gt;</code> #link <a href="https://code.launchpad.net/~chad.smith/cloud-init/+git/cloud-init/+merge/367301">https://code.launchpad.net/~chad.smith/cloud-init/+git/cloud-init/+merge/367301</a></p>
+<p>16:55 <code>&lt;blackboxsw&gt;</code> #link <a href="https://code.launchpad.net/~chad.smith/cloud-init/+git/cloud-init/+merge/367302">https://code.launchpad.net/~chad.smith/cloud-init/+git/cloud-init/+merge/367302</a></p>
+<p>16:55 <code>&lt;blackboxsw&gt;</code> #link <a href="https://code.launchpad.net/~chad.smith/cloud-init/+git/cloud-init/+merge/367297">https://code.launchpad.net/~chad.smith/cloud-init/+git/cloud-init/+merge/367297</a></p>
+<p>16:55 <code>&lt;blackboxsw&gt;</code> so when we land those, it should be a matter of an hour or so until <code>&lt;series&gt;</code>-proposed is accessible to test those final packages</p>
+<p>16:56 <code>&lt;blackboxsw&gt;</code> AnhVoMSFT: in the SRU process, we still will have to verify and test those bits before release. There is a tracking bug for the overall process here</p>
+<p>16:56 <code>&lt;blackboxsw&gt;</code> #link <a href="https://bugs.launchpad.net/ubuntu/+source/cloud-init/+bug/1828637">https://bugs.launchpad.net/ubuntu/+source/cloud-init/+bug/1828637</a></p>
+<p>16:56 <code>&lt;ubot5</code>&gt;` Ubuntu bug 1828637 in cloud-init (Ubuntu) "sru cloud-init (18.5-45 to 19.1.1) Xenial, Bionic, Cosmic, Disco" [Undecided,In progress]</p>
+<p>16:56 <code>&lt;blackboxsw&gt;</code> ^ this but will go to fix released when we pass verification and publish the SRU</p>
+<p>16:57 <code>&lt;blackboxsw&gt;</code> which will be promotion from xenial-proposed to xenial-updates for public availability on all images</p>
+<p>16:57 <code>&lt;blackboxsw&gt;</code> again the estimate on this is probably next week for getting through testing</p>
+<p>16:58 <code>&lt;blackboxsw&gt;</code> the rest of the cloud-init team is meeting this week for feature planning for the next cycle. But generally  we will be tracking our ongoing work @ our public trello board</p>
+<p>16:59 <code>&lt;blackboxsw&gt;</code> #link <a href="https://trello.com/b/hFtWKUn3/daily-cloud-init-curtin">https://trello.com/b/hFtWKUn3/daily-cloud-init-curtin</a></p>
+<p>17:00 <code>&lt;blackboxsw&gt;</code> If there are there any features or significant gaps that people have interest in that we could try to put on our radar feel free to drop us a line here in channel or on the mailinglist @ cloud-init@lists.launchpad.net</p>
+<p>17:01 <code>&lt;blackboxsw&gt;</code> I think that about wraps up current in-flight work</p>
+<p>17:02 <code>&lt;blackboxsw&gt;</code> #topic Office hours (next ~30 mins)</p>
+<p>17:03 <code>&lt;blackboxsw&gt;</code> This section is allocated generally for folks to chat about any burning questions that we have. Bring your topics, bugs, feature requests, merge proposals or questions and we'll try getting some eyes or discussion on the</p>
+<p>17:03 <code>&lt;blackboxsw&gt;</code> *them.</p>
+<p>17:04 <code>&lt;blackboxsw&gt;</code> Generally we should have a couple cloud-init devs hanging out in channel during this time to help build momentum or unblock folks. Today may be a bit light in attendance due to a remote work trip a number of people are attending.</p>
+<p>17:04 <code>&lt;AnhVoMSFT&gt;</code> if our next work requires importing another module (python-dbus), are there any guidelines wrt to using additional python modules not currently part of cloudinit package?</p>
+<p>17:06 <code>&lt;blackboxsw&gt;</code> AnhVoMSFT: generally adding new dependencies is something we try to avoid if possible due to impacting the minimal cloud images with additional dependencies. From ubuntu's perspective we tend to try to look at an ubuntu minimal image to see if the dependency is already there (and that makes things simple for the addition).</p>
+<p>17:06 <code>&lt;blackboxsw&gt;</code> If new dependency is also something that can be optional instead of strict it makes adding that dependency easier.</p>
+<p>17:06 <code>&lt;blackboxsw&gt;</code> For example: python-jsonschema is an optional package dependency</p>
+<p>17:07 <code>&lt;blackboxsw&gt;</code> we bookend the imports in cloud-init with a try/except ImportError: pass and make sure that cloud-init still behaves if it is not there.</p>
+<p>17:07 <code>&lt;AnhVoMSFT&gt;</code> i will have to look into how to make it optional - certainly we can go that way if that makes thing easier</p>
+<p>17:07 <code>&lt;AnhVoMSFT&gt;</code> what we are looking at is how to get the kernel init timestamp and systemd init timestamp - both of these are available as KernelTimestamp and UserSpaceTimestamp that are available as part of the systemd's system dbus</p>
+<p>17:07 <code>&lt;blackboxsw&gt;</code> This type of approach has been helpful in supporting Centos 6 where jsonschema wasn't available in stock images</p>
+<p>17:08 <code>&lt;AnhVoMSFT&gt;</code> normally you can get those info from "systemctl show", but the issue is systemctl internally use systemd's format_timestamp, which trims the precision down to "seconds" level. (format_timestamp_us would give us what we need)</p>
+<p>17:11 <code>&lt;blackboxsw&gt;</code> AnhVoMSFT: interesting. since it seems like the dependency is one one or two values and not the full content of python-dbus library/modules I wonder if it might be better to see if those values are available in /proc or /sys somewhere as it might be fairly simple to instrument our own. (and avoid the time cost of importing larger python modules)</p>
+<p>17:11 <code>&lt;AnhVoMSFT&gt;</code> I guess if we really want to avoid another module, we can use os.stat to key off ctime of /proc and /proc/1 - however, the ctimes of /proc and /proc/1 are a bit earlier than the actual KernelTimestamp and UserSpaceTimestamp. They do have the advantage of being more widely available. Systemd and dbus might not exist on all distros</p>
+<p>17:11 <code>&lt;blackboxsw&gt;</code> ... at least something to peek at to see if it is low hanging fruit that is easy to handle</p>
+<p>17:12 <code>&lt;AnhVoMSFT&gt;</code> Right, I would appreciate if someone with more knowledge on Linux systems can provide some advices here</p>
+<p>17:12 <code>&lt;AnhVoMSFT&gt;</code> the dependency is really on those values, and the dbus library seems a bit overkill for it</p>
+<p>17:13 <code>&lt;blackboxsw&gt;</code> rharper: Odd_Bloke may have some thoughts on that too. but that conversation may have to wait a bit due to time difference.</p>
+<p>17:14 <code>&lt;blackboxsw&gt;</code> AnhVoMSFT: again, what call/values would you like to make/get from python-dbus just for clarity</p>
+<p>17:15 <code>&lt;AnhVoMSFT&gt;</code> bus=dbus.SystemBus() systemd1=bus.get_object('org.freedesktop.systemd1','/org/freedesktop/systemd1') manager=dbus.Interface(systemd1, 'org.freedesktop.systemd1.Manager') props_iface=dbus.Interface(manager,'org.freedesktop.DBus.Properties') props_iface.Get('org.freedesktop.systemd1.Manager','KernelTimestamp')</p>
+<p>17:15 <code>&lt;AnhVoMSFT&gt;</code> oops - multiline didn't seem to go so well</p>
+<p>17:15 <code>&lt;blackboxsw&gt;</code> it's all good thx</p>
+<p>17:16 <code>&lt;blackboxsw&gt;</code> alternately, I support we could shell out via util.subp to make a cli call to handle that to avoid a python package dependency, but again it'd probably be better/faster to avoid that</p>
+<p>17:17 <code>&lt;AnhVoMSFT&gt;</code> right, we're trying to avoid adding more util.subp call (in fact we have a workitem to reduce the numbers of the existing util.subp call the Azure DS makes)</p>
+<p>17:18 <code>&lt;AnhVoMSFT&gt;</code> Like mentioned previously, we're looking at the /proc and /proc/1 ctime, they're cheap using the os.stat module and exist in all distros.</p>
+<p>17:19 <code>&lt;blackboxsw&gt;</code> oops typo "alternatively , I support" ///   I suppose</p>
+<p>17:19 <code>&lt;blackboxsw&gt;</code> yeah that seems like the most non-contentious approach (processing /proc/1 ctime)</p>
+<p>17:20 <code>&lt;blackboxsw&gt;</code> uncontentious rather</p>
+<p>17:22 <code>&lt;AnhVoMSFT&gt;</code> another thing we're looking at is cloud-init cloudtests so that we can have some azure cloud test running as part of cloud-init check-in gate</p>
+<p>17:22 <code>&lt;blackboxsw&gt;</code> excellent!</p>
+<p>17:23 <code>&lt;AnhVoMSFT&gt;</code> if you guys have any pointers/tips on what it takes to enable cloud-tests please let us know</p>
+<p>17:23 <code>&lt;AnhVoMSFT&gt;</code> one of our team members will be looking at it</p>
+<p>17:24 <code>&lt;blackboxsw&gt;</code> any blockers that you are aware of to date?  Generally the biggest lift is getting the platform support added to the cloud-tests</p>
+<p>17:25 <code>&lt;blackboxsw&gt;</code> I know powersj added more CI docs related to this a few months ago at</p>
+<p>17:25 <code>&lt;blackboxsw&gt;</code> #link <a href="https://cloudinit.readthedocs.io/en/latest/topics/tests.html#">https://cloudinit.readthedocs.io/en/latest/topics/tests.html#</a></p>
+<p>17:25 <code>&lt;blackboxsw&gt;</code> I'll try to see if there was additional documentation tossed around</p>
+<p>17:26 <code>&lt;blackboxsw&gt;</code> the benefit if Azure platform is added to cloud-init tip is that'd we would likely add some of that testing to our SRU verification process each release we are doing. I'm excited about that</p>
+<p>17:27 <code>&lt;blackboxsw&gt;</code> right now, it's manual for Azure testing... per something like this <a href="https://github.com/cloud-init/ubuntu-sru/blob/master/manual/azure-sru-18.5.21.txt">https://github.com/cloud-init/ubuntu-sru/blob/master/manual/azure-sru-18.5.21.txt</a></p>
+<p>17:27 <code>&lt;AnhVoMSFT&gt;</code> I'm not aware of any blockers, we just barely started looking at it</p>
+<p>17:27 <code>&lt;AnhVoMSFT&gt;</code> these links are very helpful, I'll pass them along</p>
+<p>17:28 <code>&lt;blackboxsw&gt;</code> the above script is tedious to write up, and only is really testing upgrade path and any <em>new</em> azure-specific bugs/features that are fixed in the current SRU, since most of the other integration testing covers general case</p>
+<p>17:28 <code>&lt;blackboxsw&gt;</code> thanks AnhVoMSFT that's good to hear</p>
+<p>17:29 <code>&lt;blackboxsw&gt;</code> are there any other topics folks have for today's meeting? Otherwise we can adjourn until next meeting</p>
+<p>17:29 <code>&lt;blackboxsw&gt;</code> next meeting will be May 27th, same time</p>
+<p>17:30 <code>&lt;blackboxsw&gt;</code> and I'll post status notes for the meeting to our github pages</p>
+<p>17:30 <code>&lt;blackboxsw&gt;</code> #link <a href="https://cloud-init.github.io">https://cloud-init.github.io</a></p>
+<p>17:31 <code>&lt;blackboxsw&gt;</code> before I forget. let's get an action to followup on kernel/userspace timestamp discussion</p>
+<p>17:31 <code>&lt;AnhVoMSFT&gt;</code> thanks blackboxsw</p>
+<p>17:32 <code>&lt;blackboxsw&gt;</code> #action Odd_Bloke/rharper/AnhVoMSFT followup on recommended approach for getting kernel/userspace timestamp with or without python-dbus package dependency</p>
+<p>17:32 * meetingology Odd_Bloke/rharper/AnhVoMSFT followup on recommended approach for getting kernel/userspace timestamp with or without python-dbus package dependency</p>
+<p>17:32 <code>&lt;blackboxsw&gt;</code> thank you AnhVoMSFT</p>
+<p>17:32 <code>&lt;blackboxsw&gt;</code> see folks next time, or anytime in channel</p>
+<p>17:32 <code>&lt;blackboxsw&gt;</code> #endmeeting</p>
+<p>Generated by MeetBot 0.1.5 (<a href="http://wiki.ubuntu.com/meetingology">http://wiki.ubuntu.com/meetingology</a>)</p>
+  </div>
+  <div class="tag-cloud">
+    <p>
+    </p>
+  </div>
+
+
+
+    <div class="addthis_relatedposts_inline">
+
+
+</article>
+
+    <footer>
+<p>&copy;  </p>
+<p>Powered by <a href="http://getpelican.com" target="_blank">Pelican</a> - <a href="https://github.com/alexandrevicenzi/flex" target="_blank">Flex</a> theme by <a href="http://alexandrevicenzi.com" target="_blank">Alexandre Vicenzi</a></p>    </footer>
+  </main>
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " Cloud-init Info ",
+  "url" : "https://cloud-init.github.io",
+  "image": "/images/cloud-init-orange.svg",
+  "description": "Cloud-init project updates and general information"
+}
+</script>
+
+</body>
+</html>
