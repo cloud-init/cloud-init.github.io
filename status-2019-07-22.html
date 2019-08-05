@@ -1,0 +1,320 @@
+
+<!DOCTYPE html>
+<html lang="english">
+<head>
+  <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" type="text/css" href="https://cloud-init.github.io/theme/stylesheet/style.min.css">
+
+  <link rel="stylesheet" type="text/css" href="https://cloud-init.github.io/theme/pygments/github.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cloud-init.github.io/theme/font-awesome/css/font-awesome.min.css">
+
+
+    <link href="https://cloud-init.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Cloud-init Info Atom">
+
+
+    <link rel="shortcut icon" href="/theme/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/theme/img/favicon.ico" type="image/x-icon">
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-50554247-3', 'auto');
+  ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#2c001e">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#2c001e">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Microsoft EDGE -->
+    <meta name="msapplication-TileColor" content="#2c001e">
+
+<meta name="author" content="chad.smith@canonical.com" />
+<meta name="description" content="Meeting information #cloud-init: Cloud-init bi-weekly status, 22 Jul at 16:15 — 17:15 UTC Full logs at [[http://ubottu.com/meetingology/logs/cloud-init/2019/cloud-init.2019-07-22-16.15.log.html]] Meeting summary Previous Actions The discussion about &#34;Previous Actions&#34; started at 16:17. LINK: https://bugs.launchpad.net/ubuntu/+source/cloud-init …" />
+<meta name="keywords" content="">
+
+<meta property="og:site_name" content="Cloud-init Info"/>
+<meta property="og:title" content="Cloud-init bi-weekly status"/>
+<meta property="og:description" content="Meeting information #cloud-init: Cloud-init bi-weekly status, 22 Jul at 16:15 — 17:15 UTC Full logs at [[http://ubottu.com/meetingology/logs/cloud-init/2019/cloud-init.2019-07-22-16.15.log.html]] Meeting summary Previous Actions The discussion about &#34;Previous Actions&#34; started at 16:17. LINK: https://bugs.launchpad.net/ubuntu/+source/cloud-init …"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:url" content="https://cloud-init.github.io/status-2019-07-22.html"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2019-07-22 16:15:00+00:00"/>
+<meta property="article:modified_time" content=""/>
+<meta property="article:author" content="https://cloud-init.github.io/author/chadsmithcanonicalcom.html">
+<meta property="article:section" content="status-meeting-minutes"/>
+<meta property="og:image" content="/images/cloud-init-orange.svg">
+
+  <title>Cloud-init Info &ndash; Cloud-init bi-weekly status</title>
+
+</head>
+<body>
+  <aside>
+    <div>
+      <a href="https://cloud-init.github.io">
+        <img src="/images/cloud-init-orange.svg" alt="Cloud-init" title="Cloud-init">
+      </a>
+      <h1><a href="https://cloud-init.github.io">Cloud-init</a></h1>
+
+<p>Make your cloud images be all they can be</p>
+      <nav>
+        <ul class="list">
+
+          <li><a href="https://cloudinit.readthedocs.org/" target="_blank">Docs</a></li>
+          <li><a href="https://cloud-init.io" target="_blank">Overview</a></li>
+          <li><a href="https://cloudinit.readthedocs.io/en/latest/topics/hacking.html" target="_blank">Hacking</a></li>
+          <li><a href="https://jenkins.ubuntu.com/server/view/cloud-init/" target="_blank">CI builds</a></li>
+          <li><a href="https://launchpad.net/cloud-init" target="_blank">Code</a></li>
+        </ul>
+      </nav>
+
+      <ul class="social">
+        <li><a class="sc-github" href="https://github.com/cloud-init" target="_blank"><i class="fa fa-github"></i></a></li>
+        <li><a class="sc-wechat" href="https://webchat.freenode.net/?channels=cloud-init" target="_blank"><i class="fa fa-wechat"></i></a></li>
+      </ul>
+    </div>
+
+
+  </aside>
+  <main>
+
+    <nav>
+      <a href="https://cloud-init.github.io">Home</a>
+
+      <a href="/archives.html">Archives</a>
+      <a href="/categories.html">Categories</a>
+      <a href="/tags.html">Tags</a>
+
+      <a href="https://cloud-init.github.io/feeds/all.atom.xml">Atom</a>
+
+    </nav>
+
+<article class="single">
+  <header>
+      
+    <h1 id="status-2019-07-22">Cloud-init bi-weekly status</h1>
+    <p>
+      Posted on Mon 22 July 2019 in <a href="https://cloud-init.github.io/category/status-meeting-minutes.html">status-meeting-minutes</a>
+
+        &#8226; 6 min read
+    </p>
+  </header>
+
+
+  <div>
+    <h2>Meeting information</h2>
+<ul>
+<li>#cloud-init: Cloud-init bi-weekly status, 22 Jul at 16:15 &mdash; 17:15 UTC</li>
+<li>Full logs at [[<a href="http://ubottu.com/meetingology/logs/cloud-init/2019/cloud-init.2019-07-22-16.15.log.html">http://ubottu.com/meetingology/logs/cloud-init/2019/cloud-init.2019-07-22-16.15.log.html</a>]]</li>
+</ul>
+<h2>Meeting summary</h2>
+<h3>Previous Actions</h3>
+<p>The discussion about "Previous Actions" started at 16:17.</p>
+<ul>
+<li><strong>LINK</strong>: <a href="https://bugs.launchpad.net/ubuntu/+source/cloud-init/+bug/1832381">https://bugs.launchpad.net/ubuntu/+source/cloud-init/+bug/1832381</a> </li>
+<li><strong>ACTION</strong>: rharper to update <a href="https://bugs.launchpad.net/ubuntu/+source/cloud-init/+bug/1832381">https://bugs.launchpad.net/ubuntu/+source/cloud-init/+bug/1832381</a> status</li>
+<li><strong>LINK</strong>: <a href="http://ubottu.com/meetingology/logs/cloud-init/2019/cloud-init.2019-07-08-16.16.html">http://ubottu.com/meetingology/logs/cloud-init/2019/cloud-init.2019-07-08-16.16.html</a> </li>
+<li><strong>ACTION</strong>: rharper to followup with blackboxsw on pushing status minutes up to cloud-init.github.io page</li>
+</ul>
+<h3>Recent Changes</h3>
+<p>The discussion about "Recent Changes" started at 16:23.</p>
+<ul>
+<li><strong>LINK</strong>: <a href="https://discourse.ubuntu.com/t/cloud-init-19-2-release/11873">https://discourse.ubuntu.com/t/cloud-init-19-2-release/11873</a> </li>
+</ul>
+<h3>In Progress Development</h3>
+<p>The discussion about "In Progress Development" started at 16:27.</p>
+<ul>
+<li><strong>LINK</strong>: <a href="https://code.launchpad.net/~goneri/cloud-init/+git/cloud-init/+merge/368507">https://code.launchpad.net/~goneri/cloud-init/+git/cloud-init/+merge/368507</a> </li>
+<li><strong>LINK</strong>: <a href="https://code.launchpad.net/~goneri/cloud-init/+git/cloud-init/+merge/365641">https://code.launchpad.net/~goneri/cloud-init/+git/cloud-init/+merge/365641</a> </li>
+<li><strong>LINK</strong>: <a href="https://code.launchpad.net/~goneri/cloud-init/+git/cloud-init/+merge/368508">https://code.launchpad.net/~goneri/cloud-init/+git/cloud-init/+merge/368508</a> </li>
+</ul>
+<h3>In Progress Development</h3>
+<p>The discussion about "In Progress Development" started at 16:36.</p>
+<ul>
+<li><strong>LINK</strong>: <a href="https://code.launchpad.net/~tribaal/cloud-init/+git/cloud-init/+merge/369516">https://code.launchpad.net/~tribaal/cloud-init/+git/cloud-init/+merge/369516</a> </li>
+<li><strong>LINK</strong>: <a href="https://code.launchpad.net/~xiaofengw/cloud-init/+git/cloud-init/+merge/367889">https://code.launchpad.net/~xiaofengw/cloud-init/+git/cloud-init/+merge/367889</a> </li>
+<li><strong>LINK</strong>: <a href="https://code.launchpad.net/~daniel-thewatkins/cloud-init/+git/cloud-init/+merge/369783">https://code.launchpad.net/~daniel-thewatkins/cloud-init/+git/cloud-init/+merge/369783</a> </li>
+<li><strong>LINK</strong>: <a href="https://code.launchpad.net/~raharper/cloud-init/+git/cloud-init/+ref/feature/stage_threadpool">https://code.launchpad.net/~raharper/cloud-init/+git/cloud-init/+ref/feature/stage_threadpool</a> </li>
+</ul>
+<h3>Office Hours (next ~30 mins)</h3>
+<p>The discussion about "Office Hours (next ~30 mins)" started at 16:43.</p>
+<ul>
+<li><strong>LINK</strong>: <a href="https://copr.fedorainfracloud.org/coprs/g/cloud-init/cloud-init-dev/">https://copr.fedorainfracloud.org/coprs/g/cloud-init/cloud-init-dev/</a> </li>
+<li><strong>LINK</strong>: <a href="https://download.opensuse.org/repositories/Cloud:/Tools/">https://download.opensuse.org/repositories/Cloud:/Tools/</a> </li>
+</ul>
+<h2>Vote results</h2>
+<h2>Action items, by person</h2>
+<ul>
+<li>rharper</li>
+<li>rharper to update <a href="https://bugs.launchpad.net/ubuntu/+source/cloud-init/+bug/1832381">https://bugs.launchpad.net/ubuntu/+source/cloud-init/+bug/1832381</a> status</li>
+<li>rharper to followup with blackboxsw on pushing status minutes up to cloud-init.github.io page</li>
+</ul>
+<h2>Done items</h2>
+<ul>
+<li>(none)</li>
+</ul>
+<h2>People present (lines said)</h2>
+<ul>
+<li>rharper (69)</li>
+<li>Goneri (20)</li>
+<li>meetingology (6)</li>
+<li>Odd_Bloke (5)</li>
+<li>metsuke (4)</li>
+<li>ubot5 (2)</li>
+</ul>
+<h2>Full Log</h2>
+<p>16:15 <code>&lt;rharper&gt;</code> #startmeeting Cloud-init bi-weekly status</p>
+<p>16:15 <code>&lt;meetingology&gt;</code> Meeting started Mon Jul 22 16:15:03 2019 UTC.  The chair is rharper. Information about MeetBot at <a href="http://wiki.ubuntu.com/meetingology.">http://wiki.ubuntu.com/meetingology.</a></p>
+<p>16:15 <code>&lt;meetingology&gt;</code> </p>
+<p>16:15 <code>&lt;meetingology&gt;</code> Available commands: action commands idea info link nick</p>
+<p>16:15 <code>&lt;rharper&gt;</code> \o/</p>
+<p>16:15 <code>&lt;rharper&gt;</code> #chair Odd_Bloke</p>
+<p>16:15 <code>&lt;meetingology&gt;</code> Current chairs: Odd_Bloke rharper</p>
+<p>16:15 <code>&lt;rharper&gt;</code> hi folks, welcome to another cloud-init community status meeting. All discussions and interjections welcome.</p>
+<p>16:16 <code>&lt;rharper&gt;</code> cloud-init upstream uses this meeting as a platform for community updates, feature/bug discussions, and an opportunity to get some extra input on current development.</p>
+<p>16:16 <code>&lt;rharper&gt;</code> our format is the following topics: Previous Actions, Recent Changes, In-progress Development, Office Hours</p>
+<p>16:16 <code>&lt;rharper&gt;</code> anyone is welcome to participate, interject, make suggestions or ask questions</p>
+<p>16:16 <code>&lt;rharper&gt;</code> we host the meeting every two weeks at the date and time  indicated in the IRC channel topic  ^</p>
+<p>16:17 <code>&lt;rharper&gt;</code> #topic Previous Actions</p>
+<p>16:17 <code>&lt;Odd_Bloke&gt;</code> o/</p>
+<p>16:17 <code>&lt;rharper&gt;</code> We had a few previous action items to look at</p>
+<p>16:18 <code>&lt;rharper&gt;</code> <a href="https://bugs.launchpad.net/ubuntu/+source/cloud-init/+bug/1832381">https://bugs.launchpad.net/ubuntu/+source/cloud-init/+bug/1832381</a></p>
+<p>16:18 <code>&lt;ubot5&gt;</code> Ubuntu bug 1832381 in cloud-init (Ubuntu) "vm fails to boot due to conflicting network configuration when user switches from netplan to eni" [Undecided,Incomplete]</p>
+<p>16:18 <code>&lt;rharper&gt;</code> AnhVoMSFT was looking to collect logs from this scenario;</p>
+<p>16:19 <code>&lt;Goneri&gt;</code> hey!</p>
+<p>16:19 <code>&lt;rharper&gt;</code> it appears that getting an instance where the MAC address changes is harder so fewer folks trip over this; however, we agreed that cloud-init can track which renderer it used and if it switches it can clean up the config it wrote;</p>
+<p>16:19 <code>&lt;rharper&gt;</code> #action rharper to update <a href="https://bugs.launchpad.net/ubuntu/+source/cloud-init/+bug/1832381">https://bugs.launchpad.net/ubuntu/+source/cloud-init/+bug/1832381</a> status</p>
+<p>16:19 * meetingology rharper to update <a href="https://bugs.launchpad.net/ubuntu/+source/cloud-init/+bug/1832381">https://bugs.launchpad.net/ubuntu/+source/cloud-init/+bug/1832381</a> status</p>
+<p>16:19 <code>&lt;ubot5&gt;</code> Ubuntu bug 1832381 in cloud-init (Ubuntu) "vm fails to boot due to conflicting network configuration when user switches from netplan to eni" [Undecided,Incomplete]</p>
+<p>16:20 <code>&lt;rharper&gt;</code> The other action was to review <a href="https://code.launchpad.net/~vtqanh/cloud-init/+git/cloud-init/+merge/369785">https://code.launchpad.net/~vtqanh/cloud-init/+git/cloud-init/+merge/369785</a></p>
+<p>16:20 <code>&lt;rharper&gt;</code> This was completed the other week while we worked toward the 19.2 release; that branch is currently work-in-progress, awaiting feedback/changes from submitter</p>
+<p>16:21 <code>&lt;rharper&gt;</code> that's all of the action items from previous meeting</p>
+<p>16:22 <code>&lt;rharper&gt;</code> previous meeting status found here:</p>
+<p>16:22 <code>&lt;rharper&gt;</code> #link <a href="http://ubottu.com/meetingology/logs/cloud-init/2019/cloud-init.2019-07-08-16.16.html">http://ubottu.com/meetingology/logs/cloud-init/2019/cloud-init.2019-07-08-16.16.html</a></p>
+<p>16:23 <code>&lt;rharper&gt;</code> normally at the cloud-init.github.io status page; looks like we didn't push the logs there.</p>
+<p>16:23 <code>&lt;rharper&gt;</code> #action rharper to followup with blackboxsw on pushing status minutes up to cloud-init.github.io page</p>
+<p>16:23 * meetingology rharper to followup with blackboxsw on pushing status minutes up to cloud-init.github.io page</p>
+<p>16:23 <code>&lt;rharper&gt;</code> #topic Recent Changes</p>
+<p>16:25 <code>&lt;rharper&gt;</code> % git log --oneline  --since 2019-07-08</p>
+<p>16:25 <code>&lt;rharper&gt;</code> a02c0c9 (HEAD -&gt;` master, origin/master, origin/HEAD) cloud_tests: updates and fixes</p>
+<p>16:25 <code>&lt;rharper&gt;</code> 5498107 Fix bug rendering MTU on bond or vlan when input was netplan.</p>
+<p>16:25 <code>&lt;rharper&gt;</code> b3a87fc net: update net sequence, include wait on netdevs, opensuse netrules path</p>
+<p>16:25 <code>&lt;rharper&gt;</code> 060b1a1 (tag: 19.2, raharper/release/19.2, release/19.2, fix/fs_setup_custom_command_lp1801790) Release 19.2</p>
+<p>16:25 <code>&lt;rharper&gt;</code> 07b1723 net: add rfc3442 (classless static routes) to EphemeralDHCP</p>
+<p>16:25 <code>&lt;rharper&gt;</code> 1404817 templates/ntp.conf.debian.tmpl: fix missing newline for pools</p>
+<p>16:25 <code>&lt;rharper&gt;</code> a785462 Support netplan renderer in Arch Linux</p>
+<p>16:25 <code>&lt;rharper&gt;</code> a066ccd Fix typo in publicly viewable documentation.</p>
+<p>16:26 <code>&lt;rharper&gt;</code> d9769c4 Add a cdrom size checker for OVF ds to ds-identify</p>
+<p>16:26 <code>&lt;rharper&gt;</code> 9c47c68 VMWare: Trigger the post customization script via cc_scripts module.</p>
+<p>16:26 <code>&lt;rharper&gt;</code> a24550a Cloud-init analyze module: Added ability to analyze boot events.</p>
+<p>16:26 <code>&lt;rharper&gt;</code> a6faf3a Update debian eni network configuration location, retain Ubuntu setting</p>
+<p>16:26 <code>&lt;rharper&gt;</code> e5f5421 net: skip bond interfaces in get_interfaces</p>
+<p>16:26 <code>&lt;rharper&gt;</code> 217c893 Fix a couple of issues raised by a coverity scan</p>
+<p>16:26 <code>&lt;rharper&gt;</code> biggest item in there is the 19.2 release</p>
+<p>16:26 <code>&lt;rharper&gt;</code> #link <a href="https://discourse.ubuntu.com/t/cloud-init-19-2-release/11873">https://discourse.ubuntu.com/t/cloud-init-19-2-release/11873</a></p>
+<p>16:26 <code>&lt;rharper&gt;</code> a big thank you from the cloud-init team to everyone who helped contribute to the release</p>
+<p>16:27 <code>&lt;Goneri&gt;</code> do you have time for a little BSD update?</p>
+<p>16:27 <code>&lt;rharper&gt;</code> Yes, let's talk about In progress developement</p>
+<p>16:27 <code>&lt;rharper&gt;</code> #topic In Progress Development</p>
+<p>16:27 <code>&lt;rharper&gt;</code> Goneri: go ahead</p>
+<p>16:28 <code>&lt;Goneri&gt;</code> #topic FreeBSD/NetBSD status</p>
+<p>16:28 <code>&lt;Goneri&gt;</code> so there is two active branches, the first one is: <a href="https://code.launchpad.net/~goneri/cloud-init/+git/cloud-init/+merge/368507">https://code.launchpad.net/~goneri/cloud-init/+git/cloud-init/+merge/368507</a></p>
+<p>16:28 <code>&lt;rharper&gt;</code> #link <a href="https://code.launchpad.net/~goneri/cloud-init/+git/cloud-init/+merge/368507">https://code.launchpad.net/~goneri/cloud-init/+git/cloud-init/+merge/368507</a></p>
+<p>16:29 <code>&lt;Goneri&gt;</code> it has started with a tiny fix to address a configuration difference with FreeBSD (there is no chpasswd there)</p>
+<p>16:29 <code>&lt;Goneri&gt;</code> and it's now a slightly bigger refactoring now, I believe it clarify the code base and I would like to land it like that.</p>
+<p>16:30 <code>&lt;Goneri&gt;</code> a discussion is ongoing with rharper on the PR</p>
+<p>16:30 <code>&lt;Goneri&gt;</code> second PR is <a href="https://code.launchpad.net/~goneri/cloud-init/+git/cloud-init/+merge/365641">https://code.launchpad.net/~goneri/cloud-init/+git/cloud-init/+merge/365641</a></p>
+<p>16:30 <code>&lt;Goneri&gt;</code> #link <a href="https://code.launchpad.net/~goneri/cloud-init/+git/cloud-init/+merge/365641">https://code.launchpad.net/~goneri/cloud-init/+git/cloud-init/+merge/365641</a></p>
+<p>16:30 <code>&lt;Goneri&gt;</code> this one is much bigger, and I've just addressed the last comment from rharper, I test it often and it works fine for me</p>
+<p>16:31 <code>&lt;Goneri&gt;</code> if you want to give it a try, I pushed some pre-built images here: <a href="http://bsd-cloud-image.org/">http://bsd-cloud-image.org/</a></p>
+<p>16:31 <code>&lt;rharper&gt;</code> nice!</p>
+<p>16:31 <code>&lt;Goneri&gt;</code> I test it with OpenStack and NoCloud, a friend who maintains CBSD also test it on Bhyve (FreeBSD)</p>
+<p>16:32 <code>&lt;Goneri&gt;</code> finally, the last one is <a href="https://code.launchpad.net/~goneri/cloud-init/+git/cloud-init/+merge/368508">https://code.launchpad.net/~goneri/cloud-init/+git/cloud-init/+merge/368508</a></p>
+<p>16:32 <code>&lt;Goneri&gt;</code> #link <a href="https://code.launchpad.net/~goneri/cloud-init/+git/cloud-init/+merge/368508">https://code.launchpad.net/~goneri/cloud-init/+git/cloud-init/+merge/368508</a></p>
+<p>16:32 <code>&lt;Goneri&gt;</code> No active merge request yet because it depends on the two actives PR that I just mentioned</p>
+<p>16:32 <code>&lt;Goneri&gt;</code> this patch brings NetBSD support (7 and 8)</p>
+<p>16:33 <code>&lt;Goneri&gt;</code> I would like to work on OpenBSD later, but it's still a low priority</p>
+<p>16:34 <code>&lt;rharper&gt;</code> Goneri: thanks for the update</p>
+<p>16:34 <code>&lt;Goneri&gt;</code> finally, I've a bunch of scripts that I use to build my images</p>
+<p>16:35 <code>&lt;Goneri&gt;</code> it's still rather raw, but I would like to integrate that at some point with your CI</p>
+<p>16:35 <code>&lt;Goneri&gt;</code> that's all</p>
+<p>16:35 <code>&lt;rharper&gt;</code> thanks</p>
+<p>16:36 <code>&lt;rharper&gt;</code> #topic In Progress Development</p>
+<p>16:36 <code>&lt;rharper&gt;</code> #link <a href="https://code.launchpad.net/~tribaal/cloud-init/+git/cloud-init/+merge/369516">https://code.launchpad.net/~tribaal/cloud-init/+git/cloud-init/+merge/369516</a></p>
+<p>16:36 <code>&lt;rharper&gt;</code> Adding a new datasource for Exoscale</p>
+<p>16:36 <code>&lt;rharper&gt;</code> #link <a href="https://code.launchpad.net/~xiaofengw/cloud-init/+git/cloud-init/+merge/367889">https://code.launchpad.net/~xiaofengw/cloud-init/+git/cloud-init/+merge/367889</a></p>
+<p>16:36 <code>&lt;rharper&gt;</code> vmware user-defined-scripts</p>
+<p>16:37 <code>&lt;rharper&gt;</code> #link <a href="https://code.launchpad.net/~daniel-thewatkins/cloud-init/+git/cloud-init/+merge/369783">https://code.launchpad.net/~daniel-thewatkins/cloud-init/+git/cloud-init/+merge/369783</a></p>
+<p>16:37 <code>&lt;rharper&gt;</code> Allow datasources to configure the order of network-config sources</p>
+<p>16:37 <code>&lt;rharper&gt;</code> #link <a href="https://code.launchpad.net/~raharper/cloud-init/+git/cloud-init/+ref/feature/stage_threadpool">https://code.launchpad.net/~raharper/cloud-init/+git/cloud-init/+ref/feature/stage_threadpool</a></p>
+<p>16:38 <code>&lt;Odd_Bloke&gt;</code> I'm expecting to have a response to Ryan's review comments on that today, and whatever conclusion we reach shouldn't be too much work to implement.</p>
+<p>16:38 <code>&lt;rharper&gt;</code> definitely</p>
+<p>16:38 <code>&lt;Odd_Bloke&gt;</code> And then I'll have a follow-up to split apart the "cmdline" network data source in to "cmdline" and "initramfs", which are currently conflated.</p>
+<p>16:39 <code>&lt;Odd_Bloke&gt;</code> (Neither of these should cause behavioural changes, they're just setting us up for some data source work down the line.)</p>
+<p>16:40 <code>&lt;rharper&gt;</code> The threadpool branch is a more general approach to handle running modules async from the mainthread;  there were some limitations depending on systemd;  and there is a desire for more than just disk_setup to run async;  this branch I'm working on would allow modules to be tagged async and they run in a separate thread allowing the next module to proceed; we then join at the end of stage to ensure completion of threads;</p>
+<p>16:41 <code>&lt;rharper&gt;</code> any other upstream development I'm missing?</p>
+<p>16:43 <code>&lt;rharper&gt;</code> ok, I think that's it then;</p>
+<p>16:43 <code>&lt;rharper&gt;</code> #topic  Office Hours (next ~30 mins)</p>
+<p>16:43 <code>&lt;rharper&gt;</code> feel free to ask for help, reviews, discussions on any cloud-init items you're looking at.</p>
+<p>16:44 <code>&lt;metsuke&gt;</code> Is Ubuntu the recommended, or most maintained, distribution of cloud-init?</p>
+<p>16:46 <code>&lt;rharper&gt;</code> metsuke: hi; cloud-init in Ubuntu is the most-up-to-date as we're both the upstream maintainers (working for Canonical) and handle getting the latest upstream into Ubuntu images</p>
+<p>16:47 <code>&lt;rharper&gt;</code> metsuke: we also help produce daily rpm builds for RedHat/Centos/Fedora in our copr repo</p>
+<p>16:47 <code>&lt;rharper&gt;</code> #link <a href="https://copr.fedorainfracloud.org/coprs/g/cloud-init/cloud-init-dev/">https://copr.fedorainfracloud.org/coprs/g/cloud-init/cloud-init-dev/</a></p>
+<p>16:48 <code>&lt;rharper&gt;</code> #link <a href="https://download.opensuse.org/repositories/Cloud:/Tools/">https://download.opensuse.org/repositories/Cloud:/Tools/</a></p>
+<p>16:48 <code>&lt;rharper&gt;</code> suse's cloud:Tools keeps a really recent cloud-init as well</p>
+<p>16:48 <code>&lt;metsuke&gt;</code> great, thanks for the info!</p>
+<p>16:48 <code>&lt;rharper&gt;</code> sure</p>
+<p>16:49 <code>&lt;metsuke&gt;</code> I'm looking to distribute standardized VMs to 100+ sites running ESXi so I'm trying to find the best way to do that =)</p>
+<p>16:52 <code>&lt;Odd_Bloke&gt;</code> metsuke: If you have any questions, please don't hesitate to ask in here; we're generally around US working hours, for reference.</p>
+<p>16:53 <code>&lt;rharper&gt;</code> yes, cloud-init can help keep your base image generic, allowing customization to happen at boot time;</p>
+<p>16:53 <code>&lt;metsuke&gt;</code> thanks, I'm trying to do some preliminary investigation so I have an intelligent question to ask =P</p>
+<p>17:15 <code>&lt;rharper&gt;</code> #endmeeting</p>
+<p>Generated by MeetBot 0.1.5 (<a href="http://wiki.ubuntu.com/meetingology">http://wiki.ubuntu.com/meetingology</a>)</p>
+  </div>
+  <div class="tag-cloud">
+    <p>
+    </p>
+  </div>
+
+
+
+    <div class="addthis_relatedposts_inline">
+
+
+</article>
+
+    <footer>
+<p>&copy;  </p>
+<p>Powered by <a href="http://getpelican.com" target="_blank">Pelican</a> - <a href="https://github.com/alexandrevicenzi/flex" target="_blank">Flex</a> theme by <a href="http://alexandrevicenzi.com" target="_blank">Alexandre Vicenzi</a></p>    </footer>
+  </main>
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " Cloud-init Info ",
+  "url" : "https://cloud-init.github.io",
+  "image": "/images/cloud-init-orange.svg",
+  "description": "Cloud-init project updates and general information"
+}
+</script>
+
+</body>
+</html>

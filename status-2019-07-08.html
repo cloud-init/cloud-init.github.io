@@ -1,0 +1,353 @@
+
+<!DOCTYPE html>
+<html lang="english">
+<head>
+  <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" type="text/css" href="https://cloud-init.github.io/theme/stylesheet/style.min.css">
+
+  <link rel="stylesheet" type="text/css" href="https://cloud-init.github.io/theme/pygments/github.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cloud-init.github.io/theme/font-awesome/css/font-awesome.min.css">
+
+
+    <link href="https://cloud-init.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Cloud-init Info Atom">
+
+
+    <link rel="shortcut icon" href="/theme/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/theme/img/favicon.ico" type="image/x-icon">
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-50554247-3', 'auto');
+  ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#2c001e">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#2c001e">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Microsoft EDGE -->
+    <meta name="msapplication-TileColor" content="#2c001e">
+
+<meta name="author" content="chad.smith@canonical.com" />
+<meta name="description" content="Meeting information #cloud-init: Cloud-init bi-weekly status, 08 Jul at 16:16 — 17:32 UTC Full logs at [[http://ubottu.com/meetingology/logs/cloud-init/2019/cloud-init.2019-07-08-16.16.log.html]] Meeting summary Previous Actions The discussion about &#34;Previous Actions&#34; started at 16:18. LINK: https://cloud-init.github.io/status-2019-06-24.html#status-2019-06-24 …" />
+<meta name="keywords" content="">
+
+<meta property="og:site_name" content="Cloud-init Info"/>
+<meta property="og:title" content="Cloud-init bi-weekly status"/>
+<meta property="og:description" content="Meeting information #cloud-init: Cloud-init bi-weekly status, 08 Jul at 16:16 — 17:32 UTC Full logs at [[http://ubottu.com/meetingology/logs/cloud-init/2019/cloud-init.2019-07-08-16.16.log.html]] Meeting summary Previous Actions The discussion about &#34;Previous Actions&#34; started at 16:18. LINK: https://cloud-init.github.io/status-2019-06-24.html#status-2019-06-24 …"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:url" content="https://cloud-init.github.io/status-2019-07-08.html"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2019-07-08 16:16:00+00:00"/>
+<meta property="article:modified_time" content=""/>
+<meta property="article:author" content="https://cloud-init.github.io/author/chadsmithcanonicalcom.html">
+<meta property="article:section" content="status-meeting-minutes"/>
+<meta property="og:image" content="/images/cloud-init-orange.svg">
+
+  <title>Cloud-init Info &ndash; Cloud-init bi-weekly status</title>
+
+</head>
+<body>
+  <aside>
+    <div>
+      <a href="https://cloud-init.github.io">
+        <img src="/images/cloud-init-orange.svg" alt="Cloud-init" title="Cloud-init">
+      </a>
+      <h1><a href="https://cloud-init.github.io">Cloud-init</a></h1>
+
+<p>Make your cloud images be all they can be</p>
+      <nav>
+        <ul class="list">
+
+          <li><a href="https://cloudinit.readthedocs.org/" target="_blank">Docs</a></li>
+          <li><a href="https://cloud-init.io" target="_blank">Overview</a></li>
+          <li><a href="https://cloudinit.readthedocs.io/en/latest/topics/hacking.html" target="_blank">Hacking</a></li>
+          <li><a href="https://jenkins.ubuntu.com/server/view/cloud-init/" target="_blank">CI builds</a></li>
+          <li><a href="https://launchpad.net/cloud-init" target="_blank">Code</a></li>
+        </ul>
+      </nav>
+
+      <ul class="social">
+        <li><a class="sc-github" href="https://github.com/cloud-init" target="_blank"><i class="fa fa-github"></i></a></li>
+        <li><a class="sc-wechat" href="https://webchat.freenode.net/?channels=cloud-init" target="_blank"><i class="fa fa-wechat"></i></a></li>
+      </ul>
+    </div>
+
+
+  </aside>
+  <main>
+
+    <nav>
+      <a href="https://cloud-init.github.io">Home</a>
+
+      <a href="/archives.html">Archives</a>
+      <a href="/categories.html">Categories</a>
+      <a href="/tags.html">Tags</a>
+
+      <a href="https://cloud-init.github.io/feeds/all.atom.xml">Atom</a>
+
+    </nav>
+
+<article class="single">
+  <header>
+      
+    <h1 id="status-2019-07-08">Cloud-init bi-weekly status</h1>
+    <p>
+      Posted on Mon 08 July 2019 in <a href="https://cloud-init.github.io/category/status-meeting-minutes.html">status-meeting-minutes</a>
+
+        &#8226; 10 min read
+    </p>
+  </header>
+
+
+  <div>
+    <h2>Meeting information</h2>
+<ul>
+<li>#cloud-init: Cloud-init bi-weekly status, 08 Jul at 16:16 &mdash; 17:32 UTC</li>
+<li>Full logs at [[<a href="http://ubottu.com/meetingology/logs/cloud-init/2019/cloud-init.2019-07-08-16.16.log.html">http://ubottu.com/meetingology/logs/cloud-init/2019/cloud-init.2019-07-08-16.16.log.html</a>]]</li>
+</ul>
+<h2>Meeting summary</h2>
+<h3>Previous Actions</h3>
+<p>The discussion about "Previous Actions" started at 16:18.</p>
+<ul>
+<li><strong>LINK</strong>: <a href="https://cloud-init.github.io/status-2019-06-24.html#status-2019-06-24">https://cloud-init.github.io/status-2019-06-24.html#status-2019-06-24</a> </li>
+<li><strong>ACTION</strong>: query on incomplete <a href="https://bugs.launchpad.net/ubuntu/+source/cloud-init/+bug/1832381">https://bugs.launchpad.net/ubuntu/+source/cloud-init/+bug/1832381</a> with AnhVoMSFT to see if this needs priority</li>
+</ul>
+<h3>Recent Changes</h3>
+<p>The discussion about "Recent Changes" started at 16:22.</p>
+<h3>In Progress Development</h3>
+<p>The discussion about "In Progress Development" started at 16:27.</p>
+<ul>
+<li><strong>LINK</strong>: <a href="https://trello.com/b/hFtWKUn3/daily-cloud-init-curtin">https://trello.com/b/hFtWKUn3/daily-cloud-init-curtin</a> </li>
+<li><strong>LINK</strong>: <a href="https://trello.com/c/RhevWnHx/1064-azure-imds-handle-multiple-default-routes-static-ips-in-primary-subnet">https://trello.com/c/RhevWnHx/1064-azure-imds-handle-multiple-default-routes-static-ips-in-primary-subnet</a> </li>
+<li><strong>LINK</strong>: <a href="https://code.launchpad.net/~chad.smith/cloud-init/+git/cloud-init/+merge/369792">https://code.launchpad.net/~chad.smith/cloud-init/+git/cloud-init/+merge/369792</a> </li>
+<li><strong>LINK</strong>: <a href="https://trello.com/c/TMK5ZDMf/1108-azure-async-disk-mounts">https://trello.com/c/TMK5ZDMf/1108-azure-async-disk-mounts</a> </li>
+<li><strong>LINK</strong>: <a href="https://code.launchpad.net/~tribaal/cloud-init/+git/cloud-init/+merge/369516">https://code.launchpad.net/~tribaal/cloud-init/+git/cloud-init/+merge/369516</a> </li>
+<li><strong>LINK</strong>: <a href="https://wiki.ubuntu.com/CloudinitUpdates">https://wiki.ubuntu.com/CloudinitUpdates</a> </li>
+<li><strong>ACTION</strong>: review Azure telemetry branch  <a href="https://code.launchpad.net/~vtqanh/cloud-init/+git/cloud-init/+merge/369785">https://code.launchpad.net/~vtqanh/cloud-init/+git/cloud-init/+merge/369785</a></li>
+<li><strong>LINK</strong>: <a href="https://code.launchpad.net/~bitfehler/cloud-init/+git/cloud-init/+merge/369814">https://code.launchpad.net/~bitfehler/cloud-init/+git/cloud-init/+merge/369814</a> </li>
+</ul>
+<h3>Office Hours (next ~30 mins)</h3>
+<p>The discussion about "Office Hours (next ~30 mins)" started at 16:48.</p>
+<ul>
+<li><strong>LINK</strong>: <a href="https://netplan.io">https://netplan.io</a> for more info</li>
+</ul>
+<h2>Vote results</h2>
+<h2>Action items, by person</h2>
+<ul>
+<li>AnhVoMSFT</li>
+<li>query on incomplete <a href="https://bugs.launchpad.net/ubuntu/+source/cloud-init/+bug/1832381">https://bugs.launchpad.net/ubuntu/+source/cloud-init/+bug/1832381</a> with AnhVoMSFT to see if this needs priority</li>
+</ul>
+<h2>Done items</h2>
+<ul>
+<li>(none)</li>
+</ul>
+<h2>People present (lines said)</h2>
+<ul>
+<li>blackboxsw (89)</li>
+<li>Odd_Bloke (13)</li>
+<li>bitfehler (10)</li>
+<li>tribaal (8)</li>
+<li>AnhVoMSFT (7)</li>
+<li>chad-aws (6)</li>
+<li>meetingology (5)</li>
+<li>ubot5 (3)</li>
+<li>robjo (2)</li>
+<li>rharper (2)</li>
+</ul>
+<h2>Full Log</h2>
+<p>16:16 <code>&lt;blackboxsw&gt;</code> #startmeeting Cloud-init bi-weekly status</p>
+<p>16:16 <code>&lt;meetingology&gt;</code> Meeting started Mon Jul  8 16:16:57 2019 UTC.  The chair is blackboxsw. Information about MeetBot at <a href="http://wiki.ubuntu.com/meetingology.">http://wiki.ubuntu.com/meetingology.</a></p>
+<p>16:16 <code>&lt;meetingology&gt;</code> </p>
+<p>16:16 <code>&lt;meetingology&gt;</code> Available commands: action commands idea info link nick</p>
+<p>16:17 <code>&lt;Odd_Bloke&gt;</code> bitfehler: It works for me on an Ubuntu eoan system, locally.</p>
+<p>16:17 <code>&lt;blackboxsw&gt;</code> hi folks, welcome to another cloud-init community status meeting. All discussions and interjections welcome.</p>
+<p>16:17 <code>&lt;Odd_Bloke&gt;</code> bitfehler: What version of Python 3 are you using?</p>
+<p>16:17 <code>&lt;blackboxsw&gt;</code> loud-init upstream uses this meeting as a platform for community updates, feature/bug discussions, and an opportunity to get some extra input on current development.</p>
+<p>16:17 <code>&lt;blackboxsw&gt;</code> our format is the following topics: Previous Actions, Recent Changes, In-progress Development, Office Hours</p>
+<p>16:17 <code>&lt;blackboxsw&gt;</code> anyone is welcome to participate, interject, make suggestions or ask questions</p>
+<p>16:18 <code>&lt;blackboxsw&gt;</code> we host the meeting every two weeks at the date and time  indicated in the IRC channel topic  ^</p>
+<p>16:18 <code>&lt;blackboxsw&gt;</code> #topic Previous Actions</p>
+<p>16:19 <code>&lt;blackboxsw&gt;</code> I'm looking through our meeting minutes now from the previous meeting</p>
+<p>16:19 <code>&lt;blackboxsw&gt;</code> #link <a href="https://cloud-init.github.io/status-2019-06-24.html#status-2019-06-24">https://cloud-init.github.io/status-2019-06-24.html#status-2019-06-24</a></p>
+<p>16:19 <code>&lt;blackboxsw&gt;</code> Touch base with AnhVoMSFT by next status on priority of <a href="https://bugs.launchpad.net/ubuntu/+source/cloud-init/+bug/1832381">https://bugs.launchpad.net/ubuntu/+source/cloud-init/+bug/1832381</a></p>
+<p>16:19 <code>&lt;ubot5&gt;</code> Ubuntu bug 1832381 in cloud-init (Ubuntu) "vm fails to boot due to conflicting network configuration when user switches from netplan to eni" [Undecided,Incomplete]</p>
+<p>16:20 <code>&lt;blackboxsw&gt;</code> I think AnhVoMSFT may have been looking to get cloud-init logs on a system reproducing this problem</p>
+<p>16:20 <code>&lt;blackboxsw&gt;</code> so let's carry this over for next meeting and this bug is marked incomplete until we have some cloud-init logs to debug</p>
+<p>16:21 <code>&lt;blackboxsw&gt;</code> #action query on incomplete <a href="https://bugs.launchpad.net/ubuntu/+source/cloud-init/+bug/1832381">https://bugs.launchpad.net/ubuntu/+source/cloud-init/+bug/1832381</a> with AnhVoMSFT to see if this needs priority</p>
+<p>16:21 * meetingology query on incomplete <a href="https://bugs.launchpad.net/ubuntu/+source/cloud-init/+bug/1832381">https://bugs.launchpad.net/ubuntu/+source/cloud-init/+bug/1832381</a> with AnhVoMSFT to see if this needs priority</p>
+<p>16:21 <code>&lt;ubot5&gt;</code> Ubuntu bug 1832381 in cloud-init (Ubuntu) "vm fails to boot due to conflicting network configuration when user switches from netplan to eni" [Undecided,Incomplete]</p>
+<p>16:21 <code>&lt;blackboxsw&gt;</code> no further actions listed from last meeting</p>
+<p>16:22 <code>&lt;blackboxsw&gt;</code> #topic Recent Changes</p>
+<p>16:22 <code>&lt;AnhVoMSFT&gt;</code> blackboxsw I did hear back from networking on how to trigger mac address change, so I'll work on that this week and get the logs attached</p>
+<p>16:22 <code>&lt;blackboxsw&gt;</code> excellent AnhVoMSFT thanks!</p>
+<p>16:22 <code>&lt;blackboxsw&gt;</code> and thanks for joining the meeting</p>
+<p>16:22 <code>&lt;AnhVoMSFT&gt;</code> the harder it is to reproduce, the better, since it's unlikely to affect that many customers</p>
+<p>16:22 <code>&lt;blackboxsw&gt;</code> +1</p>
+<p>16:23 <code>&lt;blackboxsw&gt;</code> the following are commits that landed in tip of master for cloud-init upstream</p>
+<p>16:23 <code>&lt;blackboxsw&gt;</code> - Add missing dsname for Hetzner Cloud datasource [Markus Schade]</p>
+<p>16:24 <code>&lt;blackboxsw&gt;</code> - doc: indicate that netplan is default in Ubuntu now [Daniel Watkins]</p>
+<p>16:24 <code>&lt;blackboxsw&gt;</code> - azure: add region and AZ properties from imds compute location metadata</p>
+<p>16:24 <code>&lt;blackboxsw&gt;</code> [Chad Smith]</p>
+<p>16:24 <code>&lt;blackboxsw&gt;</code> - sysconfig: support more bonding options [Penghui Liao]</p>
+<p>16:24 <code>&lt;blackboxsw&gt;</code> - cloud-init-generator: use libexec path to ds-identify on redhat systems</p>
+<p>16:24 <code>&lt;blackboxsw&gt;</code> [Ryan Harper] (<a href="[https://bugs.launchpad.net/bugs/1833264](https://bugs.launchpad.net/bugs/1833264)">LP: #1833264</a>)</p>
+<p>16:24 <code>&lt;blackboxsw&gt;</code> - tools/build-on-freebsd: update to python3 [Gonéri Le Bouder]</p>
+<p>16:24 <code>&lt;ubot5&gt;</code> Ubuntu bug 1833264 in cloud-init "cloud-init-generator hardcodes path to ds-identify" [Undecided,Fix committed]</p>
+<p>16:25 <code>&lt;blackboxsw&gt;</code> though I think the bottom two of  those commits I  may have reported last meeting</p>
+<p>16:26 <code>&lt;blackboxsw&gt;</code> beyond that I know that paride has resolved a couple of issues with our CI infrastructure not cleaning up stale containers which would have triggered a number of CI failures over the last few weeks.</p>
+<p>16:27 <code>&lt;blackboxsw&gt;</code> I think that about wraps 'completed' work in tip.</p>
+<p>16:27 <code>&lt;blackboxsw&gt;</code> #topic In Progress Development</p>
+<p>16:28 <code>&lt;blackboxsw&gt;</code> We mentioned this last meeting, there are a couple of longer features we are working on that will hit cloud-init tip soon.</p>
+<p>16:28 <code>&lt;blackboxsw&gt;</code> we track our work on trello at the following url</p>
+<p>16:28 <code>&lt;blackboxsw&gt;</code> #link <a href="https://trello.com/b/hFtWKUn3/daily-cloud-init-curtin">https://trello.com/b/hFtWKUn3/daily-cloud-init-curtin</a></p>
+<p>16:29 <code>&lt;blackboxsw&gt;</code> In trying to enable secondary IP configuration on Azure platforms, we discovered a systemd-networkd bug related to classless routes not getting the appropriate source IP configuration</p>
+<p>16:29 <code>&lt;blackboxsw&gt;</code> per this card</p>
+<p>16:29 <code>&lt;blackboxsw&gt;</code> #link <a href="https://trello.com/c/RhevWnHx/1064-azure-imds-handle-multiple-default-routes-static-ips-in-primary-subnet">https://trello.com/c/RhevWnHx/1064-azure-imds-handle-multiple-default-routes-static-ips-in-primary-subnet</a></p>
+<p>16:30 <code>&lt;blackboxsw&gt;</code> Dan Streetman filed a bug and upstream systemd fix for this <a href="https://github.com/systemd/systemd/issues/12969">https://github.com/systemd/systemd/issues/12969</a></p>
+<p>16:31 <code>&lt;blackboxsw&gt;</code> and he's working on getting that released into Ubuntu Eoan. cloud-init may need a minor fix to only render static IPs if systemd-networkd version contains the latest fix.</p>
+<p>16:31 <code>&lt;chad-aws&gt;</code> secondary addresses on azure too, or aws?</p>
+<p>16:31 <code>&lt;blackboxsw&gt;</code> chad-aws: I also have just pushed a branch for review that will add secondary IPs from AWS's Datasource as well</p>
+<p>16:31 <code>&lt;blackboxsw&gt;</code> since we had context on the netplan we need to generate that</p>
+<p>16:31 <code>&lt;chad-aws&gt;</code> ok</p>
+<p>16:32 <code>&lt;blackboxsw&gt;</code> #link <a href="https://code.launchpad.net/~chad.smith/cloud-init/+git/cloud-init/+merge/369792">https://code.launchpad.net/~chad.smith/cloud-init/+git/cloud-init/+merge/369792</a></p>
+<p>16:33 <code>&lt;blackboxsw&gt;</code> chad-aws: the one question I think we might have to discuss related to the above branch is whether or not cloud-init on older LTSes (Xenial, Bionic) should change behavior to attempt rendering secondary IP information or not (because that would be a change in behavior)</p>
+<p>16:34 <code>&lt;blackboxsw&gt;</code> generally we try to retain existing behavior on old Ubuntu LTS  releases so we don't surprise folks who may have worked around previous limitations of cloud-init (like manually/scripted adding their own secondary IP information)</p>
+<p>16:35 <code>&lt;chad-aws&gt;</code> (Note I am not the chad.smith above, but I am interested too.)</p>
+<p>16:35 <code>&lt;blackboxsw&gt;</code> hehe, yes, I am not talking to myself (blackboxsw == chad.smith)</p>
+<p>16:36 <code>&lt;blackboxsw&gt;</code> also in progress is rharper's good work on teasing out async mount functionality per the following</p>
+<p>16:36 <code>&lt;blackboxsw&gt;</code> #link <a href="https://trello.com/c/TMK5ZDMf/1108-azure-async-disk-mounts">https://trello.com/c/TMK5ZDMf/1108-azure-async-disk-mounts</a></p>
+<p>16:36 <code>&lt;chad-aws&gt;</code> I think different config files should make different behavior and that's okay.</p>
+<p>16:36 <code>&lt;blackboxsw&gt;</code> +1 chad-aws</p>
+<p>16:37 <code>&lt;blackboxsw&gt;</code> the async mount feature is the ability to allow cloud-init defer some disk mounts until later in the cloud-init stages to allow folks to ssh to the vms earlier in the boot process</p>
+<p>16:38 <code>&lt;blackboxsw&gt;</code> as some systems with lots of mounts may block for a while trying to mount and format disks</p>
+<p>16:39 <code>&lt;blackboxsw&gt;</code> while this approach is tagged as azure, rharper is approaching it in a generic way that should make this functionality accessible to many platforms</p>
+<p>16:40 <code>&lt;blackboxsw&gt;</code> paride: rharper Odd_Bloke anything else I'm forgetting in progress?</p>
+<p>16:40 <code>&lt;rharper&gt;</code> blackboxsw: right; it's changes to cc_disk_setup/cc_mount handling</p>
+<p>16:40 <code>&lt;rharper&gt;</code> blackboxsw: nothing I can think of</p>
+<p>16:41 <code>&lt;blackboxsw&gt;</code> we probably should cut an Ubutuu Eoan upload of cloud-init tip soon, but I don't know when that should be scheduled?</p>
+<p>16:41 <code>&lt;Odd_Bloke&gt;</code> I'm doing some work to modify the way we determine network config sources, but that shouldn't affect any data sources that don't opt in to it.</p>
+<p>16:41 <code>&lt;AnhVoMSFT&gt;</code> i looked at it briefly, this involves calling a systemd unit to format/mount - do we report error back to cloud-init ?</p>
+<p>16:41 * tribaal raises hand</p>
+<p>16:41 <code>&lt;tribaal&gt;</code> is there any rough estimation on where that tip cut would be?</p>
+<p>16:41 <code>&lt;blackboxsw&gt;</code> tribaal: ahh yes awesome, forgot. tribaal has a new datasource</p>
+<p>16:41 <code>&lt;tribaal&gt;</code> yes, thanks a lot for your reviews everyone</p>
+<p>16:42 <code>&lt;tribaal&gt;</code> nice working with you guys again :)</p>
+<p>16:42 <code>&lt;blackboxsw&gt;</code> #link <a href="https://code.launchpad.net/~tribaal/cloud-init/+git/cloud-init/+merge/369516">https://code.launchpad.net/~tribaal/cloud-init/+git/cloud-init/+merge/369516</a></p>
+<p>16:42 <code>&lt;blackboxsw&gt;</code> for Exoscale ^</p>
+<p>16:42 <code>&lt;tribaal&gt;</code> Ideally we'd target the next release for our datasource as well, but of course it's not landed yet so if the cut is e.g. tomorrow it might be a bit tight :)</p>
+<p>16:42 <code>&lt;Odd_Bloke&gt;</code> Specifically, if a platform does any networking setup during the initramfs (such as for iSCSI), cloud-init will <em>only</em> consider the initramfs-provided configuration at the moment.</p>
+<p>16:42 <code>&lt;blackboxsw&gt;</code> tribaal: for eoan, we can just grab tip of master at anypoint for an upload since it</p>
+<p>16:43 <code>&lt;blackboxsw&gt;</code> is still a development release</p>
+<p>16:43 <code>&lt;tribaal&gt;</code> ack</p>
+<p>16:43 <code>&lt;blackboxsw&gt;</code> so it's super low weight for our release (and we should do it often)</p>
+<p>16:43 <code>&lt;blackboxsw&gt;</code> also we have planned/upcoming an SRU into Xenial/Bionic/Disco on July 15th (so next week)</p>
+<p>16:44 <code>&lt;tribaal&gt;</code> as far as SRUs are concerned, would that typically be something that would be backported, or not?</p>
+<p>16:44 <code>&lt;Odd_Bloke&gt;</code> I'm making it possible for data sources to specify a different order for the network config sources, so that platforms where iSCSI is the default can have their data source's network config preferred.</p>
+<p>16:44 <code>&lt;blackboxsw&gt;</code> tribaal: and others: cloud-init SRUs our tip into every release due to an SRU exception that we have with Ubuntu</p>
+<p>16:44 <code>&lt;blackboxsw&gt;</code> so we upload latest code into each SRU target series for ubuntu</p>
+<p>16:45 <code>&lt;blackboxsw&gt;</code> though we may patch/disable some functionality that is deemed a change in behavior from previous release</p>
+<p>16:45 <code>&lt;tribaal&gt;</code> blackboxsw: understood, thanks. I'll schedule some time for myself to work on it "full time" as much as possible, so we can make the cut.</p>
+<p>16:45 <code>&lt;Odd_Bloke&gt;</code> I'm also splitting apart explicitly-from-the-user cmdline configuration (i.e. network-data=...) from the initramfs-provided values (ip=... or iBFT), so that data sources can be configured to still allow explicit user network configuration to override data source network configuration.</p>
+<p>16:45 <code>&lt;blackboxsw&gt;</code> here's our SRU process for those interested</p>
+<p>16:45 <code>&lt;blackboxsw&gt;</code> #link <a href="https://wiki.ubuntu.com/CloudinitUpdates">https://wiki.ubuntu.com/CloudinitUpdates</a></p>
+<p>16:46 <code>&lt;blackboxsw&gt;</code> so this meeting (and an email to cloud-init mailinglist) will serve as a call for branches/features for SRU.</p>
+<p>16:46 <code>&lt;Odd_Bloke&gt;</code> But as I said previously, this is all just refactoring except for the specific places we need this functionality.</p>
+<p>16:46 <code>&lt;AnhVoMSFT&gt;</code> I sent a merge proposal for adding some more telemetry for Azure: <a href="https://code.launchpad.net/~vtqanh/cloud-init/+git/cloud-init/+merge/369785">https://code.launchpad.net/~vtqanh/cloud-init/+git/cloud-init/+merge/369785</a> - would appreciate a review. Trying to make it in before next SRU</p>
+<p>16:46 <code>&lt;AnhVoMSFT&gt;</code> also will send a merge proposal today or tomorrow on the case sensitivity issue when checking is_new_instance</p>
+<p>16:46 <code>&lt;blackboxsw&gt;</code> if folks are interested in getting a specific feature/bug or branch reviewed/fixed and published, please raise your hand, ping in channel or send email to the mailing list to make sure the need is not forgotten</p>
+<p>16:47 <code>&lt;blackboxsw&gt;</code> #action review Azure telemetry branch  <a href="https://code.launchpad.net/~vtqanh/cloud-init/+git/cloud-init/+merge/369785">https://code.launchpad.net/~vtqanh/cloud-init/+git/cloud-init/+merge/369785</a></p>
+<p>16:47 * meetingology review Azure telemetry branch  <a href="https://code.launchpad.net/~vtqanh/cloud-init/+git/cloud-init/+merge/369785">https://code.launchpad.net/~vtqanh/cloud-init/+git/cloud-init/+merge/369785</a></p>
+<p>16:47 <code>&lt;bitfehler&gt;</code> i feel a bit awkward stepping in here, but i kind of do</p>
+<p>16:47 <code>&lt;blackboxsw&gt;</code> AnhVoMSFT: we also have reviewed samgilson's branch on a new cloud-init analyze subcommand for boot performance</p>
+<p>16:48 <code>&lt;bitfehler&gt;</code> sorry, i am pretty new to cloud-init, but i did open a merge proposal today</p>
+<p>16:48 <code>&lt;blackboxsw&gt;</code> bitfehler: no worries, conversations gotta happen :)</p>
+<p>16:48 <code>&lt;Odd_Bloke&gt;</code> #link <a href="https://code.launchpad.net/~bitfehler/cloud-init/+git/cloud-init/+merge/369814">https://code.launchpad.net/~bitfehler/cloud-init/+git/cloud-init/+merge/369814</a></p>
+<p>16:48 <code>&lt;Odd_Bloke&gt;</code> (Can I do that, or only blackboxsw?)</p>
+<p>16:48 <code>&lt;AnhVoMSFT&gt;</code> thanks blackboxsw, last I synced with him, Sam is actively working on addressing your comments</p>
+<p>16:48 <code>&lt;blackboxsw&gt;</code> I'll tick the topic to office hours which is really just open season for discussion or reviews</p>
+<p>16:48 <code>&lt;robjo&gt;</code> Does anyone know if VMware has any plans to move their source from <a href="https://github.com/vmware/cloud-init-vmware-guestinfo">https://github.com/vmware/cloud-init-vmware-guestinfo</a> to be included in upstream cloud-init?</p>
+<p>16:48 <code>&lt;blackboxsw&gt;</code> #topic  Office Hours (next ~30 mins)</p>
+<p>16:51 <code>&lt;bitfehler&gt;</code> i think my main question would have been how to best get in touch with you, but i think i found the answer already :)</p>
+<p>16:51 <code>&lt;blackboxsw&gt;</code> hrm, first I've seen of that robjo . maybe we can ping Sankar on that to see what the motivation is there</p>
+<p>16:51 <code>&lt;blackboxsw&gt;</code> bitfehler: either here or mail cloud-init@lists.launchpad.net</p>
+<p>16:52 <code>&lt;robjo&gt;</code> I was just made aware of this last week via "please create a packge' to which my initial answer is No, the VMware code should be in cloud-init proper</p>
+<p>16:53 <code>&lt;blackboxsw&gt;</code> per vmware,yeah that makes sense for them to try to get that cloud-init datasource upstream. forcing every distro to do their packaging for them is not really the right solution</p>
+<p>16:54 <code>&lt;bitfehler&gt;</code> one other thing i was wondering: do you feel a plain systemd-networkd network renderer would make sense? i wrote a very basic one trying to get better cloud-init support for Arch Linux</p>
+<p>16:54 <code>&lt;bitfehler&gt;</code> it sort of works, but I am not sure whether this goal worth pursuing?</p>
+<p>16:57 <code>&lt;blackboxsw&gt;</code> bitfehler: interesting, right so we have netplan render which ultimately renders networkd on our behalf on ubuntu,</p>
+<p>16:58 <code>&lt;blackboxsw&gt;</code> if direct networkd render is the only way to support network config on Arch linux I don't see why we wouldn't want that.... rharper or Odd_Bloke? (maybe I'm missing the concern)</p>
+<p>16:59 <code>&lt;bitfehler&gt;</code> i saw the comments about networkd above, but i am not familiar with netplan. it is another layer in between, right?</p>
+<p>17:00 <code>&lt;Odd_Bloke&gt;</code> bitfehler: netplan takes v2 network configuration and renders it for a target backend.  The two supported backends ATM are networkd and NetworkManager.</p>
+<p>17:00 <code>&lt;blackboxsw&gt;</code> <a href="https://netplan.io">https://netplan.io</a> for more info</p>
+<p>17:00 <code>&lt;bitfehler&gt;</code> oh, wow, i overlooked that. so it doesn't need any additional software?</p>
+<p>17:01 <code>&lt;AnhVoMSFT&gt;</code> it does need netplan</p>
+<p>17:01 <code>&lt;bitfehler&gt;</code> oh wait, netplan is a renderer itself, and that supports the two backends</p>
+<p>17:02 <code>&lt;Odd_Bloke&gt;</code> Right, netplan is the intended way for cloud-init to render network config for networkd.</p>
+<p>17:03 <code>&lt;bitfehler&gt;</code> ok, got it. i guess i could also look into porting netplan to arch then? not sure what an effort that would be</p>
+<p>17:05 <code>&lt;Odd_Bloke&gt;</code> IMO, that would be the best way to go, if it's tractable.</p>
+<p>17:05 <code>&lt;Odd_Bloke&gt;</code> We ideally wouldn't reimplement netplan's networkd renderer in cloud-init. :)</p>
+<p>17:05 <code>&lt;bitfehler&gt;</code> i'll let you know soon ;)</p>
+<p>17:08 <code>&lt;chad-aws&gt;</code> I guess this should go both ways. Is there anything AWS EC2 can do better or different?</p>
+<p>17:25 <code>&lt;blackboxsw&gt;</code> nice chad-aws, sorry I got pulled into a second meeting. chad-aws I did have a question about metadata versioning in aws.</p>
+<p>17:26 <code>&lt;blackboxsw&gt;</code> how are new features communicated for a new metadata version</p>
+<p>17:26 <code>&lt;blackboxsw&gt;</code> I reference <a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-metadata.html">https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-metadata.html</a></p>
+<p>17:26 <code>&lt;blackboxsw&gt;</code> but it didn't have a specific note on the changes added for 2018-09-24  which I used in my  branch</p>
+<p>17:27 <code>&lt;blackboxsw&gt;</code> only the first version that a field was introduced, not that local_ipv4s changed value from string to list in 2018-09-24.</p>
+<p>17:27 <code>&lt;blackboxsw&gt;</code> so I guess my question is, is there a better source of truth for ec2 metadata values that we should be looking at</p>
+<p>17:28 <code>&lt;blackboxsw&gt;</code> chad-aws: sorry (I realize that's a question out of left field)</p>
+<p>17:31 <code>&lt;blackboxsw&gt;</code> I think I'll wrap the meeting here. Thank you all again for the attending this week.</p>
+<p>17:31 <code>&lt;chad-aws&gt;</code> thx</p>
+<p>17:31 <code>&lt;blackboxsw&gt;</code> Again plan for cloud-init 19.2 SRU is scheduled for next week so any features/branches that need landing or review should be raised here or on the mailing list</p>
+<p>17:32 <code>&lt;blackboxsw&gt;</code> minutes will be posted at <a href="https://cloud-init.github.io">https://cloud-init.github.io</a></p>
+<p>17:32 <code>&lt;blackboxsw&gt;</code> #endmeeting</p>
+<p>Generated by MeetBot 0.1.5 (<a href="http://wiki.ubuntu.com/meetingology">http://wiki.ubuntu.com/meetingology</a>)</p>
+  </div>
+  <div class="tag-cloud">
+    <p>
+    </p>
+  </div>
+
+
+
+    <div class="addthis_relatedposts_inline">
+
+
+</article>
+
+    <footer>
+<p>&copy;  </p>
+<p>Powered by <a href="http://getpelican.com" target="_blank">Pelican</a> - <a href="https://github.com/alexandrevicenzi/flex" target="_blank">Flex</a> theme by <a href="http://alexandrevicenzi.com" target="_blank">Alexandre Vicenzi</a></p>    </footer>
+  </main>
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " Cloud-init Info ",
+  "url" : "https://cloud-init.github.io",
+  "image": "/images/cloud-init-orange.svg",
+  "description": "Cloud-init project updates and general information"
+}
+</script>
+
+</body>
+</html>
