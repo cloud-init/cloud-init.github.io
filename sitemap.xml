@@ -5,29 +5,36 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://cloud-init.github.io/</loc>
-<lastmod>2019-10-29T17:42:13-00:00</lastmod>
+<lastmod>2019-12-10T17:25:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://cloud-init.github.io/archives.html</loc>
-<lastmod>2019-10-29T17:42:13-00:00</lastmod>
+<lastmod>2019-12-10T17:25:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://cloud-init.github.io/tags.html</loc>
-<lastmod>2019-10-29T17:42:13-00:00</lastmod>
+<lastmod>2019-12-10T17:25:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://cloud-init.github.io/categories.html</loc>
-<lastmod>2019-10-29T17:42:13-00:00</lastmod>
+<lastmod>2019-12-10T17:25:16-00:00</lastmod>
 <changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://cloud-init.github.io/status-2019-11-26.html</loc>
+<lastmod>2019-11-26T17:23:00+00:00</lastmod>
+<changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
@@ -334,14 +341,14 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://cloud-init.github.io/category/status-meeting-minutes.html</loc>
-<lastmod>2019-10-29T16:20:00-04:56</lastmod>
+<lastmod>2019-11-26T17:23:00-04:56</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://cloud-init.github.io/author/chadsmithcanonicalcom.html</loc>
-<lastmod>2019-10-29T16:20:00-04:56</lastmod>
+<lastmod>2019-11-26T17:23:00-04:56</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
