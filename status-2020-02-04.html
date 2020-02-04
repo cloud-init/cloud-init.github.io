@@ -1,0 +1,287 @@
+
+<!DOCTYPE html>
+<html lang="english">
+<head>
+  <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" type="text/css" href="https://cloud-init.github.io/theme/stylesheet/style.min.css">
+
+  <link rel="stylesheet" type="text/css" href="https://cloud-init.github.io/theme/pygments/github.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cloud-init.github.io/theme/font-awesome/css/font-awesome.min.css">
+
+
+    <link href="https://cloud-init.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Cloud-init Info Atom">
+
+
+    <link rel="shortcut icon" href="/theme/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/theme/img/favicon.ico" type="image/x-icon">
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-50554247-3', 'auto');
+  ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#2c001e">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#2c001e">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Microsoft EDGE -->
+    <meta name="msapplication-TileColor" content="#2c001e">
+
+<meta name="author" content="chad.smith@canonical.com" />
+<meta name="description" content="Meeting information #cloud-init: Cloud-init bi-weekly status, 04 Feb at 17:23 — 19:08 UTC Full logs at [[http://ubottu.com/meetingology/logs/cloud-init/2020/cloud-init.2020-02-04-17.23.log.html]] Meeting summary LINK: https://cloud-init.github.io/ Previous Actions The discussion about &#34;Previous Actions&#34; started at 17:27. Recent Changes The …" />
+<meta name="keywords" content="">
+
+<meta property="og:site_name" content="Cloud-init Info"/>
+<meta property="og:title" content="Cloud-init bi-weekly status"/>
+<meta property="og:description" content="Meeting information #cloud-init: Cloud-init bi-weekly status, 04 Feb at 17:23 — 19:08 UTC Full logs at [[http://ubottu.com/meetingology/logs/cloud-init/2020/cloud-init.2020-02-04-17.23.log.html]] Meeting summary LINK: https://cloud-init.github.io/ Previous Actions The discussion about &#34;Previous Actions&#34; started at 17:27. Recent Changes The …"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:url" content="https://cloud-init.github.io/status-2020-02-04.html"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2020-02-04 17:23:00+00:00"/>
+<meta property="article:modified_time" content=""/>
+<meta property="article:author" content="https://cloud-init.github.io/author/chadsmithcanonicalcom.html">
+<meta property="article:section" content="status-meeting-minutes"/>
+<meta property="og:image" content="/images/cloud-init-orange.svg">
+
+  <title>Cloud-init Info &ndash; Cloud-init bi-weekly status</title>
+
+</head>
+<body>
+  <aside>
+    <div>
+      <a href="https://cloud-init.github.io">
+        <img src="/images/cloud-init-orange.svg" alt="Cloud-init" title="Cloud-init">
+      </a>
+      <h1><a href="https://cloud-init.github.io">Cloud-init</a></h1>
+
+<p>Make your cloud images be all they can be</p>
+      <nav>
+        <ul class="list">
+
+          <li><a href="https://cloudinit.readthedocs.org/" target="_blank">Docs</a></li>
+          <li><a href="https://cloud-init.io" target="_blank">Overview</a></li>
+          <li><a href="https://cloudinit.readthedocs.io/en/latest/topics/hacking.html" target="_blank">Hacking</a></li>
+          <li><a href="https://jenkins.ubuntu.com/server/view/cloud-init/" target="_blank">CI builds</a></li>
+          <li><a href="https://launchpad.net/cloud-init" target="_blank">Code</a></li>
+        </ul>
+      </nav>
+
+      <ul class="social">
+        <li><a class="sc-github" href="https://github.com/cloud-init" target="_blank"><i class="fa fa-github"></i></a></li>
+        <li><a class="sc-wechat" href="https://webchat.freenode.net/?channels=cloud-init" target="_blank"><i class="fa fa-wechat"></i></a></li>
+      </ul>
+    </div>
+
+
+  </aside>
+  <main>
+
+    <nav>
+      <a href="https://cloud-init.github.io">Home</a>
+
+      <a href="/archives.html">Archives</a>
+      <a href="/categories.html">Categories</a>
+      <a href="/tags.html">Tags</a>
+
+      <a href="https://cloud-init.github.io/feeds/all.atom.xml">Atom</a>
+
+    </nav>
+
+<article class="single">
+  <header>
+      
+    <h1 id="status-2020-02-04">Cloud-init bi-weekly status</h1>
+    <p>
+      Posted on Tue 04 February 2020 in <a href="https://cloud-init.github.io/category/status-meeting-minutes.html">status-meeting-minutes</a>
+
+        &#8226; 6 min read
+    </p>
+  </header>
+
+
+  <div>
+    <h2>Meeting information</h2>
+<ul>
+<li>#cloud-init: Cloud-init bi-weekly status, 04 Feb at 17:23 &mdash; 19:08 UTC</li>
+<li>Full logs at [[<a href="http://ubottu.com/meetingology/logs/cloud-init/2020/cloud-init.2020-02-04-17.23.log.html">http://ubottu.com/meetingology/logs/cloud-init/2020/cloud-init.2020-02-04-17.23.log.html</a>]]</li>
+</ul>
+<h2>Meeting summary</h2>
+<p><strong>LINK</strong>: <a href="https://cloud-init.github.io/">https://cloud-init.github.io/</a> </p>
+<h3>Previous Actions</h3>
+<p>The discussion about "Previous Actions" started at 17:27.</p>
+<h3>Recent Changes</h3>
+<p>The discussion about "Recent Changes" started at 17:27.</p>
+<ul>
+<li><strong>LINK</strong>: <a href="https://paste.ubuntu.com/p/3jQdKZVPcM/">https://paste.ubuntu.com/p/3jQdKZVPcM/</a> </li>
+</ul>
+<h3>In-progress Development,</h3>
+<p>The discussion about "In-progress Development," started at 17:32.</p>
+<h3>In-progress Development</h3>
+<p>The discussion about "In-progress Development" started at 17:32.</p>
+<ul>
+<li><strong>LINK</strong>: <a href="https://github.com/canonical/cloud-init/pulls">https://github.com/canonical/cloud-init/pulls</a> </li>
+</ul>
+<h3>Community Charter</h3>
+<p>The discussion about "Community Charter" started at 17:43.</p>
+<ul>
+<li><strong>LINK</strong>: <a href="https://bugs.launchpad.net/cloud-init/+bugs">https://bugs.launchpad.net/cloud-init/+bugs</a>?field.tag=bitesize </li>
+</ul>
+<h3>Office Hours (next ~30 mins)</h3>
+<p>The discussion about "Office Hours (next ~30 mins)" started at 17:47.</p>
+<h2>Vote results</h2>
+<h2>Done items</h2>
+<ul>
+<li>(none)</li>
+</ul>
+<h2>People present (lines said)</h2>
+<ul>
+<li>blackboxsw (68)</li>
+<li>ahosmanMSFT (10)</li>
+<li>meetingology (5)</li>
+<li>powersj (4)</li>
+<li>ubot5 (3)</li>
+<li>Odd_Bloke (0)</li>
+<li>rharper (0)</li>
+</ul>
+<h2>Full Log</h2>
+<p>17:23 <code>&lt;blackboxsw&gt;</code> #startmeeting Cloud-init bi-weekly status</p>
+<p>17:23 <code>&lt;meetingology&gt;</code> Meeting started Tue Feb  4 17:23:28 2020 UTC.  The chair is blackboxsw. Information about MeetBot at <a href="http://wiki.ubuntu.com/meetingology.">http://wiki.ubuntu.com/meetingology.</a></p>
+<p>17:23 <code>&lt;meetingology&gt;</code> </p>
+<p>17:23 <code>&lt;meetingology&gt;</code> Available commands: action commands idea info link nick</p>
+<p>17:23 <code>&lt;blackboxsw&gt;</code> morning, afternoon and evening folks. Time for another cloud-init community status meeting</p>
+<p>17:24 <code>&lt;blackboxsw&gt;</code> #chair rharper</p>
+<p>17:24 <code>&lt;meetingology&gt;</code> Current chairs: blackboxsw rharper</p>
+<p>17:24 <code>&lt;blackboxsw&gt;</code> #chair Odd_Bloke</p>
+<p>17:24 <code>&lt;meetingology&gt;</code> Current chairs: Odd_Bloke blackboxsw rharper</p>
+<p>17:24 <code>&lt;blackboxsw&gt;</code> Coud-init upstream uses this meeting as a platform for community updates, feature/bug discussions, and an opportunity to get some extra input on current development.</p>
+<p>17:24 <code>&lt;blackboxsw&gt;</code> The next scheduled status meeting is always listed in the topic of this channel, so feel free to drop in on next session if you miss this one</p>
+<p>17:25 <code>&lt;blackboxsw&gt;</code> while we're at it I'll update for next status meeting.</p>
+<p>17:26 <code>&lt;blackboxsw&gt;</code> 2 weeks from today, same bat time, same bat channel</p>
+<p>17:26 <code>&lt;blackboxsw&gt;</code> Our previous meeting minutes line here:</p>
+<p>17:26 <code>&lt;blackboxsw&gt;</code> #link <a href="https://cloud-init.github.io/">https://cloud-init.github.io/</a></p>
+<p>17:26 <code>&lt;blackboxsw&gt;</code> <em>live here</em> rather</p>
+<p>17:27 <code>&lt;blackboxsw&gt;</code> the topics we cover in this meeting are the following: Previous Actions, Recent Changes, In-progress Development, Community Charter, Upcoming Meetings, Office Hours (~30 mins).</p>
+<p>17:27 <code>&lt;blackboxsw&gt;</code> new topics or intejections are always welcome</p>
+<p>17:27 <code>&lt;blackboxsw&gt;</code> #topic Previous Actions</p>
+<p>17:27 <code>&lt;blackboxsw&gt;</code> From last meeting we had no unresolved actions so we can jump to the next section</p>
+<p>17:27 <code>&lt;blackboxsw&gt;</code> #topic Recent Changes</p>
+<p>17:29 <code>&lt;blackboxsw&gt;</code> found from tip of master with    <code>git log --since 01/21/2020</code></p>
+<p>17:29 <code>&lt;blackboxsw&gt;</code> - sysconfig: distro-specific config rendering for BOOTPROTO option (#162)</p>
+<p>17:29 <code>&lt;blackboxsw&gt;</code> [Robert Schweikert] (LP: #1800854)</p>
+<p>17:29 <code>&lt;blackboxsw&gt;</code> - cloudinit: replace "from six import X" imports (except in util.py) (#183)</p>
+<p>17:29 <code>&lt;blackboxsw&gt;</code> - run-container: use 'test -n' instead of 'test ! -z' (#202)</p>
+<p>17:29 <code>&lt;blackboxsw&gt;</code> [Paride Legovini]</p>
+<p>17:29 <code>&lt;blackboxsw&gt;</code> - net/cmdline: correctly handle static ip= config (#201)</p>
+<p>17:29 <code>&lt;blackboxsw&gt;</code> [Dimitri John Ledkov] (LP: #1861412)</p>
+<p>17:29 <code>&lt;ubot5&gt;</code> Launchpad bug 1800854 in cloud-init "BOTOPROTO handling between RHEL/Centos/Fedora and SUSE distros is different" [Medium,Triaged] <a href="https://launchpad.net/bugs/1800854">https://launchpad.net/bugs/1800854</a></p>
+<p>17:29 <code>&lt;blackboxsw&gt;</code> - Replace mock library with unittest.mock (#186)</p>
+<p>17:29 <code>&lt;blackboxsw&gt;</code> - HACKING.rst: update CLA link (#199)</p>
+<p>17:29 <code>&lt;ubot5&gt;</code> Launchpad bug 1861412 in cloud-init (Ubuntu) "cloud-init crashes with static network configuration" [Undecided,Fix committed] <a href="https://launchpad.net/bugs/1861412">https://launchpad.net/bugs/1861412</a></p>
+<p>17:29 <code>&lt;blackboxsw&gt;</code> - Scaleway: Fix DatasourceScaleway to avoid backtrace (#128)</p>
+<p>17:29 <code>&lt;blackboxsw&gt;</code> [Louis Bouchard]</p>
+<p>17:29 <code>&lt;blackboxsw&gt;</code> - cloudinit/cmd/devel/net_convert.py: add missing space (#191)</p>
+<p>17:29 <code>&lt;blackboxsw&gt;</code> - tools/run-container: drop support for python2 (#192) [Paride Legovini]</p>
+<p>17:29 <code>&lt;blackboxsw&gt;</code> - Print ssh key fingerprints using sha256 hash (#188) (LP: #1860789)</p>
+<p>17:29 <code>&lt;blackboxsw&gt;</code> - Make the RPM build use Python 3 (#190) [Paride Legovini]</p>
+<p>17:29 <code>&lt;ubot5&gt;</code> Launchpad bug 1860789 in cloud-init (Ubuntu) "ssh_authkey_fingerprints must use sha256 not md5" [Undecided,Fix committed] <a href="https://launchpad.net/bugs/1860789">https://launchpad.net/bugs/1860789</a></p>
+<p>17:29 <code>&lt;powersj&gt;</code> thought we were going to use pastebin :P</p>
+<p>17:29 <code>&lt;blackboxsw&gt;</code> heh, that is a good point (I wondered if anyone would call me on that)</p>
+<p>17:30 <code>&lt;blackboxsw&gt;</code> #link <a href="https://paste.ubuntu.com/p/3jQdKZVPcM/">https://paste.ubuntu.com/p/3jQdKZVPcM/</a></p>
+<p>17:31 <code>&lt;blackboxsw&gt;</code> generally speaking, dropping use of six since our code based is not python3-only, tooling dropping py2,  sysconfig rendering flavors for opensuse, doc fixes and read the docs fixups</p>
+<p>17:32 <code>&lt;blackboxsw&gt;</code> thanks all for the contributions over the last couple weeks</p>
+<p>17:32 <code>&lt;blackboxsw&gt;</code> #topic  In-progress Development,</p>
+<p>17:32 <code>&lt;blackboxsw&gt;</code> #topic  In-progress Development</p>
+<p>17:32 <code>&lt;blackboxsw&gt;</code> Any existing PRs are up for review at the following url:</p>
+<p>17:33 <code>&lt;blackboxsw&gt;</code> #link <a href="https://github.com/canonical/cloud-init/pulls">https://github.com/canonical/cloud-init/pulls</a></p>
+<p>17:33 <code>&lt;blackboxsw&gt;</code> generally speaking we are in the 'long tail' part of a couple of feature-sets:</p>
+<p>17:34 <code>&lt;blackboxsw&gt;</code> * we are trying to wrap up tooling for our automated CI,  publishing processes and documentation for the shift to github from launchpad</p>
+<p>17:34 <code>&lt;blackboxsw&gt;</code> * we are in progress on cloud-init handling network hotplug  for a couple of datasources</p>
+<p>17:35 <code>&lt;blackboxsw&gt;</code> * in progress on boot speed improvements for various platforms</p>
+<p>17:36 <code>&lt;blackboxsw&gt;</code> We also recently validated and released cloud-init v 19.4.33 to Xenial, Bionic and Eoan  (1/9/2020)</p>
+<p>17:38 <code>&lt;ahosmanMSFT&gt;</code> Hi @blackboxsw I'm no longer in the provisioning team, but there's an urgency for the cloud test to be resilient. Have you looked at those issues, I can dedicate as much time as needed to this. If you have time, can we tackle this today?</p>
+<p>17:38 <code>&lt;blackboxsw&gt;</code> there are also a number of PRs in flight for FreeBSD,NetBSD, OpenSUSE and CentOS that need attention so we can better enable those distros</p>
+<p>17:38 <code>&lt;ahosmanMSFT&gt;</code> azurecloudtest that is</p>
+<p>17:39 <code>&lt;blackboxsw&gt;</code> hi ahosmanMSFT I can spend some time on office hours here to peek more at it. my individual runs didn't hit the timeouts again, so we might need a reproducer cmdline from you in a new bug maybe?</p>
+<p>17:39 <code>&lt;ahosmanMSFT&gt;</code> So your able to run all tests successfully without timeout and image not building&gt;`</p>
+<p>17:40 <code>&lt;blackboxsw&gt;</code> ahosmanMSFT: but yes I can spend a little time on this today. and I think ultimately we'll have to find the tox command line that exhibits this error. I'll go checkout my test run again and see. I don't think I saw the failure. but I might be invoking tests differently than you</p>
+<p>17:41 <code>&lt;ahosmanMSFT&gt;</code> blackboxsw: hmm that's interesting, thanks let me know</p>
+<p>17:41 <code>&lt;blackboxsw&gt;</code> same here ahosmanMSFT, can you file a bug with the traceback you see and the tox cmdline you are running?</p>
+<p>17:41 <code>&lt;blackboxsw&gt;</code> then I know exactly what to look for</p>
+<p>17:42 <code>&lt;ahosmanMSFT&gt;</code> Sure, will do now</p>
+<p>17:43 <code>&lt;blackboxsw&gt;</code> cool.</p>
+<p>17:43 <code>&lt;blackboxsw&gt;</code> ok next topic</p>
+<p>17:43 <code>&lt;blackboxsw&gt;</code> #topic Community Charter</p>
+<p>17:43 <code>&lt;blackboxsw&gt;</code> ok this section is reserved to raise general community work/goals.</p>
+<p>17:44 <code>&lt;blackboxsw&gt;</code> At last cloud-init summit we raised a couple of general themes of improvements cloud-init would like to achieve</p>
+<p>17:45 <code>&lt;blackboxsw&gt;</code> These themes fell into two categories for this year: datasource documentation updates and cloud-init json schema validation for the 50+ config modules in cloudinit/config/cc_*py  so that we can better raise user-config errors and remove some of cloud-init's "sharp edges"</p>
+<p>17:45 <code>&lt;blackboxsw&gt;</code> we converted a number of these feature requests in into bugs which can be searched here:</p>
+<p>17:46 <code>&lt;blackboxsw&gt;</code> #link <a href="https://bugs.launchpad.net/cloud-init/+bugs">https://bugs.launchpad.net/cloud-init/+bugs</a>?field.tag=bitesize</p>
+<p>17:46 <code>&lt;blackboxsw&gt;</code> tasks in this list should be fairly easy one-time bugs for folks with a little time available to help improve cloud-init.</p>
+<p>17:47 <code>&lt;blackboxsw&gt;</code> we'll revisit this set of bugs/features and the community charter goals near the end of 2020 at the next cloud-init summit</p>
+<p>17:47 <code>&lt;blackboxsw&gt;</code> #topic Office Hours (next ~30 mins)</p>
+<p>17:48 <code>&lt;blackboxsw&gt;</code> this time is spent with cloud-init upstream dev eyes on this channel for any cloud-init feature, bug  or implementation discussions. In the absence of such discussions, we'll review the active PRs to try to tidy up the review queue and unblock developers</p>
+<p>17:49 <code>&lt;blackboxsw&gt;</code> for the moment, I'll look over some Azure test timeouts ahosmanMSFT is seeing</p>
+<p>17:49 <code>&lt;blackboxsw&gt;</code> any other topics, concerns, bugs, questions are welcome and someone should be around to field them</p>
+<p>17:50 <code>&lt;blackboxsw&gt;</code> ahosmanMSFT: so timeouts running integration tests, you said you are getting them about half the time?</p>
+<p>18:48 <code>&lt;ahosmanMSFT&gt;</code> blackboxsw: Yes, I tracked it down to platforms/instance._wait_for_system</p>
+<p>18:49 <code>&lt;ahosmanMSFT&gt;</code> I invoke it after initializing vm in platform/azurecloudtest/instance.start</p>
+<p>18:49 <code>&lt;ahosmanMSFT&gt;</code> when removed, everything works as expected</p>
+<p>18:50 <code>&lt;ahosmanMSFT&gt;</code> looks like it's needed for cloud tests so thought I'd leave it to you, since I don't know how ec2/lxd/... rely on</p>
+<p>18:50 <code>&lt;powersj&gt;</code> ahosmanMSFT, can you file a bug please with the cli example?</p>
+<p>18:50 <code>&lt;powersj&gt;</code> that would help us triage and make a proper decision on what change to make</p>
+<p>18:51 <code>&lt;ahosmanMSFT&gt;</code> powersj, yes, was in the middle of that side tracked by meeting. On it now</p>
+<p>18:51 <code>&lt;powersj&gt;</code> thanks!</p>
+<p>19:07 <code>&lt;blackboxsw&gt;</code> aaaand, I should probably wrap the meeting for the day.</p>
+<p>19:08 <code>&lt;blackboxsw&gt;</code> Thanks all for the time and energy you put into improving cloud-init! See you next time, or anytime in between</p>
+<p>19:08 <code>&lt;blackboxsw&gt;</code> #endmeeting</p>
+<p>Generated by MeetBot 0.1.5 (<a href="http://wiki.ubuntu.com/meetingology">http://wiki.ubuntu.com/meetingology</a>)</p>
+  </div>
+  <div class="tag-cloud">
+    <p>
+    </p>
+  </div>
+
+
+
+    <div class="addthis_relatedposts_inline">
+
+
+</article>
+
+    <footer>
+<p>&copy;  </p>
+<p>Powered by <a href="http://getpelican.com" target="_blank">Pelican</a> - <a href="https://github.com/alexandrevicenzi/flex" target="_blank">Flex</a> theme by <a href="http://alexandrevicenzi.com" target="_blank">Alexandre Vicenzi</a></p>    </footer>
+  </main>
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " Cloud-init Info ",
+  "url" : "https://cloud-init.github.io",
+  "image": "/images/cloud-init-orange.svg",
+  "description": "Cloud-init project updates and general information"
+}
+</script>
+
+</body>
+</html>
