@@ -1,0 +1,295 @@
+
+<!DOCTYPE html>
+<html lang="english">
+<head>
+  <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" type="text/css" href="https://cloud-init.github.io/theme/stylesheet/style.min.css">
+
+  <link rel="stylesheet" type="text/css" href="https://cloud-init.github.io/theme/pygments/github.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cloud-init.github.io/theme/font-awesome/css/font-awesome.min.css">
+
+
+    <link href="https://cloud-init.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Cloud-init Info Atom">
+
+
+    <link rel="shortcut icon" href="/theme/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/theme/img/favicon.ico" type="image/x-icon">
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-50554247-3', 'auto');
+  ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#2c001e">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#2c001e">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Microsoft EDGE -->
+    <meta name="msapplication-TileColor" content="#2c001e">
+
+<meta name="author" content="chad.smith@canonical.com" />
+<meta name="description" content="Meeting information #cloud-init: cloud-init status meeting, 02 Jun at 16:21 — 18:08 UTC Full logs at [[http://ubottu.com/meetingology/logs/cloud-init/2020/cloud-init.2020-06-02-16.21.log.html]] Meeting summary LINK: https://cloud-init.github.io/ Previous Actions The discussion about &#34;Previous Actions&#34; started at 16:24. Recent Changes The …" />
+<meta name="keywords" content="">
+
+<meta property="og:site_name" content="Cloud-init Info"/>
+<meta property="og:title" content="Cloud-init bi-weekly status"/>
+<meta property="og:description" content="Meeting information #cloud-init: cloud-init status meeting, 02 Jun at 16:21 — 18:08 UTC Full logs at [[http://ubottu.com/meetingology/logs/cloud-init/2020/cloud-init.2020-06-02-16.21.log.html]] Meeting summary LINK: https://cloud-init.github.io/ Previous Actions The discussion about &#34;Previous Actions&#34; started at 16:24. Recent Changes The …"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:url" content="https://cloud-init.github.io/status-2020-06-02.html"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2020-06-02 16:21:00+00:00"/>
+<meta property="article:modified_time" content=""/>
+<meta property="article:author" content="https://cloud-init.github.io/author/chadsmithcanonicalcom.html">
+<meta property="article:section" content="status-meeting-minutes"/>
+<meta property="og:image" content="/images/cloud-init-orange.svg">
+
+  <title>Cloud-init Info &ndash; Cloud-init bi-weekly status</title>
+
+</head>
+<body>
+  <aside>
+    <div>
+      <a href="https://cloud-init.github.io">
+        <img src="/images/cloud-init-orange.svg" alt="Cloud-init" title="Cloud-init">
+      </a>
+      <h1><a href="https://cloud-init.github.io">Cloud-init</a></h1>
+
+<p>Make your cloud images be all they can be</p>
+      <nav>
+        <ul class="list">
+
+          <li><a href="https://cloudinit.readthedocs.org/" target="_blank">Docs</a></li>
+          <li><a href="https://cloud-init.io" target="_blank">Overview</a></li>
+          <li><a href="https://cloudinit.readthedocs.io/en/latest/topics/hacking.html" target="_blank">Hacking</a></li>
+          <li><a href="https://jenkins.ubuntu.com/server/view/cloud-init/" target="_blank">CI builds</a></li>
+          <li><a href="https://launchpad.net/cloud-init" target="_blank">Code</a></li>
+        </ul>
+      </nav>
+
+      <ul class="social">
+        <li><a class="sc-github" href="https://github.com/cloud-init" target="_blank"><i class="fa fa-github"></i></a></li>
+        <li><a class="sc-wechat" href="https://webchat.freenode.net/?channels=cloud-init" target="_blank"><i class="fa fa-wechat"></i></a></li>
+      </ul>
+    </div>
+
+
+  </aside>
+  <main>
+
+    <nav>
+      <a href="https://cloud-init.github.io">Home</a>
+
+      <a href="/archives.html">Archives</a>
+      <a href="/categories.html">Categories</a>
+      <a href="/tags.html">Tags</a>
+
+      <a href="https://cloud-init.github.io/feeds/all.atom.xml">Atom</a>
+
+    </nav>
+
+<article class="single">
+  <header>
+      
+    <h1 id="status-2020-06-02">Cloud-init bi-weekly status</h1>
+    <p>
+      Posted on Tue 02 June 2020 in <a href="https://cloud-init.github.io/category/status-meeting-minutes.html">status-meeting-minutes</a>
+
+        &#8226; 8 min read
+    </p>
+  </header>
+
+
+  <div>
+    <h2>Meeting information</h2>
+<ul>
+<li>#cloud-init: cloud-init status meeting, 02 Jun at 16:21 &mdash; 18:08 UTC</li>
+<li>Full logs at [[<a href="http://ubottu.com/meetingology/logs/cloud-init/2020/cloud-init.2020-06-02-16.21.log.html">http://ubottu.com/meetingology/logs/cloud-init/2020/cloud-init.2020-06-02-16.21.log.html</a>]]</li>
+</ul>
+<h2>Meeting summary</h2>
+<p><strong>LINK</strong>: <a href="https://cloud-init.github.io/">https://cloud-init.github.io/</a> </p>
+<h3>Previous Actions</h3>
+<p>The discussion about "Previous Actions" started at 16:24.</p>
+<h3>Recent Changes</h3>
+<p>The discussion about "Recent Changes" started at 16:27.</p>
+<h3>In-progress Development</h3>
+<p>The discussion about "In-progress Development" started at 16:34.</p>
+<ul>
+<li><strong>LINK</strong>: <a href="https://bugs.launchpad.net/ubuntu/+source/cloud-init/+bug/1881018">https://bugs.launchpad.net/ubuntu/+source/cloud-init/+bug/1881018</a> </li>
+</ul>
+<h3>Community Charter</h3>
+<p>The discussion about "Community Charter" started at 16:47.</p>
+<ul>
+<li><strong>LINK</strong>: <a href="https://bugs.launchpad.net/cloud-init/">https://bugs.launchpad.net/cloud-init/</a>?field.tag=bitezise </li>
+</ul>
+<h3>Office Hours (next ~30 mins)</h3>
+<p>The discussion about "Office Hours (next ~30 mins)" started at 16:50.</p>
+<h2>Vote results</h2>
+<h2>Done items</h2>
+<ul>
+<li>(none)</li>
+</ul>
+<h2>People present (lines said)</h2>
+<ul>
+<li>blackboxsw (76)</li>
+<li>Odd_Bloke (6)</li>
+<li>knaccc (5)</li>
+<li>meena (5)</li>
+<li>meetingology (4)</li>
+<li>rharper (3)</li>
+<li>ddstreet (1)</li>
+<li>ubot5 (1)</li>
+<li>smoser (0)</li>
+</ul>
+<h2>Full Log</h2>
+<p>16:21 <code>&lt;blackboxsw&gt;</code> #startmeeting cloud-init status meeting</p>
+<p>16:21 <code>&lt;meetingology&gt;</code> Meeting started Tue Jun  2 16:21:15 2020 UTC.  The chair is blackboxsw. Information about MeetBot at <a href="http://wiki.ubuntu.com/meetingology.">http://wiki.ubuntu.com/meetingology.</a></p>
+<p>16:21 <code>&lt;meetingology&gt;</code> </p>
+<p>16:21 <code>&lt;meetingology&gt;</code> Available commands: action commands idea info link nick</p>
+<p>16:21 <code>&lt;blackboxsw&gt;</code> hi folks, time for another cloud-init upstream status meeting.</p>
+<p>16:22 <code>&lt;blackboxsw&gt;</code> we use this meeting to provide a venue for any cloud-init interested parties to keep up to date on current development, release-related info and expedite distributed development where possible.</p>
+<p>16:22 <code>&lt;blackboxsw&gt;</code> this meeting is a welcome place for interruptions, questions, requests and unrelated discussions at any point. so don't be shy :)</p>
+<p>16:23 <code>&lt;blackboxsw&gt;</code> #chair Odd_Bloke smoser rharper</p>
+<p>16:23 <code>&lt;meetingology&gt;</code> Current chairs: Odd_Bloke blackboxsw rharper smoser</p>
+<p>16:23 <code>&lt;blackboxsw&gt;</code> The topics we generally cover in this meeting are the following: Previous Actions, Recent Changes, In-progress Development, Community Charter, Office Hours (~30 mins).</p>
+<p>16:24 <code>&lt;blackboxsw&gt;</code> previous meeting minutes live here (and I just saw I forgot to publish last minutes so I pushed them now)</p>
+<p>16:24 <code>&lt;blackboxsw&gt;</code> #link <a href="https://cloud-init.github.io/">https://cloud-init.github.io/</a></p>
+<p>16:24 <code>&lt;blackboxsw&gt;</code> #topic Previous Actions</p>
+<p>16:25 <code>&lt;blackboxsw&gt;</code> nothing actionable brought up in last meeting on 05/19</p>
+<p>16:26 <code>&lt;blackboxsw&gt;</code> Odd_Bloke: ahh we should fix devel with those pkg drops on next upload</p>
+<p>16:26 <code>&lt;blackboxsw&gt;</code> we did drop that for Xenial, Bionic Eoan and maybe focal too?</p>
+<p>16:26 <code>&lt;blackboxsw&gt;</code> so an oversight for groovy</p>
+<p>16:27 <code>&lt;blackboxsw&gt;</code> next topic</p>
+<p>16:27 <code>&lt;blackboxsw&gt;</code> #topic Recent Changes</p>
+<p>16:28 <code>&lt;blackboxsw&gt;</code> the following are commits landed in tip of master found via git log --since 05/19/2020 : <a href="https://paste.ubuntu.com/p/QFvgWhjXY9/">https://paste.ubuntu.com/p/QFvgWhjXY9/</a></p>
+<p>16:28 <code>&lt;Odd_Bloke&gt;</code> blackboxsw: When you say "next upload" are you referring to the upload you're about to do, or the one after that?</p>
+<p>16:28 <code>&lt;blackboxsw&gt;</code> Odd_Bloke: if you'd like we can adjust the current upload so that devel, focal, bionic xenial eoan all drop those stale deps</p>
+<p>16:28 <code>&lt;blackboxsw&gt;</code> I think X, B E have all dropped them</p>
+<p>16:29 <code>&lt;blackboxsw&gt;</code> so maybe I re-do ubuntu/devel PR Odd_Bloke ?</p>
+<p>16:29 <code>&lt;blackboxsw&gt;</code> probably good/better/correct to keep all releases on the same footing.</p>
+<p>16:29 <code>&lt;Odd_Bloke&gt;</code> blackboxsw: I think it's worth doing, we've uploaded without fixing it a few times before, and we've remembered this time around.</p>
+<p>16:30 <code>&lt;blackboxsw&gt;</code> yeah sounds good Odd_Bloke I'll re-do that devel PR (and make sure focal drops it too)</p>
+<p>16:30 <code>&lt;blackboxsw&gt;</code> if needed</p>
+<p>16:30 <code>&lt;Odd_Bloke&gt;</code> And it should just be a case of pushing a new commit to your existing branch.</p>
+<p>16:30 <code>&lt;Odd_Bloke&gt;</code> Thanks!</p>
+<p>16:30 <code>&lt;blackboxsw&gt;</code> +1</p>
+<p>16:32 <code>&lt;blackboxsw&gt;</code> things of note in the recent commits landed.  <a href="https://github.com/canonical/cloud-init/pull/358">https://github.com/canonical/cloud-init/pull/358</a>  Mattew Ruffell  improved cc_grub_dpkg to be more dynamic in matching disks instead of a hardcoded device list</p>
+<p>16:33 <code>&lt;blackboxsw&gt;</code> thanks Matthew</p>
+<p>16:33 <code>&lt;blackboxsw&gt;</code> and chef_license support <a href="https://github.com/canonical/cloud-init/commit/0919bd46bbd1b12158c369569ec1298bb000dd8a">https://github.com/canonical/cloud-init/commit/0919bd46bbd1b12158c369569ec1298bb000dd8a</a></p>
+<p>16:34 <code>&lt;blackboxsw&gt;</code> thanks bipinbachhao  for the config extension there</p>
+<p>16:34 <code>&lt;blackboxsw&gt;</code> #topic  In-progress Development</p>
+<p>16:35 <code>&lt;blackboxsw&gt;</code> a couple of new notables in flight at the moment:</p>
+<p>16:38 <code>&lt;blackboxsw&gt;</code> - falcojr: introduction of feature-flags for cloud-init upstream to give us a toggle to retain original behavior of #include failures on stable downstream releases. <a href="https://github.com/canonical/cloud-init/pull/367">https://github.com/canonical/cloud-init/pull/367</a>  . Upstream cloud-init will fail loudly and raise an Exception if someone tries to #include a url which fails. this differs from original cloud-init behavior which was to try our best to get a system up</p>
+<p>16:38 <code>&lt;blackboxsw&gt;</code> and running, even amid not-critical failures</p>
+<p>16:39 <code>&lt;blackboxsw&gt;</code> per the above, if downstreams (distributiions) would like to retain a more permissive warn on #include user-data issues, a cloudinit/feature_overrides.py file would need to be introduced in the downstream</p>
+<p>16:40 <code>&lt;blackboxsw&gt;</code> - Also meena and Odd_Bloke and others have been working toward a refactor of cloudinit.net modules. Dan added a doc PR to capture this approach <a href="https://github.com/canonical/cloud-init/pull/391">https://github.com/canonical/cloud-init/pull/391</a></p>
+<p>16:41 <code>&lt;blackboxsw&gt;</code> beyond that, there are a number of PRs up from lucas on json schema additions for cloudinit/config/cc_* modules to get better validation of #cloud-config user-data</p>
+<p>16:42 <code>&lt;blackboxsw&gt;</code> For ubuntu proper, we have started the StableReleaseUpdate process for cloud-init to publish master into ubuntu/xenial, bionic, eoan and focal releases</p>
+<p>16:43 <code>&lt;blackboxsw&gt;</code> some of these changes will add the opportunity to enable 'new' features on platforms like Azure</p>
+<p>16:43 <code>&lt;blackboxsw&gt;</code> and AWS</p>
+<p>16:43 <code>&lt;blackboxsw&gt;</code> Azure (xenial) will be dropping walinuxagent support</p>
+<p>16:44 <code>&lt;blackboxsw&gt;</code> AWS will now surface a datasource config option apply_full_imds_network_config boolean</p>
+<p>16:45 <code>&lt;blackboxsw&gt;</code> if set true in an Ec2(aws) image network configuration from cloud-init can come completely from IMDS for every connected NIC. That config will include all secondary IPv4/IPv6 addressses configured for the machine</p>
+<p>16:46 <code>&lt;blackboxsw&gt;</code> Upstream has  started the Ubuntu SRU process (which generally takes around 10-14 days). We plan to include every commit that has landed in tip of master as of commitish 5f7825e22241423322dbe628de1b00289cf34114</p>
+<p>16:46 <code>&lt;blackboxsw&gt;</code> the bug related to this SRU work is here</p>
+<p>16:46 <code>&lt;blackboxsw&gt;</code> #link <a href="https://bugs.launchpad.net/ubuntu/+source/cloud-init/+bug/1881018">https://bugs.launchpad.net/ubuntu/+source/cloud-init/+bug/1881018</a></p>
+<p>16:46 <code>&lt;ubot5&gt;</code> Ubuntu bug 1881018 in cloud-init (Ubuntu Focal) "sru cloud-init (19.4.33 to 20.2-30) Xenial, Bionic, Eoan and Focal" [Undecided,New]</p>
+<p>16:47 <code>&lt;blackboxsw&gt;</code> #topic Community Charter</p>
+<p>16:48 <code>&lt;blackboxsw&gt;</code> upstream has signed up to get as much of the json schema coverage as we  can for cloudinit/config/cc*py modules since invalid #cloud-config user-data formats tends to have one of the highest incidence of errors (because writing YAML is something humans shouldn't have to do :) )</p>
+<p>16:49 <code>&lt;blackboxsw&gt;</code> so we are chopping away at defining JSON schema for as many cloud config modules as possible . there are still plenty to choose from. Anyone can feel free to grab a JSON schema bug and help us with bettering cloud-init</p>
+<p>16:49 <code>&lt;blackboxsw&gt;</code> bugs are filed for each config module which needs schema definition:</p>
+<p>16:49 <code>&lt;blackboxsw&gt;</code> #link  <a href="https://bugs.launchpad.net/cloud-init/">https://bugs.launchpad.net/cloud-init/</a>?field.tag=bitezise</p>
+<p>16:50 <code>&lt;blackboxsw&gt;</code> a big thanks to lucasmoura for starting to grab a number of these</p>
+<p>16:50 <code>&lt;blackboxsw&gt;</code> #topic Office Hours (next ~30 mins)</p>
+<p>16:50 <code>&lt;blackboxsw&gt;</code> This 'section' of the meeting is a time where a couple of upstream devs will be available in channel for any discussions, questions, bug work or PR reviews.</p>
+<p>16:51 <code>&lt;blackboxsw&gt;</code> In the absence of discussions/topics here we scrub the review queue.</p>
+<p>16:51 <code>&lt;blackboxsw&gt;</code> since we are mid-stream on Ubuntu SRU at the moment, I'll be addressing review comments on some of the functional 'upload' branches we've put together</p>
+<p>16:52 <code>&lt;blackboxsw&gt;</code> and, let's update the topic for next IRC meeting too while we are at it</p>
+<p>16:59 <code>&lt;blackboxsw&gt;</code> Odd_Bloke: just pushed ubuntu/devel dropping python3-six|unittest2|nose</p>
+<p>17:01 <code>&lt;blackboxsw&gt;</code> and just re-pushed ubuntu/focal to drop python3-six</p>
+<p>17:04 <code>&lt;blackboxsw&gt;</code> oops and missed you others. reworking</p>
+<p>17:12 <code>&lt;blackboxsw&gt;</code> ok re-pushed. focal and devel PRs in shape</p>
+<p>17:13 <code>&lt;blackboxsw&gt;</code> dropped the following build-deps: python3-six, python3-unittest2, python3-pep8, python3-nose, python3-pyflakes</p>
+<p>17:20 <code>&lt;Odd_Bloke&gt;</code> blackboxsw: +1 on the ubuntu/devel upload.</p>
+<p>17:21 <code>&lt;blackboxsw&gt;</code> whew, think we got all of the dropped deps between the two of us... thanks!</p>
+<p>17:21 <code>&lt;blackboxsw&gt;</code> Odd_Bloke: thanks focal looks good and sbuilds</p>
+<p>17:21 <code>&lt;blackboxsw&gt;</code> just finished eoan and building now to test</p>
+<p>17:23 <code>&lt;meena&gt;</code> what? me??</p>
+<p>17:24 <code>&lt;blackboxsw&gt;</code> well yes indeedy meena, just trying to keep you highlighted as participating in the cloud-init status meeting :) you've thankfully reviewed, pushed and prodded us to talk about cloudinit.net refactor and how best to address it I think :) credit due ;)</p>
+<p>17:26 <code>&lt;blackboxsw&gt;</code> community notice: upload to Ubuntu groovy of cloud-init master accepted [ubuntu/groovy-proposed] cloud-init 20.2-45-g5f7825e2-0ubuntu1 (Accepted)</p>
+<p>17:30 <code>&lt;Odd_Bloke&gt;</code> blackboxsw: One issue with <a href="https://github.com/canonical/cloud-init/pull/412">https://github.com/canonical/cloud-init/pull/412</a></p>
+<p>17:31 <code>&lt;meena&gt;</code> blackboxsw: i'm just waiting for Odd_Bloke to provide the basic infrastructure so i can start moving code… without that, i have to bug other projects in my … 2 hours of free time per day.</p>
+<p>17:31 <code>&lt;meena&gt;</code> blackboxsw: yesterday, i tried to build an android app on my laptop and gave up after an hour.</p>
+<p>17:35 <code>&lt;blackboxsw&gt;</code> nice review again Odd_Bloke, will reflect that patch to each series. as every other ubuntu/* is missing enabling various cloud datasources beyond just Rbx</p>
+<p>17:54 <code>&lt;blackboxsw&gt;</code> Odd_Bloke: rharper so Xenial is interesting for datasource config via dpkg</p>
+<p>17:55 <code>&lt;blackboxsw&gt;</code> We are missing: Hetzner, IBMCloud, Oracle, and  RbxCloud</p>
+<p>17:55 <code>&lt;blackboxsw&gt;</code> one was an oversight on previous SRUs</p>
+<p>17:55 <code>&lt;blackboxsw&gt;</code> but Oracle and IBMCloud, I'm trying to recall if there is a reason we didn't want to surface either of those datasources as configurable on Xenial</p>
+<p>17:56 <code>&lt;blackboxsw&gt;</code> a little warning bell is going off in my head</p>
+<p>17:56 <code>&lt;blackboxsw&gt;</code> Hetzner I thought was 'ok'</p>
+<p>17:56 <code>&lt;blackboxsw&gt;</code> Oracle currently gets detected as OpenStack on Xenial.</p>
+<p>17:57 <code>&lt;rharper&gt;</code> IBMCloud and Oracle are sensitive</p>
+<p>17:57 <code>&lt;rharper&gt;</code> not sure about Hetzner or RbxCloud though</p>
+<p>17:57 <code>&lt;blackboxsw&gt;</code> upstream Oracle datasource is 'good', but I wasn't sure if there was extra baggage associated with <em>not</em> backporting that functionality</p>
+<p>17:57 <code>&lt;rharper&gt;</code> blackboxsw: I think you might want to check with CPC on those</p>
+<p>17:58 <code>&lt;meena&gt;</code> Hetzner is also detected as OpenStack on FreeBSD… but… only thru cloud-init itself, not thru ds-identify</p>
+<p>18:03 <code>&lt;meena&gt;</code> (i'm not sure how much of that is my fault having helped a lot with Hetzner and FreeBSD and ds-identify myself)</p>
+<p>18:03 <code>&lt;knaccc&gt;</code> Odd_Bloke thanks for your reply. I managed to fix things in the end, but kinda by cheating. Now my /etc/netplan/50-cloud-init.yaml only contains the IP addresses configuration, and I make the nameservers and search domain apply in the "Global" scope (as reported by systemd-resolve --status) by simply modifying the /etc/resolv.conf file. All configuration survives reboot just fine, and I am no longer</p>
+<p>18:03 <code>&lt;knaccc&gt;</code> scared that resolv.conf will be overwritten because I found a web page that said that "Note: The mode of operation of systemd-resolved is detected automatically, depending on whether /etc/resolv.conf is a symlink to the local stub DNS resolver file or contains server names." Although you said in your message that "cloud-init will regenerate /etc/netplan/50-cloud-init.yaml on each boot, so yes, you don't</p>
+<p>18:03 <code>&lt;knaccc&gt;</code> want to modify that", the OVH instructions directly contradict that and tell me to edit it to add all IP addresses to my interface (see Ubuntu 18.04 section here: <a href="https://docs.ovh.com/gb/en/vps/network-ipaliasing-vps/">https://docs.ovh.com/gb/en/vps/network-ipaliasing-vps/</a>). I'm therefore very confused about why OVH seem to contradict the instructions that are in that config file, and confused as to what other location I should be editing/creating instead</p>
+<p>18:06 <code>&lt;ddstreet&gt;</code> knaccc why do you want to change resolved 'Global' section?</p>
+<p>18:08 <code>&lt;blackboxsw&gt;</code> heh meena not at fault :) . Just need to make sure we move cloud-platforms to a better way of detecting the right datasource when we can.</p>
+<p>18:08 <code>&lt;knaccc&gt;</code> ddstreet if I put the nameservers and search domain into the /etc/netplan/50-cloud-init.yaml file, it gets ignored completely (i.e. although those configurations show up in systemd-resolve --status against that specific "link", the "Global" nameservers and lack of any search domain in that Global section are taking precedence). Therefore I had to configure nameservers and search domain at the resolv.conf</p>
+<p>18:08 <code>&lt;knaccc&gt;</code> level so that it appeared in the Global section, and then suddenly everything worked for the first time</p>
+<p>18:08 <code>&lt;blackboxsw&gt;</code> I should tie off our cloud-init status meeting. Thanks folks for all who've attended</p>
+<p>18:08 <code>&lt;blackboxsw&gt;</code> #endmeeting</p>
+<p>Generated by MeetBot 0.1.5 (<a href="http://wiki.ubuntu.com/meetingology">http://wiki.ubuntu.com/meetingology</a>)</p>
+  </div>
+  <div class="tag-cloud">
+    <p>
+    </p>
+  </div>
+
+
+
+    <div class="addthis_relatedposts_inline">
+
+
+</article>
+
+    <footer>
+<p>&copy;  </p>
+<p>Powered by <a href="http://getpelican.com" target="_blank">Pelican</a> - <a href="https://github.com/alexandrevicenzi/flex" target="_blank">Flex</a> theme by <a href="http://alexandrevicenzi.com" target="_blank">Alexandre Vicenzi</a></p>    </footer>
+  </main>
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " Cloud-init Info ",
+  "url" : "https://cloud-init.github.io",
+  "image": "/images/cloud-init-orange.svg",
+  "description": "Cloud-init project updates and general information"
+}
+</script>
+
+</body>
+</html>
