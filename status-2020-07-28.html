@@ -1,0 +1,229 @@
+
+<!DOCTYPE html>
+<html lang="english">
+<head>
+  <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" type="text/css" href="https://cloud-init.github.io/theme/stylesheet/style.min.css">
+
+  <link rel="stylesheet" type="text/css" href="https://cloud-init.github.io/theme/pygments/github.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cloud-init.github.io/theme/font-awesome/css/font-awesome.min.css">
+
+
+    <link href="https://cloud-init.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Cloud-init Info Atom">
+
+
+    <link rel="shortcut icon" href="/theme/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/theme/img/favicon.ico" type="image/x-icon">
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-50554247-3', 'auto');
+  ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#2c001e">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#2c001e">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Microsoft EDGE -->
+    <meta name="msapplication-TileColor" content="#2c001e">
+
+<meta name="author" content="chad.smith@canonical.com" />
+<meta name="description" content="Meeting information #cloud-init: cloud-init status meeting, 28 Jul at 16:55 — 17:56 UTC Full logs at [[http://ubottu.com/meetingology/logs/cloud-init/2020/cloud-init.2020-07-28-16.55.log.html]] Meeting summary LINK: https://cloud-init.github.io/status-2020-07-14.html#status-2020-07-14 Previous Actions The discussion about &#34;Previous Actions&#34; started at 16:58 …" />
+<meta name="keywords" content="">
+
+<meta property="og:site_name" content="Cloud-init Info"/>
+<meta property="og:title" content="Cloud-init bi-weekly status"/>
+<meta property="og:description" content="Meeting information #cloud-init: cloud-init status meeting, 28 Jul at 16:55 — 17:56 UTC Full logs at [[http://ubottu.com/meetingology/logs/cloud-init/2020/cloud-init.2020-07-28-16.55.log.html]] Meeting summary LINK: https://cloud-init.github.io/status-2020-07-14.html#status-2020-07-14 Previous Actions The discussion about &#34;Previous Actions&#34; started at 16:58 …"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:url" content="https://cloud-init.github.io/status-2020-07-28.html"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2020-07-28 16:55:00+00:00"/>
+<meta property="article:modified_time" content=""/>
+<meta property="article:author" content="https://cloud-init.github.io/author/chadsmithcanonicalcom.html">
+<meta property="article:section" content="status-meeting-minutes"/>
+<meta property="og:image" content="/images/cloud-init-orange.svg">
+
+  <title>Cloud-init Info &ndash; Cloud-init bi-weekly status</title>
+
+</head>
+<body>
+  <aside>
+    <div>
+      <a href="https://cloud-init.github.io">
+        <img src="/images/cloud-init-orange.svg" alt="Cloud-init" title="Cloud-init">
+      </a>
+      <h1><a href="https://cloud-init.github.io">Cloud-init</a></h1>
+
+<p>Make your cloud images be all they can be</p>
+      <nav>
+        <ul class="list">
+
+          <li><a href="https://cloudinit.readthedocs.org/" target="_blank">Docs</a></li>
+          <li><a href="https://cloud-init.io" target="_blank">Overview</a></li>
+          <li><a href="https://cloudinit.readthedocs.io/en/latest/topics/hacking.html" target="_blank">Hacking</a></li>
+          <li><a href="https://jenkins.ubuntu.com/server/view/cloud-init/" target="_blank">CI builds</a></li>
+          <li><a href="https://launchpad.net/cloud-init" target="_blank">Code</a></li>
+        </ul>
+      </nav>
+
+      <ul class="social">
+        <li><a class="sc-github" href="https://github.com/cloud-init" target="_blank"><i class="fa fa-github"></i></a></li>
+        <li><a class="sc-wechat" href="https://webchat.freenode.net/?channels=cloud-init" target="_blank"><i class="fa fa-wechat"></i></a></li>
+      </ul>
+    </div>
+
+
+  </aside>
+  <main>
+
+    <nav>
+      <a href="https://cloud-init.github.io">Home</a>
+
+      <a href="/archives.html">Archives</a>
+      <a href="/categories.html">Categories</a>
+      <a href="/tags.html">Tags</a>
+
+      <a href="https://cloud-init.github.io/feeds/all.atom.xml">Atom</a>
+
+    </nav>
+
+<article class="single">
+  <header>
+      
+    <h1 id="status-2020-07-28">Cloud-init bi-weekly status</h1>
+    <p>
+      Posted on Tue 28 July 2020 in <a href="https://cloud-init.github.io/category/status-meeting-minutes.html">status-meeting-minutes</a>
+
+        &#8226; 3 min read
+    </p>
+  </header>
+
+
+  <div>
+    <h2>Meeting information</h2>
+<ul>
+<li>#cloud-init: cloud-init status meeting, 28 Jul at 16:55 &mdash; 17:56 UTC</li>
+<li>Full logs at [[<a href="http://ubottu.com/meetingology/logs/cloud-init/2020/cloud-init.2020-07-28-16.55.log.html">http://ubottu.com/meetingology/logs/cloud-init/2020/cloud-init.2020-07-28-16.55.log.html</a>]]</li>
+</ul>
+<h2>Meeting summary</h2>
+<p><strong>LINK</strong>: <a href="https://cloud-init.github.io/status-2020-07-14.html#status-2020-07-14">https://cloud-init.github.io/status-2020-07-14.html#status-2020-07-14</a> </p>
+<h3>Previous Actions</h3>
+<p>The discussion about "Previous Actions" started at 16:58.</p>
+<h3>Recent Changes</h3>
+<p>The discussion about "Recent Changes" started at 17:00.</p>
+<ul>
+<li><strong>LINK</strong>: <a href="https://paste.ubuntu.com/p/RjZcwtk6Hd/">https://paste.ubuntu.com/p/RjZcwtk6Hd/</a> </li>
+</ul>
+<h3>In-progress Development</h3>
+<p>The discussion about "In-progress Development" started at 17:05.</p>
+<h3>Community Charter</h3>
+<p>The discussion about "Community Charter" started at 17:11.</p>
+<h3>Office Hours (next ~30 mins)</h3>
+<p>The discussion about "Office Hours (next ~30 mins)" started at 17:15.</p>
+<h2>Vote results</h2>
+<h2>Done items</h2>
+<ul>
+<li>(none)</li>
+</ul>
+<h2>People present (lines said)</h2>
+<ul>
+<li>blackboxsw_ (38)</li>
+<li>meetingology (4)</li>
+<li>rharper (0)</li>
+<li>Odd_Bloke (0)</li>
+<li>smoser (0)</li>
+</ul>
+<h2>Full Log</h2>
+<p>16:55 <code>&lt;blackboxsw_&gt;</code> #startmeeting cloud-init status meeting</p>
+<p>16:55 <code>&lt;meetingology&gt;</code> Meeting started Tue Jul 28 16:55:17 2020 UTC.  The chair is blackboxsw_. Information about MeetBot at <a href="http://wiki.ubuntu.com/meetingology.">http://wiki.ubuntu.com/meetingology.</a></p>
+<p>16:55 <code>&lt;meetingology&gt;</code> </p>
+<p>16:55 <code>&lt;meetingology&gt;</code> Available commands: action commands idea info link nick</p>
+<p>16:56 <code>&lt;blackboxsw_&gt;</code> community notice: time for another bi-weekly (or semi-monthly if you prefer) cloud-init community status meeting</p>
+<p>16:56 <code>&lt;blackboxsw_&gt;</code> #chair Odd_Bloke smoser rharper</p>
+<p>16:56 <code>&lt;meetingology&gt;</code> Current chairs: Odd_Bloke blackboxsw_ rharper smoser</p>
+<p>16:57 <code>&lt;blackboxsw_&gt;</code> Hello folks, cloud-init community status roundup. We gather here in this IRC channel every 2 weeks to discuss current development tasks and progress on cloud-init.</p>
+<p>16:57 <code>&lt;blackboxsw_&gt;</code> All questions. side-conversations and interruptions are welcome</p>
+<p>16:58 <code>&lt;blackboxsw_&gt;</code> Last meeting minutes live here</p>
+<p>16:58 <code>&lt;blackboxsw_&gt;</code> #link <a href="https://cloud-init.github.io/status-2020-07-14.html#status-2020-07-14">https://cloud-init.github.io/status-2020-07-14.html#status-2020-07-14</a></p>
+<p>16:58 <code>&lt;blackboxsw_&gt;</code> he topics we'll cover today: Previous Actions, Recent Changes, In-progress Development, Community Charter, Office Hours (~30 mins).</p>
+<p>16:58 <code>&lt;blackboxsw_&gt;</code> #topic Previous Actions</p>
+<p>16:58 <code>&lt;blackboxsw_&gt;</code> None found in meeting minutes from last session.</p>
+<p>16:59 * blackboxsw_ sets the topic for next meeting.</p>
+<p>16:59 <code>&lt;blackboxsw_&gt;</code> +2 weeks from now</p>
+<p>16:59 <code>&lt;blackboxsw_&gt;</code> August 11th 16:15 UTC</p>
+<p>17:00 <code>&lt;blackboxsw_&gt;</code> #topic Recent Changes</p>
+<p>17:00 <code>&lt;blackboxsw_&gt;</code> The following commits have been landed on master of upstream branch since last meeting: found via git log --since 2020-07-14</p>
+<p>17:01 <code>&lt;blackboxsw_&gt;</code> #link <a href="https://paste.ubuntu.com/p/RjZcwtk6Hd/">https://paste.ubuntu.com/p/RjZcwtk6Hd/</a></p>
+<p>17:02 <code>&lt;blackboxsw_&gt;</code> features of note:</p>
+<p>17:02 <code>&lt;blackboxsw_&gt;</code> - azure: avoid bouncing hostname if set hostname fails</p>
+<p>17:03 <code>&lt;blackboxsw_&gt;</code> - vmware: new defaults for post customization script overrides on vCloud</p>
+<p>17:04 <code>&lt;blackboxsw_&gt;</code> - azure ValueError raised if JsonDecodeErrors is not available when parsing metadata</p>
+<p>17:05 <code>&lt;blackboxsw_&gt;</code> Thanks Goneri otubo anhVo and dermotbradley for community contributions this round</p>
+<p>17:05 <code>&lt;blackboxsw_&gt;</code> #topic In-progress Development</p>
+<p>17:09 <code>&lt;blackboxsw_&gt;</code> Current projects for cloud-init are leading us to additional features:</p>
+<p>17:10 <code>&lt;blackboxsw_&gt;</code> - network device hot plug support for cloud-init post-boot</p>
+<p>17:10 <code>&lt;blackboxsw_&gt;</code> - better integration testing on other clouds, Oracle support</p>
+<p>17:11 <code>&lt;blackboxsw_&gt;</code> - extended json schema validation and publishing full static schema versions for external tools</p>
+<p>17:11 <code>&lt;blackboxsw_&gt;</code> #topic Community Charter</p>
+<p>17:12 <code>&lt;blackboxsw_&gt;</code> The following topics are still topics for ongoing community development:</p>
+<p>17:13 <code>&lt;blackboxsw_&gt;</code> - JSON schema extensions to validate user-data before instance launch: <a href="https://bugs.launchpad.net/cloud-init/">https://bugs.launchpad.net/cloud-init/</a>?field.tag=bitesize</p>
+<p>17:13 <code>&lt;blackboxsw_&gt;</code> - Datasource documentation and updates</p>
+<p>17:14 <code>&lt;blackboxsw_&gt;</code> - cloudinit.net refactor into distro-specific networking subclasses cloudinit.distros.networking: <a href="https://bugs.launchpad.net/cloud-init/+bugs">https://bugs.launchpad.net/cloud-init/+bugs</a>?field.tag=net-refactor</p>
+<p>17:15 <code>&lt;blackboxsw_&gt;</code> As always: thank you all for bug contributions, PR submissions, triage and discussion participation.</p>
+<p>17:15 <code>&lt;blackboxsw_&gt;</code> If anyone would like to be involved more than they currently are, please feel free to contact us here in IRC #cloud-init on Freenode or on the mailing list cloud-init@lists.launchpad.net and we can see how best we can get you "set up"</p>
+<p>17:15 <code>&lt;blackboxsw_&gt;</code> #topic Office Hours (next ~30 mins)</p>
+<p>17:17 <code>&lt;blackboxsw_&gt;</code> This time of the meeting is really just an open door for any discussions, concerns, bugs, questions or general prodding of upstream devs to make sure existing development work is unblocked where possible.</p>
+<p>17:17 <code>&lt;blackboxsw_&gt;</code> In the absence of discussions, review of existing PRs is addressed.</p>
+<p>17:56 <code>&lt;blackboxsw_&gt;</code> Thanks for tuning in folks. have a good one!</p>
+<p>17:56 <code>&lt;blackboxsw_&gt;</code> #endmeeting</p>
+<p>Generated by MeetBot 0.1.5 (<a href="http://wiki.ubuntu.com/meetingology">http://wiki.ubuntu.com/meetingology</a>)</p>
+  </div>
+  <div class="tag-cloud">
+    <p>
+    </p>
+  </div>
+
+
+
+    <div class="addthis_relatedposts_inline">
+
+
+</article>
+
+    <footer>
+<p>&copy;  </p>
+<p>Powered by <a href="http://getpelican.com" target="_blank">Pelican</a> - <a href="https://github.com/alexandrevicenzi/flex" target="_blank">Flex</a> theme by <a href="http://alexandrevicenzi.com" target="_blank">Alexandre Vicenzi</a></p>    </footer>
+  </main>
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " Cloud-init Info ",
+  "url" : "https://cloud-init.github.io",
+  "image": "/images/cloud-init-orange.svg",
+  "description": "Cloud-init project updates and general information"
+}
+</script>
+
+</body>
+</html>
