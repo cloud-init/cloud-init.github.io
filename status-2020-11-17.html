@@ -1,0 +1,268 @@
+
+<!DOCTYPE html>
+<html lang="english">
+<head>
+  <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" type="text/css" href="https://cloud-init.github.io/theme/stylesheet/style.min.css">
+
+  <link rel="stylesheet" type="text/css" href="https://cloud-init.github.io/theme/pygments/github.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cloud-init.github.io/theme/font-awesome/css/font-awesome.min.css">
+
+
+    <link href="https://cloud-init.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Cloud-init Info Atom">
+
+
+    <link rel="shortcut icon" href="/theme/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/theme/img/favicon.ico" type="image/x-icon">
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-50554247-3', 'auto');
+  ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#2c001e">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#2c001e">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Microsoft EDGE -->
+    <meta name="msapplication-TileColor" content="#2c001e">
+
+<meta name="author" content="chad.smith@canonical.com" />
+<meta name="description" content="Meeting information #cloud-init: cloud-init status meeting &amp;&amp; office hours, 17 Nov at 17:25 — 18:35 UTC Full logs at [[http://ubottu.com/meetingology/logs/cloud-init/2020/cloud-init.2020-11-17-17.25.log.html]] Meeting summary LINK: https://discourse.ubuntu.com/t/cloud-init-statue-11-17-20/19391 LINK: https://github.com/canonical/cloud-init/pull/655 i&#39;d …" />
+<meta name="keywords" content="">
+
+<meta property="og:site_name" content="Cloud-init Info"/>
+<meta property="og:title" content="Cloud-init bi-weekly status"/>
+<meta property="og:description" content="Meeting information #cloud-init: cloud-init status meeting &amp;&amp; office hours, 17 Nov at 17:25 — 18:35 UTC Full logs at [[http://ubottu.com/meetingology/logs/cloud-init/2020/cloud-init.2020-11-17-17.25.log.html]] Meeting summary LINK: https://discourse.ubuntu.com/t/cloud-init-statue-11-17-20/19391 LINK: https://github.com/canonical/cloud-init/pull/655 i&#39;d …"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:url" content="https://cloud-init.github.io/status-2020-11-17.html"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2020-11-17 17:25:00+00:00"/>
+<meta property="article:modified_time" content=""/>
+<meta property="article:author" content="https://cloud-init.github.io/author/chadsmithcanonicalcom.html">
+<meta property="article:section" content="status-meeting-minutes"/>
+<meta property="og:image" content="/images/cloud-init-orange.svg">
+
+  <title>Cloud-init Info &ndash; Cloud-init bi-weekly status</title>
+
+</head>
+<body>
+  <aside>
+    <div>
+      <a href="https://cloud-init.github.io">
+        <img src="/images/cloud-init-orange.svg" alt="Cloud-init" title="Cloud-init">
+      </a>
+      <h1><a href="https://cloud-init.github.io">Cloud-init</a></h1>
+
+<p>Make your cloud images be all they can be</p>
+      <nav>
+        <ul class="list">
+
+          <li><a href="https://cloudinit.readthedocs.org/" target="_blank">Docs</a></li>
+          <li><a href="https://cloud-init.io" target="_blank">Overview</a></li>
+          <li><a href="https://cloudinit.readthedocs.io/en/latest/topics/hacking.html" target="_blank">Hacking</a></li>
+          <li><a href="https://jenkins.ubuntu.com/server/view/cloud-init/" target="_blank">CI builds</a></li>
+          <li><a href="https://launchpad.net/cloud-init" target="_blank">Code</a></li>
+        </ul>
+      </nav>
+
+      <ul class="social">
+        <li><a class="sc-github" href="https://github.com/cloud-init" target="_blank"><i class="fa fa-github"></i></a></li>
+        <li><a class="sc-wechat" href="https://webchat.freenode.net/?channels=cloud-init" target="_blank"><i class="fa fa-wechat"></i></a></li>
+      </ul>
+    </div>
+
+
+  </aside>
+  <main>
+
+    <nav>
+      <a href="https://cloud-init.github.io">Home</a>
+
+      <a href="/archives.html">Archives</a>
+      <a href="/categories.html">Categories</a>
+      <a href="/tags.html">Tags</a>
+
+      <a href="https://cloud-init.github.io/feeds/all.atom.xml">Atom</a>
+
+    </nav>
+
+<article class="single">
+  <header>
+      
+    <h1 id="status-2020-11-17">Cloud-init bi-weekly status</h1>
+    <p>
+      Posted on Tue 17 November 2020 in <a href="https://cloud-init.github.io/category/status-meeting-minutes.html">status-meeting-minutes</a>
+
+        &#8226; 6 min read
+    </p>
+  </header>
+
+
+  <div>
+    <h2>Meeting information</h2>
+<ul>
+<li>#cloud-init: cloud-init status meeting  &amp;&amp; office hours, 17 Nov at 17:25 &mdash; 18:35 UTC</li>
+<li>Full logs at [[<a href="http://ubottu.com/meetingology/logs/cloud-init/2020/cloud-init.2020-11-17-17.25.log.html">http://ubottu.com/meetingology/logs/cloud-init/2020/cloud-init.2020-11-17-17.25.log.html</a>]]</li>
+</ul>
+<h2>Meeting summary</h2>
+<p><strong>LINK</strong>: <a href="https://discourse.ubuntu.com/t/cloud-init-statue-11-17-20/19391">https://discourse.ubuntu.com/t/cloud-init-statue-11-17-20/19391</a> 
+ <strong>LINK</strong>: <a href="https://github.com/canonical/cloud-init/pull/655">https://github.com/canonical/cloud-init/pull/655</a> i'd love this too get merged, so we don't have to carry the patch on ports
+ <strong>LINK</strong>: <a href="https://github.com/canonical/cloud-init/pull/655">https://github.com/canonical/cloud-init/pull/655</a> 
+ <strong>LINK</strong>: <a href="https://github.com/canonical/cloud-init/pull/647">https://github.com/canonical/cloud-init/pull/647</a> 
+ <strong>LINK</strong>: <a href="https://github.com/canonical/cloud-init/pull/588#pullrequestreview-529957360">https://github.com/canonical/cloud-init/pull/588#pullrequestreview-529957360</a> 
+ <strong>LINK</strong>: <a href="https://github.com/canonical/cloud-init/blob/eeef783b0322d99840f39a58de052772afefe822/cloudinit/sources/DataSourceAzure.py#L1325">https://github.com/canonical/cloud-init/blob/eeef783b0322d99840f39a58de052772afefe822/cloudinit/sources/DataSourceAzure.py#L1325</a> 
+ <strong>LINK</strong>: <a href="https://github.com/canonical/cloud-init/blob/eeef783b0322d99840f39a58de052772afefe822/cloudinit/config/cc_set_passwords.py#L163">https://github.com/canonical/cloud-init/blob/eeef783b0322d99840f39a58de052772afefe822/cloudinit/config/cc_set_passwords.py#L163</a> 
+ <strong>LINK</strong>: <a href="https://github.com/canonical/cloud-init/pull/663">https://github.com/canonical/cloud-init/pull/663</a> 
+ <strong>LINK</strong>: <a href="https://github.com/canonical/cloud-init/pull/659">https://github.com/canonical/cloud-init/pull/659</a> 
+ <strong>LINK</strong>: <a href="https://github.com/canonical/cloud-init/pulls">https://github.com/canonical/cloud-init/pulls</a>?q=is%3Apr+is%3Aopen+label%3A%22release+20.4%22 </p>
+<h2>Vote results</h2>
+<h2>Done items</h2>
+<ul>
+<li>(none)</li>
+</ul>
+<h2>People present (lines said)</h2>
+<ul>
+<li>blackboxsw (48)</li>
+<li>AnhVoMSFT (15)</li>
+<li>rharper (7)</li>
+<li>meena (6)</li>
+<li>smoser (3)</li>
+<li>meetingology (3)</li>
+<li>Odd_Bloke (1)</li>
+</ul>
+<h2>Full Log</h2>
+<p>17:25 <code>&lt;blackboxsw&gt;</code> #startmeeting cloud-init status meeting  &amp;&amp; office hours</p>
+<p>17:25 <code>&lt;meetingology&gt;</code> Meeting started Tue Nov 17 17:25:00 2020 UTC.  The chair is blackboxsw. Information about MeetBot at <a href="http://wiki.ubuntu.com/meetingology.">http://wiki.ubuntu.com/meetingology.</a></p>
+<p>17:25 <code>&lt;meetingology&gt;</code> </p>
+<p>17:25 <code>&lt;meetingology&gt;</code> Available commands: action commands idea info link nick</p>
+<p>17:25 <code>&lt;blackboxsw&gt;</code> community-notice: hi folks just starting up an our cloud-init satus update and office hours community meeting.</p>
+<p>17:26 <code>&lt;blackboxsw&gt;</code> As of the cloud-init summit,  we decided  to try to host these primarily async in discourse to allow folks in other timezones to participate as available.</p>
+<p>17:26 <code>&lt;blackboxsw&gt;</code> I've just finished posting a status update for cloud-init upstream to <a href="https://discourse.ubuntu.com/t/cloud-init-statue-11-17-20/19391">https://discourse.ubuntu.com/t/cloud-init-statue-11-17-20/19391</a></p>
+<p>17:26 <code>&lt;blackboxsw&gt;</code> #link <a href="https://discourse.ubuntu.com/t/cloud-init-statue-11-17-20/19391">https://discourse.ubuntu.com/t/cloud-init-statue-11-17-20/19391</a></p>
+<p>17:27 <code>&lt;blackboxsw&gt;</code> #chairs rharper smoser Odd_Bloke</p>
+<p>17:28 <code>&lt;rharper&gt;</code> o/</p>
+<p>17:28 <code>&lt;blackboxsw&gt;</code> Generally I think this status meeting can be used as a platform for communication and discussion with the community.</p>
+<p>17:29 <code>&lt;blackboxsw&gt;</code> for this week, as brought up by a few folks in the community, is that we are trying to define a "go" date for the next upstream cloud-init release 20.4.</p>
+<p>17:30 <code>&lt;blackboxsw&gt;</code> The hope is to target this Friday Nov 20th. as a deadline for requesting specific PRs and reviews that are needed to get features or fixes included in this 20.4 release.</p>
+<p>17:31 <code>&lt;meena&gt;</code> so, i just responded to falcojr's email</p>
+<p>17:32 <code>&lt;blackboxsw&gt;</code> The goal of this date, from an Ubuntu standpoint,  is also to be able to SRU (stable release update) and publish this functionality back to Xenial, Bionic and Focal before the end of the calendar year</p>
+<p>17:32 <code>&lt;meena&gt;</code> <a href="https://github.com/canonical/cloud-init/pull/655">https://github.com/canonical/cloud-init/pull/655</a> i'd love this too get merged, so we don't have to carry the patch on ports</p>
+<p>17:33 <code>&lt;blackboxsw&gt;</code> thanks meena there  <a href="https://github.com/canonical/cloud-init/pull/655">https://github.com/canonical/cloud-init/pull/655</a>  ahh I'm too late</p>
+<p>17:34 <code>&lt;blackboxsw&gt;</code> So, for those who happen to be on this channel now, let's add links to the meeting log and I'll make sure they are also reflected on the discourse post and PRs that need review assessment and hopefully landing before upstream release cut.</p>
+<p>17:34 <code>&lt;blackboxsw&gt;</code> #link  <a href="https://github.com/canonical/cloud-init/pull/655">https://github.com/canonical/cloud-init/pull/655</a></p>
+<p>17:34 <code>&lt;blackboxsw&gt;</code> rharper or smoser are there any concerns with existing PRs that you are aware of that should be destined for this 20.4  release?</p>
+<p>17:35 <code>&lt;meena&gt;</code> rharper, i'd also love your historic knowledge on <a href="https://github.com/canonical/cloud-init/pull/588">https://github.com/canonical/cloud-init/pull/588</a> but that can wait until after the release</p>
+<p>17:36 <code>&lt;blackboxsw&gt;</code> rharper: I wanted to put a solid review on the cached ds handling  today/tomorrow</p>
+<p>17:36 <code>&lt;blackboxsw&gt;</code> #link <a href="https://github.com/canonical/cloud-init/pull/647">https://github.com/canonical/cloud-init/pull/647</a></p>
+<p>17:36 <code>&lt;blackboxsw&gt;</code> I've looked it over a couple times, but wanted to but some investment in the review myself today.</p>
+<p>17:37 <code>&lt;blackboxsw&gt;</code> AnhVoMSFT: welcome and thanks for peeking in to checkup. If your team also have any hopes for PRs you can pitch us here, discourse or email.</p>
+<p>17:38 <code>&lt;AnhVoMSFT&gt;</code> I have a quick question on the cc_set_passwords. I'm still looking through the code but if anyone knows this one well and can point me to the right place to look it would be appreciated</p>
+<p>17:39 <code>&lt;AnhVoMSFT&gt;</code> it seems like if we create an image that previously was deployed with password ABC, but during image preparation we don't delete that user, then when we deploy a VM with that image and specifying a new password DEF, it isn't applied. I.e., the user will still have password ABC</p>
+<p>17:39 <code>&lt;rharper&gt;</code> blackboxsw: I'm not aware of anything critical PR wise; maybe the networking_cls bits; but not sure if that's ready;</p>
+<p>17:40 <code>&lt;meena&gt;</code> from my understanding, that needs to get in</p>
+<p>17:40 <code>&lt;blackboxsw&gt;</code> AnhVoMSFT: poking around now on that</p>
+<p>17:41 <code>&lt;rharper&gt;</code> meena: yes; that makes sense; just hadn't looked at the current state of the PR since I last commented;</p>
+<p>17:42 <code>&lt;rharper&gt;</code> meena: re: 588 (genreate_fallback_config); did you have a specific question you wanted some background on?</p>
+<p>17:43 <code>&lt;meena&gt;</code> rharper, search for your name</p>
+<p>17:44 <code>&lt;rharper&gt;</code> hidden under a "Load more Items"</p>
+<p>17:44 <code>&lt;rharper&gt;</code> I'll respond</p>
+<p>17:44 <code>&lt;blackboxsw&gt;</code> so instance-id should have changed on the newly deployed vm, so cc_set_passwords should get retriggered due to <a href="https://github.com/canonical/cloud-init/blob/master/cloudinit/config/cc_set_passwords.py#L49">https://github.com/canonical/cloud-init/blob/master/cloudinit/config/cc_set_passwords.py#L49</a> (the default frequency for cc modules). AnhVoMSFT: what the userdata password field you are using? top-level password or chpasswd?</p>
+<p>17:45 <code>&lt;AnhVoMSFT&gt;</code> this is the user password passed in from ovf</p>
+<p>17:45 <code>&lt;blackboxsw&gt;</code> as that'd be different code paths I think</p>
+<p>17:45 <code>&lt;meena&gt;</code> <a href="https://github.com/canonical/cloud-init/pull/588#pullrequestreview-529957360">https://github.com/canonical/cloud-init/pull/588#pullrequestreview-529957360</a></p>
+<p>17:46 <code>&lt;AnhVoMSFT&gt;</code> in a newly created instance without the existing user, I could see the password getting created during the initial useradd call when the user is created</p>
+<p>17:47 <code>&lt;AnhVoMSFT&gt;</code> however, if the user existed, that code path isn't invoked. There's some code in cc_set_passwords to change the password for existing user, but I'm unsure when it's invoked (or why it's not invoked in the case of azure)</p>
+<p>17:48 <code>&lt;blackboxsw&gt;</code> AnhVoMSFT: could you provide a paste of redacted userdata from that instance via <code>sudo cloud-init query userdata</code>... redacting the specific passwords ?</p>
+<p>17:49 <code>&lt;blackboxsw&gt;</code> yeah I would have expected a                 log.debug("Changing password for %s:", users) log</p>
+<p>17:53 <code>&lt;AnhVoMSFT&gt;</code> let me run the query</p>
+<p>17:53 <code>&lt;AnhVoMSFT&gt;</code> there's nothing returned (since there's no userdata)</p>
+<p>17:54 <code>&lt;AnhVoMSFT&gt;</code> looks like the ds Azure is adding the user/password information retrieved from OVF to cfg['defuser']</p>
+<p>18:00 <code>&lt;AnhVoMSFT&gt;</code> <a href="https://github.com/canonical/cloud-init/blob/eeef783b0322d99840f39a58de052772afefe822/cloudinit/sources/DataSourceAzure.py#L1325">https://github.com/canonical/cloud-init/blob/eeef783b0322d99840f39a58de052772afefe822/cloudinit/sources/DataSourceAzure.py#L1325</a></p>
+<p>18:00 <code>&lt;AnhVoMSFT&gt;</code> if I'm reading the code of cc_set_password correctly we will need to add cfg['password'] as well if we want the defuser's password to be changed?</p>
+<p>18:01 <code>&lt;Odd_Bloke&gt;</code> rharper: We are treating the networking_cls PR as critical, and AFA(I/we)K it's pretty much ready to land.</p>
+<p>18:02 <code>&lt;rharper&gt;</code> Odd_Bloke: ok, makes sense</p>
+<p>18:06 <code>&lt;smoser&gt;</code> blackboxsw: i dont have anything critical.</p>
+<p>18:06 <code>&lt;blackboxsw&gt;</code> AnhVoMSFT: so normalize_users_groups is what pulls the default_user configuration out of /etc/cloud/cloud.cfg(.d/*)</p>
+<p>18:06 <code>&lt;blackboxsw&gt;</code> <a href="https://github.com/canonical/cloud-init/blob/eeef783b0322d99840f39a58de052772afefe822/cloudinit/config/cc_set_passwords.py#L163">https://github.com/canonical/cloud-init/blob/eeef783b0322d99840f39a58de052772afefe822/cloudinit/config/cc_set_passwords.py#L163</a></p>
+<p>18:07 <code>&lt;blackboxsw&gt;</code> that ug_util.extract_default is what should be seeing the passwords set/changed</p>
+<p>18:07 <code>&lt;smoser&gt;</code> </p>
+<p>18:08 <code>&lt;smoser&gt;</code> #669 looks reasonable.</p>
+<p>18:08 <code>&lt;blackboxsw&gt;</code> yet interestingly. password referenced there is only set from the top-level "password" value <a href="https://github.com/canonical/cloud-init/blob/eeef783b0322d99840f39a58de052772afefe822/cloudinit/config/cc_set_passwords.py#L143">https://github.com/canonical/cloud-init/blob/eeef783b0322d99840f39a58de052772afefe822/cloudinit/config/cc_set_passwords.py#L143</a></p>
+<p>18:08 <code>&lt;blackboxsw&gt;</code> thanks smoser for that</p>
+<p>18:08 <code>&lt;blackboxsw&gt;</code> #link <a href="https://github.com/canonical/cloud-init/pull/663">https://github.com/canonical/cloud-init/pull/663</a></p>
+<p>18:12 <code>&lt;AnhVoMSFT&gt;</code> let me test it out real quick by setting the cfg['password'] key in the ds azure</p>
+<p>18:12 <code>&lt;blackboxsw&gt;</code> AnhVoMSFT: so, I may be mistaken but if a password key is set on the default_user in system_info (which is what it looks like azure does), then that default password is only used if there is no top-level "password" key provided in merged cloud-config, then and the default_user specific password key is ignored</p>
+<p>18:12 <code>&lt;blackboxsw&gt;</code> +1 AnhVoMSFT</p>
+<p>18:13 <code>&lt;AnhVoMSFT&gt;</code> yep that worked</p>
+<p>18:13 <code>&lt;AnhVoMSFT&gt;</code> it's a one liner change, I'll submit a PR asap</p>
+<p>18:14 <code>&lt;blackboxsw&gt;</code> AnhVoMSFT: good. ok, I wonder if this ever worked (having the password key hung under default_user scope?)</p>
+<p>18:14 <code>&lt;blackboxsw&gt;</code> as in, I wonder if there was a regression introduced with some of the is_FreeBSD restructuring</p>
+<p>18:15 <code>&lt;AnhVoMSFT&gt;</code> I don't think so. customer reported this issue in cloud-init 18.5 and I repro-ed it in master</p>
+<p>18:15 <code>&lt;blackboxsw&gt;</code> ok, ok. good thanks for that context</p>
+<p>18:15 <code>&lt;blackboxsw&gt;</code> and checking the recent BSD change it looking completely unrelated</p>
+<p>18:17 <code>&lt;blackboxsw&gt;</code> ok AnhVoMSFT when the PR is submitted. let's get that queued for this upstream 20.4  if we can</p>
+<p>18:18 <code>&lt;blackboxsw&gt;</code> do folks have an opinion on whether it helps to add a custom label to active PRs that we intend to land before upstream release like 'upstream-blocker'  or 'upstream-release'?</p>
+<p>18:19 <code>&lt;blackboxsw&gt;</code> just for more public tracking/transparency. not sure if that's helpful or just needless process?</p>
+<p>18:19 <code>&lt;blackboxsw&gt;</code> do folks have an opinion on whether it helps to add a custom label to active PRs that we intend to land before upstream release like 'upstream-blocker'  or 'upstream-release'?</p>
+<p>18:23 <code>&lt;AnhVoMSFT&gt;</code> I think that would be helpful, yes</p>
+<p>18:25 <code>&lt;blackboxsw&gt;</code> ok, let's try it out. let's try specific 'release 20.4' and see how that feels to folks. easy enough to drop if it doesn't improve communication</p>
+<p>18:30 <code>&lt;blackboxsw&gt;</code> also added pickling upgrade test validation PR</p>
+<p>18:30 <code>&lt;blackboxsw&gt;</code> #link <a href="https://github.com/canonical/cloud-init/pull/659">https://github.com/canonical/cloud-init/pull/659</a></p>
+<p>18:31 <code>&lt;blackboxsw&gt;</code> ok, last call for cloud-init status / office hours. Any other takers for discussion at the moment? If not I'll close out the meeting in a few mins and publish minutes.</p>
+<p>18:33 <code>&lt;blackboxsw&gt;</code> my plan is still to publish to cloud-init.github.io status meetings and link it from the primary post at <a href="https://discourse.ubuntu.com/t/cloud-init-status-11-17-20/19391">https://discourse.ubuntu.com/t/cloud-init-status-11-17-20/19391</a></p>
+<p>18:34 <code>&lt;blackboxsw&gt;</code> the following will list prs we hope to work toward landing this week</p>
+<p>18:34 <code>&lt;blackboxsw&gt;</code> #link <a href="https://github.com/canonical/cloud-init/pulls">https://github.com/canonical/cloud-init/pulls</a>?q=is%3Apr+is%3Aopen+label%3A%22release+20.4%22</p>
+<p>18:35 <code>&lt;blackboxsw&gt;</code> thanks again for the discussion and suggestions folks. Have a good one!</p>
+<p>18:35 <code>&lt;blackboxsw&gt;</code> #endmeeting</p>
+<p>Generated by MeetBot 0.1.5 (<a href="http://wiki.ubuntu.com/meetingology">http://wiki.ubuntu.com/meetingology</a>)</p>
+  </div>
+  <div class="tag-cloud">
+    <p>
+    </p>
+  </div>
+
+
+
+    <div class="addthis_relatedposts_inline">
+
+
+</article>
+
+    <footer>
+<p>&copy;  </p>
+<p>Powered by <a href="http://getpelican.com" target="_blank">Pelican</a> - <a href="https://github.com/alexandrevicenzi/flex" target="_blank">Flex</a> theme by <a href="http://alexandrevicenzi.com" target="_blank">Alexandre Vicenzi</a></p>    </footer>
+  </main>
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " Cloud-init Info ",
+  "url" : "https://cloud-init.github.io",
+  "image": "/images/cloud-init-orange.svg",
+  "description": "Cloud-init project updates and general information"
+}
+</script>
+
+</body>
+</html>
