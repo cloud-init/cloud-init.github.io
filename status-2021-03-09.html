@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<html lang="english">
+<head>
+  <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" type="text/css" href="https://cloud-init.github.io/theme/stylesheet/style.min.css">
+
+  <link rel="stylesheet" type="text/css" href="https://cloud-init.github.io/theme/pygments/github.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cloud-init.github.io/theme/font-awesome/css/font-awesome.min.css">
+
+
+    <link href="https://cloud-init.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Cloud-init Info Atom">
+
+
+    <link rel="shortcut icon" href="/theme/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/theme/img/favicon.ico" type="image/x-icon">
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-50554247-3', 'auto');
+  ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#2c001e">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#2c001e">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Microsoft EDGE -->
+    <meta name="msapplication-TileColor" content="#2c001e">
+
+<meta name="author" content="chad.smith@canonical.com" />
+<meta name="description" content="Meeting information #cloud-init: cloud-init bi-weekly office-hours meeting, started by blackboxsw, 09 Mar at 17:19 — 18:38 UTC. Full logs at https://new.ubottu.com/meetingology/logs/cloud-init/2021/cloud-init.2021-03-09-17.19.log.html Meeting summary LINK: https://discourse.ubuntu.com/t/cloud-init-status-03-09-2021/21309 (blackboxsw, 17:23) People present (lines …" />
+<meta name="keywords" content="">
+
+<meta property="og:site_name" content="Cloud-init Info"/>
+<meta property="og:title" content="Cloud-init bi-weekly status"/>
+<meta property="og:description" content="Meeting information #cloud-init: cloud-init bi-weekly office-hours meeting, started by blackboxsw, 09 Mar at 17:19 — 18:38 UTC. Full logs at https://new.ubottu.com/meetingology/logs/cloud-init/2021/cloud-init.2021-03-09-17.19.log.html Meeting summary LINK: https://discourse.ubuntu.com/t/cloud-init-status-03-09-2021/21309 (blackboxsw, 17:23) People present (lines …"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:url" content="https://cloud-init.github.io/status-2021-03-09.html"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2021-03-09 17:19:00+00:00"/>
+<meta property="article:modified_time" content=""/>
+<meta property="article:author" content="https://cloud-init.github.io/author/chadsmithcanonicalcom.html">
+<meta property="article:section" content="status-meeting-minutes"/>
+<meta property="og:image" content="/images/cloud-init-orange.svg">
+
+  <title>Cloud-init Info &ndash; Cloud-init bi-weekly status</title>
+
+</head>
+<body>
+  <aside>
+    <div>
+      <a href="https://cloud-init.github.io">
+        <img src="/images/cloud-init-orange.svg" alt="Cloud-init" title="Cloud-init">
+      </a>
+      <h1><a href="https://cloud-init.github.io">Cloud-init</a></h1>
+
+<p>Make your cloud images be all they can be</p>
+      <nav>
+        <ul class="list">
+
+          <li><a href="https://cloudinit.readthedocs.org/" target="_blank">Docs</a></li>
+          <li><a href="https://cloud-init.io" target="_blank">Overview</a></li>
+          <li><a href="https://cloudinit.readthedocs.io/en/latest/topics/hacking.html" target="_blank">Hacking</a></li>
+          <li><a href="https://jenkins.ubuntu.com/server/view/cloud-init/" target="_blank">CI builds</a></li>
+          <li><a href="https://launchpad.net/cloud-init" target="_blank">Code</a></li>
+        </ul>
+      </nav>
+
+      <ul class="social">
+        <li><a class="sc-github" href="https://github.com/cloud-init" target="_blank"><i class="fa fa-github"></i></a></li>
+        <li><a class="sc-wechat" href="https://webchat.freenode.net/?channels=cloud-init" target="_blank"><i class="fa fa-wechat"></i></a></li>
+      </ul>
+    </div>
+
+
+  </aside>
+  <main>
+
+    <nav>
+      <a href="https://cloud-init.github.io">Home</a>
+
+      <a href="/archives.html">Archives</a>
+      <a href="/categories.html">Categories</a>
+      <a href="/tags.html">Tags</a>
+
+      <a href="https://cloud-init.github.io/feeds/all.atom.xml">Atom</a>
+
+    </nav>
+
+<article class="single">
+  <header>
+      
+    <h1 id="status-2021-03-09">Cloud-init bi-weekly status</h1>
+    <p>
+      Posted on Tue 09 March 2021 in <a href="https://cloud-init.github.io/category/status-meeting-minutes.html">status-meeting-minutes</a>
+
+        &#8226; 3 min read
+    </p>
+  </header>
+
+
+  <div>
+    <h2>Meeting information</h2>
+<ul>
+<li>#cloud-init: cloud-init bi-weekly office-hours meeting, started by blackboxsw, 09 Mar at 17:19 &mdash; 18:38 UTC.</li>
+<li>Full logs at <a href="https://new.ubottu.com/meetingology/logs/cloud-init/2021/cloud-init.2021-03-09-17.19.log.html">https://new.ubottu.com/meetingology/logs/cloud-init/2021/cloud-init.2021-03-09-17.19.log.html</a></li>
+</ul>
+<h2>Meeting summary</h2>
+<ul>
+<li><strong>LINK</strong>: <a href="https://discourse.ubuntu.com/t/cloud-init-status-03-09-2021/21309">https://discourse.ubuntu.com/t/cloud-init-status-03-09-2021/21309</a>   (blackboxsw, 17:23)</li>
+</ul>
+<h2>People present (lines said)</h2>
+<ul>
+<li>blackboxsw (14)</li>
+<li>falcojr (8)</li>
+<li>beantaxi (7)</li>
+<li>meetingology (3)</li>
+<li>Odd_Bloke (3)</li>
+</ul>
+<h2>Full log</h2>
+<p>17:19 <code>&lt;blackboxsw&gt;</code> #startmeeting cloud-init bi-weekly office-hours</p>
+<p>17:19 <code>&lt;meetingology&gt;</code> Meeting started at 17:19:08 UTC.  The chair is blackboxsw.  Information about MeetBot at <a href="https://wiki.ubuntu.com/meetingology">https://wiki.ubuntu.com/meetingology</a></p>
+<p>17:19 <code>&lt;meetingology&gt;</code> Available commands: action, commands, idea, info, link, nick</p>
+<p>17:19 <code>&lt;blackboxsw&gt;</code> #char Odd_Bloke falcojr</p>
+<p>17:19 <code>&lt;blackboxsw&gt;</code> #chair Odd_Bloke falcojr</p>
+<p>17:19 <code>&lt;meetingology&gt;</code> Current chairs: Odd_Bloke, blackboxsw, falcojr</p>
+<p>17:20 <code>&lt;blackboxsw&gt;</code> hi cloud-init, sorry for the confusion on the UTC time that I posted in the topic. I had incorrectly set 15:15 UTC instead of 17:15.</p>
+<p>17:20 <code>&lt;blackboxsw&gt;</code> welcome to the bi-weekly cloud-init office hours</p>
+<p>17:21 <code>&lt;blackboxsw&gt;</code> This cloud-init status meeting has moved to a more asynchronous posting of high-level happenings in cloud-init to discourse to support timezone differences for all cloud-init developers.</p>
+<p>17:23 <code>&lt;blackboxsw&gt;</code> We plan on continuing to host these office hours to provide a means for quick communication, questions and discussions with a couple of upstream developers present to help facilite any questions or discussions of interest to folks.</p>
+<p>17:23 <code>&lt;blackboxsw&gt;</code> For reference, here are the high-level "happenings" in cloud-init upstream over the last two weeks.</p>
+<p>17:23 <code>&lt;Odd_Bloke&gt;</code> o/</p>
+<p>17:23 <code>&lt;blackboxsw&gt;</code> #link <a href="https://discourse.ubuntu.com/t/cloud-init-status-03-09-2021/21309">https://discourse.ubuntu.com/t/cloud-init-status-03-09-2021/21309</a></p>
+<p>17:26 <code>&lt;blackboxsw&gt;</code> As of last office-hours I belive upstream had just cut the first 21.1 release in the tip of cloud-init. Canonical will be starting the SRU process this week I believe to publish the 21.1 release (plus a couple of extra fixes which just landed in tip) into Ubuntu Xenial, Bionic, Focal, Groovy and Hirsute.</p>
+<p>17:41 <code>&lt;beantaxi&gt;</code> Odd_Bloke: I tried your command and it was helpful. It complained about a missing ssh key, so I shrugged, tried ssh-keygen -t rsa and reran the test, and it passed. I've kicked off a run of all the tests, which I assume will take a bit.</p>
+<p>17:55 <code>&lt;Odd_Bloke&gt;</code> beantaxi: Great, thanks for the update!  A full run in LXD containers takes ~12mins locally (though I'm probably running on beefier hardware than you're paying EC2 for so YMMV :p).</p>
+<p>17:55 <code>&lt;Odd_Bloke&gt;</code> beantaxi: Once you had the output, was it clear that the missing SSH key was the issue?</p>
+<p>17:55 <code>&lt;blackboxsw&gt;</code> setting the appropriate time for next office hours</p>
+<p>17:56 <code>&lt;blackboxsw&gt;</code> setting the appropriate time for next office hours Mar 23 17:15 UTC</p>
+<p>17:57 <code>&lt;beantaxi&gt;</code> ERROR tests/integration_tests/modules/test_runcmd.py::TestRuncmd::test_runcmd - FileNotFoundError: [Errno 2] No such file or directory: '/home/ubuntu/.ssh/id_rsa.pub'</p>
+<p>17:57 <code>&lt;beantaxi&gt;</code> That was the error message</p>
+<p>17:59 <code>&lt;falcojr&gt;</code> tests require an ssh keypair. It'll use your user one by default or you can specify one manually in the integration settings config</p>
+<p>17:59 <code>&lt;falcojr&gt;</code> do an <code>ssh-keygen</code></p>
+<p>17:59 <code>&lt;beantaxi&gt;</code> The full test failed with 7 failures: <a href="https://paste.ubuntu.com/p/hcYN7ZDvbs/">https://paste.ubuntu.com/p/hcYN7ZDvbs/</a></p>
+<p>18:00 <code>&lt;beantaxi&gt;</code> falcojr: Thanks ... I was just showing Odd_Bloke the error message I got before running ssh-keygen, which did indeed solve most of my issues</p>
+<p>18:01 <code>&lt;beantaxi&gt;</code> falcojr: Also, this is just me running the existing integration tests on an EC2 instance. Without any of my changes</p>
+<p>18:01 <code>&lt;falcojr&gt;</code> not sure the cause of that first one, but the rest are for code not in ubuntu images yet</p>
+<p>18:03 <code>&lt;falcojr&gt;</code> the version of cloud_init to use is specified by the CLOUD_INIT_SOURCE variable (integration_settings.py...copy this to user_settings.py to easily override defaults)</p>
+<p>18:03 <code>&lt;falcojr&gt;</code> it defaults to NONE which means use whatever image has been released on this platform</p>
+<p>18:04 <code>&lt;falcojr&gt;</code> to test non-released code, changing it to IN_PLACE (only works on LXD) should work</p>
+<p>18:08 <code>&lt;falcojr&gt;</code> you can also set it to ppa:cloud-init-dev/daily , but that won't contain any changes that you're trying to test</p>
+<p>18:18 <code>&lt;beantaxi&gt;</code> falcojr: Copying integration_settings.py to user_settings.py and setting CLOUD_INIT_SOURCE=IN_PLACE made all the test_keys_to_console errors clean. There's still that simple_streams error. Do I just need to add a PPA for simplestreams? It looks like requires a file in /etc/apt/sources.list.d, but mine is empty</p>
+<p>18:23 <code>&lt;falcojr&gt;</code> Not sure off the top of my head. Did you pip install the integration_requirements.txt?</p>
+<p>18:38 * blackboxsw thinks I should about wrap up office hours. Thanks falcojr Odd_Bloke and beantaxi for the discussion there</p>
+<p>18:38 <code>&lt;blackboxsw&gt;</code> #endmeeting</p>
+<p>Generated by MeetBot 0.4.0 (<a href="https://wiki.ubuntu.com/meetingology">https://wiki.ubuntu.com/meetingology</a>)</p>
+  </div>
+  <div class="tag-cloud">
+    <p>
+    </p>
+  </div>
+
+
+
+    <div class="addthis_relatedposts_inline">
+
+
+</article>
+
+    <footer>
+<p>&copy;  </p>
+<p>Powered by <a href="http://getpelican.com" target="_blank">Pelican</a> - <a href="https://github.com/alexandrevicenzi/flex" target="_blank">Flex</a> theme by <a href="http://alexandrevicenzi.com" target="_blank">Alexandre Vicenzi</a></p>    </footer>
+  </main>
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " Cloud-init Info ",
+  "url" : "https://cloud-init.github.io",
+  "image": "/images/cloud-init-orange.svg",
+  "description": "Cloud-init project updates and general information"
+}
+</script>
+
+</body>
+</html>

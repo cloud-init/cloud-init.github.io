@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+<html lang="english">
+<head>
+  <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" type="text/css" href="https://cloud-init.github.io/theme/stylesheet/style.min.css">
+
+  <link rel="stylesheet" type="text/css" href="https://cloud-init.github.io/theme/pygments/github.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cloud-init.github.io/theme/font-awesome/css/font-awesome.min.css">
+
+
+    <link href="https://cloud-init.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Cloud-init Info Atom">
+
+
+    <link rel="shortcut icon" href="/theme/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/theme/img/favicon.ico" type="image/x-icon">
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-50554247-3', 'auto');
+  ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#2c001e">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#2c001e">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Microsoft EDGE -->
+    <meta name="msapplication-TileColor" content="#2c001e">
+
+<meta name="author" content="chad.smith@canonical.com" />
+<meta name="description" content="Meeting information #cloud-init: cloud-init bi-weekly office-hours meeting, started by Odd_Bloke, 23 Mar at 17:22 — 18:24 UTC. Full logs at https://new.ubottu.com/meetingology/logs/cloud-init/2021/cloud-init.2021-03-23-17.22.log.html Meeting summary LINK: https://discourse.ubuntu.com/t/cloud-init-status-03-23-2021/21490 (Odd_Bloke, 17:23) LINK: https://discourse …" />
+<meta name="keywords" content="">
+
+<meta property="og:site_name" content="Cloud-init Info"/>
+<meta property="og:title" content="Cloud-init bi-weekly status"/>
+<meta property="og:description" content="Meeting information #cloud-init: cloud-init bi-weekly office-hours meeting, started by Odd_Bloke, 23 Mar at 17:22 — 18:24 UTC. Full logs at https://new.ubottu.com/meetingology/logs/cloud-init/2021/cloud-init.2021-03-23-17.22.log.html Meeting summary LINK: https://discourse.ubuntu.com/t/cloud-init-status-03-23-2021/21490 (Odd_Bloke, 17:23) LINK: https://discourse …"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:url" content="https://cloud-init.github.io/status-2021-03-23.html"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2021-03-23 17:22:00+00:00"/>
+<meta property="article:modified_time" content=""/>
+<meta property="article:author" content="https://cloud-init.github.io/author/chadsmithcanonicalcom.html">
+<meta property="article:section" content="status-meeting-minutes"/>
+<meta property="og:image" content="/images/cloud-init-orange.svg">
+
+  <title>Cloud-init Info &ndash; Cloud-init bi-weekly status</title>
+
+</head>
+<body>
+  <aside>
+    <div>
+      <a href="https://cloud-init.github.io">
+        <img src="/images/cloud-init-orange.svg" alt="Cloud-init" title="Cloud-init">
+      </a>
+      <h1><a href="https://cloud-init.github.io">Cloud-init</a></h1>
+
+<p>Make your cloud images be all they can be</p>
+      <nav>
+        <ul class="list">
+
+          <li><a href="https://cloudinit.readthedocs.org/" target="_blank">Docs</a></li>
+          <li><a href="https://cloud-init.io" target="_blank">Overview</a></li>
+          <li><a href="https://cloudinit.readthedocs.io/en/latest/topics/hacking.html" target="_blank">Hacking</a></li>
+          <li><a href="https://jenkins.ubuntu.com/server/view/cloud-init/" target="_blank">CI builds</a></li>
+          <li><a href="https://launchpad.net/cloud-init" target="_blank">Code</a></li>
+        </ul>
+      </nav>
+
+      <ul class="social">
+        <li><a class="sc-github" href="https://github.com/cloud-init" target="_blank"><i class="fa fa-github"></i></a></li>
+        <li><a class="sc-wechat" href="https://webchat.freenode.net/?channels=cloud-init" target="_blank"><i class="fa fa-wechat"></i></a></li>
+      </ul>
+    </div>
+
+
+  </aside>
+  <main>
+
+    <nav>
+      <a href="https://cloud-init.github.io">Home</a>
+
+      <a href="/archives.html">Archives</a>
+      <a href="/categories.html">Categories</a>
+      <a href="/tags.html">Tags</a>
+
+      <a href="https://cloud-init.github.io/feeds/all.atom.xml">Atom</a>
+
+    </nav>
+
+<article class="single">
+  <header>
+      
+    <h1 id="status-2021-03-23">Cloud-init bi-weekly status</h1>
+    <p>
+      Posted on Tue 23 March 2021 in <a href="https://cloud-init.github.io/category/status-meeting-minutes.html">status-meeting-minutes</a>
+
+        &#8226; 2 min read
+    </p>
+  </header>
+
+
+  <div>
+    <h2>Meeting information</h2>
+<ul>
+<li>#cloud-init: cloud-init bi-weekly office-hours meeting, started by Odd_Bloke, 23 Mar at 17:22 &mdash; 18:24 UTC.</li>
+<li>Full logs at <a href="https://new.ubottu.com/meetingology/logs/cloud-init/2021/cloud-init.2021-03-23-17.22.log.html">https://new.ubottu.com/meetingology/logs/cloud-init/2021/cloud-init.2021-03-23-17.22.log.html</a></li>
+</ul>
+<h2>Meeting summary</h2>
+<ul>
+<li><strong>LINK</strong>: <a href="https://discourse.ubuntu.com/t/cloud-init-status-03-23-2021/21490">https://discourse.ubuntu.com/t/cloud-init-status-03-23-2021/21490</a>   (Odd_Bloke, 17:23)</li>
+<li><strong>LINK</strong>: <a href="https://discourse.ubuntu.com/t/cloud-init-status-03-23-2021/21490">https://discourse.ubuntu.com/t/cloud-init-status-03-23-2021/21490</a>   (blackboxsw, 17:23)</li>
+<li><strong>LINK</strong>: <a href="https://bugs.launchpad.net/cloud-init/+bug/1724414">https://bugs.launchpad.net/cloud-init/+bug/1724414</a>   (blackboxsw, 17:25)</li>
+</ul>
+<h2>People present (lines said)</h2>
+<ul>
+<li>blackboxsw (11)</li>
+<li>Odd_Bloke (10)</li>
+<li>meetingology (3)</li>
+<li>ubot5 (1)</li>
+<li>falcojr (0)</li>
+</ul>
+<h2>Full log</h2>
+<p>17:22 <code>&lt;Odd_Bloke&gt;</code> #startmeeting cloud-init bi-weekly office-hours</p>
+<p>17:22 <code>&lt;meetingology&gt;</code> Meeting started at 17:22:08 UTC.  The chair is Odd_Bloke.  Information about MeetBot at <a href="https://wiki.ubuntu.com/meetingology">https://wiki.ubuntu.com/meetingology</a></p>
+<p>17:22 <code>&lt;meetingology&gt;</code> Available commands: action, commands, idea, info, link, nick</p>
+<p>17:22 <code>&lt;Odd_Bloke&gt;</code> #chair blackboxsw falcojr</p>
+<p>17:22 <code>&lt;meetingology&gt;</code> Current chairs: Odd_Bloke, blackboxsw, falcojr</p>
+<p>17:22 <code>&lt;blackboxsw&gt;</code> \0 woot thanks Odd_Bloke</p>
+<p>17:23 <code>&lt;Odd_Bloke&gt;</code> Hey folks, the cloud-init committers will be around for the next while, to answer any questions or have any discussions you're interested in having.</p>
+<p>17:23 <code>&lt;Odd_Bloke&gt;</code> blackboxsw posted a status update to Discourse earlier today.</p>
+<p>17:23 <code>&lt;blackboxsw&gt;</code> Here's the discourse post for reference on recent cloud-init events</p>
+<p>17:23 <code>&lt;Odd_Bloke&gt;</code> #link <a href="https://discourse.ubuntu.com/t/cloud-init-status-03-23-2021/21490">https://discourse.ubuntu.com/t/cloud-init-status-03-23-2021/21490</a></p>
+<p>17:23 <code>&lt;blackboxsw&gt;</code> #link <a href="https://discourse.ubuntu.com/t/cloud-init-status-03-23-2021/21490">https://discourse.ubuntu.com/t/cloud-init-status-03-23-2021/21490</a></p>
+<p>17:23 <code>&lt;blackboxsw&gt;</code> thanks Odd_Bloke</p>
+<p>17:23 <code>&lt;Odd_Bloke&gt;</code> Haha</p>
+<p>17:23 <code>&lt;Odd_Bloke&gt;</code> Please read it twice.</p>
+<p>17:24 <code>&lt;blackboxsw&gt;</code> and correct any clerical errors</p>
+<p>17:25 <code>&lt;blackboxsw&gt;</code> one topic of interested that hamalq  brought up yesterday was the "feature" of RedHat and CentOS that automatically prefers fqdn  over hostname in #cloud-config per this bug</p>
+<p>17:25 <code>&lt;blackboxsw&gt;</code> #link <a href="https://bugs.launchpad.net/cloud-init/+bug/1724414">https://bugs.launchpad.net/cloud-init/+bug/1724414</a></p>
+<p>17:25 <code>&lt;ubot5&gt;</code> Ubuntu bug 1724414 in cloud-init "rhel distro selects FQDN as hostname" [Low,Won't fix]</p>
+<p>17:26 <code>&lt;blackboxsw&gt;</code> I mentioned we'd bring it up to reflect our opinion on this behavior today after a discussion</p>
+<p>17:28 <code>&lt;blackboxsw&gt;</code> I think the upstream stance on RedHat and CentOS is that this default behavior on RedHat/CentOS has been in play for a long time and changing that default behavior would be asking to cause problems for the majority of users who may rely on this behavior during system launch.</p>
+<p>17:28 <code>&lt;blackboxsw&gt;</code> Odd_Bloke: falcojr did we say in this case we'd prefer a new bug which better describes the desired use-case and how current cloud-init doesn't allow for that use-case?</p>
+<p>17:30 <code>&lt;blackboxsw&gt;</code> that's all the content/discussion I had. I know I needed to get otubo a review today on his resize lvm partition branch <a href="https://github.com/canonical/cloud-init/pull/721">https://github.com/canonical/cloud-init/pull/721</a> as my stale review was blocking that.</p>
+<p>17:31 <code>&lt;Odd_Bloke&gt;</code> We've closed out that bug as Won't Fix; we'd like folks who consider themselves affected by that bug to file a new one which describes their specific problem with the current situation: we can then work to support those requirements.</p>
+<p>18:24 <code>&lt;Odd_Bloke&gt;</code> OK, sounds like there's not much to chat about; thanks to any lurkers. :)</p>
+<p>18:24 <code>&lt;Odd_Bloke&gt;</code> #endmeeting</p>
+<p>Generated by MeetBot 0.4.0 (<a href="https://wiki.ubuntu.com/meetingology">https://wiki.ubuntu.com/meetingology</a>)</p>
+  </div>
+  <div class="tag-cloud">
+    <p>
+    </p>
+  </div>
+
+
+
+    <div class="addthis_relatedposts_inline">
+
+
+</article>
+
+    <footer>
+<p>&copy;  </p>
+<p>Powered by <a href="http://getpelican.com" target="_blank">Pelican</a> - <a href="https://github.com/alexandrevicenzi/flex" target="_blank">Flex</a> theme by <a href="http://alexandrevicenzi.com" target="_blank">Alexandre Vicenzi</a></p>    </footer>
+  </main>
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " Cloud-init Info ",
+  "url" : "https://cloud-init.github.io",
+  "image": "/images/cloud-init-orange.svg",
+  "description": "Cloud-init project updates and general information"
+}
+</script>
+
+</body>
+</html>
